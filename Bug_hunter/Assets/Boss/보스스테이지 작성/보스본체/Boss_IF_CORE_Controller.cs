@@ -95,7 +95,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
     public int nowPattern;
 
     [SerializeField]
-    public GameObject PatternNoticeText;
+    public GameObject TypingEffectManager;
 
     public GameObject FirstPattern_Hamster;
     public GameObject FirsPattern_StartPos;
@@ -139,7 +139,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
                 case 1:
                     // 1번 패턴 생성
 
-                    Instantiate(PatternNoticeText, this.transform.position,
+                    Instantiate(TypingEffectManager, this.transform.position,
                         this.transform.rotation);
                     yield return new WaitForSeconds(3.0f);
 
@@ -150,7 +150,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
                     break;
                 case 2:
                     // 2번 패턴 생성
-                    Instantiate(PatternNoticeText, this.transform.position,
+                    Instantiate(TypingEffectManager, this.transform.position,
                         this.transform.rotation);
                     yield return new WaitForSeconds(3.0f);
 
@@ -167,7 +167,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
                     break;
                 case 3:
                     // 3번 패턴 생성
-                    Instantiate(PatternNoticeText, this.transform.position,
+                    Instantiate(TypingEffectManager, this.transform.position,
     this.transform.rotation);
                     yield return new WaitForSeconds(3.0f);
 
@@ -180,7 +180,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
                     break;
                 case 4:
                     // 4번 패턴 생성
-                    Instantiate(PatternNoticeText, this.transform.position,
+                    Instantiate(TypingEffectManager, this.transform.position,
     this.transform.rotation);
                     yield return new WaitForSeconds(3.0f);
 

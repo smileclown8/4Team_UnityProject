@@ -38,27 +38,25 @@ public class Boss_IF_CameraController : MonoBehaviour
     }
     void Update()
     {
-
         if (GameObject.Find("CORE_STAGESTART") != null)
         {
             minCameraSize = GameObject.Find("CORE_STAGESTART").GetComponent<CoreRotater>().CameraSize;
             this.GetComponent<Camera>().orthographicSize = minCameraSize;
-            if(transform.position.z < -10)
-            {
-                transform.Translate(0, 0, -10);
-            }
+
         }
         else
         {
             this.GetComponent<Camera>().orthographicSize = 10f;
-            transform.Translate(0, 0, -10);
         }
-
 
         if (GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent != true)
         {
-
             transform.position = Vector2.Lerp(transform.position, playerCameraPos.position, 2f * Time.deltaTime);
+        }
+
+        else
+        {
+            this.transform.position = new Vector2(GameObject.Find("CORE_STAGESTART_POS").transform.position.x, GameObject.Find("CORE_STAGESTART_POS").transform.position.y);
         }
 
         if (transform.position.x <= leftEnd)
@@ -80,13 +78,8 @@ public class Boss_IF_CameraController : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x, downEnd);
         }
-        transform.Translate(0, 0, -10); //카메라를 원래 z축으로 이동
-
-    }
-
-    void CameraZoomIN()
-    {
-
+        transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -10);
+        //카메라를 원래 z축으로 이동
     }
 }
 
