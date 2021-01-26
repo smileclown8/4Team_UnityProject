@@ -94,6 +94,9 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
     public bool isPattern = false;
     public int nowPattern;
 
+    [SerializeField]
+    public GameObject PatternNoticeText;
+
     public GameObject FirstPattern_Hamster;
     public GameObject FirsPattern_StartPos;
 
@@ -112,8 +115,8 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
     IEnumerator PatternDecide()
     {
         yield return new WaitForSeconds(5.0f); //보스 패턴 시작하기전까지 시간
-        
-        int postPattern =0;            
+
+        int postPattern = 0;
 
         while (true)
         {
@@ -124,7 +127,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
 
             while (true)
             {
-                if( nowPattern == postPattern)
+                if (nowPattern == postPattern)
                 {
                     nowPattern = Random.Range(1, 4 + 1);
                 }
@@ -133,18 +136,26 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
             }
             switch (nowPattern)
             {
-                case 1:;
-
+                case 1:
                     // 1번 패턴 생성
+
+                    Instantiate(PatternNoticeText, this.transform.position,
+                        this.transform.rotation);
+                    yield return new WaitForSeconds(3.0f);
+
                     Instantiate(FirstPattern_Hamster, FirsPattern_StartPos.transform.position, FirsPattern_StartPos.transform.rotation);
                     postPattern = nowPattern;
                     Debug.Log("패턴1");
                     yield return new WaitForSeconds(13.0f); // 1번 패턴이 끝날때까지 걸리는 시간
                     break;
-                case 2:;
-
+                case 2:
                     // 2번 패턴 생성
+                    Instantiate(PatternNoticeText, this.transform.position,
+                        this.transform.rotation);
+                    yield return new WaitForSeconds(3.0f);
 
+
+                    Debug.Log("패턴2");
                     Instantiate(SecondPattern_Alpaca_1, SecondPattern_RightPos.transform.position, SecondPattern_RightPos.transform.rotation);
 
                     yield return new WaitForSeconds(5.0f);
@@ -152,21 +163,27 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
                     Instantiate(SecondPattern_Alpaca_2, SecondPattern_LeftPos.transform.position, SecondPattern_LeftPos.transform.rotation);
 
                     postPattern = nowPattern;
-                    Debug.Log("패턴2");
                     yield return new WaitForSeconds(10.0f); // 2번 패턴이 끝날때까지 걸리는 시간
                     break;
-                case 3:;
-
+                case 3:
                     // 3번 패턴 생성
+                    Instantiate(PatternNoticeText, this.transform.position,
+    this.transform.rotation);
+                    yield return new WaitForSeconds(3.0f);
+
                     Instantiate(ThirdPattern_Dove, ThirdPattern_DovePos.transform.position, ThirdPattern_DovePos.transform.rotation);
-  
+
                     postPattern = nowPattern;
                     Debug.Log("패턴3");
                     yield return new WaitForSeconds(10.0f); // 3번 패턴이 끝날때까지 걸리는 시간
                     isPattern = true;
                     break;
-                case 4:;
+                case 4:
                     // 4번 패턴 생성
+                    Instantiate(PatternNoticeText, this.transform.position,
+    this.transform.rotation);
+                    yield return new WaitForSeconds(3.0f);
+
                     Instantiate(FourthPattern_Bear, FourthPattern_BearPos.transform.position, FourthPattern_BearPos.transform.rotation);
 
 
@@ -177,7 +194,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
             }
 
             yield return new WaitForSeconds(3.0f);
-            
+
         }
     }
 

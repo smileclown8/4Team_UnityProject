@@ -163,6 +163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 7866930776738216673, guid: 8f8ee1ee9e639f546970e73c1e0ba688,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7866930776738216677, guid: 8f8ee1ee9e639f546970e73c1e0ba688,
         type: 3}
       propertyPath: m_Pivot.x
@@ -914,7 +919,6 @@ Transform:
   m_Children:
   - {fileID: 1332301679}
   - {fileID: 1064330815}
-  - {fileID: 823421754}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1103,50 +1107,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a35195da26c59894984c058e1a76696c, type: 3}
---- !u!1 &823421753
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 823421754}
-  - component: {fileID: 823421755}
-  m_Layer: 0
-  m_Name: TypingEffectManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &823421754
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823421753}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 605570176}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &823421755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823421753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a88e3668e3b4e42b1c004f51447247, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tx: {fileID: 1573855631}
 --- !u!1 &847387239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &874354197
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1337,6 +1297,8 @@ MonoBehaviour:
   CoreMovespeed: 5
   isPattern: 0
   nowPattern: 0
+  PatternNoticeText: {fileID: 1758204678725418253, guid: cca5981593aadc24b9c16b80087f07d6,
+    type: 3}
   FirstPattern_Hamster: {fileID: 576827453037724895, guid: 29df82dbf5c8ffd47bcb7750243c6c50,
     type: 3}
   FirsPattern_StartPos: {fileID: 1122559342}
@@ -1805,7 +1767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161733761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.51, y: 11.8, z: -10}
+  m_LocalPosition: {x: 39.44, y: 11.04, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2238,7 +2200,7 @@ GameObject:
   - component: {fileID: 1573855632}
   - component: {fileID: 1573855631}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PatternNoticeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
