@@ -1461,8 +1461,7 @@ MonoBehaviour:
   CoreMovespeed: 5
   isPattern: 0
   nowPattern: 0
-  PatternNoticeText: {fileID: 1758204678725418253, guid: cca5981593aadc24b9c16b80087f07d6,
-    type: 3}
+  TypingEffectManager: {fileID: 0}
   FirstPattern_Hamster: {fileID: 576827453037724895, guid: 29df82dbf5c8ffd47bcb7750243c6c50,
     type: 3}
   FirsPattern_StartPos: {fileID: 1122559342}
@@ -1517,7 +1516,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8887ecf8525672b4697b1ec8972d24ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b049106a1b0b9ce43826c302e5af1624, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3126,6 +3125,8 @@ MonoBehaviour:
   CameraSize: 10
   shirinkCamerSpeed: 2.5
   turnSpeed: 15
+  StageStartTypingManager: {fileID: 5110863666755523672, guid: 5551cf2ba040c744ea7f9e9ae788e791,
+    type: 3}
 --- !u!212 &1873792354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3165,7 +3166,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8887ecf8525672b4697b1ec8972d24ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b049106a1b0b9ce43826c302e5af1624, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
