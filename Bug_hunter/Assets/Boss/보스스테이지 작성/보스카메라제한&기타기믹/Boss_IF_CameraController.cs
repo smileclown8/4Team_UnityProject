@@ -18,6 +18,10 @@ public class Boss_IF_CameraController : MonoBehaviour
     public float downEnd;
     public float upEnd;
 
+
+    public bool isNeedZoomIN = false;
+    private float minCameraSize;
+
     void Awake()
     {
         playerCamera = GameObject.Find("playerCameraPos");
@@ -35,7 +39,27 @@ public class Boss_IF_CameraController : MonoBehaviour
     void Update()
     {
 
-        transform.position = Vector2.Lerp(transform.position, playerCameraPos.position, 2f * Time.deltaTime);
+        if (GameObject.Find("CORE_STAGESTART") != null)
+        {
+            minCameraSize = GameObject.Find("CORE_STAGESTART").GetComponent<CoreRotater>().CameraSize;
+            this.GetComponent<Camera>().orthographicSize = minCameraSize;
+            if(transform.position.z < -10)
+            {
+                transform.Translate(0, 0, -10);
+            }
+        }
+        else
+        {
+            this.GetComponent<Camera>().orthographicSize = 10f;
+            transform.Translate(0, 0, -10);
+        }
+
+
+        if (GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent != true)
+        {
+
+            transform.position = Vector2.Lerp(transform.position, playerCameraPos.position, 2f * Time.deltaTime);
+        }
 
         if (transform.position.x <= leftEnd)
         {
@@ -57,6 +81,11 @@ public class Boss_IF_CameraController : MonoBehaviour
             transform.position = new Vector2(transform.position.x, downEnd);
         }
         transform.Translate(0, 0, -10); //카메라를 원래 z축으로 이동
+
+    }
+
+    void CameraZoomIN()
+    {
 
     }
 }
