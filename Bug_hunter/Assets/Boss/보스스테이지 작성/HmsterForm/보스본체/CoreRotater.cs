@@ -35,8 +35,8 @@ public class CoreRotater : MonoBehaviour
 
         if (GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent == true)
         {
-            if (CameraSize > 5)
-                CameraSize -= Time.deltaTime * shirinkCamerSpeed;
+            if (CameraSize < 15)
+                CameraSize += Time.deltaTime * shirinkCamerSpeed;
 
             turnSpeed += Time.deltaTime * 40f;
 
