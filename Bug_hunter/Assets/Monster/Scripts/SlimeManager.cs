@@ -138,7 +138,7 @@ public class SlimeManager : MonoBehaviour
         {
             if (distanceFromPlayer <= 2) // 안됨
             {
-                Invoke("Jump", 2); // 안됨
+                //Invoke("Jump", 2); // 안됨
                 return; // 안됨
             }
             else

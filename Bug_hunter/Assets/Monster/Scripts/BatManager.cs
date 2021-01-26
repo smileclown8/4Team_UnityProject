@@ -13,7 +13,6 @@ public class BatManager : MonoBehaviour
     float shoottime;
     float nextshoot;
     Animator animator;
-    int movementFlag = 0;   // 0: 정지상태, 1: 좌이동, 2: 우이동
 
 
     void Start()
@@ -61,7 +60,6 @@ public class BatManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")                                           // 트리거 반경에서 벗어나면
         {
-            movementFlag = 0;
             GameObject.Find("BatMoving").GetComponent<BatMove>().enabled = true;        // 다시 움직이기 시작
         }
     }

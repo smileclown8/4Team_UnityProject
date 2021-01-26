@@ -15,6 +15,8 @@ public class SnakeManager : MonoBehaviour
     // 이동 및 추격용
     public int movementFlag = 0;   // 0: 정지상태, 1: 좌이동, 2: 우이동
     public bool isTracing = false;
+    float timer = 3f;
+    bool isFast;
     public float movePower = 1f;
     GameObject target;
 
@@ -41,7 +43,6 @@ public class SnakeManager : MonoBehaviour
         playerPos = GameObject.FindWithTag("Player").GetComponent<Transform>();
         col = GetComponent<BoxCollider2D>();
         animator = gameObject.GetComponentInChildren<Animator>();
-
     }
 
     void Start()
@@ -55,14 +56,37 @@ public class SnakeManager : MonoBehaviour
         Move();
         //if (distanceFromPlayer < 0.1f)
         //InvokeRepeating("SnakeAttack", 1, 1);
-        Invoke("MovingSlow", 0.2f);
-        Invoke("MovingFast", 3);
     }
 
 
     private void Update()
     {
         distanceFromPlayer = playerPos.position.x - transform.position.x;
+
+        /*
+        if (isFast)
+        {
+            if (timer > 0)
+            {
+                movePower = 4f;
+                timer -= Time.deltaTime;
+                if (timer <= 0)
+                {
+                    isFast = false;
+                    timer = 3f;
+                }
+            }
+        }
+        else
+        {
+            movePower = 1f;
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                isFast = true;
+                timer = 0.2f;
+            }
+        }*/
     }
 
 
@@ -104,30 +128,6 @@ public class SnakeManager : MonoBehaviour
         transform.position += moveVelocity * movePower * Time.deltaTime;
     }
 
-    IEnumerator MoveSlow(Vector3 velo)
-    {
-        yield return new WaitForSeconds(0.5f);
-        movePower = 1f;
-        transform.position += velo * movePower * Time.deltaTime;
-    }
-    IEnumerator MoveFast(Vector3 velo)
-    {
-        yield return new WaitForSeconds(3);
-        movePower = 4f;
-        transform.position += velo * movePower * Time.deltaTime;
-    }
-
-    void MovingSlow()
-    {
-        movePower = 1f;
-        new WaitForSeconds(0.2f);
-    }
-    void MovingFast()
-    {
-        movePower = 4f;
-        new WaitForSeconds(3);
-    }
-
 
 
 
@@ -145,7 +145,6 @@ public class SnakeManager : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             isTracing = true;
-            animator.SetBool("isMoving", true);
         }
     }
     public void OnTriggerExit2D(Collider2D other)
@@ -153,20 +152,12 @@ public class SnakeManager : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             isTracing = false;
-            StartCoroutine("ChangeMovement");
         }
     }
 
 
     public IEnumerator ChangeMovement()
     {
-        movementFlag = Random.Range(0, 3);
-
-        if (movementFlag == 0)
-            animator.SetBool("isMoving", false);
-        else
-            animator.SetBool("isMoving", true);
-
         yield return new WaitForSeconds(3f);
 
         StartCoroutine("ChangeMovement");
