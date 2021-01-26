@@ -1461,7 +1461,8 @@ MonoBehaviour:
   CoreMovespeed: 5
   isPattern: 0
   nowPattern: 0
-  TypingEffectManager: {fileID: 0}
+  TypingEffectManager: {fileID: 1758204678725418253, guid: cca5981593aadc24b9c16b80087f07d6,
+    type: 3}
   FirstPattern_Hamster: {fileID: 576827453037724895, guid: 29df82dbf5c8ffd47bcb7750243c6c50,
     type: 3}
   FirsPattern_StartPos: {fileID: 1122559342}
