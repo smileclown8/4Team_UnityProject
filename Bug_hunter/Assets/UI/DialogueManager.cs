@@ -138,7 +138,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (talking && keyActivated)
         {
-            if (Input.GetKeyDown(KeyCode.Z))
+          //  if (Input.GetKeyDown(KeyCode.Z))   // 터치가 아닐때
+            if(Input.GetMouseButtonDown(0))     // 터치일 때
             {
                 keyActivated = false;
                 count++;
