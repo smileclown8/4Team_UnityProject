@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9100660158539592933}
   - component: {fileID: 127304368742553804}
-  m_Layer: 0
-  m_Name: rotateSpkie
+  m_Layer: 11
+  m_Name: MoverotateSpike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

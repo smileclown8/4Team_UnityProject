@@ -13,6 +13,8 @@ TagManager:
   - Tile1_4on
   - Tile_off
   - endpoint
+  - RotateSpike
+  - Gimik
   layers:
   - Default
   - TransparentFX

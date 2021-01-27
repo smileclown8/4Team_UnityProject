@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 9100660158539592933}
   - component: {fileID: 127304368742553804}
   - component: {fileID: 9000001504162628269}
-  m_Layer: 0
+  - component: {fileID: 4350049616465624597}
+  - component: {fileID: 9186918126609745893}
+  m_Layer: 11
   m_Name: rotateSpike
-  m_TagString: Untagged
+  m_TagString: Gimik
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +96,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f522e9fd407722429def14173d10894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &4350049616465624597
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4865064071342796757}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.054113865, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.417751
+--- !u!114 &9186918126609745893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4865064071342796757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd440e626c9fd1b418bf2043dfebc2e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
+  PlayerStatusManager: {fileID: 0}

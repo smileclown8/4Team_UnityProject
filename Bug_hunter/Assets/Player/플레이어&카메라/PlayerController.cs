@@ -155,7 +155,13 @@ public class PlayerController : MonoBehaviour
             {
               OnDamaged(collision.transform.position);  // 만약 몬스터 위가 아닌곳에서 몬스터와 충돌하면 데미지를 입는다.
             }
-        }  
+        }
+        if (collision.gameObject.tag == "Gimik")  // tag가 Gimik인것과 충돌할때.
+                                                  // if(collision.gameObject.tag =="Gimik"){ OnDamaged( ... ) } 이런 내용을 추가해야함
+        {
+
+            OnDamaged(collision.transform.position);  
+        }
     }
 
 
