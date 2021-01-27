@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
         PlayerStatusManager = GameObject.Find("PlayerStatusManager");
         jumpPower = PlayerStatusManager.GetComponent<PlayerStatusManager>().jumpPower;
         Dialogue = GameObject.Find("UI_Dialogue");
+
     }
 
 

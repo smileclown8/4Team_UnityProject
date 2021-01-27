@@ -543,7 +543,7 @@ PrefabInstance:
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.44
+      value: -15.370002
       objectReference: {fileID: 0}
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
@@ -1182,8 +1182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 360
-  Boss_IF_HP: 100
-  Boss_IF_MaxHP: 100
+  Boss_IF_HP: 450
+  Boss_IF_MaxHP: 450
   startPos: {fileID: 1536686681}
   endPos: {fileID: 437902395}
   desPos: {fileID: 0}
@@ -1836,12 +1836,12 @@ PrefabInstance:
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.439997
+      value: -15.37
       objectReference: {fileID: 0}
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5299997
+      value: 6.37
       objectReference: {fileID: 0}
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
@@ -2103,12 +2103,12 @@ PrefabInstance:
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.500002
+      value: 4.5600033
       objectReference: {fileID: 0}
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.8999996
+      value: 5.0599995
       objectReference: {fileID: 0}
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
@@ -2362,12 +2362,12 @@ PrefabInstance:
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: 4.56
       objectReference: {fileID: 0}
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32
+      value: -0.52
       objectReference: {fileID: 0}
     - target: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
         type: 3}
@@ -2911,6 +2911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3836339823146012146, guid: 70aa6fa6309ef8044874dc3af51b6e13,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3836339823146012150, guid: 70aa6fa6309ef8044874dc3af51b6e13,
         type: 3}
