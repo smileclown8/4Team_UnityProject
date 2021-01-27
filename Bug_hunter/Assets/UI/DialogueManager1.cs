@@ -128,9 +128,10 @@ public class DialogueManager1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
+
+        //  if (Input.GetKeyDown(KeyCode.Z))   // 터치가 아닐때
+        if (Input.GetMouseButtonDown(0))     // 터치일 때
+        {
                 keyActivated = false;
                 count++;
                 text.text = "";
