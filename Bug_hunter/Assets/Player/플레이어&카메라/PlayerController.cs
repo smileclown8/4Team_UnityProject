@@ -61,9 +61,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // 01.27 21:00      여기로 옮겼음
-        skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
-
         bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
         tilemap = GameObject.Find("Tilemap1_2_1");
         if (tilemap != null)
@@ -83,8 +80,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // 01.27 21:00      Strt() 로 빼놨음
-        // skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
+        skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
         isTalk = Dialogue.GetComponent<DialogueManager>().talking;
 
 
@@ -137,26 +133,6 @@ public class PlayerController : MonoBehaviour
                     PlayerSecondSkillShoot();
                     break;
 
-                // 01.27 21:00      스킬 추가
-                // 산탄
-                case 3:
-                    ; RandomBulletFire();
-                    break;
-                // 화살
-                case 4:
-                    ; ArrowSkillBulletFire();
-                    break;
-                // 구름탄
-                case 5:
-                    ; BombSkillFire();
-                    break;
-                // 찌릿찌릿
-                case 6:
-                    ; ElectroSkillFire();
-                    break;
-                case 7:
-                    ; FireBulletSkill();
-                    break;
             }
 
         }
@@ -165,7 +141,7 @@ public class PlayerController : MonoBehaviour
     public void Jump() //플레이어 점프
     {
         if (
-            //Input.GetKeyDown(KeyCode.Space)&& //터치가 아닐때, 터치라면 이 줄을 주석처리하기
+            Input.GetKeyDown(KeyCode.Space)&& //터치가 아닐때, 터치라면 이 줄을 주석처리하기
             !isJumping && isTalk==false) // 
         {
             playerRigidbody2D.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
@@ -276,17 +252,11 @@ public class PlayerController : MonoBehaviour
     // =======================================================================================
     // 여기서부터 플레이어 슈팅
 
-    public int skill_ID = 0; //초기값, 일반공격
+    public int skill_ID; //초기값, 일반공격
 
     public GameObject NormalBullet; // 일반 공격의 bullet(탄환,투사체). 
     public GameObject FirstSkillBullet; // 첫번째 스킬의 bullet
     public GameObject SecondSkillBullet; // 두번째스킬의 bullet.
-
-    // 01.27 21:00
-    public GameObject arrowSkillBullet;
-    public GameObject BombSkill;
-    public GameObject ElectroSkill;
-    public GameObject FireSkill;
 
     public GameObject bulletPos;
     //bulletPos도 ShootPos로 이름 바꿔야함
@@ -317,7 +287,6 @@ public class PlayerController : MonoBehaviour
         }
         curTime -= Time.deltaTime;
     }
-
     public void PlayerFirstSkillShoot()
     {
         pos = bulletPos.transform;
@@ -342,53 +311,6 @@ public class PlayerController : MonoBehaviour
         }
         curTime -= Time.deltaTime;
     }
-
-
-    // 01.27 21:00      여기서부터 스킬 추가
-    public void RandomBulletFire()
-    {
-        pos = bulletPos.transform;
-        int random_BulletPOS_Y = Random.Range(-1, 1 + 1);
-        Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
-
-        Instantiate(NormalBullet, newBulletPos, transform.rotation);
-
-    }
-
-    public void ArrowSkillBulletFire()
-    {
-        pos = bulletPos.transform;
-        Instantiate(arrowSkillBullet, pos.position, transform.rotation);
-
-    }
-
-    public void BombSkillFire()
-    {
-        pos = bulletPos.transform;
-        int random_BulletPOS_Y = Random.Range(-2, 1 + 2);
-        Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
-
-        Instantiate(BombSkill, newBulletPos, transform.rotation);
-    }
-
-    public void ElectroSkillFire()
-    {
-        pos = bulletPos.transform;
-        int random_BulletPOS_Y = Random.Range(-2, 1 + 2);
-        Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
-
-        Instantiate(ElectroSkill, newBulletPos, transform.rotation);
-    }
-
-    void FireBulletSkill()
-    {
-        pos = bulletPos.transform;
-
-        Instantiate(FireSkill, pos.position, transform.rotation);
-
-    }
-    // 01.27 21:00      여기까지 스킬 추가
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     // Trigger 타입의 콜라이더와 충돌이 발생하면 충돌이 발생한 오브젝트의
