@@ -7,8 +7,8 @@ public class TestScript1 : MonoBehaviour
 
     BGMManager BGM;
     public int playMusicTrack;
-    
-  
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +20,12 @@ public class TestScript1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       
-       
-            BGM.Play(playMusicTrack);
-            this.gameObject.SetActive(false);
-           
-     
+        BGM.Play(playMusicTrack);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        BGM.Stop();
+        //this.gameObject.SetActive(false);
     }
 }
