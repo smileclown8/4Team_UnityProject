@@ -152,7 +152,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
                     // 2번 패턴 생성
                     Instantiate(TypingEffectManager, this.transform.position,
                         this.transform.rotation);
-                    yield return new WaitForSeconds(3.0f);
+                    yield return new WaitForSeconds(4.0f);
 
 
                     Debug.Log("패턴2");
@@ -163,7 +163,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
                     Instantiate(SecondPattern_Alpaca_2, SecondPattern_LeftPos.transform.position, SecondPattern_LeftPos.transform.rotation);
 
                     postPattern = nowPattern;
-                    yield return new WaitForSeconds(10.0f); // 2번 패턴이 끝날때까지 걸리는 시간
+                    yield return new WaitForSeconds(5.0f); // 2번 패턴이 끝날때까지 걸리는 시간
                     break;
                 case 3:
                     // 3번 패턴 생성
