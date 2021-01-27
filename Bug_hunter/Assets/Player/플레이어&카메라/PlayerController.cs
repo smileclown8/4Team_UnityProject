@@ -85,19 +85,20 @@ public class PlayerController : MonoBehaviour
 
 
 
-        /* 터치가 아닐 때
+        //터치가 아닐 때
          Jump();
         Land();
 
         Shoot();
-        */
-
+    
+    /*
         // 터치일 때
        // Jump();
         Land();
         
        Shoot();
-        
+    */
+
     }
 
     public bool isShootButton = false;

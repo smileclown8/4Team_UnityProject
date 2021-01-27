@@ -129,7 +129,7 @@ public class DialogueManager1 : MonoBehaviour
     void Update()
     {
 
-        //  if (Input.GetKeyDown(KeyCode.Z))   // 터치가 아닐때
+         // if (Input.GetKeyDown(KeyCode.Z))   // 터치가 아닐때
         if (Input.GetMouseButtonDown(0))     // 터치일 때
         {
                 keyActivated = false;
