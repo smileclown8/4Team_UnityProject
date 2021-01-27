@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3476545778411978120}
   - component: {fileID: 3476545778411978134}
   - component: {fileID: 3476545778411978135}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Recognition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 3476545778858288187}
   - component: {fileID: 3476545778858288188}
   - component: {fileID: 3476545778858288135}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ Transform:
   m_GameObject: {fileID: 3476545778858288189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.014204133, y: 0.46, z: -1.8979332}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 3476545778411978120}
   m_Father: {fileID: 0}
