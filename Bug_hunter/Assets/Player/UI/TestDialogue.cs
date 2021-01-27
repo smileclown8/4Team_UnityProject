@@ -8,6 +8,11 @@ public class TestDialogue : MonoBehaviour
     public Dialogue dialogue;
 
     private DialogueManager theDM;
+    public GameObject targetObject;
+
+
+
+    public bool isSavorTalkItemGet = false;
 
     void Start()
     {
@@ -17,8 +22,45 @@ public class TestDialogue : MonoBehaviour
     {
         if (collision.gameObject.name == "player")
         {
-            theDM.ShowDialogue(dialogue);
-  
+
+            
+
+            if (this.gameObject.name == "Dialougue_01_message")
+            {
+                theDM.ShowDialogue(this.dialogue);
+            }
+            if (this.gameObject.name == "Dialougue_03_message")
+            {
+                theDM.ShowDialogue(this.dialogue);
+            }
+            if (this.gameObject.name == "Dialougue_04_message")
+            {
+                theDM.ShowDialogue(this.dialogue);
+            }
+            if (this.gameObject.name == "Savor1")
+            {
+                theDM.ShowDialogue(this.dialogue);
+            }
+            if (this.gameObject.name == "Bolt")
+            {
+                
+                theDM.ShowDialogue(this.dialogue);
+                Destroy(GameObject.Find("Savor1"));
+
+                targetObject.SetActive(true);
+                GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorTalkItemGet = true;
+
+
+            }
+            if (this.gameObject.name == "Savor2")
+            {
+                if (isSavorTalkItemGet == true)
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                
+            }
+
         }
     }
 }

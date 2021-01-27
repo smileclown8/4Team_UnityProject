@@ -6,6 +6,7 @@ using UnityEngine;
 public class Dialogue
 {
     [TextArea(1, 2)] //텍스트 두줄
+   
     public string[] sentences;
     public Sprite[] sprites;
     public Sprite[] dialogueWindows; 

@@ -60,7 +60,7 @@ public class DialogueManager : MonoBehaviour
     public void ShowDialogue(Dialogue dialogue)
     {
         talking = true;
-        GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent = true;
+
         for (int i = 0; i < dialogue.sentences.Length; i++)
         {
             listSentences.Add(dialogue.sentences[i]);
@@ -82,8 +82,6 @@ public class DialogueManager : MonoBehaviour
         animSprite.SetBool("Appear", false);
         animDialogueWindow.SetBool("Appear", false);
         talking = false;
-        GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent = false;
-
     }
 
 
@@ -131,7 +129,7 @@ public class DialogueManager : MonoBehaviour
             {
             theAudio.Play(typeSound);
             }
-            yield return new WaitForSeconds(0.06f);
+            yield return new WaitForSeconds(0.05f);
         }
 
     }
