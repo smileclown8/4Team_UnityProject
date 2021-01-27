@@ -116,9 +116,9 @@ public class PlayerController : MonoBehaviour
 
     public void Shoot()
     {
-        //if (Input.GetKey(KeyCode.F)) // 터치가 아닐 때
+        if (Input.GetKey(KeyCode.F)) // 터치가 아닐 때
 
-        if(isShootButton) //터치일 때 
+    //    if(isShootButton) //터치일 때 
         {
 
             switch (skill_ID)
