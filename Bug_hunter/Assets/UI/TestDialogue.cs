@@ -22,8 +22,7 @@ public class TestDialogue : MonoBehaviour
     {
         if (collision.gameObject.name == "player")
         {
-
-            
+                      
 
             if (this.gameObject.name == "Dialougue_01_message")
             {

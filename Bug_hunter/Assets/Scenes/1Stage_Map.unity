@@ -12106,12 +12106,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &221566605 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8438855787161909179, guid: e3d94b776b515404db81ee49dade0635,
-    type: 3}
-  m_PrefabInstance: {fileID: 923715651}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &226481914
 GameObject:
   m_ObjectHideFlags: 0
@@ -37319,6 +37313,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerRespawn_1_1: {fileID: 0}
+--- !u!1 &915243043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8126722519412773286, guid: 355be5846865c1f49bbef76b6a5c5098,
+    type: 3}
+  m_PrefabInstance: {fileID: 1617155930}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &923715651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63894,6 +63894,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd2ac82d8a807ea45aab3bb7fc2a824e, type: 3}
+--- !u!4 &1224047734 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6104483621690483413, guid: dd2ac82d8a807ea45aab3bb7fc2a824e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1224047733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1234312598
 GameObject:
   m_ObjectHideFlags: 0
@@ -64019,7 +64025,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234312598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 269.7, y: 24.7, z: 0}
+  m_LocalPosition: {x: 89.9, y: 0.3, z: 0}
   m_LocalScale: {x: 0.45154113, y: 0.45154113, z: 0.45154113}
   m_Children:
   - {fileID: 35796182}
@@ -64380,6 +64386,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4063473957960498677, guid: 72d46720809ea514ba098a6f68895d8b,
+        type: 3}
+      propertyPath: targetObject
+      value: 
+      objectReference: {fileID: 915243043}
     - target: {fileID: 4063473957960498681, guid: 72d46720809ea514ba098a6f68895d8b,
         type: 3}
       propertyPath: m_Name
@@ -69935,6 +69946,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1571616320244364308, guid: 355be5846865c1f49bbef76b6a5c5098,
         type: 3}
+      propertyPath: cahtTr
+      value: 
+      objectReference: {fileID: 1224047734}
+    - target: {fileID: 1571616320244364308, guid: 355be5846865c1f49bbef76b6a5c5098,
+        type: 3}
       propertyPath: sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -69942,6 +69958,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Savor2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126722519412773286, guid: 355be5846865c1f49bbef76b6a5c5098,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8126722519412773291, guid: 355be5846865c1f49bbef76b6a5c5098,
         type: 3}
@@ -71519,7 +71540,7 @@ MonoBehaviour:
   sentences:
   - "\uB204\uAD70\uAC00 \uB5A8\uC5B4\uB728\uB9B0 \uBCFC\uD2B8"
   - "\uB9CC\uC9C8 \uC218 \uC788\uC744 \uAC83 \uAC19\uB2E4"
-  cahtTr: {fileID: 221566605}
+  cahtTr: {fileID: 1224047734}
   chatBoxPrefab: {fileID: 7646865679912189430, guid: abf0330ed7d89f44f8b00014d0d08459,
     type: 3}
 --- !u!4 &2024859382 stripped
