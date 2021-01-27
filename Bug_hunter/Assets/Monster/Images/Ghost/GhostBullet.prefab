@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6495135641533652105}
   - component: {fileID: 2298079058992426097}
   - component: {fileID: 4334448945367706138}
-  - component: {fileID: 606156253559849395}
+  - component: {fileID: 4449386336423858118}
   m_Layer: 0
   m_Name: GhostBullet
   m_TagString: Untagged
@@ -142,7 +142,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.12
---- !u!114 &606156253559849395
+--- !u!114 &4449386336423858118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6495135641533652150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b48d8ece603f824a9efd4e2f6fd422d, type: 3}
+  m_Script: {fileID: 11500000, guid: 565148e7a001ea64d9320e507e1873e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3

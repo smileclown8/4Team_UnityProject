@@ -2,118 +2,102 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-// 기본적으로 슬라임과 같음
-
 public class SnakeManager : MonoBehaviour
 {
     // 스탯
-    int hp = 10;
-    int snakeDamage = 15;
+    int hp = 15;
+    int attack = 15;
+    int dodgeRate = 10;
 
 
-    // 이동 및 추격용
-    public int movementFlag = 0;   // 0: 정지상태, 1: 좌이동, 2: 우이동
-    public bool isTracing = false;
+    Rigidbody2D rigid;
+    public int nextMove;
+    GameObject target;
+    bool isTracing;
+    string direction = "";
+    public float movePower = 1f;
+    Vector3 moveVelocity = Vector3.zero;
+    Animator anim;
     float timer = 3f;
     bool isFast;
-    public float movePower = 1f;
-    GameObject target;
 
-    Animator animator;
-    Rigidbody2D rigid;
-    SpriteRenderer spriteRenderer;
-    new CapsuleCollider2D collider;
-    public Collider2D col;
-
-    // 공격용
-    float distanceFromPlayer;
-    Transform playerPos;
-    public float jumpHeight;
-
-
-    // ===============================================================
-
-
-    private void Awake()
+    void Awake()
     {
-        animator = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        playerPos = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        col = GetComponent<BoxCollider2D>();
-        animator = gameObject.GetComponentInChildren<Animator>();
+        anim = GetComponent<Animator>();
+        Invoke("Think", 1);
     }
-
-    void Start()
-    {
-        StartCoroutine("ChangeMovement");
-    }
-
 
     void FixedUpdate()
     {
-        Move();
-        //if (distanceFromPlayer < 0.1f)
-        //InvokeRepeating("SnakeAttack", 1, 1);
-    }
 
-
-    private void Update()
-    {
-        distanceFromPlayer = playerPos.position.x - transform.position.x;
-
-        /*
-        if (isFast)
+        // 패트롤
+        if (!isTracing)
         {
-            if (timer > 0)
+            if (isFast)
             {
-                movePower = 4f;
+                if (timer > 0)
+                {
+                    movePower = 4f;
+                    timer -= Time.deltaTime;
+                    if (timer <= 0)
+                    {
+                        isFast = false;
+                        timer = 3f;
+                    }
+                }
+            }
+            else
+            {
+                movePower = 1f;
                 timer -= Time.deltaTime;
                 if (timer <= 0)
                 {
-                    isFast = false;
-                    timer = 3f;
+                    isFast = true;
+                    timer = 1f;
                 }
             }
-        }
-        else
-        {
-            movePower = 1f;
-            timer -= Time.deltaTime;
-            if (timer <= 0)
+            rigid.velocity = new Vector2(nextMove*movePower, rigid.velocity.y);
+
+
+            // 추락방지
+            Vector2 frontVec = new Vector2(rigid.position.x + nextMove * 0.7f, rigid.position.y);
+            Debug.DrawRay(frontVec, Vector3.down, new Color(0, 1, 0));
+            RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 1, LayerMask.GetMask("Platform"));
+            if (rayHit.collider == null)
             {
-                isFast = true;
-                timer = 0.2f;
+                nextMove *= -1;
+                CancelInvoke();
+                Invoke("Think", 3);
             }
-        }*/
-    }
+        }
 
 
-    // 이동용 함수
-    public void Move()
-    {
-        Vector3 moveVelocity = Vector3.zero;
-        string direction = "";
-
+        // 추격
+        target = GetComponentInChildren<RecognitionManager>().target;
+        isTracing = GetComponentInChildren<RecognitionManager>().isTracing;
         if (isTracing)
         {
+            movePower = 2f;
             Vector3 playerPos = target.transform.position;
 
             if (playerPos.x < transform.position.x)
                 direction = "Left";
             else if (playerPos.x > transform.position.x)
                 direction = "Right";
+
+            transform.position += moveVelocity * movePower * Time.deltaTime;
+
         }
         else
         {
-            if (movementFlag == 1)
+            if (nextMove == -1)
                 direction = "Left";
-            else if (movementFlag == 2)
+            else if (nextMove == 1)
                 direction = "Right";
         }
 
-        // 왼쪽 오른쪽 이동
+        // 플립
         if (direction == "Left")
         {
             moveVelocity = Vector3.left;
@@ -125,76 +109,39 @@ public class SnakeManager : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        transform.position += moveVelocity * movePower * Time.deltaTime;
+    }
+    // 패트롤 방향을 3초마다 생각
+    void Think()
+    {
+        nextMove = Random.Range(-1, 2);
+        Invoke("Think", 3);
     }
 
 
 
-
-    // 추격용 함수들
-    public void OnTriggerEnter2D(Collider2D other)
+    float delaytime = 1f;
+    float attacktime = 1f;
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            target = other.gameObject;
-            StopCoroutine("ChangeMovement");
+            target = collision.gameObject;
+            //GameObject.FindWithTag("Player").playerHP -= snakeDamage;
+            Debug.Log("콰삭!");
         }
-    }
-    public void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            isTracing = true;
-        }
-    }
-    public void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            isTracing = false;
-        }
-    }
 
-
-    public IEnumerator ChangeMovement()
-    {
-        yield return new WaitForSeconds(3f);
-
-        StartCoroutine("ChangeMovement");
-    }
-
-
-
-    // 충돌하면 초당 15씩 체력 깎기
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        StopCoroutine("ChangeMovement");
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-    }
-    void SnakeAttack()
-    {
-        // GameObject.FindWithTag("Player").hp -= snakeDamage;
-        Debug.Log("콰삭!");
-    }
-
-
-
-    // 체력 0 이하일 때 피격효과 내고 사라진다.
-    public void OnDamaged(int damage)
-    {
-        if (hp <= 0)
+        if (collision.gameObject.tag == "Player")
         {
-            spriteRenderer.color = new Color(1, 1, 1, 0.3f);        // 맞으면 반투명해짐
-            collider.enabled = false;                               // 충돌 끄기
-            rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);    // 위로 튀어오름
-            Invoke("Destroy", 1.5f);                                // 1.5초 뒤 사라짐
-        }
-    }
+            if (Time.time > attacktime)
+            {
+                //GameObject.FindWithTag("Player").playerHP -= snakeDamage;
+                Debug.Log("콰삭콰삭!");
 
-    private void Destroy()
-    {
-        Destroy(gameObject);
+                attacktime = Time.time + delaytime;
+            }
+        }
     }
 }

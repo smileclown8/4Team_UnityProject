@@ -3,16 +3,13 @@ using System.Collections;
 
 public class StaffController : MonoBehaviour
 {
+	// 스탯
+	int hp = 1;
+	int attack = 20;
+
+
 	public GameObject Explosion;
 
-    private void Awake()
-    {
-    }
-    // Update is called once per frame
-    void Update()
-	{
-
-	}
 
 
 	private void OnTriggerEnter2D(Collider2D collision)

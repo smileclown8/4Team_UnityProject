@@ -5,12 +5,18 @@ using Pathfinding;
 
 public class GhostManager : MonoBehaviour
 {
-    int hp;            // 체력
+    // 스탯
+    int hp = 15;
+    int attack = 20;
+    int dodgeRate = 30;
+
+
+
     bool isDamaged;         // 공격을 받았는가?
     bool trace;             // 추격을 시작했는가?
     Rigidbody2D rigid;
     Animator animator;
-    GameObject target;
+    public GameObject target;
 
     int playerHP = 30;           // 플레이어의 HP. 나중에 플레이어와 연결할 것
 
