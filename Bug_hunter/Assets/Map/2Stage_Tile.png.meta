@@ -1,0 +1,3572 @@
+fileFormatVersion: 2
+guid: 4322758304cd41e4a9f59113f3db83e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8108573705378525087
+    second: 2Stage_Tile_0
+  - first:
+      213: -1439207604811729580
+    second: 2Stage_Tile_1
+  - first:
+      213: -3682473506137088598
+    second: 2Stage_Tile_2
+  - first:
+      213: 3574169357545125599
+    second: 2Stage_Tile_3
+  - first:
+      213: -8052632110972532388
+    second: 2Stage_Tile_4
+  - first:
+      213: -5309593564109618607
+    second: 2Stage_Tile_5
+  - first:
+      213: -1845083251454512531
+    second: 2Stage_Tile_6
+  - first:
+      213: -3949801848187634561
+    second: 2Stage_Tile_7
+  - first:
+      213: 5491528552468442853
+    second: 2Stage_Tile_8
+  - first:
+      213: -4044833243726820534
+    second: 2Stage_Tile_9
+  - first:
+      213: -313701449253597823
+    second: 2Stage_Tile_10
+  - first:
+      213: 3360854673926604050
+    second: 2Stage_Tile_11
+  - first:
+      213: -9127902058027883275
+    second: 2Stage_Tile_12
+  - first:
+      213: 4370061504352916424
+    second: 2Stage_Tile_13
+  - first:
+      213: 6419751866077809074
+    second: 2Stage_Tile_14
+  - first:
+      213: -2083341101335112711
+    second: 2Stage_Tile_15
+  - first:
+      213: 804734874428126718
+    second: 2Stage_Tile_16
+  - first:
+      213: 127342396658509852
+    second: 2Stage_Tile_17
+  - first:
+      213: 5108080397735214349
+    second: 2Stage_Tile_18
+  - first:
+      213: -2397743575155934183
+    second: 2Stage_Tile_19
+  - first:
+      213: 252580470596972752
+    second: 2Stage_Tile_20
+  - first:
+      213: 7930449848789292441
+    second: 2Stage_Tile_21
+  - first:
+      213: -8682558837931440562
+    second: 2Stage_Tile_22
+  - first:
+      213: -5220974051929073600
+    second: 2Stage_Tile_23
+  - first:
+      213: -4535170874793013216
+    second: 2Stage_Tile_24
+  - first:
+      213: 1019978432352206124
+    second: 2Stage_Tile_25
+  - first:
+      213: -6182630662794883553
+    second: 2Stage_Tile_26
+  - first:
+      213: 2896850917215825036
+    second: 2Stage_Tile_27
+  - first:
+      213: -4762291526619050502
+    second: 2Stage_Tile_28
+  - first:
+      213: 8822600501988495101
+    second: 2Stage_Tile_29
+  - first:
+      213: 634459666631780100
+    second: 2Stage_Tile_30
+  - first:
+      213: -2441569375685637881
+    second: 2Stage_Tile_31
+  - first:
+      213: -6562077256646647375
+    second: 2Stage_Tile_32
+  - first:
+      213: -3625393247700999398
+    second: 2Stage_Tile_33
+  - first:
+      213: 3570533638054342520
+    second: 2Stage_Tile_34
+  - first:
+      213: 1048954483111726387
+    second: 2Stage_Tile_35
+  - first:
+      213: -8593726919677304443
+    second: 2Stage_Tile_36
+  - first:
+      213: -3901108710792487014
+    second: 2Stage_Tile_37
+  - first:
+      213: -3023122691524776604
+    second: 2Stage_Tile_38
+  - first:
+      213: 306001792292922602
+    second: 2Stage_Tile_39
+  - first:
+      213: -1971696800150596278
+    second: 2Stage_Tile_40
+  - first:
+      213: -2418168383481878291
+    second: 2Stage_Tile_41
+  - first:
+      213: -7431999978765311609
+    second: 2Stage_Tile_42
+  - first:
+      213: 3930269054567591601
+    second: 2Stage_Tile_43
+  - first:
+      213: 7937343369879639425
+    second: 2Stage_Tile_44
+  - first:
+      213: -4248280816337766444
+    second: 2Stage_Tile_45
+  - first:
+      213: -4594772425963511366
+    second: 2Stage_Tile_46
+  - first:
+      213: 3842016786382258727
+    second: 2Stage_Tile_47
+  - first:
+      213: 6726182509115880559
+    second: 2Stage_Tile_48
+  - first:
+      213: 2901127456581541053
+    second: 2Stage_Tile_49
+  - first:
+      213: 5338103051513300003
+    second: 2Stage_Tile_50
+  - first:
+      213: 1459666584455803335
+    second: 2Stage_Tile_51
+  - first:
+      213: -7152709202648580671
+    second: 2Stage_Tile_52
+  - first:
+      213: 4451542794351178558
+    second: 2Stage_Tile_53
+  - first:
+      213: 7920593622503044550
+    second: 2Stage_Tile_54
+  - first:
+      213: 5193715720580469794
+    second: 2Stage_Tile_55
+  - first:
+      213: 89901882955323738
+    second: 2Stage_Tile_56
+  - first:
+      213: -1924144894392766698
+    second: 2Stage_Tile_57
+  - first:
+      213: 7420545695295057735
+    second: 2Stage_Tile_58
+  - first:
+      213: 5111034145033107300
+    second: 2Stage_Tile_59
+  - first:
+      213: -2880618561156935643
+    second: 2Stage_Tile_60
+  - first:
+      213: 7388179812936156439
+    second: 2Stage_Tile_61
+  - first:
+      213: -1120535950924051865
+    second: 2Stage_Tile_62
+  - first:
+      213: -6455657018428825046
+    second: 2Stage_Tile_63
+  - first:
+      213: -159384449411370244
+    second: 2Stage_Tile_64
+  - first:
+      213: -7977151381717820903
+    second: 2Stage_Tile_65
+  - first:
+      213: -7030961566834578665
+    second: 2Stage_Tile_66
+  - first:
+      213: 7042327076521521374
+    second: 2Stage_Tile_67
+  - first:
+      213: -8276761777907728931
+    second: 2Stage_Tile_68
+  - first:
+      213: -8297334142327961250
+    second: 2Stage_Tile_69
+  - first:
+      213: -2157167210001054916
+    second: 2Stage_Tile_70
+  - first:
+      213: -5626082986015870290
+    second: 2Stage_Tile_71
+  - first:
+      213: 2682720385514738539
+    second: 2Stage_Tile_72
+  - first:
+      213: 7217991999793002221
+    second: 2Stage_Tile_73
+  - first:
+      213: 2894734091858762750
+    second: 2Stage_Tile_74
+  - first:
+      213: 6726618921550540457
+    second: 2Stage_Tile_75
+  - first:
+      213: -4763549763699326668
+    second: 2Stage_Tile_76
+  - first:
+      213: -3414043920698480644
+    second: 2Stage_Tile_77
+  - first:
+      213: -4610001003710411554
+    second: 2Stage_Tile_78
+  - first:
+      213: -8865916034818483918
+    second: 2Stage_Tile_79
+  - first:
+      213: 6024712569540878554
+    second: 2Stage_Tile_80
+  - first:
+      213: -8376600674085243999
+    second: 2Stage_Tile_81
+  - first:
+      213: 3564148442948183377
+    second: 2Stage_Tile_82
+  - first:
+      213: -5840679838985000641
+    second: 2Stage_Tile_83
+  - first:
+      213: -2549974084893061397
+    second: 2Stage_Tile_84
+  - first:
+      213: -6286458051863657646
+    second: 2Stage_Tile_85
+  - first:
+      213: -7414856110356642476
+    second: 2Stage_Tile_86
+  - first:
+      213: 2220020948768970413
+    second: 2Stage_Tile_87
+  - first:
+      213: -4226061989690301742
+    second: 2Stage_Tile_88
+  - first:
+      213: 4073439672990905947
+    second: 2Stage_Tile_89
+  - first:
+      213: 4999640726427752390
+    second: 2Stage_Tile_90
+  - first:
+      213: -3781141600892716039
+    second: 2Stage_Tile_91
+  - first:
+      213: 5037375908104103261
+    second: 2Stage_Tile_92
+  - first:
+      213: 4302693242185978471
+    second: 2Stage_Tile_93
+  - first:
+      213: -5908757946936770174
+    second: 2Stage_Tile_94
+  - first:
+      213: 7886720158583224855
+    second: 2Stage_Tile_95
+  - first:
+      213: 3509453813350291783
+    second: 2Stage_Tile_96
+  - first:
+      213: 99416914602408799
+    second: 2Stage_Tile_97
+  - first:
+      213: 6257495116187292254
+    second: 2Stage_Tile_98
+  - first:
+      213: 3735380382478343190
+    second: 2Stage_Tile_99
+  - first:
+      213: 7779777077010549421
+    second: 2Stage_Tile_100
+  - first:
+      213: -8117621637420952247
+    second: 2Stage_Tile_101
+  - first:
+      213: 2108604519129594905
+    second: 2Stage_Tile_102
+  - first:
+      213: 3913772316048308194
+    second: 2Stage_Tile_103
+  - first:
+      213: -3916753595462618886
+    second: 2Stage_Tile_104
+  - first:
+      213: 8756703068089806953
+    second: 2Stage_Tile_105
+  - first:
+      213: -3472691155541913919
+    second: 2Stage_Tile_106
+  - first:
+      213: -4462533325347089820
+    second: 2Stage_Tile_107
+  - first:
+      213: 8685070513021867800
+    second: 2Stage_Tile_108
+  - first:
+      213: 2838755465924690890
+    second: 2Stage_Tile_109
+  - first:
+      213: -361786549074609274
+    second: 2Stage_Tile_110
+  - first:
+      213: -7403832710250248714
+    second: 2Stage_Tile_111
+  - first:
+      213: 6560626879294648108
+    second: 2Stage_Tile_112
+  - first:
+      213: -5008113497702975897
+    second: 2Stage_Tile_113
+  - first:
+      213: -112811930858829870
+    second: 2Stage_Tile_114
+  - first:
+      213: 7563398984995080876
+    second: 2Stage_Tile_115
+  - first:
+      213: 8416235605486362535
+    second: 2Stage_Tile_116
+  - first:
+      213: -7644752432466821728
+    second: 2Stage_Tile_117
+  - first:
+      213: -747331711383957872
+    second: 2Stage_Tile_118
+  - first:
+      213: -6234639896907680234
+    second: 2Stage_Tile_119
+  - first:
+      213: 784740319817259767
+    second: 2Stage_Tile_120
+  - first:
+      213: 4782716409320266175
+    second: 2Stage_Tile_121
+  - first:
+      213: 5116096915876729343
+    second: 2Stage_Tile_122
+  - first:
+      213: 472777505018338024
+    second: 2Stage_Tile_123
+  - first:
+      213: -1534643467649492998
+    second: 2Stage_Tile_124
+  - first:
+      213: 3638061352918890021
+    second: 2Stage_Tile_125
+  - first:
+      213: -1819974569861680030
+    second: 2Stage_Tile_126
+  - first:
+      213: 4993853762673010606
+    second: 2Stage_Tile_127
+  - first:
+      213: 6264192515197106402
+    second: 2Stage_Tile_128
+  - first:
+      213: 8676325598857188752
+    second: 2Stage_Tile_129
+  - first:
+      213: -1372448294041538982
+    second: 2Stage_Tile_130
+  - first:
+      213: 1051525643283774885
+    second: 2Stage_Tile_131
+  - first:
+      213: -3152200649919116026
+    second: 2Stage_Tile_132
+  - first:
+      213: -3576543338687165455
+    second: 2Stage_Tile_133
+  - first:
+      213: 8287319876642366053
+    second: 2Stage_Tile_134
+  - first:
+      213: 3363403618788778490
+    second: 2Stage_Tile_135
+  - first:
+      213: -1349471114606105291
+    second: 2Stage_Tile_136
+  - first:
+      213: -260018692950571474
+    second: 2Stage_Tile_137
+  - first:
+      213: -5132851853154173533
+    second: 2Stage_Tile_138
+  - first:
+      213: -6433523031763939794
+    second: 2Stage_Tile_139
+  - first:
+      213: -4078700868623233061
+    second: 2Stage_Tile_140
+  - first:
+      213: -3275710214059966927
+    second: 2Stage_Tile_141
+  - first:
+      213: -6836128794286931031
+    second: 2Stage_Tile_142
+  - first:
+      213: -2732721333891753049
+    second: 2Stage_Tile_143
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 78
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2Stage_Tile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fe820f2d0778070800000000000000
+      internalID: 8108573705378525087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455f7250f48e60ce0800000000000000
+      internalID: -1439207604811729580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad59e35bd935ecc0800000000000000
+      internalID: -3682473506137088598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_3
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6309b08100a9130800000000000000
+      internalID: 3574169357545125599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59049e72cd4f3090800000000000000
+      internalID: -8052632110972532388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152cb8de8c88056b0800000000000000
+      internalID: -5309593564109618607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62f708fe82f466e0800000000000000
+      internalID: -1845083251454512531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_7
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c3891652c7f29c0800000000000000
+      internalID: -3949801848187634561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eeebc38f14d53c40800000000000000
+      internalID: 5491528552468442853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_9
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bc8f3689dddd7c0800000000000000
+      internalID: -4044833243726820534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_10
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dc6b7a13285abf0800000000000000
+      internalID: -313701449253597823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_11
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 860.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2154b15f48724ae20800000000000000
+      internalID: 3360854673926604050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4e0be907d235180800000000000000
+      internalID: -9127902058027883275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3909dd8c395ac30800000000000000
+      internalID: 4370061504352916424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_14
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b908b31f4a871950800000000000000
+      internalID: 6419751866077809074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f313fc6e4c7613e0800000000000000
+      internalID: -2083341101335112711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_16
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef538a8ca1efa2b00800000000000000
+      internalID: 804734874428126718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_17
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c186dad2c3964c100800000000000000
+      internalID: 127342396658509852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_18
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0db427de0c83e640800000000000000
+      internalID: 5108080397735214349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_19
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cfa541ce089bed0800000000000000
+      internalID: -2397743575155934183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_20
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0322b8998518300800000000000000
+      internalID: 252580470596972752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_21
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995d222ce1e9e0e60800000000000000
+      internalID: 7930449848789292441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_22
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e460ba33dba518780800000000000000
+      internalID: -8682558837931440562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_23
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 782.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0485c3df2cf5b87b0800000000000000
+      internalID: -5220974051929073600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020d3442e16df01c0800000000000000
+      internalID: -4535170874793013216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2db9eaeaf0b72e00800000000000000
+      internalID: 1019978432352206124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_26
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e4cae4b22e23aa0800000000000000
+      internalID: -6182630662794883553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ce9ef9f8ea33820800000000000000
+      internalID: 2896850917215825036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_28
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdc4079611f8edb0800000000000000
+      internalID: -4762291526619050502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_29
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe0534996c207a70800000000000000
+      internalID: 8822600501988495101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_30
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40766ed84bd0ec800800000000000000
+      internalID: 634459666631780100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_31
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70909cbb69dcd1ed0800000000000000
+      internalID: -2441569375685637881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_32
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b128e0a081dee4a0800000000000000
+      internalID: -6562077256646647375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_33
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13aea3ac0400bdc0800000000000000
+      internalID: -3625393247700999398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_34
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fefc22d651d8130800000000000000
+      internalID: 3570533638054342520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_35
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 704.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d8d677b82ae8e00800000000000000
+      internalID: 1048954483111726387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5812ce7e5e2fcb880800000000000000
+      internalID: -8593726919677304443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_37
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f1807eb4a7cd9c0800000000000000
+      internalID: -3901108710792487014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_38
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d2e33ede5bb06d0800000000000000
+      internalID: -3023122691524776604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_39
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4a04242032f3400800000000000000
+      internalID: 306001792292922602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_40
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45df3ee43023a4e0800000000000000
+      internalID: -1971696800150596278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_41
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de86b7fcaa0f07ed0800000000000000
+      internalID: -2418168383481878291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_42
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781abfe456b3cd890800000000000000
+      internalID: -7431999978765311609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_43
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be2635b1ee1b8630800000000000000
+      internalID: 3930269054567591601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_44
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1855af5bdbb172e60800000000000000
+      internalID: 7937343369879639425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_45
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7b41c1b131b05c0800000000000000
+      internalID: -4248280816337766444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_46
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab16fae92d61c30c0800000000000000
+      internalID: -4594772425963511366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_47
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 626.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722076d49e5915530800000000000000
+      internalID: 3842016786382258727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f643c4eea53385d50800000000000000
+      internalID: 6726182509115880559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_49
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcdca90d00e24820800000000000000
+      internalID: 2901127456581541053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_50
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32401ef5170c41a40800000000000000
+      internalID: 5338103051513300003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_51
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1fef06607c14410800000000000000
+      internalID: 1459666584455803335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_52
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdb67a70e87cbc90800000000000000
+      internalID: -7152709202648580671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_53
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3370cf069e07cd30800000000000000
+      internalID: 4451542794351178558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_54
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5b48f3fe99bed60800000000000000
+      internalID: 7920593622503044550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_55
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2249f8d2ee8c31840800000000000000
+      internalID: 5193715720580469794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_56
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59d03649456f3100800000000000000
+      internalID: 89901882955323738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_57
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f6651c9601c45e0800000000000000
+      internalID: -1924144894392766698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_58
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fad9f7ef21bf660800000000000000
+      internalID: 7420545695295057735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_59
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 548.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4673799b97a0ee640800000000000000
+      internalID: 5111034145033107300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52018d84eacf508d0800000000000000
+      internalID: -2880618561156935643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_61
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71585c64566188660800000000000000
+      internalID: 7388179812936156439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_62
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a0e1f4d7e0370f0800000000000000
+      internalID: -1120535950924051865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_63
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22eac03526e866a0800000000000000
+      internalID: -6455657018428825046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_64
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf23d1e00b0c9cdf0800000000000000
+      internalID: -159384449411370244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_65
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a513545177b4190800000000000000
+      internalID: -7977151381717820903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_66
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ba663e4b10d6e90800000000000000
+      internalID: -7030961566834578665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_67
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed03e2c0a2f5bb160800000000000000
+      internalID: 7042327076521521374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_68
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd7741e309032d80800000000000000
+      internalID: -8276761777907728931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_69
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5942d70f82f9dc80800000000000000
+      internalID: -8297334142327961250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_70
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3344c60ad33012e0800000000000000
+      internalID: -2157167210001054916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_71
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 470.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2b7ad15532ce1b0800000000000000
+      internalID: -5626082986015870290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b631e4a1affea3520800000000000000
+      internalID: 2682720385514738539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_73
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6f5433b757b2460800000000000000
+      internalID: 7217991999793002221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_74
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb5470d1592c2820800000000000000
+      internalID: 2894734091858762750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_75
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aee07e1540c95d50800000000000000
+      internalID: 6726618921550540457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_76
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4314ec07ab874edb0800000000000000
+      internalID: -4763549763699326668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_77
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf76f2b7421ee90d0800000000000000
+      internalID: -3414043920698480644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_78
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc85af038cf500c0800000000000000
+      internalID: -4610001003710411554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_79
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23954380750f5f480800000000000000
+      internalID: -8865916034818483918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_80
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0a05569241c9350800000000000000
+      internalID: 6024712569540878554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_81
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3f9db611650cb80800000000000000
+      internalID: -8376600674085243999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_82
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15520bc0026667130800000000000000
+      internalID: 3564148442948183377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_83
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 392.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f396386b1acb1fea0800000000000000
+      internalID: -5840679838985000641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee4f73841cac9cd0800000000000000
+      internalID: -2549974084893061397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_85
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253c54b75b302c8a0800000000000000
+      internalID: -6286458051863657646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_86
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455ce8937a3291990800000000000000
+      internalID: -7414856110356642476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_87
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6dc4d6a491fce10800000000000000
+      internalID: 2220020948768970413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_88
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2aab1d2030a55c0800000000000000
+      internalID: -4226061989690301742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_89
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b563b92fcc3c78830800000000000000
+      internalID: 4073439672990905947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_90
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c75d4f50ca426540800000000000000
+      internalID: 4999640726427752390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_91
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb76515fbfa68bc0800000000000000
+      internalID: -3781141600892716039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_92
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55e7a203ba58e540800000000000000
+      internalID: 5037375908104103261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_93
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76218f505bc36bb30800000000000000
+      internalID: 4302693242185978471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_94
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281411504ffdffda0800000000000000
+      internalID: -5908757946936770174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_95
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 314.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71af347d232437d60800000000000000
+      internalID: 7886720158583224855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749526c36a514b030800000000000000
+      internalID: 3509453813350291783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_97
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bba873823316100800000000000000
+      internalID: 99416914602408799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_98
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52d51097a617d650800000000000000
+      internalID: 6257495116187292254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_99
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c959ebaacb6d330800000000000000
+      internalID: 3735380382478343190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_100
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daac0f2580257fb60800000000000000
+      internalID: 7779777077010549421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_101
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945df78312a685f80800000000000000
+      internalID: -8117621637420952247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_102
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cb08663a4434d10800000000000000
+      internalID: 2108604519129594905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_103
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e731d57f23805630800000000000000
+      internalID: 3913772316048308194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_104
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af077b55b55e4a9c0800000000000000
+      internalID: -3916753595462618886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_105
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960f011ab0f068970800000000000000
+      internalID: 8756703068089806953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_106
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce884b0bc58ecfc0800000000000000
+      internalID: -3472691155541913919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_107
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 236.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46218588595e112c0800000000000000
+      internalID: -4462533325347089820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81753e9bd91978870800000000000000
+      internalID: 8685070513021867800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_109
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3c3ae4e09456720800000000000000
+      internalID: 2838755465924690890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_110
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bb4e9ec0daafaf0800000000000000
+      internalID: -361786549074609274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_111
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5cd11906d404990800000000000000
+      internalID: -7403832710250248714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_112
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fac3413670c0b50800000000000000
+      internalID: 6560626879294648108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_113
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7663396de4b9f7ab0800000000000000
+      internalID: -5008113497702975897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_114
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7cbb685263f6ef0800000000000000
+      internalID: -112811930858829870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_115
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa8e23ed4796f860800000000000000
+      internalID: 7563398984995080876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_116
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af520b21b97cc470800000000000000
+      internalID: 8416235605486362535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_117
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adf2039a2268e590800000000000000
+      internalID: -7644752432466821728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_118
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e039d94c1f0a5f0800000000000000
+      internalID: -747331711383957872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_119
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 158.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616f65adb0c1a79a0800000000000000
+      internalID: -6234639896907680234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa52a3c925f3ea00800000000000000
+      internalID: 784740319817259767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_121
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb957fefb3f9f5240800000000000000
+      internalID: 4782716409320266175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_122
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1dd4be907000740800000000000000
+      internalID: 5116096915876729343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_123
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ead96cc2a4af8600800000000000000
+      internalID: 472777505018338024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_124
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7d0e5a5e9d3bae0800000000000000
+      internalID: -1534643467649492998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_125
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526bec3768dfc7230800000000000000
+      internalID: 3638061352918890021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_126
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264762775c62eb6e0800000000000000
+      internalID: -1819974569861680030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_127
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea76f50e98bbd4540800000000000000
+      internalID: 4993853762673010606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_128
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8fbf847e1eee650800000000000000
+      internalID: 6264192515197106402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_129
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095d28bb920886870800000000000000
+      internalID: 8676325598857188752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_130
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e20115c8514fce0800000000000000
+      internalID: -1372448294041538982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_131
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 80.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adb4285005c79e00800000000000000
+      internalID: 1051525643283774885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dc0d0c5322144d0800000000000000
+      internalID: -3152200649919116026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_133
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb03c568c09d5ec0800000000000000
+      internalID: -3576543338687165455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_134
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5626d4b0589720370800000000000000
+      internalID: 8287319876642366053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_135
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af12b2e65c53dae20800000000000000
+      internalID: 3363403618788778490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_136
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53da04bcb27b54de0800000000000000
+      internalID: -1349471114606105291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_137
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2648bb506a346cf0800000000000000
+      internalID: -260018692950571474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_138
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad3a004f6274c8b0800000000000000
+      internalID: -5132851853154173533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_139
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e8a6d83e887b6a0800000000000000
+      internalID: -6433523031763939794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_140
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf82ac7b2b8567c0800000000000000
+      internalID: -4078700868623233061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_141
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e36df6ae65a82d0800000000000000
+      internalID: -3275710214059966927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_142
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a345b9b4113121a0800000000000000
+      internalID: -6836128794286931031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_Tile_143
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 2.75
+        width: 77.916664
+        height: 78.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab1047ec6c631ad0800000000000000
+      internalID: -2732721333891753049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
