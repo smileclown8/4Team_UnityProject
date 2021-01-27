@@ -8,13 +8,30 @@ public class CameraController : MonoBehaviour
     Transform playerCameraPos;
 
 
+    public GameObject Stage_1_CameraPos1;
+    public GameObject Stage_1_CameraPos2;
+
+
+    public float leftEnd;
+    public float rightEnd;
+    public float downEnd;
+    public float upEnd;
+
+
     void Awake()
     {
-
         playerCamera = GameObject.Find("playerCameraPos");
+        Stage_1_CameraPos1 = GameObject.Find("Left_DOWN");
+        Stage_1_CameraPos2 = GameObject.Find("Right_UP");
+
     }
     void Start()
     {
+        leftEnd = Stage_1_CameraPos1.transform.position.x;
+        downEnd = Stage_1_CameraPos1.transform.position.y;
+        upEnd = Stage_1_CameraPos2.transform.position.y;
+        rightEnd = Stage_1_CameraPos2.transform.position.x;
+
         playerCameraPos = playerCamera.transform;
     }
     void Update()
@@ -32,6 +49,30 @@ public class CameraController : MonoBehaviour
             transform.Translate(0, 0, -10); //카메라를 원래 z축으로 이동
 
         }
+
+
+
+
+        if (transform.position.x <= leftEnd)
+        {
+            transform.position = new Vector2(leftEnd, transform.position.y);
+        }
+
+        if (transform.position.x >= rightEnd)
+        {
+            transform.position = new Vector2(rightEnd, transform.position.y);
+        }
+
+        if (transform.position.y >= upEnd)
+        {
+            transform.position = new Vector2(transform.position.x, upEnd);
+        }
+
+        if (transform.position.y <= downEnd)
+        {
+            transform.position = new Vector2(transform.position.x, downEnd);
+        }
+        transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -10);
 
     }
 }
