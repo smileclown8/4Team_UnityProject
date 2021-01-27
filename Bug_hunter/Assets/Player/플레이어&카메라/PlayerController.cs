@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
 
     GameObject tilemap;
     Renderer tileColor;
+    GameObject tilemap2;
+    Renderer tileColor2;
 
     void Awake()
     {
@@ -62,6 +64,9 @@ public class PlayerController : MonoBehaviour
         bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
         tilemap = GameObject.Find("Tilemap1_2_1");
         tileColor = tilemap.GetComponent<Renderer>();
+
+        tilemap2 = GameObject.Find("Tilemap1_4_1");
+        tileColor2 = tilemap2.GetComponent<Renderer>();
 
     }
 
@@ -280,6 +285,15 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Tile_off")
         {
             tileColor.material.color = new Color(1f, 1f, 1f, 1f);
+        }
+
+        if (collision.gameObject.tag == "Tile1_4on")
+        {
+            tileColor2.material.color = new Color(1f, 1f, 1f, 0.2f);
+        }
+        if (collision.gameObject.tag == "Tile1_4off")
+        {
+            tileColor2.material.color = new Color(1f, 1f, 1f, 1f);
         }
 
     }
