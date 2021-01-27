@@ -27,11 +27,17 @@ public class CameraController : MonoBehaviour
     }
     void Start()
     {
-        leftEnd = Stage_1_CameraPos1.transform.position.x;
-        downEnd = Stage_1_CameraPos1.transform.position.y;
-        upEnd = Stage_1_CameraPos2.transform.position.y;
-        rightEnd = Stage_1_CameraPos2.transform.position.x;
+        if (Stage_1_CameraPos1 != null)
+        {
+            leftEnd = Stage_1_CameraPos1.transform.position.x;
+            downEnd = Stage_1_CameraPos1.transform.position.y;
+        }
 
+        if (Stage_1_CameraPos2 != null)
+        {
+            upEnd = Stage_1_CameraPos2.transform.position.y;
+            rightEnd = Stage_1_CameraPos2.transform.position.x;
+        }
         playerCameraPos = playerCamera.transform;
     }
     void Update()

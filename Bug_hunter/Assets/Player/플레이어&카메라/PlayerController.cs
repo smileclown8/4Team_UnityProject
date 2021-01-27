@@ -83,16 +83,47 @@ public class PlayerController : MonoBehaviour
         skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
         isTalk = Dialogue.GetComponent<DialogueManager>().talking;
 
-        Jump();
+
+
+        // 터치가 아닐 때
+         Jump();
         Land();
-        if (Input.GetKey(KeyCode.F)) // 유니티내에서 
-            //테스트용으로 버튼대신 키입력받기. 나중에는 update에서 Jump()와 Shoot을하는게 아니라 따로 버튼입력 받을거임
-            //즉, Update문은 Land를 제외하고 싹 비워버릴꺼니 신경ㄴㄴ
+
+        Shoot();
+
+
+        /* 터치일 때
+       // Jump();
+        Land();
+        
+       Shoot();
+        */
+    }
+
+    public bool isShootButton = false;
+
+    public void ShootButtonDown()
+    {
+        isShootButton = true;
+    }
+
+    public void ShootButtonUp()
+    {
+        isShootButton = false;
+    }
+
+
+    public void Shoot()
+    {
+        if (Input.GetKey(KeyCode.F)) // 터치가 아닐 때
+
+        // if(isShootButton) 터치일 때 
         {
+
             switch (skill_ID)
             {
                 case 0:
-                    PlayerNormalShoot() ;
+                    PlayerNormalShoot();
                     break;
                 case 1:
                     PlayerFirstSkillShoot();
@@ -102,14 +133,15 @@ public class PlayerController : MonoBehaviour
                     break;
 
             }
+
         }
     }
 
     public void Jump() //플레이어 점프
     {
-        //if (!isJumping)
-        if (Input.GetKeyDown(KeyCode.Space)&& !isJumping
-            && isTalk==false) // GetKeydown은 테스트용으로 넣은것, 나중에 버튼입력으로 바꿀거라 if(!isJumping)만 남을거
+        if (
+            Input.GetKeyDown(KeyCode.Space)&& //터치가 아닐때, 터치라면 이 줄을 주석처리하기
+            !isJumping && isTalk==false) // 
         {
             playerRigidbody2D.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             playerRigidbody2D.AddForce(Vector2.right * this.playerRigidbody2D.velocity.x * 0.5f, ForceMode2D.Impulse);
@@ -138,8 +170,7 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(playerRigidbody2D.position, Vector3.down, new Color(0, 1, 0));
 
             RaycastHit2D rayHit = Physics2D.Raycast(playerRigidbody2D.position, Vector3.down
-                , 1, isLayer);  // 밟는 땅이 platform 레이어가 아니라면 다시 점프가 안됨! 반드시 
-                                                      // 점프가 가능한 땅은 platform을 설정해줄것
+                , 1, isLayer);  // 점프가 가능한 오브젝트의 레이어를 플레이어의 인스펙터의 isLayer 항목에서 설정해줘야 합니다.
 
             if (rayHit.collider != null)
             {
