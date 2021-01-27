@@ -45,7 +45,7 @@ public class CameraController : MonoBehaviour
         if (GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent != true)
         {
             this.GetComponent<Camera>().orthographicSize = 10f;
-            transform.position = Vector2.Lerp(transform.position, playerCameraPos.position, 2f * Time.deltaTime);
+            transform.position = Vector2.Lerp(transform.position, playerCameraPos.position, 10f * Time.deltaTime);
             transform.Translate(0, 0, -10); //카메라를 원래 z축으로 이동
         }
         else if (GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent == true)

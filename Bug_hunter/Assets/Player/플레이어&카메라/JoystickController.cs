@@ -48,7 +48,6 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
 
     void Awake()
     {
-        Player = GameObject.Find("player");
         Joystick = GameObject.Find("Joystick");
         PlayerStatusManager = GameObject.Find("PlayerStatusManager");
         Dialogue = GameObject.Find("UI_Dialogue");
@@ -57,9 +56,7 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
     // Start is called before the first frame update
     void Start()
     {
-        playerRigidbody = Player.GetComponent<PlayerController>().playerRigidbody2D;
-        moveSpeed = PlayerStatusManager.GetComponent<PlayerStatusManager>().moveSpeed;
-        maxMoveSpeed = PlayerStatusManager.GetComponent<PlayerStatusManager>().maxMoveSpeed;
+
         radius = rect_Background.rect.width * 0.5f;
 
         JoystickBGImage = GetComponent<Image>();
@@ -72,6 +69,11 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
     // Update is called once per frame
     void Update()
     {
+        Player = GameObject.Find("player");
+        playerRigidbody = Player.GetComponent<PlayerController>().playerRigidbody2D;
+        moveSpeed = PlayerStatusManager.GetComponent<PlayerStatusManager>().moveSpeed;
+        maxMoveSpeed = PlayerStatusManager.GetComponent<PlayerStatusManager>().maxMoveSpeed;
+
         isTalk = Dialogue.GetComponent<DialogueManager>().talking;
 
         if (isTalk == false)

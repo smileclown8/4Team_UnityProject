@@ -85,19 +85,19 @@ public class PlayerController : MonoBehaviour
 
 
 
-        // 터치가 아닐 때
+        /* 터치가 아닐 때
          Jump();
         Land();
 
         Shoot();
+        */
 
-
-        /* 터치일 때
+        // 터치일 때
        // Jump();
         Land();
         
        Shoot();
-        */
+        
     }
 
     public bool isShootButton = false;
@@ -115,9 +115,9 @@ public class PlayerController : MonoBehaviour
 
     public void Shoot()
     {
-        if (Input.GetKey(KeyCode.F)) // 터치가 아닐 때
+        //if (Input.GetKey(KeyCode.F)) // 터치가 아닐 때
 
-        // if(isShootButton) 터치일 때 
+        if(isShootButton) //터치일 때 
         {
 
             switch (skill_ID)
@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
     public void Jump() //플레이어 점프
     {
         if (
-            Input.GetKeyDown(KeyCode.Space)&& //터치가 아닐때, 터치라면 이 줄을 주석처리하기
+            //Input.GetKeyDown(KeyCode.Space)&& //터치가 아닐때, 터치라면 이 줄을 주석처리하기
             !isJumping && isTalk==false) // 
         {
             playerRigidbody2D.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5966874427698122829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.12, y: 0.09, z: 0}
+  m_LocalPosition: {x: 2.51, y: -0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5966874427858925749}
@@ -58,8 +58,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5966874427858925745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.1, y: 12.9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.903, y: 11.64, z: 0}
+  m_LocalScale: {x: 0.47618756, y: 0.47618756, z: 0.47618756}
   m_Children:
   - {fileID: 5966874427698122830}
   - {fileID: 5966874429190919457}
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3a477faa0e5017143ab14dc8544a95e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 4e60ab59c6664c741a715679adeadde5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb7f22aa81e570f448e9e7f89483291a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -150,18 +150,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.018998146, y: 0.15210032}
+  m_Offset: {x: -0.15818751, y: 0.20588493}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.78, y: 1.9}
+    oldSize: {x: 4.57, y: 4.81}
     newSize: {x: 1.78, y: 1.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39314938, y: 1.5957993}
+  m_Size: {x: 3.4121273, y: 4.311137}
   m_EdgeRadius: 0
 --- !u!114 &5966874427858925750
 MonoBehaviour:
@@ -178,8 +178,15 @@ MonoBehaviour:
   playerRigidbody2D: {fileID: 0}
   maxMoveSpeed: 10
   moveSpeed: 80
-  jumpPower: 35
   isJumping: 0
+  jumpPower: 35
+  PlayerStatusManager: {fileID: 0}
+  Dialogue: {fileID: 0}
+  isTalk: 0
+  isShootButton: 0
+  isLayer:
+    serializedVersion: 2
+    m_Bits: 0
   skill_ID: 1
   NormalBullet: {fileID: 1921888244951303501, guid: ec57b8b31e3819a4aaa7e89d2776a436,
     type: 3}

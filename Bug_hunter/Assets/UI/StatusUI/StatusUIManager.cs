@@ -15,22 +15,21 @@ public class StatusUIManager : MonoBehaviour
     void Start()
     {
         PlayerStatusManager = GameObject.Find("PlayerStatusManager");
-        HpBar = GameObject.Find("HpBar");
-
-        BossHpBar = GameObject.Find("BossHpBar");
     }
 
     // Update is called once per frame
     void Update()
     {
         Boss_IF_CORE_Controller = GameObject.Find("Boss_CORE");
+        HpBar = GameObject.Find("HpBar");
+        BossHpBar = GameObject.Find("BossHpBar");
 
         if (HpBar != null)
         {
             HpBar.GetComponent<Image>().fillAmount = PlayerStatusManager.GetComponent<PlayerStatusManager>().player_HP /
                 PlayerStatusManager.GetComponent<PlayerStatusManager>().player_MaxHP;
         }
-        if (Boss_IF_CORE_Controller != null)
+        if (Boss_IF_CORE_Controller != null && BossHpBar != null)
         {
         BossHpBar.GetComponent<Image>().fillAmount =
             Boss_IF_CORE_Controller.GetComponent<Boss_IF_CORE_Controller>().Boss_IF_HP /

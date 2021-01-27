@@ -55,7 +55,8 @@ public class CoreRotater : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "PlayerBullet")
+        if (collision.gameObject.tag == "PlayerBullet" &&
+           GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent == false)
         {
             GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent = true;
 
