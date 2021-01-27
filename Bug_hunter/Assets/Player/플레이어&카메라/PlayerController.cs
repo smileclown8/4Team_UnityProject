@@ -41,6 +41,9 @@ public class PlayerController : MonoBehaviour
     public GameObject Dialogue;
     public bool isTalk;
 
+    GameObject tilemap;
+    Renderer tileColor;
+
     void Awake()
     {
         playerRigidbody2D = GetComponent<Rigidbody2D>();
@@ -57,6 +60,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
+        tilemap = GameObject.Find("Tilemap1_2_1");
+        tileColor = tilemap.GetComponent<Renderer>();
+
     }
 
     // Update is called once per frame
@@ -260,5 +266,21 @@ public class PlayerController : MonoBehaviour
             curTime = coolTime * coolTime_SecondSKill;
         }
         curTime -= Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    // Trigger 타입의 콜라이더와 충돌이 발생하면 충돌이 발생한 오브젝트의
+    // Collider 정보가 넘어온다.
+    // Trigger 를 사용할 때는 Collider 타입으로 매개변수를 받음
+    {
+        if (collision.gameObject.tag == "Tile")
+        {
+            tileColor.material.color = new Color(1f, 1f, 1f, 0.2f);
+        }
+        if (collision.gameObject.tag == "Tile_off")
+        {
+            tileColor.material.color = new Color(1f, 1f, 1f, 1f);
+        }
+
     }
 }
