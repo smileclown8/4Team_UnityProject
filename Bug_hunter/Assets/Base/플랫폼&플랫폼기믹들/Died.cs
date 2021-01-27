@@ -11,8 +11,7 @@ public class Died : MonoBehaviour
     {
         PlayerRespawn_1_1 = GameObject.Find("PlayerRespawn_1_1").transform;
         PlayerStatusManager player_Hp = GameObject.Find("Player").GetComponent<PlayerStatusManager>();
-      
-
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -23,6 +22,7 @@ public class Died : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
  
     }
 }
