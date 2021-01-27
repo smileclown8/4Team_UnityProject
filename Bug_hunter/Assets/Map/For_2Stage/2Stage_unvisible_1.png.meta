@@ -1,0 +1,1148 @@
+fileFormatVersion: 2
+guid: 47d116d2ac6558245b79d9e03b0c57e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5012223887560458067
+    second: 2Stage_unvisible_1_0
+  - first:
+      213: 3287039358441721698
+    second: 2Stage_unvisible_1_1
+  - first:
+      213: 4415588095894437155
+    second: 2Stage_unvisible_1_2
+  - first:
+      213: 2570494821010660175
+    second: 2Stage_unvisible_1_3
+  - first:
+      213: 8732834369328741098
+    second: 2Stage_unvisible_1_4
+  - first:
+      213: -4839546490363186507
+    second: 2Stage_unvisible_1_5
+  - first:
+      213: -7453436980059009780
+    second: 2Stage_unvisible_1_6
+  - first:
+      213: -6820382158024017862
+    second: 2Stage_unvisible_1_7
+  - first:
+      213: 4733405438635845215
+    second: 2Stage_unvisible_1_8
+  - first:
+      213: 1341826218557752134
+    second: 2Stage_unvisible_1_9
+  - first:
+      213: 6656751761307042062
+    second: 2Stage_unvisible_1_10
+  - first:
+      213: -988325055169437307
+    second: 2Stage_unvisible_1_11
+  - first:
+      213: -6948399208773851383
+    second: 2Stage_unvisible_1_12
+  - first:
+      213: 6659582557393974108
+    second: 2Stage_unvisible_1_13
+  - first:
+      213: 5520673110775216833
+    second: 2Stage_unvisible_1_14
+  - first:
+      213: -5482343129678409403
+    second: 2Stage_unvisible_1_15
+  - first:
+      213: -3576439684368271149
+    second: 2Stage_unvisible_1_16
+  - first:
+      213: 1410897166349850924
+    second: 2Stage_unvisible_1_17
+  - first:
+      213: 2662912378879532616
+    second: 2Stage_unvisible_1_18
+  - first:
+      213: -46753323558679397
+    second: 2Stage_unvisible_1_19
+  - first:
+      213: -2580778900553745829
+    second: 2Stage_unvisible_1_20
+  - first:
+      213: 8078065585662405958
+    second: 2Stage_unvisible_1_21
+  - first:
+      213: 10413614505982927
+    second: 2Stage_unvisible_1_22
+  - first:
+      213: -7690156236611546037
+    second: 2Stage_unvisible_1_23
+  - first:
+      213: -4454087840392905472
+    second: 2Stage_unvisible_1_24
+  - first:
+      213: 4518159024551231481
+    second: 2Stage_unvisible_1_25
+  - first:
+      213: 3936033043945661082
+    second: 2Stage_unvisible_1_26
+  - first:
+      213: -945654665906825793
+    second: 2Stage_unvisible_1_27
+  - first:
+      213: 1962468645885552066
+    second: 2Stage_unvisible_1_28
+  - first:
+      213: 1892309100188823145
+    second: 2Stage_unvisible_1_29
+  - first:
+      213: 6413599813449288286
+    second: 2Stage_unvisible_1_30
+  - first:
+      213: 2902973517051014654
+    second: 2Stage_unvisible_1_31
+  - first:
+      213: -3712209743676353285
+    second: 2Stage_unvisible_1_32
+  - first:
+      213: 654025514981167575
+    second: 2Stage_unvisible_1_33
+  - first:
+      213: -4079019039955875580
+    second: 2Stage_unvisible_1_34
+  - first:
+      213: 6684451647944821323
+    second: 2Stage_unvisible_1_35
+  - first:
+      213: 5903254362980211987
+    second: 2Stage_unvisible_1_36
+  - first:
+      213: 4720768311118088523
+    second: 2Stage_unvisible_1_37
+  - first:
+      213: 2664372224743232552
+    second: 2Stage_unvisible_1_38
+  - first:
+      213: 6560423192064608622
+    second: 2Stage_unvisible_1_39
+  - first:
+      213: 462189873592395823
+    second: 2Stage_unvisible_1_40
+  - first:
+      213: -7898037201028598770
+    second: 2Stage_unvisible_1_41
+  - first:
+      213: -5559692357371177985
+    second: 2Stage_unvisible_1_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 391
+        width: 72
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fb4c0e11ffe8540800000000000000
+      internalID: 5012223887560458067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 391
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f85aa81e8ed9d20800000000000000
+      internalID: 3287039358441721698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 391
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d3b3a7af1574d30800000000000000
+      internalID: 4415588095894437155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 391
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b525fab6b3ca320800000000000000
+      internalID: 2570494821010660175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_4
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 391
+        width: 72
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea79222792413970800000000000000
+      internalID: 8732834369328741098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_5
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 391
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2f9e7ab1a76dcb0800000000000000
+      internalID: -4839546490363186507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 309
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d82df7e82109890800000000000000
+      internalID: -7453436980059009780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 309
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38f09e20922951a0800000000000000
+      internalID: -6820382158024017862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_8
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 309
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56aac3fa2f60b140800000000000000
+      internalID: 4733405438635845215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_9
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 309
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643c07326df1f9210800000000000000
+      internalID: 1341826218557752134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_10
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 309
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0189aa3578816c50800000000000000
+      internalID: 6656751761307042062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_11
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 309
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581e1044993c842f0800000000000000
+      internalID: -988325055169437307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_12
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 309
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907ed6bdbb3529f90800000000000000
+      internalID: -6948399208773851383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 309
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53fadd4d079b6c50800000000000000
+      internalID: 6659582557393974108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 232
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cabec8c1fe5d9c40800000000000000
+      internalID: 5520673110775216833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_15
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 232
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54117b268fdcae3b0800000000000000
+      internalID: -5482343129678409403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_16
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 232
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d87e9c4e0fed5ec0800000000000000
+      internalID: -3576439684368271149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_17
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 232
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2953ee5f73849310800000000000000
+      internalID: 1410897166349850924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_18
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 232
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84eda1b23b094f420800000000000000
+      internalID: 2662912378879532616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_19
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 232
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c47359916e95ff0800000000000000
+      internalID: -46753323558679397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_20
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 232
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5abba4734b3f2cd0800000000000000
+      internalID: -2580778900553745829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_21
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 232
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d27b9c9dd0b1070800000000000000
+      internalID: 8078065585662405958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 155
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbf471902ff42000800000000000000
+      internalID: 10413614505982927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 155
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b449381a5a3174590800000000000000
+      internalID: -7690156236611546037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_24
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 155
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d7efa35b6ef22c0800000000000000
+      internalID: -4454087840392905472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_25
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 155
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fff911d1b9b3be30800000000000000
+      internalID: 4518159024551231481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_26
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 155
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92a49013399f9630800000000000000
+      internalID: 3936033043945661082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_27
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 155
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5de66771c50e2f0800000000000000
+      internalID: -945654665906825793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_28
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 155
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5a9d8f5d61c3b10800000000000000
+      internalID: 1962468645885552066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_29
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 155
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e6ef9c915d24a10800000000000000
+      internalID: 1892309100188823145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_30
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 78
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a0824bc0fa10950800000000000000
+      internalID: 6413599813449288286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_31
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 78
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd213c780f694820800000000000000
+      internalID: 2902973517051014654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_32
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 78
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf45d6008e49b7cc0800000000000000
+      internalID: -3712209743676353285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_33
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 78
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d19e7e9db0931900800000000000000
+      internalID: 654025514981167575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_34
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 78
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40900637bc96467c0800000000000000
+      internalID: -4079019039955875580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_35
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 78
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a860aab51f3cc50800000000000000
+      internalID: 6684451647944821323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_36
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31dd53cf0929ce150800000000000000
+      internalID: 5903254362980211987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_37
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b494d1b64c9838140800000000000000
+      internalID: 4720768311118088523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_38
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824dc350c60c9f420800000000000000
+      internalID: 2664372224743232552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_39
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69ce33722e4b0b50800000000000000
+      internalID: 6560423192064608622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_40
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28e142cd370a6600800000000000000
+      internalID: 462189873592395823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_41
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04bed1e209846290800000000000000
+      internalID: -7898037201028598770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Stage_unvisible_1_42
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3df6ae14108d2b0800000000000000
+      internalID: -5559692357371177985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
