@@ -25,6 +25,7 @@ public class Enemy_Damage : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             PlayerStatusManager.GetComponent<PlayerStatusManager>().player_HP -= damage;
+            Debug.Log(PlayerStatusManager.GetComponent<PlayerStatusManager>().player_HP);
         }   
     }
 }
