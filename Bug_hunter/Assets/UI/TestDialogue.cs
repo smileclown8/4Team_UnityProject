@@ -59,6 +59,14 @@ public class TestDialogue : MonoBehaviour
                 }
                 
             }
+            if (this.gameObject.name == "Bobgurut2")
+            {
+                theDM.ShowDialogue(this.dialogue);
+            }
+            if (this.gameObject.name == "Savor3")
+            {
+                theDM.ShowDialogue(this.dialogue);
+            }
 
         }
     }
