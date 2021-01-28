@@ -47314,6 +47314,72 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.sprites.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5de93691c26fb3a42bfefafecc607b79,
+        type: 3}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5de93691c26fb3a42bfefafecc607b79,
+        type: 3}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5de93691c26fb3a42bfefafecc607b79,
+        type: 3}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.data[0]
+      value: "\uC65C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.data[1]
+      value: "\u3147\u313B\u3134\u3139\u3147\u3134\u313B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.data[2]
+      value: "\u3147\u313B\u3139"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
     - target: {fileID: 7280187156584932749, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: m_Name
@@ -49912,6 +49978,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 251be3153c4a75248831d498299366ae,
         type: 3}
+    - target: {fileID: 3509015895514134917, guid: 76a0ca50bb9966c4d941f1f5765cf1d9,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509015895514134917, guid: 76a0ca50bb9966c4d941f1f5765cf1d9,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.39
+      objectReference: {fileID: 0}
     - target: {fileID: 3509015895514134918, guid: 76a0ca50bb9966c4d941f1f5765cf1d9,
         type: 3}
       propertyPath: dialogue.sprites.Array.size
@@ -51005,6 +51081,16 @@ PrefabInstance:
     - target: {fileID: 1158758833815591098, guid: e3d94b776b515404db81ee49dade0635,
         type: 3}
       propertyPath: dialogue.sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158758833815591098, guid: e3d94b776b515404db81ee49dade0635,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158758833815591098, guid: e3d94b776b515404db81ee49dade0635,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.data[0]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1158758833815591099, guid: e3d94b776b515404db81ee49dade0635,
@@ -85197,6 +85283,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3236503794051226720, guid: 68cfb539f52e6cc46a46a18f7720aa41,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3236503794051226720, guid: 68cfb539f52e6cc46a46a18f7720aa41,
+        type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 60b1f628794fe10469991587ffeea03f, type: 3}
+    - target: {fileID: 3236503794051226720, guid: 68cfb539f52e6cc46a46a18f7720aa41,
+        type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: dog_bark
+      objectReference: {fileID: 0}
+    - target: {fileID: 3236503794051226720, guid: 68cfb539f52e6cc46a46a18f7720aa41,
+        type: 3}
+      propertyPath: sounds.Array.data[2].Volumn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3236503794051226721, guid: 68cfb539f52e6cc46a46a18f7720aa41,
         type: 3}
       propertyPath: m_RootOrder
@@ -87494,10 +87600,40 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7186703012044255536, guid: 2da9678a636679d498dae7bad7b610b5,
         type: 3}
+      propertyPath: dialogue2.sprites.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186703012044255536, guid: 2da9678a636679d498dae7bad7b610b5,
+        type: 3}
       propertyPath: dialogue.sprites.Array.data[0]
       value: 
       objectReference: {fileID: 21300000, guid: 90b06d819beff6c498078fb3f5868a23,
         type: 3}
+    - target: {fileID: 7186703012044255536, guid: 2da9678a636679d498dae7bad7b610b5,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186703012044255536, guid: 2da9678a636679d498dae7bad7b610b5,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.data[0]
+      value: "\uB098\uB294\uCC45\uC774\uB2E4"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186703012044255536, guid: 2da9678a636679d498dae7bad7b610b5,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.data[1]
+      value: "\uCC45\uC740\uB098\uC774\uB2E4"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186703012044255536, guid: 2da9678a636679d498dae7bad7b610b5,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.data[2]
+      value: "\uB09C\uAC00?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186703012044255536, guid: 2da9678a636679d498dae7bad7b610b5,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7186703012044255536, guid: 2da9678a636679d498dae7bad7b610b5,
         type: 3}
       propertyPath: dialogue.dialogueWindows.Array.data[0]
@@ -87575,6 +87711,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 500799826604bdf429b343684c031bfa,
         type: 3}
+    - target: {fileID: 7186703012044255539, guid: 2da9678a636679d498dae7bad7b610b5,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 23.529411
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186703012044255539, guid: 2da9678a636679d498dae7bad7b610b5,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 23.529411
+      objectReference: {fileID: 0}
     - target: {fileID: 7186703012044255548, guid: 2da9678a636679d498dae7bad7b610b5,
         type: 3}
       propertyPath: m_Name
@@ -88829,6 +88975,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayerID
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114505873632861524, guid: 0834193e6d300e3488f26ea8e9f5b922,
+        type: 3}
+      propertyPath: dog_bark
+      value: dog_bark
       objectReference: {fileID: 0}
     - target: {fileID: 4114505873632861525, guid: 0834193e6d300e3488f26ea8e9f5b922,
         type: 3}

@@ -40,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
     public string typeSound;
     public string enterSound;
+    public string dog_bark;
 
     private AudioManager theAudio;
 
@@ -81,6 +82,9 @@ public class DialogueManager : MonoBehaviour
         listDialogueWindows.Clear();
         animSprite.SetBool("Appear", false);
         animDialogueWindow.SetBool("Appear", false);
+
+        GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook = false;
+
         talking = false;
     }
 
@@ -145,6 +149,17 @@ public class DialogueManager : MonoBehaviour
                 count++;
                 text.text = "";
                 theAudio.Play(enterSound);
+
+                // Dialougue_03_message 오브젝트와 대화할때
+                // (count+1)번째 문장이 나올 때
+                // 그리고, 처음대화할때만(howManyTailkingWithThisObject ==) 효과음(dog_bark)을 재생시켜줘라.
+                if (GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook == true 
+                    && count == 1
+                    && GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                {
+                    theAudio.Play(dog_bark);
+                }
+
 
                 if (count == listSentences.Count)
                 {
