@@ -22,6 +22,11 @@ public class NpcSentence : MonoBehaviour
         Invoke("TalkNpc", 6f);
 
     }
+
+    void Update()
+    {
+
+    }
     /*
     private void OnMouseDown()
     {

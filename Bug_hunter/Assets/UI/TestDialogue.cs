@@ -26,7 +26,13 @@ public class TestDialogue : MonoBehaviour
     public bool isBobgurut2 = false;
     public bool isSavorBomb = false;
 
-
+    private void Update()
+    {
+        if (this.gameObject.name == "Savor2")
+        {
+            Destroy(GameObject.Find("Savor1_Chatbox(Clone)"));
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -65,7 +71,7 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Bolt")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    Destroy(GameObject.Find("Savor1"));
+                    GameObject.Find("Savor1").SetActive(false);
 
                     targetObject.SetActive(true);
                     GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorTalkItemGet = true;

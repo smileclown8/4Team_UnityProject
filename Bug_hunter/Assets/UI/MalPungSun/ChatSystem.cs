@@ -47,4 +47,5 @@ public class ChatSystem : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
 }

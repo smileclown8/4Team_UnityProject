@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (instance == null)
         {
-           DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(this.gameObject);
             instance = this;
         }
         else
@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animSprite;
     public Animator animDialogueWindow;
 
-   
+
 
     public string typeSound;
     public string enterSound;
@@ -136,7 +136,7 @@ public class DialogueManager : MonoBehaviour
             text.text += listSentences[count][i]; // 1글자씩 출력.
             if (i % 7 == 1)
             {
-            theAudio.Play(typeSound);
+                theAudio.Play(typeSound);
             }
             yield return new WaitForSeconds(0.05f);
         }
@@ -147,8 +147,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (talking && keyActivated)
         {
-          // if (Input.GetKeyDown(KeyCode.Z))   // 터치가 아닐때
-            if(Input.GetMouseButtonDown(0))     // 터치일 때
+            // if (Input.GetKeyDown(KeyCode.Z))   // 터치가 아닐때
+            if (Input.GetMouseButtonDown(0))     // 터치일 때
             {
                 keyActivated = false;
                 count++;
@@ -158,7 +158,7 @@ public class DialogueManager : MonoBehaviour
                 // Dialougue_03_message 오브젝트와 대화할때
                 // (count+1)번째 문장이 나올 때
                 // 그리고, 처음대화할때만(howManyTailkingWithThisObject ==) 효과음(dog_bark)을 재생시켜줘라.
-                if (GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook == true 
+                if (GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook == true
                     && count == 1
                     && GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                 {
@@ -177,12 +177,13 @@ public class DialogueManager : MonoBehaviour
                 if (GameObject.Find("Savor2") != null) // 없는데 찾으라고해서 오류 났으니까 걸어줘야 함
                 {
 
-                if (GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorBomb == true
-                   && count == 9
-                   && GameObject.Find("Savor2").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
-                {
-                    theAudio.Play(Bomb);
-                }
+                    if (GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorBomb == true
+                       && count == 9
+                       && GameObject.Find("Savor2").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                    {
+                        Debug.Log("재생");
+                        theAudio.Play(Bomb);
+                    }
 
 
                 }
@@ -202,7 +203,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     StopAllCoroutines();
                     StartCoroutine(StartDialogueCoroutine());
-                    
+
                 }
             }
         }
