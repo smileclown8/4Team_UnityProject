@@ -41,6 +41,7 @@ public class DialogueManager : MonoBehaviour
     public string typeSound;
     public string enterSound;
     public string dog_bark;
+    public string Bomb;
 
     private AudioManager theAudio;
 
@@ -84,7 +85,11 @@ public class DialogueManager : MonoBehaviour
         animDialogueWindow.SetBool("Appear", false);
 
         GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook = false;
-
+        GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().isBobgurut2 = false;
+        if (GameObject.Find("Savor2") != null)
+        {
+            GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorBomb = false;
+        }
         talking = false;
     }
 
@@ -159,6 +164,33 @@ public class DialogueManager : MonoBehaviour
                 {
                     theAudio.Play(dog_bark);
                 }
+
+                if (GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().isBobgurut2 == true
+                    && count == 1
+                    && GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                {
+                    theAudio.Play(dog_bark);
+                }
+
+
+
+                if (GameObject.Find("Savor2") != null) // 없는데 찾으라고해서 오류 났으니까 걸어줘야 함
+                {
+
+                if (GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorBomb == true
+                   && count == 9
+                   && GameObject.Find("Savor2").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                {
+                    theAudio.Play(Bomb);
+                }
+
+
+                }
+
+
+
+
+
 
 
                 if (count == listSentences.Count)

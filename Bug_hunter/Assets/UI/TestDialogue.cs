@@ -23,6 +23,8 @@ public class TestDialogue : MonoBehaviour
     }
 
     public bool isTalkWithBook = false;
+    public bool isBobgurut2 = false;
+    public bool isSavorBomb = false;
 
 
 
@@ -71,20 +73,26 @@ public class TestDialogue : MonoBehaviour
                 }
                 if (this.gameObject.name == "Savor2")
                 {
-                    if (isSavorTalkItemGet == true)
-                    {
+                    //if (isSavorTalkItemGet == true)
+                    //{
                         theDM.ShowDialogue(this.dialogue);
-                    }
+                        isSavorBomb = true;
+                    //} 
+                    
 
                 }
                 if (this.gameObject.name == "Bobgurut2")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    isBobgurut2 = true;
                 }
                 if (this.gameObject.name == "Savor3")
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
+
+
+
                 howManyTailkingWithThisObject++;
             }
         }
