@@ -1,55 +1,37 @@
 fileFormatVersion: 2
-guid: bcc2d6dbc1d577a4da2be4992845fb82
+guid: 572ad4fed770878409289cf954604e7e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3987011388434069450
-    second: GhostAttack_0
+      213: -8986173220217792346
+    second: GhostDeath_0
   - first:
-      213: -2977981801198352798
-    second: GhostAttack_1
+      213: -7703996353260293104
+    second: GhostDeath_1
   - first:
-      213: 4295156431522766159
-    second: GhostAttack_2
+      213: 701875493208012936
+    second: GhostDeath_2
   - first:
-      213: -6958155311487899049
-    second: GhostAttack_3
+      213: 6159573609211952006
+    second: GhostDeath_3
   - first:
-      213: 126941894561724354
-    second: GhostAttack_4
+      213: 2579648940156005449
+    second: GhostDeath_4
   - first:
-      213: 3649775347473315381
-    second: GhostAttack_5
+      213: 1652603676909975321
+    second: GhostDeath_5
   - first:
-      213: -2507167913032170531
-    second: GhostAttack_6
+      213: 7390793012755826349
+    second: GhostDeath_6
   - first:
-      213: 297487058799308543
-    second: GhostAttack_7
+      213: -6611693767131136429
+    second: GhostDeath_7
   - first:
-      213: -838414800414141731
-    second: GhostAttack_8
+      213: -5961840133642816451
+    second: GhostDeath_8
   - first:
-      213: -4639805390374924788
-    second: GhostAttack_9
-  - first:
-      213: 3227886108039137706
-    second: GhostAttack_10
-  - first:
-      213: -600779573976368089
-    second: GhostAttack_11
-  - first:
-      213: -3677077183617130894
-    second: GhostAttack_12
-  - first:
-      213: -7186228750930407608
-    second: GhostAttack_13
-  - first:
-      213: -6320047653757666832
-    second: GhostAttack_14
-  - first:
-      213: 547144789982212347
-    second: GhostAttack_15
+      213: -7934703742092937570
+    second: GhostDeath_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -147,10 +129,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GhostAttack_0
+      name: GhostDeath_0
       rect:
         serializedVersion: 2
-        x: 90
+        x: 80
         y: 1030
         width: 170
         height: 160
@@ -161,41 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63843fc244a4ba8c0800000000000000
-      internalID: -3987011388434069450
+      spriteID: 6a85ac62113ba4380800000000000000
+      internalID: -8986173220217792346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostAttack_1
+      name: GhostDeath_1
       rect:
         serializedVersion: 2
-        x: 420
+        x: 400
         y: 1030
-        width: 150
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2668eff64551ca6d0800000000000000
-      internalID: -2977981801198352798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GhostAttack_2
-      rect:
-        serializedVersion: 2
-        x: 730
-        y: 1040
         width: 170
-        height: 140
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4d16ab84067b9b30800000000000000
-      internalID: 4295156431522766159
+      spriteID: 014f30d5228e51590800000000000000
+      internalID: -7703996353260293104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostAttack_3
+      name: GhostDeath_2
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 1040
+        x: 720
+        y: 1030
         width: 170
-        height: 140
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,17 +185,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75a24ce2c9aaf6f90800000000000000
-      internalID: -6958155311487899049
+      spriteID: 8883739da009db900800000000000000
+      internalID: 701875493208012936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostAttack_4
+      name: GhostDeath_3
       rect:
         serializedVersion: 2
-        x: 90
+        x: 1040
+        y: 1030
+        width: 170
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bf2f010933b7550800000000000000
+      internalID: 6159573609211952006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostDeath_4
+      rect:
+        serializedVersion: 2
+        x: 80
         y: 710
         width: 170
         height: 160
@@ -245,17 +227,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c777740bfcf2c100800000000000000
-      internalID: 126941894561724354
+      spriteID: 94c26332b01ccc320800000000000000
+      internalID: 2579648940156005449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostAttack_5
+      name: GhostDeath_5
       rect:
         serializedVersion: 2
-        x: 410
+        x: 390
         y: 710
         width: 170
         height: 160
@@ -266,17 +248,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536ff18575b96a230800000000000000
-      internalID: 3649775347473315381
+      spriteID: 91739bcc94a3fe610800000000000000
+      internalID: 1652603676909975321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostAttack_6
+      name: GhostDeath_6
       rect:
         serializedVersion: 2
-        x: 730
+        x: 710
         y: 710
         width: 170
         height: 160
@@ -287,17 +269,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd3c57f0110c43dd0800000000000000
-      internalID: -2507167913032170531
+      spriteID: da600c5461f519660800000000000000
+      internalID: 7390793012755826349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostAttack_7
+      name: GhostDeath_7
       rect:
         serializedVersion: 2
-        x: 1050
+        x: 1030
         y: 710
         width: 170
         height: 160
@@ -308,17 +290,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe220167e2e02400800000000000000
-      internalID: 297487058799308543
+      spriteID: 35efb7e8c8b8e34a0800000000000000
+      internalID: -6611693767131136429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostAttack_8
+      name: GhostDeath_8
       rect:
         serializedVersion: 2
-        x: 60
+        x: 70
         y: 390
         width: 170
         height: 160
@@ -329,81 +311,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd292ee5e2a5d54f0800000000000000
-      internalID: -838414800414141731
+      spriteID: d347d825cf9434da0800000000000000
+      internalID: -5961840133642816451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GhostAttack_9
+      name: GhostDeath_9
       rect:
         serializedVersion: 2
         x: 390
         y: 390
-        width: 150
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0e82c784991c9fb0800000000000000
-      internalID: -4639805390374924788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GhostAttack_10
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 400
-        width: 170
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa9471d2051cbcc20800000000000000
-      internalID: 3227886108039137706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GhostAttack_11
-      rect:
-        serializedVersion: 2
-        x: 1020
-        y: 400
-        width: 170
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72cf3d8192a99a7f0800000000000000
-      internalID: -600779573976368089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GhostAttack_12
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 70
         width: 170
         height: 160
       alignment: 0
@@ -413,71 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e9ec298c568fcc0800000000000000
-      internalID: -3677077183617130894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GhostAttack_13
-      rect:
-        serializedVersion: 2
-        x: 380
-        y: 70
-        width: 170
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84f081a7603654c90800000000000000
-      internalID: -7186228750930407608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GhostAttack_14
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 70
-        width: 170
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f9bb3ad42eaa48a0800000000000000
-      internalID: -6320047653757666832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GhostAttack_15
-      rect:
-        serializedVersion: 2
-        x: 1020
-        y: 70
-        width: 170
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf0789f9949d79700800000000000000
-      internalID: 547144789982212347
+      spriteID: e9676968cf442e190800000000000000
+      internalID: -7934703742092937570
       vertices: []
       indices: 
       edges: []

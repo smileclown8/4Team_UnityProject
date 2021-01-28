@@ -17,6 +17,21 @@ TextureImporter:
   - first:
       213: -6570529266995337877
     second: Ghosf - attack 1 - projectile_4
+  - first:
+      213: -1749980809984747440
+    second: GhostBullet_0
+  - first:
+      213: 3748774424384108214
+    second: GhostBullet_1
+  - first:
+      213: 4957372834440688514
+    second: GhostBullet_2
+  - first:
+      213: 2345810388168633987
+    second: GhostBullet_3
+  - first:
+      213: -7562729588320730509
+    second: GhostBullet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghosf - attack 1 - projectile_0
+      name: GhostBullet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 160
-        height: 160
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,41 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4c52b2920d582cc0800000000000000
-      internalID: -3735633625271346101
+      spriteID: 058db11a9b1d6b7e0800000000000000
+      internalID: -1749980809984747440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - attack 1 - projectile_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 903111fe91826d500800000000000000
-      internalID: 420567707055887113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ghosf - attack 1 - projectile_2
+      name: GhostBullet_1
       rect:
         serializedVersion: 2
         x: 320
-        y: 160
-        width: 160
-        height: 160
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81813f583c98bddc0800000000000000
-      internalID: -3613142803175761896
+      spriteID: 6b6fb742a72560430800000000000000
+      internalID: 3748774424384108214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - attack 1 - projectile_3
+      name: GhostBullet_2
       rect:
         serializedVersion: 2
-        x: 480
-        y: 160
-        width: 160
-        height: 160
+        x: 640
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +185,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4c7be5c65efc80e0800000000000000
-      internalID: -2266156863833015219
+      spriteID: 2833200e3502cc440800000000000000
+      internalID: 4957372834440688514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - attack 1 - projectile_4
+      name: GhostBullet_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e66319e1efd8020800000000000000
+      internalID: 2345810388168633987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhostBullet_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,8 +227,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b656f6e917ac0d4a0800000000000000
-      internalID: -6570529266995337877
+      spriteID: 3728ecb2289cb0790800000000000000
+      internalID: -7562729588320730509
       vertices: []
       indices: 
       edges: []

@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: -8547431974555952021
     second: Ghosf - walk_7
+  - first:
+      213: -6359977545375631545
+    second: GhostWalk_0
+  - first:
+      213: 3970276514997407652
+    second: GhostWalk_1
+  - first:
+      213: 3556599287615214125
+    second: GhostWalk_2
+  - first:
+      213: 592535162598928477
+    second: GhostWalk_3
+  - first:
+      213: -3149461272667580951
+    second: GhostWalk_4
+  - first:
+      213: 1986861738824318592
+    second: GhostWalk_5
+  - first:
+      213: -3231713538527487565
+    second: GhostWalk_6
+  - first:
+      213: 7430231543672112127
+    second: GhostWalk_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghosf - walk_0
+      name: GhostWalk_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 152
-        width: 67
-        height: 63
+        x: 62
+        y: 304
+        width: 134
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 006d0c8c5c74fd6a0800000000000000
-      internalID: -6422335628804827648
+      spriteID: 747bc6c7e12dcb7a0800000000000000
+      internalID: -6359977545375631545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - walk_1
+      name: GhostWalk_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 152
-        width: 59
-        height: 67
+        x: 320
+        y: 304
+        width: 118
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c12c4899dc96be910800000000000000
-      internalID: 1867702802240029212
+      spriteID: 4af0f787471491730800000000000000
+      internalID: 3970276514997407652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - walk_2
+      name: GhostWalk_2
       rect:
         serializedVersion: 2
-        x: 277
-        y: 152
-        width: 75
-        height: 63
+        x: 554
+        y: 304
+        width: 150
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f57c6eadef8d7e750800000000000000
-      internalID: 6334269990025742175
+      spriteID: d2256ba55349b5130800000000000000
+      internalID: 3556599287615214125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - walk_3
+      name: GhostWalk_3
       rect:
         serializedVersion: 2
-        x: 406
-        y: 152
-        width: 67
-        height: 63
+        x: 812
+        y: 304
+        width: 134
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdaeafb94ae4731c0800000000000000
-      internalID: -4524060831771858209
+      spriteID: d5033ab479b193800800000000000000
+      internalID: 592535162598928477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - walk_4
+      name: GhostWalk_4
       rect:
         serializedVersion: 2
-        x: 31
-        y: 27
-        width: 59
-        height: 67
+        x: 62
+        y: 54
+        width: 118
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f2cd43a7974979b0800000000000000
-      internalID: -5081951987905477899
+      spriteID: 9e59cc8b8adda44d0800000000000000
+      internalID: -3149461272667580951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - walk_5
+      name: GhostWalk_5
       rect:
         serializedVersion: 2
-        x: 148
-        y: 27
-        width: 75
-        height: 63
+        x: 296
+        y: 54
+        width: 150
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f56504608d74af750800000000000000
-      internalID: 6339458418620782175
+      spriteID: 08e30708930c29b10800000000000000
+      internalID: 1986861738824318592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - walk_6
+      name: GhostWalk_6
       rect:
         serializedVersion: 2
-        x: 277
-        y: 27
-        width: 67
-        height: 63
+        x: 554
+        y: 54
+        width: 134
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e36844babf99de6c0800000000000000
-      internalID: -4112461578530159042
+      spriteID: 3b99f38b8a5a623d0800000000000000
+      internalID: -3231713538527487565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghosf - walk_7
+      name: GhostWalk_7
       rect:
         serializedVersion: 2
-        x: 402
-        y: 27
-        width: 67
-        height: 63
+        x: 804
+        y: 54
+        width: 134
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6cd6c6c7eb616980800000000000000
-      internalID: -8547431974555952021
+      spriteID: ff38a7fc83c7d1760800000000000000
+      internalID: 7430231543672112127
       vertices: []
       indices: 
       edges: []

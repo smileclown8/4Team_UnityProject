@@ -138,10 +138,10 @@ TextureImporter:
       name: snake-SWEN_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 513
-        width: 120
-        height: 131
+        x: 52
+        y: 1031
+        width: 229
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: snake-SWEN_1
       rect:
         serializedVersion: 2
-        x: 190
-        y: 514
-        width: 120
-        height: 129
+        x: 385
+        y: 1031
+        width: 230
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: snake-SWEN_2
       rect:
         serializedVersion: 2
-        x: 357
-        y: 513
-        width: 120
-        height: 131
+        x: 719
+        y: 1031
+        width: 229
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +201,10 @@ TextureImporter:
       name: snake-SWEN_3
       rect:
         serializedVersion: 2
-        x: 24
-        y: 346
-        width: 129
-        height: 115
+        x: 52
+        y: 698
+        width: 250
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +222,10 @@ TextureImporter:
       name: snake-SWEN_4
       rect:
         serializedVersion: 2
-        x: 190
-        y: 347
-        width: 130
-        height: 114
+        x: 385
+        y: 698
+        width: 250
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,10 +243,10 @@ TextureImporter:
       name: snake-SWEN_5
       rect:
         serializedVersion: 2
-        x: 357
-        y: 346
-        width: 130
-        height: 115
+        x: 719
+        y: 698
+        width: 250
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +264,10 @@ TextureImporter:
       name: snake-SWEN_6
       rect:
         serializedVersion: 2
-        x: 13
-        y: 180
-        width: 130
-        height: 114
+        x: 31
+        y: 364
+        width: 250
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: snake-SWEN_7
       rect:
         serializedVersion: 2
-        x: 180
-        y: 180
-        width: 130
-        height: 114
+        x: 365
+        y: 364
+        width: 250
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,10 +306,10 @@ TextureImporter:
       name: snake-SWEN_8
       rect:
         serializedVersion: 2
-        x: 347
-        y: 180
-        width: 129
-        height: 114
+        x: 698
+        y: 364
+        width: 250
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +327,10 @@ TextureImporter:
       name: snake-SWEN_9
       rect:
         serializedVersion: 2
-        x: 24
-        y: 13
-        width: 119
-        height: 130
+        x: 52
+        y: 31
+        width: 229
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,10 +348,10 @@ TextureImporter:
       name: snake-SWEN_10
       rect:
         serializedVersion: 2
-        x: 190
-        y: 13
-        width: 120
-        height: 130
+        x: 385
+        y: 31
+        width: 230
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,10 +369,10 @@ TextureImporter:
       name: snake-SWEN_11
       rect:
         serializedVersion: 2
-        x: 357
-        y: 13
-        width: 119
-        height: 130
+        x: 719
+        y: 31
+        width: 229
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

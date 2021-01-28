@@ -14,13 +14,7 @@ public class SlimeAttackRange : MonoBehaviour
     {
         animator = GetComponentInParent<Animator>();
         rigid = GetComponentInParent<SlimeManager>().rigid;
-        playerPos = GameObject.Find("player").transform;
-        //playerPos = GameObject.FindWithTag("Player").transform;
-    }
-
-    void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) { }
+        playerPos = GameObject.FindWithTag("Player").transform;
     }
 
 
@@ -28,10 +22,10 @@ public class SlimeAttackRange : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            myPos = GetComponent<Transform>();
+            myPos = GetComponentInParent<Transform>();
             JumpAttack();
             Debug.Log("쩜프");
-            Invoke("BackDown", 0.5f);
+            Invoke("BackDown", 0.8f);
             Debug.Log("빽");
         }
     }
@@ -43,17 +37,21 @@ public class SlimeAttackRange : MonoBehaviour
     {
         float distanceFromPlayer = playerPos.transform.position.x - transform.transform.position.x;
 
-        rigid.AddForce(new Vector2(distanceFromPlayer, playerPos.localScale.y * 4), ForceMode2D.Impulse);
+        rigid.AddForce(new Vector2(distanceFromPlayer, playerPos.localScale.y * 7), ForceMode2D.Impulse);
     }
 
     void BackDown()
     {
-        if (myPos.position.x < playerPos.position.x)
+        Debug.Log("1");
+        if (myPos.position.x <= playerPos.position.x)
         {
-            rigid.AddForce(new Vector2(-5, playerPos.localScale.y * 1.2f), ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(GetComponentInParent<Rigidbody>().mass * -15, playerPos.localScale.y * 4), ForceMode2D.Impulse);
+            Debug.Log("2");
         }
         else if (myPos.position.x > playerPos.position.x)
-            rigid.AddForce(new Vector2(5, playerPos.localScale.y * 1.2f), ForceMode2D.Impulse);
-
+        {
+            rigid.AddForce(new Vector2(GetComponentInParent<Rigidbody>().mass * 15, playerPos.localScale.y * 4), ForceMode2D.Impulse);
+            Debug.Log("3");
+        }
     }
 }
