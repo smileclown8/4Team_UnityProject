@@ -20,12 +20,19 @@ public class TestScript1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        BGM.Play(playMusicTrack);
+        if (collision.gameObject.tag == "Player")
+        {
+            BGM.Play(playMusicTrack);
+            BGM.SetVolumn(0.2f);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        BGM.Stop();
-        //this.gameObject.SetActive(false);
+        if (collision.gameObject.tag == "Player")
+        {
+            BGM.Stop();
+            //this.gameObject.SetActive(false);
+        }
     }
 }

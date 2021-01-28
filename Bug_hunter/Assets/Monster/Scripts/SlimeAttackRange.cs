@@ -5,16 +5,17 @@ using UnityEngine;
 public class SlimeAttackRange : MonoBehaviour
 {
     // 공격용
-    Transform playerPos;
-    Transform myPos;
-    Rigidbody2D rigid;
-    Animator animator;
+    public Transform playerPos;
+    public Transform myPos;
+    public Rigidbody2D rigid;
+    public Animator animator;
 
-    private void Start()
+    void Start()
     {
         animator = GetComponentInParent<Animator>();
         rigid = GetComponentInParent<SlimeManager>().rigid;
-        playerPos = GameObject.FindWithTag("Player").transform;
+        playerPos = GameObject.Find("player").transform;
+        //playerPos = GameObject.FindWithTag("Player").transform;
     }
 
     void FixedUpdate()

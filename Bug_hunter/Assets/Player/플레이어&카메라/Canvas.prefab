@@ -396,6 +396,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossHpBar
       objectReference: {fileID: 0}
+    - target: {fileID: 1636899603969815365, guid: 5b76de3ac8a119c46896f646091169ac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1636899603969815370, guid: 5b76de3ac8a119c46896f646091169ac,
         type: 3}
       propertyPath: m_Pivot.x
