@@ -22,8 +22,11 @@ public class TestDialogue : MonoBehaviour
     {
         if (collision.gameObject.name == "player")
         {
-                      
 
+            if (this.gameObject.name == "Dialougue_00_message")
+            {
+                theDM.ShowDialogue(this.dialogue);
+            }
             if (this.gameObject.name == "Dialougue_01_message")
             {
                 theDM.ShowDialogue(this.dialogue);
