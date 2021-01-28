@@ -12923,6 +12923,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1158758834784477177, guid: e3d94b776b515404db81ee49dade0635,
+        type: 3}
+      propertyPath: playMusicTrack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8438855787161909179, guid: e3d94b776b515404db81ee49dade0635,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -47225,7 +47230,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialougue_01_message
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7280187157763531458, guid: 91fd0c2f258da314fb902043ea56e8c0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 91fd0c2f258da314fb902043ea56e8c0, type: 3}
 --- !u!1 &412048860
 GameObject:
@@ -49839,6 +49845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bobgurut2
       objectReference: {fileID: 0}
+    - target: {fileID: 3509015896415911621, guid: 76a0ca50bb9966c4d941f1f5765cf1d9,
+        type: 3}
+      propertyPath: playMusicTrack
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76a0ca50bb9966c4d941f1f5765cf1d9, type: 3}
 --- !u!4 &826581612 stripped
@@ -50856,6 +50867,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158758834784477177, guid: e3d94b776b515404db81ee49dade0635,
+        type: 3}
+      propertyPath: playMusicTrack
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8438855787161909179, guid: e3d94b776b515404db81ee49dade0635,
         type: 3}
@@ -85189,6 +85205,11 @@ PrefabInstance:
       propertyPath: sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8126722518234175209, guid: 355be5846865c1f49bbef76b6a5c5098,
+        type: 3}
+      propertyPath: playMusicTrack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8126722519412773286, guid: 355be5846865c1f49bbef76b6a5c5098,
         type: 3}
       propertyPath: m_Name
@@ -86081,9 +86102,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7269092865304447303, guid: 21d2f75ea99c04f4797e77a6a69dea36,
         type: 3}
+      propertyPath: clips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269092865304447303, guid: 21d2f75ea99c04f4797e77a6a69dea36,
+        type: 3}
       propertyPath: clips.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 034942c94d5be784db8950ca01475f49, type: 3}
+    - target: {fileID: 7269092865304447303, guid: 21d2f75ea99c04f4797e77a6a69dea36,
+        type: 3}
+      propertyPath: clips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: acd490f27ebc9564ba22ba330a7d21e0, type: 3}
+    - target: {fileID: 7269092865304447303, guid: 21d2f75ea99c04f4797e77a6a69dea36,
+        type: 3}
+      propertyPath: clips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: a245897b7b11fe24cb13084d692e8b56, type: 3}
     - target: {fileID: 7269092865304447305, guid: 21d2f75ea99c04f4797e77a6a69dea36,
         type: 3}
       propertyPath: m_Name
@@ -88376,7 +88412,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2138108045}
-  - component: {fileID: 2138108047}
   - component: {fileID: 2138108046}
   m_Layer: 0
   m_Name: CatSound
@@ -88425,19 +88460,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.78, y: 1.9}
   m_EdgeRadius: 0
---- !u!114 &2138108047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138108044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49d91390d8595f44882030dbaa076c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playMusicTrack: 0
 --- !u!1001 &2144743889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88468,12 +88490,12 @@ PrefabInstance:
     - target: {fileID: 5966874427858925749, guid: c92c6114ce887eb48904d248cf535723,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.1
+      value: 87.4
       objectReference: {fileID: 0}
     - target: {fileID: 5966874427858925749, guid: c92c6114ce887eb48904d248cf535723,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2
+      value: 22.8
       objectReference: {fileID: 0}
     - target: {fileID: 5966874427858925749, guid: c92c6114ce887eb48904d248cf535723,
         type: 3}
