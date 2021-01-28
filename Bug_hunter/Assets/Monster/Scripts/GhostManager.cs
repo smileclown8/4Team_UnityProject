@@ -40,8 +40,12 @@ public class GhostManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))    // 테스트용 임시함수. 지울 것***************
+        if (Input.GetMouseButtonDown(2))    // 테스트용 임시함수. 지울 것***************
             isDamaged = true;
+
+        if (Input.GetMouseButtonDown(1))    // 테스트용 임시함수. 지울 것***************
+            hp = 0;
+
 
         if (isDamaged)
         {
@@ -61,12 +65,6 @@ public class GhostManager : MonoBehaviour
                 Stop();
             }
         }
-
-        if (Input.GetMouseButtonDown(1))    // 테스트용 임시함수. 지울 것***************
-            hp = 0;
-
-        if (Input.GetMouseButtonDown(2))    // 테스트용 임시함수. 지울 것***************
-            playerHP = 0;
     }
 
 

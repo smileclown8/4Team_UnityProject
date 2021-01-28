@@ -41,7 +41,7 @@ public class SlimeAttackRange : MonoBehaviour
 
     void JumpAttack()   // 몬스터의 공격
     {
-        float distanceFromPlayer = playerPos.position.x - transform.position.x;
+        float distanceFromPlayer = playerPos.transform.position.x - transform.transform.position.x;
 
         rigid.AddForce(new Vector2(distanceFromPlayer, playerPos.localScale.y * 4), ForceMode2D.Impulse);
     }
