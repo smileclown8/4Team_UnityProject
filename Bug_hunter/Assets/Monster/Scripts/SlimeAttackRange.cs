@@ -10,11 +10,19 @@ public class SlimeAttackRange : MonoBehaviour
     public Rigidbody2D rigid;
     public Animator animator;
 
-    void Start()
+    public float mass;
+
+
+    void Awake()
     {
         animator = GetComponentInParent<Animator>();
-        rigid = GetComponentInParent<SlimeManager>().rigid;
         playerPos = GameObject.FindWithTag("Player").transform;
+    }
+
+    void Start()
+    {
+        rigid = GetComponentInParent<SlimeManager>().rigid;
+        mass = GetComponentInParent<Rigidbody2D>().mass;
     }
 
 
@@ -37,7 +45,7 @@ public class SlimeAttackRange : MonoBehaviour
     {
         float distanceFromPlayer = playerPos.transform.position.x - transform.transform.position.x;
 
-        rigid.AddForce(new Vector2(distanceFromPlayer, playerPos.localScale.y * 7), ForceMode2D.Impulse);
+        rigid.AddForce(new Vector2(distanceFromPlayer, playerPos.localScale.y*15), ForceMode2D.Impulse);
     }
 
     void BackDown()
@@ -45,12 +53,12 @@ public class SlimeAttackRange : MonoBehaviour
         Debug.Log("1");
         if (myPos.position.x <= playerPos.position.x)
         {
-            rigid.AddForce(new Vector2(GetComponentInParent<Rigidbody>().mass * -15, playerPos.localScale.y * 4), ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(mass * -15, playerPos.localScale.y  *20), ForceMode2D.Impulse);
             Debug.Log("2");
         }
         else if (myPos.position.x > playerPos.position.x)
         {
-            rigid.AddForce(new Vector2(GetComponentInParent<Rigidbody>().mass * 15, playerPos.localScale.y * 4), ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(mass * 15, playerPos.localScale.y *20), ForceMode2D.Impulse);
             Debug.Log("3");
         }
     }
