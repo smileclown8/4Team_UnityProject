@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateBar : MonoBehaviour
+public class RotateBarLeft : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,6 +13,6 @@ public class RotateBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime);
     }
 }
