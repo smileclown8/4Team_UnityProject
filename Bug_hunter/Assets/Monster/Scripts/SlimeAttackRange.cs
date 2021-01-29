@@ -33,7 +33,7 @@ public class SlimeAttackRange : MonoBehaviour
             myPos = GetComponentInParent<Transform>();
             JumpAttack();
             Debug.Log("쩜프");
-            Invoke("BackDown", 0.8f);
+            Invoke("BackDown", 0.25f);
             Debug.Log("빽");
         }
     }
@@ -45,7 +45,7 @@ public class SlimeAttackRange : MonoBehaviour
     {
         float distanceFromPlayer = playerPos.transform.position.x - transform.transform.position.x;
 
-        rigid.AddForce(new Vector2(distanceFromPlayer, playerPos.localScale.y*15), ForceMode2D.Impulse);
+        rigid.AddForce(new Vector2(distanceFromPlayer * 4, playerPos.localScale.y * 15), ForceMode2D.Impulse);
     }
 
     void BackDown()
@@ -53,12 +53,12 @@ public class SlimeAttackRange : MonoBehaviour
         Debug.Log("1");
         if (myPos.position.x <= playerPos.position.x)
         {
-            rigid.AddForce(new Vector2(mass * -15, playerPos.localScale.y  *20), ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(-30, playerPos.localScale.y*15), ForceMode2D.Impulse);
             Debug.Log("2");
         }
         else if (myPos.position.x > playerPos.position.x)
         {
-            rigid.AddForce(new Vector2(mass * 15, playerPos.localScale.y *20), ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(30, playerPos.localScale.y*15), ForceMode2D.Impulse);
             Debug.Log("3");
         }
     }

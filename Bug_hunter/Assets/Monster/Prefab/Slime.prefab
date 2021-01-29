@@ -48,6 +48,7 @@ MonoBehaviour:
   myPos: {fileID: 0}
   rigid: {fileID: 0}
   animator: {fileID: 0}
+  mass: 0
 --- !u!58 &1024025115
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -63,7 +64,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -1.1}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1.5
 --- !u!1 &149886909127615060
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +186,7 @@ Rigidbody2D:
   m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
