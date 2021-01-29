@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3213043057290602439}
   m_Layer: 12
   m_Name: Electro
-  m_TagString: Player
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,9 +118,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.049970567, y: -0.68805826}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.36191237
 --- !u!50 &2628208462613845728
 Rigidbody2D:
   serializedVersion: 4

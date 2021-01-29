@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6618378536593418925}
   - component: {fileID: 1640930128445903006}
   - component: {fileID: 6355751994735381011}
+  - component: {fileID: 1493068484463734696}
   m_Layer: 12
   m_Name: arrow
   m_TagString: PlayerBullet
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 80
+--- !u!114 &1493068484463734696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475634399493701589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b62e9f3ffeef94cbd5b902a7aeec24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
