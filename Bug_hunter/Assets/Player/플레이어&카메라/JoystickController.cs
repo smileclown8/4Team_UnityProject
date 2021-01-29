@@ -74,8 +74,6 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
         moveSpeed = PlayerStatusManager.GetComponent<PlayerStatusManager>().moveSpeed;
         maxMoveSpeed = PlayerStatusManager.GetComponent<PlayerStatusManager>().maxMoveSpeed;
 
-        Debug.Log(moveSpeed);
-
         isTalk = Dialogue.GetComponent<DialogueManager>().talking;
 
         if (isTalk == false)

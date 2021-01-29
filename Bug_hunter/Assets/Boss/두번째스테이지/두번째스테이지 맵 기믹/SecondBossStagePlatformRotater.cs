@@ -10,9 +10,11 @@ public class SecondBossStagePlatformRotater : MonoBehaviour
         
     }
 
+    public float rotSpeed;
+
     // Update is called once per frame
     void Update()
     {
-        
+        this.transform.Rotate(Vector3.forward, rotSpeed * Time.deltaTime);
     }
 }
