@@ -57,7 +57,7 @@ public class CameraController : MonoBehaviour
         }
 
 
-
+        /*
 
         if (transform.position.x <= leftEnd)
         {
@@ -78,6 +78,7 @@ public class CameraController : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x, downEnd);
         }
+        */
         transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -10);
 
     }

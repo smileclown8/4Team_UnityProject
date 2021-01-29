@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
+  //      bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
         tilemap = GameObject.Find("Tilemap1_2_1");
         if (tilemap != null)
         {
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
+       // skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
         isTalk = Dialogue.GetComponent<DialogueManager>().talking;
 
 
@@ -89,7 +89,9 @@ public class PlayerController : MonoBehaviour
          Jump();
         Land();
 
-        Shoot();
+
+
+    //   Shoot(); -> SkillController
     
     /*
         // 터치일 때
@@ -98,45 +100,8 @@ public class PlayerController : MonoBehaviour
         
        Shoot();
     */
-
     }
 
-    public bool isShootButton = false;
-
-    public void ShootButtonDown()
-    {
-        isShootButton = true;
-    }
-
-    public void ShootButtonUp()
-    {
-        isShootButton = false;
-    }
-
-
-    public void Shoot()
-    {
-        if (Input.GetKey(KeyCode.F)) // 터치가 아닐 때
-
-    //    if(isShootButton) //터치일 때 
-        {
-
-            switch (skill_ID)
-            {
-                case 0:
-                    PlayerNormalShoot();
-                    break;
-                case 1:
-                    PlayerFirstSkillShoot();
-                    break;
-                case 2:
-                    PlayerSecondSkillShoot();
-                    break;
-
-            }
-
-        }
-    }
 
     public void Jump() //플레이어 점프
     {
@@ -249,8 +214,76 @@ public class PlayerController : MonoBehaviour
         spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    // Trigger 타입의 콜라이더와 충돌이 발생하면 충돌이 발생한 오브젝트의
+    // Collider 정보가 넘어온다.
+    // Trigger 를 사용할 때는 Collider 타입으로 매개변수를 받음
+    {
+        if (collision.gameObject.tag == "Tile")
+        {
+            tileColor.material.color = new Color(1f, 1f, 1f, 0.2f);
+        }
+        if (collision.gameObject.tag == "Tile_off")
+        {
+            tileColor.material.color = new Color(1f, 1f, 1f, 1f);
+        }
+
+        if (collision.gameObject.tag == "Tile1_4on")
+        {
+            tileColor2.material.color = new Color(1f, 1f, 1f, 0.2f);
+        }
+        if (collision.gameObject.tag == "Tile1_4off")
+        {
+            tileColor2.material.color = new Color(1f, 1f, 1f, 1f);
+        }
+
+    }
+
+
+    /* 이 부분을 SkillController로 이관함.
     // =======================================================================================
     // 여기서부터 플레이어 슈팅
+
+
+
+    public bool isShootButton = false;
+
+    public void ShootButtonDown()
+    {
+        isShootButton = true;
+    }
+
+    public void ShootButtonUp()
+    {
+        isShootButton = false;
+    }
+
+
+    public void Shoot()
+    {
+        if (Input.GetKey(KeyCode.F)) // 터치가 아닐 때
+
+        //    if(isShootButton) //터치일 때 
+        {
+
+            switch (skill_ID)
+            {
+                case 0:
+                    PlayerNormalShoot();
+                    break;
+                case 1:
+                    PlayerFirstSkillShoot();
+                    break;
+                case 2:
+                    PlayerSecondSkillShoot();
+                    break;
+
+            }
+
+        }
+    }
+
 
     public int skill_ID; //초기값, 일반공격
 
@@ -312,28 +345,6 @@ public class PlayerController : MonoBehaviour
         curTime -= Time.deltaTime;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    // Trigger 타입의 콜라이더와 충돌이 발생하면 충돌이 발생한 오브젝트의
-    // Collider 정보가 넘어온다.
-    // Trigger 를 사용할 때는 Collider 타입으로 매개변수를 받음
-    {
-        if (collision.gameObject.tag == "Tile")
-        {
-            tileColor.material.color = new Color(1f, 1f, 1f, 0.2f);
-        }
-        if (collision.gameObject.tag == "Tile_off")
-        {
-            tileColor.material.color = new Color(1f, 1f, 1f, 1f);
-        }
+    */
 
-        if (collision.gameObject.tag == "Tile1_4on")
-        {
-            tileColor2.material.color = new Color(1f, 1f, 1f, 0.2f);
-        }
-        if (collision.gameObject.tag == "Tile1_4off")
-        {
-            tileColor2.material.color = new Color(1f, 1f, 1f, 1f);
-        }
-
-    }
 }

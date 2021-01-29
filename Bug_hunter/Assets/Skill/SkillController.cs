@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class SkillController : MonoBehaviour
 {
+
+
+    GameObject PlayerStatusManager;
+
+    void Awake()
+    {
+        PlayerStatusManager = GameObject.Find("PlayerStatusManager");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,47 +23,85 @@ public class SkillController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.F)) // 유니티내에서 
-                                     //테스트용으로 버튼대신 키입력받기. 나중에는 update에서 Jump()와 Shoot을하는게 아니라 따로 버튼입력 받을거임
-                                     //즉, Update문은 Land를 제외하고 싹 비워버릴꺼니 신경ㄴㄴ
-        {
-            switch (skill_ID)
-            {
-                // 기본 공격
-                case 0:
-                    PlayerNormalShoot();
-                    break;
-                // 빠른 공격
-                case 1:
-                    PlayerFirstSkillShoot();
-                    break;
-                // 탱탱볼
-                case 2:
-                    ; PlayerSecondSkillShoot();
-                    break;
-                // 산탄
-                case 3:
-                    ; RandomBulletFire();
-                    break;
-                // 화살
-                case 4:
-                    ; ArrowSkillBulletFire();
-                    break;
-                // 구름탄
-                case 5:
-                    ; BombSkillFire();
-                    break;
-                // 찌릿찌릿
-                case 6:
-                    ; ElectroSkillFire();
-                    break;
-                case 7:
-                    ; FireBulletSkill();
-                    break;
 
-            }
+        skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
+
+        if (Input.GetKey(KeyCode.F))
+        {
+            Shoot();
+        }
+
+
+        /*
+        if(isShootButton == true)
+        {
+            Shoot();
+        }
+        */
+       
+
+    }
+
+
+
+
+    public bool isShootButton = false;
+
+    public void ShootButtonDown()
+    {
+        isShootButton = true;
+    }
+
+    public void ShootButtonUp()
+    {
+        isShootButton = false;
+    }
+
+
+
+    public void Shoot()
+    {
+        switch (skill_ID)
+        {
+            // 기본 공격
+            case 0:
+                PlayerNormalShoot();
+                break;
+            // 빠른 공격
+            case 1:
+                PlayerFirstSkillShoot();
+                break;
+            // 탱탱볼
+            case 2:
+                ; PlayerSecondSkillShoot();
+                break;
+            // 산탄
+            case 3:
+                ; RandomBulletFire();
+                break;
+            // 화살
+            case 4:
+                ; ArrowSkillBulletFire();
+                break;
+            // 구름탄
+            case 5:
+                ; BombSkillFire();
+                break;
+            // 찌릿찌릿
+            case 6:
+                ; ElectroSkillFire();
+                break;
+            case 7:
+                ; FireBulletSkill();
+                break;
+
         }
     }
+
+
+
+
+
 
     public int skill_ID = 0; //초기값, 일반공격
 
