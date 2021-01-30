@@ -84,18 +84,41 @@ public class TestDialogue : MonoBehaviour
                         theDM.ShowDialogue(this.dialogue);
                         isSavorBomb = true;
                     //} 
-                    
-
                 }
                 if (this.gameObject.name == "Bobgurut2")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    isBobgurut2 = true;
+                    isBobgurut2 = true; //사운드이펙트 출력할 때
                 }
                 if (this.gameObject.name == "Savor3")
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
+
+                //2스테이지
+                if (this.gameObject.name == "Magazine02")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Portrait")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "2_1stage_01")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if(this.gameObject.name == "Fairy_tale01")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+
+
+
+
+
+
+
 
 
 
