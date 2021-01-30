@@ -15,6 +15,7 @@ public class SlimeManager : MonoBehaviour
 {
     // 스탯
     int hp = 10;
+    int attack = 5;
 
     public float movePower = 1f;
 
