@@ -112,7 +112,10 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
-
+                if (this.gameObject.name == "Fairy_tale02")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
 
 
 
