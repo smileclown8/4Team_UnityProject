@@ -177,11 +177,6 @@ public class PlayerController : MonoBehaviour
 
             OnDamaged(collision.transform.position);  
         }
-
-        if(collision.gameObject.tag == "EnemyAttack")
-        {
-            OnDamaged(collision.transform.position);
-        }
     }
 
 

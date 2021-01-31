@@ -15,7 +15,6 @@ TagManager:
   - endpoint
   - RotateSpike
   - Gimik
-  - EnemyAttack
   layers:
   - Default
   - TransparentFX
