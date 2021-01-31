@@ -84,17 +84,20 @@ public class TestDialogue : MonoBehaviour
                         theDM.ShowDialogue(this.dialogue);
                         isSavorBomb = true;
                     //} 
+                    
+
                 }
                 if (this.gameObject.name == "Bobgurut2")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    isBobgurut2 = true; //사운드이펙트 출력할 때
+                    isBobgurut2 = true;
                 }
                 if (this.gameObject.name == "Savor3")
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
 
+<<<<<<< HEAD
                 //2스테이지
                 if (this.gameObject.name == "Magazine02")
                 {
@@ -123,6 +126,8 @@ public class TestDialogue : MonoBehaviour
 
 
 
+=======
+>>>>>>> parent of a010221... 2스테이지 연출 추가
 
 
                 howManyTailkingWithThisObject++;
