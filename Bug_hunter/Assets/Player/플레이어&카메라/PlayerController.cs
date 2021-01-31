@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
         playerRigidbody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         PlayerStatusManager = GameObject.Find("PlayerStatusManager");
+        jumpPower = PlayerStatusManager.GetComponent<PlayerStatusManager>().jumpPower;
         Dialogue = GameObject.Find("UI_Dialogue");
 
     }
@@ -80,7 +81,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
        // skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
-        jumpPower = PlayerStatusManager.GetComponent<PlayerStatusManager>().jumpPower;
         isTalk = Dialogue.GetComponent<DialogueManager>().talking;
 
 
@@ -136,11 +136,11 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(playerRigidbody2D.position, Vector3.down, new Color(0, 1, 0));
 
             RaycastHit2D rayHit = Physics2D.Raycast(playerRigidbody2D.position, Vector3.down
-                , 500f, isLayer);  // 점프가 가능한 오브젝트의 레이어를 플레이어의 인스펙터의 isLayer 항목에서 설정해줘야 합니다.
+                , 1, isLayer);  // 점프가 가능한 오브젝트의 레이어를 플레이어의 인스펙터의 isLayer 항목에서 설정해줘야 합니다.
 
             if (rayHit.collider != null)
             {
-                if (rayHit.distance < 2.0f) // 플레이어의 중심에서 발끝까지의 거리(플레이어절반크기) 즉, 바닥에 닿았으면
+                if (rayHit.distance < 1.0f) // 플레이어의 중심에서 발끝까지의 거리(플레이어절반크기) 즉, 바닥에 닿았으면
                 {
                     isJumping = false;
 
@@ -176,11 +176,6 @@ public class PlayerController : MonoBehaviour
         {
 
             OnDamaged(collision.transform.position);  
-        }
-
-        if(collision.gameObject.tag == "EnemyAttack")
-        {
-            OnDamaged(collision.transform.position);
         }
     }
 

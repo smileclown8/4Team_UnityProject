@@ -36,8 +36,6 @@ public class HamsterBulletController : MonoBehaviour
             DestroyBullet();
         }
     }
-
-
     void DestroyBullet()
     {
         Destroy(this.gameObject);
