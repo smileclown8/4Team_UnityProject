@@ -157,6 +157,15 @@ MonoBehaviour:
   Boss_Clea_Doll_MaxHP: 100
   Boss_Clea_Doll_Grogy_HP: 100
   Boss_Clea_Doll_Grogy_MaxHP: 100
+  isPattern: 0
+  nowPattern: 0
+  TypingEffectManager: {fileID: 0}
+  Pattern2_TrackingBullet: {fileID: 1794721756078709453, guid: c88eb59e1a927c74aa39f40eb359cb98,
+    type: 3}
+  Pattern2_StartPos: {fileID: 276409127}
+  Pattern2InstiateTimeTerm: 1
+  postPattern: 0
+  patternRandomRate: 0
 --- !u!61 &35420253
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -411,7 +420,7 @@ GameObject:
   - component: {fileID: 58744217}
   - component: {fileID: 58744216}
   - component: {fileID: 58744218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,6 +895,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &276409127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 276409128}
+  m_Layer: 0
+  m_Name: Pattern2StartPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &276409128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276409127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.8, y: 73.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1649129302}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &295565866
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +952,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295565866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.136, y: 5.502, z: 18.5}
+  m_LocalPosition: {x: -16.136, y: 6.66, z: 18.5}
   m_LocalScale: {x: 1.4353874, y: 1.384297, z: 1}
   m_Children: []
   m_Father: {fileID: 1145137095}
@@ -1224,7 +1263,7 @@ GameObject:
   - component: {fileID: 442949330}
   - component: {fileID: 442949329}
   - component: {fileID: 442949331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1367,8 +1406,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 487714207}
+  - component: {fileID: 487714208}
   m_Layer: 0
-  m_Name: Boss_PatternManager
+  m_Name: Boss_Clea_PatternManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,6 +1428,18 @@ Transform:
   m_Father: {fileID: 1408213877}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &487714208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487714206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fbea216e977a744bbd3d3c562818c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &499037103 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1529679163671078081, guid: 55088091ce597074880cd7cac0f169e9,
@@ -2096,7 +2148,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2120,7 +2172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669288522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.6, y: 30, z: -10}
+  m_LocalPosition: {x: -6, y: 26.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2394,7 +2446,7 @@ GameObject:
   - component: {fileID: 985405309}
   - component: {fileID: 985405308}
   - component: {fileID: 985405310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2548,12 +2600,12 @@ PrefabInstance:
     - target: {fileID: 5966874427858925749, guid: c92c6114ce887eb48904d248cf535723,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.92
+      value: -11.6
       objectReference: {fileID: 0}
     - target: {fileID: 5966874427858925749, guid: c92c6114ce887eb48904d248cf535723,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.53
+      value: 28.6
       objectReference: {fileID: 0}
     - target: {fileID: 5966874427858925749, guid: c92c6114ce887eb48904d248cf535723,
         type: 3}
@@ -4300,7 +4352,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 276409128}
   m_Father: {fileID: 376804906}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6143,7 +6196,7 @@ GameObject:
   - component: {fileID: 1999344212}
   - component: {fileID: 1999344211}
   - component: {fileID: 1999344213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
