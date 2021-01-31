@@ -8,14 +8,12 @@ public class SlimeAttackRange : MonoBehaviour
     public Transform playerPos;
     public Transform myPos;
     public Rigidbody2D rigid;
-    public Animator animator;
 
     public float mass;
 
 
     void Awake()
     {
-        animator = GetComponentInParent<Animator>();
         playerPos = GameObject.FindWithTag("Player").transform;
     }
 

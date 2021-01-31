@@ -4,24 +4,32 @@ using UnityEngine;
 
 public class FairyBounce : MonoBehaviour
 {
-
     public GameObject bouncing;
+    public bool pushing;
+    Animator pushinAnim;
 
-    
+    private void Start()
+    {
+        pushinAnim = GetComponent<Animator>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             Pushing();
+            pushing = true; // 밀어내는 효과 애니메이션 재생
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Invoke("Pushing", 3);
+            pushing = false;
+
         }
     }
+
 
     void Pushing()
     {
