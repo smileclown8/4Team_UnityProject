@@ -29,7 +29,7 @@ public class SnakeManager : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        playerHP = GameObject.FindWithTag("Player").GetComponent<PlayerStatusManager>().player_HP;
+        playerHP = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP;
     }
 
     void Start()

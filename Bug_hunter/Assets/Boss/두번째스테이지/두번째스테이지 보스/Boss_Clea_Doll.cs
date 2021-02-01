@@ -57,8 +57,6 @@ public class Boss_Clea_Doll : MonoBehaviour
         {
             GameObject.Find("Boss_Clea_StatusManager").GetComponent<Boss_Clea_StatusManager>()
                 .Boss_Clea_Doll_Grogy_HP -= collision.gameObject.GetComponent<BulletDamage>().damage;
-            Debug.Log(GameObject.Find("Boss_Clea_StatusManager").GetComponent<Boss_Clea_StatusManager>()
-                .Boss_Clea_Doll_Grogy_HP);
         }
     }
 

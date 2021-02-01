@@ -17,12 +17,11 @@ public class Boss_Clea_GrogyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Boss_Clea_Doll_Grogy_HP = Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_Grogy_HP;
+
+        Boss_Clea_Doll_Grogy_HP = GameObject.Find("Boss_Clea_StatusManager").GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_Grogy_HP;
         isGrogy();
     }
 
-
-    [SerializeField]
     public GameObject Boss_Clea_Doll;
     [SerializeField]
     public GameObject Boss_Clea_StatusManager;
@@ -41,23 +40,43 @@ public class Boss_Clea_GrogyManager : MonoBehaviour
 
     void isGrogy()
     {
-        if(Boss_Clea_Doll_Grogy_HP < 0)
+        if (Boss_Clea_Doll != null)
         {
-            //Debug.Log("그로기");
-            isBossGrogy = true;
-            if (Boss_Clea_Doll != null)
+            if (!isBossGrogy && Boss_Clea_Doll_Grogy_HP < 0)
             {
+                isBossGrogy = true;
+                Debug.Log("그로기");
                 Boss_Clea_Grogy.SetActive(true);
-                Boss_Clea_Grogy.transform.position = Boss_Clea_Doll.transform.position;
+                if (GameObject.Find("Boss_Clea_Doll") != null)
+                {
+                    Boss_Clea_Grogy.transform.position = GameObject.Find("Boss_Clea_Doll").transform.position;
+                }
+
+                else if (GameObject.Find("Boss_Clea_Doll(Clone)") != null)
+                {
+                    Boss_Clea_Grogy.transform.position = GameObject.Find("Boss_Clea_Doll(Clone)").transform.position;
+                }
+
                 Boss_Clea_Crying.SetActive(true);
+                Invoke("DestroyDoll", 0.5f);
+               // Boss_Clea_Doll_Grogy_HP = GameObject.Find("Boss_Clea_StatusManager").GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_Grogy_MaxHP;
             }
-            Invoke("DestroyDoll", 0.5f);
         }
     }
 
     void DestroyDoll()
     {
-        Destroy(Boss_Clea_Doll);
+        if (GameObject.Find("Boss_Clea_Doll") != null)
+        {
+            Destroy(GameObject.Find("Boss_Clea_Doll"));
+        }
+
+        else if (GameObject.Find("Boss_Clea_Doll(Clone)") != null)
+        {
+            Destroy(GameObject.Find("Boss_Clea_Doll(Clone)"));
+        }
+
+        Debug.Log("인형파괴");
     }
 
 

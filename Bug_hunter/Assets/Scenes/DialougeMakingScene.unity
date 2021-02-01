@@ -3112,12 +3112,12 @@ PrefabInstance:
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: "<C>\n\"\uC544\uC800\uC528~\""
+      value: "<C>\n\u2605\"\uC544\uC800\uC528~\"\u2606"
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: "<C>\n\"\uC5EC\uAE30 \uB3D9\uD654\uCC45 \uC18D \uACF5\uC8FC\uB2D8 \uC655\uC790\uB2D8\uB4E4\uC740
+      value: "<C>\n\"\uC5EC\uAE30 \uB3D9\uD654\uCC45 \uC18D \uACF5\uC8FC\uB2D8 \u2605\uC655\uC790\uB2D8\u2606\uB4E4\uC740
         \uB2E4 \uC774\uB984\uC774 \uC788\uB294\uB370..\""
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
@@ -3713,6 +3713,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI_Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866930776738216673, guid: 8f8ee1ee9e639f546970e73c1e0ba688,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7866930776738216674, guid: 8f8ee1ee9e639f546970e73c1e0ba688,
         type: 3}

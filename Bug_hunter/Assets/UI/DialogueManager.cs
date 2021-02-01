@@ -137,9 +137,26 @@ public class DialogueManager : MonoBehaviour
             rendererSprite.GetComponent<SpriteRenderer>().sprite = listSprites[count];
         }
         keyActivated = true;
+
+        bool t_white = false; bool t_yellow = false; bool t_ignore = false;
+
         for (int i = 0; i < listSentences[count].Length; i++)
         {
-            text.text += listSentences[count][i]; // 1글자씩 출력.
+            switch (listSentences[count][i])
+            {
+                case '☆': t_white = true; t_yellow = false;t_ignore = true;break;//노란색 끝
+                case '★': t_white = false; t_yellow = true; t_ignore = true; break;//노란색시작
+            }
+            //Debug.Log(listSentences[count][i]);
+            string t_letter = listSentences[count][i].ToString();
+            if (!t_ignore)
+            {
+                if (t_white) { t_letter = "<color=#ffffff>" + t_letter + "</color>"; }
+                else if (t_yellow) { t_letter = "<color=#FFFF00>" + t_letter + "</color>"; }
+                text.text += t_letter; // 1글자씩 출력.
+            }
+            t_ignore = false;
+
             if (i % 7 == 1)
             {
                 theAudio.Play(typeSound);
