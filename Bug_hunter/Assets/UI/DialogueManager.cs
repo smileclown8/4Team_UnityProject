@@ -42,6 +42,7 @@ public class DialogueManager : MonoBehaviour
     public string enterSound;
     public string dog_bark;
     public string Bomb;
+    public string C_laugh;
 
     private AudioManager theAudio;
 
@@ -96,6 +97,10 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorBomb = false;
         }
+        if (GameObject.Find("Portal_02") != null)
+        {
+            GameObject.Find("Portal_02").GetComponent<TestDialogue>().isC_laugh = false;
+        }
         talking = false;
     }
 
@@ -137,9 +142,31 @@ public class DialogueManager : MonoBehaviour
             rendererSprite.GetComponent<SpriteRenderer>().sprite = listSprites[count];
         }
         keyActivated = true;
+
+        bool t_white = false; bool t_yellow = false; bool t_ignore = false;
+        bool t_teal = false;
+
         for (int i = 0; i < listSentences[count].Length; i++)
         {
-            text.text += listSentences[count][i]; // 1글자씩 출력.
+            switch (listSentences[count][i])
+            {
+                case '☆': t_white = true; t_yellow = false; t_ignore = true; break;//노란색 끝
+                case '★': t_white = false; t_yellow = true; t_ignore = true; break;//노란색시작
+                case '♡': t_white = true; t_teal = false; t_ignore = true; break;//청록색시작
+                case '♥': t_white = false; t_teal = true; t_ignore = true; break;//청록색시작
+            }
+            //Debug.Log(listSentences[count][i]);
+            string t_letter = listSentences[count][i].ToString();
+            if (!t_ignore)
+            {
+                if (t_white) { t_letter = "<color=#ffffff>" + t_letter + "</color>"; }
+                else if (t_yellow) { t_letter = "<color=#FFFF00>" + t_letter + "</color>"; }
+                if (t_white) { t_letter = "<color=#ffffff>" + t_letter + "</color>"; }
+                else if (t_teal) { t_letter = "<color=#00ffffff>" + t_letter + "</color>"; }
+                text.text += t_letter; // 1글자씩 출력.
+            }
+            t_ignore = false;
+
             if (i % 7 == 1)
             {
                 theAudio.Play(typeSound);
@@ -183,6 +210,16 @@ public class DialogueManager : MonoBehaviour
                     && GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
                         theAudio.Play(dog_bark);
+                    }
+                }
+
+                if (GameObject.Find("Portal_02") != null) // 매 오브젝트마다 걸어주기
+                {
+                    if (GameObject.Find("Portal_02").GetComponent<TestDialogue>().isC_laugh == true
+                    && count == 8
+                    && GameObject.Find("Portal_02").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                    {
+                        theAudio.Play(C_laugh);
                     }
                 }
 

@@ -25,6 +25,7 @@ public class TestDialogue : MonoBehaviour
     public bool isTalkWithBook = false;
     public bool isBobgurut2 = false;
     public bool isSavorBomb = false;
+    public bool isC_laugh = false;
 
     private void Update()
     {
@@ -138,6 +139,7 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Portal_02")
                 { 
                     theDM.ShowDialogue(this.dialogue);
+                    isC_laugh = true;
                 }
                 if (this.gameObject.name == "Fairy_tale_06")
                 {
@@ -151,6 +153,7 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
+               
 
 
 
