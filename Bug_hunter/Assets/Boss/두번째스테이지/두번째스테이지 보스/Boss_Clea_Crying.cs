@@ -34,7 +34,7 @@ public class Boss_Clea_Crying : MonoBehaviour
 
 
     [SerializeField]
-    public GameObject Boss_Clea_Doll;
+    public GameObject Boss_Clea_StatusManager;
     public float Boss_Clea_Doll_HP;
 
 
@@ -77,31 +77,25 @@ public class Boss_Clea_Crying : MonoBehaviour
                     Invoke("SetActiveScreen", 1f);
 
 
-                    Boss_Clea_Doll.GetComponent<Boss_Clea_Doll>().Boss_Clea_Doll_HP -= 25f;
-                    isGrogyRecover();
+                    Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     break;
                 case 2:
       
                     Debug.Log("두번째 만남");
 
-                    Boss_Clea_Doll.GetComponent<Boss_Clea_Doll>().Boss_Clea_Doll_HP -= 25f;
-
-                    isGrogyRecover();
+                    Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     break;
                 case 3:
           
                     Debug.Log("세번째 만남");
 
-                    Boss_Clea_Doll.GetComponent<Boss_Clea_Doll>().Boss_Clea_Doll_HP -= 25f;
-                    isGrogyRecover();
+                    Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     break;
                 case 4:
                
                     Debug.Log("네번째 만남");
 
-                    Boss_Clea_Doll.GetComponent<Boss_Clea_Doll>().Boss_Clea_Doll_HP -= 25f;
-                    isGrogyRecover();
-
+                    Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     Debug.Log("Clear!");
                     break;
             }
@@ -111,14 +105,22 @@ public class Boss_Clea_Crying : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    public GameObject Boss_Clea_Doll;
+
+    public GameObject Boss_GrogyRecoverPos;
+
     void isGrogyRecover()
     {
 
-        Boss_Clea_Doll.GetComponent<Boss_Clea_Doll>().Boss_Clea_Doll_Grogy_HP
-            = Boss_Clea_Doll.GetComponent<Boss_Clea_Doll>().Boss_Clea_Doll_Grogy_MaxHP;
-        Boss_Clea_Doll.SetActive(true);
+        Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_Grogy_HP
+            = Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_Grogy_MaxHP;
+
+        // Boss_Clea_Doll.SetActive(true); Instatiate로 바꾸기
         Boss_Clea_Grogy.SetActive(false);
         limit_Time = limit_Time_Init;
+        Instantiate(Boss_Clea_Doll, Boss_GrogyRecoverPos.transform.position,
+            Boss_GrogyRecoverPos.transform.rotation);
         this.gameObject.SetActive(false);    
     }
 
@@ -140,7 +142,10 @@ public class Boss_Clea_Crying : MonoBehaviour
     {
         Movie1.SetActive(false);
         Screen.SetActive(false);
+        GameObject.Find("Boss_Clea_GrogyManager").GetComponent<Boss_Clea_GrogyManager>().isBossGrogy
+            = true;
         Player.transform.position = ToBossPos.position;
+        isGrogyRecover();
     }
 
     void SetActiveScreen()
