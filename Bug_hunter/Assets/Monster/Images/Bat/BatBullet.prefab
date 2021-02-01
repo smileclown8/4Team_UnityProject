@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4334448945367706138}
   - component: {fileID: 4449386336423858118}
   m_Layer: 0
-  m_Name: GhostBullet
+  m_Name: BatBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: -3
   m_Sprite: {fileID: -1749980809984747440, guid: c0e0421621e9e02418d5cc4feeb1a654,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
