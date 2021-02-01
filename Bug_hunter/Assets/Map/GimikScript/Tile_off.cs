@@ -6,14 +6,21 @@ public class Tile_off : MonoBehaviour
 {
     GameObject tilemap2_0_1;
     Renderer tileColor2_0_1;
+    GameObject tilemap2_1_1;
+    Renderer tileColor2_1_1;
 
     // Start is called before the first frame update
     void Start()
     {
         tilemap2_0_1 = GameObject.Find("Tilemap2_0_1");
+        tilemap2_1_1 = GameObject.Find("Tilemap2_1_1");
         if (tilemap2_0_1 != null)
         {
             tileColor2_0_1 = tilemap2_0_1.GetComponent<Renderer>();
+        }
+        if (tilemap2_1_1 != null)
+        {
+            tileColor2_1_1 = tilemap2_1_1.GetComponent<Renderer>();
         }
     }
 
@@ -30,6 +37,7 @@ public class Tile_off : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             tileColor2_0_1.material.color = new Color(1f, 1f, 1f, 0.2f);
+            tileColor2_1_1.material.color = new Color(1f, 1f, 1f, 0.2f);
         }
     }
 }
