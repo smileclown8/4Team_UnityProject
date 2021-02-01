@@ -183,6 +183,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8271787135467077809, guid: 6b2c6c60e44af744e97a2fdef6221241,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271787135467077809, guid: 6b2c6c60e44af744e97a2fdef6221241,
+        type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271787135467077809, guid: 6b2c6c60e44af744e97a2fdef6221241,
+        type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271787135467077809, guid: 6b2c6c60e44af744e97a2fdef6221241,
+        type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 287e64a7291805d469aa542a549487fc, type: 3}
+    - target: {fileID: 8271787135467077809, guid: 6b2c6c60e44af744e97a2fdef6221241,
+        type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: C_laugh
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271787135467077809, guid: 6b2c6c60e44af744e97a2fdef6221241,
+        type: 3}
+      propertyPath: sounds.Array.data[2].Volumn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271787135467077809, guid: 6b2c6c60e44af744e97a2fdef6221241,
+        type: 3}
+      propertyPath: sounds.Array.data[3].Volumn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8271787135467077822, guid: 6b2c6c60e44af744e97a2fdef6221241,
         type: 3}
       propertyPath: m_Name
@@ -506,6 +541,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4542233381306896799, guid: 863afd998bb739e45a1a2c07f28ff84f,
+        type: 3}
+      propertyPath: clips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542233381306896799, guid: 863afd998bb739e45a1a2c07f28ff84f,
+        type: 3}
+      propertyPath: clips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 71b09e8381d5dd247b82992c69a96c29, type: 3}
+    - target: {fileID: 4542233381306896799, guid: 863afd998bb739e45a1a2c07f28ff84f,
+        type: 3}
+      propertyPath: clips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4fd77f6b8ecaf3d4e8c9edc2cd0ac01a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 863afd998bb739e45a1a2c07f28ff84f, type: 3}
 --- !u!1001 &417589175
@@ -3008,6 +3058,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
+      propertyPath: isC_laugh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
       propertyPath: dialogue.sprites.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -3043,20 +3098,17 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.sprites.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: 4b1188c88d004b241917dc432865c124,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sprites.Array.data[4]
       value: 
-      objectReference: {fileID: 21300000, guid: 4b1188c88d004b241917dc432865c124,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sprites.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: 4b1188c88d004b241917dc432865c124,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sprites.Array.data[6]
@@ -3067,8 +3119,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.sprites.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: 4b1188c88d004b241917dc432865c124,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sprites.Array.data[8]
@@ -3112,59 +3163,68 @@ PrefabInstance:
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
+<<<<<<< HEAD
       value: "<C>\n\u2605\"\uC544\uC800\uC528~\"\u2606"
+=======
+      value: " \u2605C\u2606\n\"\uC544\uC800\uC528~\""
+>>>>>>> aed1c2898a905a9f0aa9cb83b22c10691af99c3e
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
+<<<<<<< HEAD
       value: "<C>\n\"\uC5EC\uAE30 \uB3D9\uD654\uCC45 \uC18D \uACF5\uC8FC\uB2D8 \u2605\uC655\uC790\uB2D8\u2606\uB4E4\uC740
         \uB2E4 \uC774\uB984\uC774 \uC788\uB294\uB370..\""
+=======
+      value: " \u2605C\u2606\n\"\uC5EC\uAE30 \uB3D9\uD654\uCC45 \uC18D \uACF5\uC8FC\uB2D8
+        \uC655\uC790\uB2D8\uB4E4\uC740 \uB2E4 \uC774\uB984\uC774 \uC788\uB294\uB370..\""
+>>>>>>> aed1c2898a905a9f0aa9cb83b22c10691af99c3e
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: "<C>\n\"\uB098\uB294 \uC65C \uC774\uB984\uC774 \uC5C6\uC5B4\uC694?\""
+      value: " \u2605C\u2606\n\"\uB098\uB294 \uC65C \uC774\uB984\uC774 \uC5C6\uC5B4\uC694?\""
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: "<???>\n\"\uC790, \uC5EC\uAE30\uB97C \uBCF4\uB834.\""
+      value: " \u2605???\u2606\n\"\uC790, \uC5EC\uAE30\uB97C \uBCF4\uB834.\""
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
-      value: "<???>\n\"\uC774 \uB3D9\uD654\uCC45 \uC18D \uACF5\uC8FC\uB2D8\uACFC
+      value: " \u2605???\u2606\n\"\uC774 \uB3D9\uD654\uCC45 \uC18D \uACF5\uC8FC\uB2D8\uACFC
         \uB611 \uB2EE\uC558\uB124!\""
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[5]
-      value: "\"\uC774 \uACF5\uC8FC\uB2D8\uC758 \uC774\uB984\uC744 \uB530\uC11C,\n\uD074\uB808\uC544(Clea)\uB77C\uB294
+      value: "\"\uC774 \uACF5\uC8FC\uB2D8\uC758 \uC774\uB984\uC744 \uB530\uC11C,\n\u2665\uD074\uB808\uC544(Clea)\u2661\uB77C\uB294
         \uC774\uB984\uC744 \uC9C0\uC5B4\uC904\uAC8C.\""
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[6]
-      value: "<C>\n\"\uADF8\uB7FC..\uB0B4 \uC774\uB984\uC740 \uC774\uC81C\uBD80\uD130
+      value: " \u2605???\u2606\n\"\uADF8\uB7FC..\uB0B4 \uC774\uB984\uC740 \uC774\uC81C\uBD80\uD130
         \uD074\uB808\uC544 \uC778\uAC70\uC5D0\uC694?\""
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[7]
-      value: "<???>\n\"\uADF8\uB798, C. \uC55E\uC73C\uB85C \uB124 \uC774\uB984\uC740
+      value: " \u2605???\u2606\n\"\uADF8\uB798, \uC55E\uC73C\uB85C \uB124 \uC774\uB984\uC740
         \uD074\uB808\uC544\uB780\uB2E4.\""
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[8]
-      value: "<\uD074\uB808\uC544>\n\"\uB108\uBB34 \uC88B\uC544! \uC55E\uC73C\uB85C\uB294
+      value: " \u2605\uD074\uB808\uC544\u2606\n\"\uB108\uBB34 \uC88B\uC544! \uC55E\uC73C\uB85C\uB294
         \uB9E4\uC77C \uD074\uB808\uC544 \uB77C\uACE0 \uBD88\uB7EC\uC8FC\uC154\uC57C\uD574\uC694!\""
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[9]
-      value: "\uC18C\uB140\uC758 \uC774\uB984\uC740 \uD074\uB808\uC544 \uC600\uB358
-        \uAC83 \uAC19\uB2E4."
+      value: "\u2665\uC18C\uB140\uC758 \uC774\uB984\uC740 \uD074\uB808\uC544 \uC600\uB358
+        \uAC83 \uAC19\uB2E4.\u2661"
       objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
@@ -3261,7 +3321,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.dialogueWindows.Array.data[9]
       value: 
-      objectReference: {fileID: 21300000, guid: f26d2f036162dda408568c9b02ab4a4e,
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
         type: 3}
     - target: {fileID: 7280187156584932737, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
@@ -3297,6 +3357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Portal_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187157763531458, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: playMusicTrack
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91fd0c2f258da314fb902043ea56e8c0, type: 3}
@@ -3669,6 +3734,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
         type: 3}
+    - target: {fileID: 7280187156584932738, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 23.529411
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280187156584932738, guid: 91fd0c2f258da314fb902043ea56e8c0,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 23.529411
+      objectReference: {fileID: 0}
     - target: {fileID: 7280187156584932739, guid: 91fd0c2f258da314fb902043ea56e8c0,
         type: 3}
       propertyPath: m_Sprite
@@ -3732,6 +3807,16 @@ PrefabInstance:
     - target: {fileID: 7866930776738216674, guid: 8f8ee1ee9e639f546970e73c1e0ba688,
         type: 3}
       propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866930776738216676, guid: 8f8ee1ee9e639f546970e73c1e0ba688,
+        type: 3}
+      propertyPath: C_laugh
+      value: C_laugh
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866930776738216676, guid: 8f8ee1ee9e639f546970e73c1e0ba688,
+        type: 3}
+      propertyPath: talking
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7866930776738216677, guid: 8f8ee1ee9e639f546970e73c1e0ba688,
