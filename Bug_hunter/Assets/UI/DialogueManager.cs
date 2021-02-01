@@ -144,24 +144,16 @@ public class DialogueManager : MonoBehaviour
         keyActivated = true;
 
         bool t_white = false; bool t_yellow = false; bool t_ignore = false;
-<<<<<<< HEAD
-=======
         bool t_teal = false;
->>>>>>> aed1c2898a905a9f0aa9cb83b22c10691af99c3e
 
         for (int i = 0; i < listSentences[count].Length; i++)
         {
             switch (listSentences[count][i])
             {
-<<<<<<< HEAD
-                case '☆': t_white = true; t_yellow = false;t_ignore = true;break;//노란색 끝
-                case '★': t_white = false; t_yellow = true; t_ignore = true; break;//노란색시작
-=======
                 case '☆': t_white = true; t_yellow = false; t_ignore = true; break;//노란색 끝
                 case '★': t_white = false; t_yellow = true; t_ignore = true; break;//노란색시작
                 case '♡': t_white = true; t_teal = false; t_ignore = true; break;//청록색시작
                 case '♥': t_white = false; t_teal = true; t_ignore = true; break;//청록색시작
->>>>>>> aed1c2898a905a9f0aa9cb83b22c10691af99c3e
             }
             //Debug.Log(listSentences[count][i]);
             string t_letter = listSentences[count][i].ToString();
@@ -169,11 +161,8 @@ public class DialogueManager : MonoBehaviour
             {
                 if (t_white) { t_letter = "<color=#ffffff>" + t_letter + "</color>"; }
                 else if (t_yellow) { t_letter = "<color=#FFFF00>" + t_letter + "</color>"; }
-<<<<<<< HEAD
-=======
                 if (t_white) { t_letter = "<color=#ffffff>" + t_letter + "</color>"; }
                 else if (t_teal) { t_letter = "<color=#00ffffff>" + t_letter + "</color>"; }
->>>>>>> aed1c2898a905a9f0aa9cb83b22c10691af99c3e
                 text.text += t_letter; // 1글자씩 출력.
             }
             t_ignore = false;
