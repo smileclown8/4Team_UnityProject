@@ -17,7 +17,7 @@ public class SlimeManager : MonoBehaviour
     int hp = 10;
     int attack = 5;
 
-    public float movePower = 1f;
+    public float speed = 1f;
 
     // 이동 및 추격용
     Vector3 movement;
@@ -96,7 +96,7 @@ public class SlimeManager : MonoBehaviour
             moveVelocity = Vector3.right;
             transform.localScale = new Vector3(-1, 1, 1);
         }
-        transform.position += moveVelocity * movePower * Time.deltaTime;
+        transform.position += moveVelocity * speed * Time.deltaTime;
     }
 
 

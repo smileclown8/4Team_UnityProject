@@ -117,8 +117,8 @@ GameObject:
   - component: {fileID: 7003262992918065925}
   - component: {fileID: 7003262992918065922}
   - component: {fileID: 7003262992918065926}
-  - component: {fileID: 7003262992918065927}
   - component: {fileID: -1487883713572053842}
+  - component: {fileID: 7003262992918065927}
   m_Layer: 11
   m_Name: Fairy
   m_TagString: Enemy
@@ -226,19 +226,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.23}
   serializedVersion: 2
   m_Radius: 1.25
---- !u!114 &7003262992918065927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7003262992918065923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2431de83fff606140badc1b35f244de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 25
 --- !u!50 &-1487883713572053842
 Rigidbody2D:
   serializedVersion: 4
@@ -260,3 +247,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7003262992918065927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7003262992918065923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2431de83fff606140badc1b35f244de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 25

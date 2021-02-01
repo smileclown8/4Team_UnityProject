@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1024025112}
-  - component: {fileID: 1024025113}
   - component: {fileID: 1024025115}
+  - component: {fileID: 1024025113}
   m_Layer: 11
   m_Name: AttackRange
   m_TagString: Untagged
@@ -32,22 +32,6 @@ Transform:
   m_Father: {fileID: 149886909127615059}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1024025113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024025111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75760653902ae6e4393721362054b274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPos: {fileID: 0}
-  myPos: {fileID: 0}
-  rigid: {fileID: 0}
-  mass: 0
 --- !u!58 &1024025115
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -64,6 +48,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -1.1}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &1024025113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024025111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75760653902ae6e4393721362054b274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPos: {fileID: 0}
+  myPos: {fileID: 0}
+  rigid: {fileID: 0}
+  mass: 0
+  jumpHeight: 35
+  backHeightX: 30
+  backHeightY: 40
 --- !u!1 &149886909127615060
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +87,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &149886909127615059
 Transform:
   m_ObjectHideFlags: 0
@@ -185,7 +188,7 @@ Rigidbody2D:
   m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 10
+  m_GravityScale: 13
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -229,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288207d66f483eb4bb41bcde626501b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movePower: 1
+  speed: 1
   target: {fileID: 0}
   rigid: {fileID: 0}
 --- !u!1 &149886910272661519
