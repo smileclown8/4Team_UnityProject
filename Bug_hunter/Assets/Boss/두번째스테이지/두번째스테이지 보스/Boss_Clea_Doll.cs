@@ -22,6 +22,7 @@ public class Boss_Clea_Doll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Pattern1BossMove();
         Pattern2BossMove();
     }
 
@@ -53,15 +54,20 @@ public class Boss_Clea_Doll : MonoBehaviour
     // =======================================================================
     // 보스 패턴 결정 부분
 
-    public bool isPattern = false;
     public int nowPattern;
 
     [SerializeField]
     public GameObject TypingEffectManager;
 
-   // public GameObject Pattern_Hamster;
-   // public GameObject Pattern_StartPos;
+    // public GameObject Pattern_Hamster;
+    // public GameObject Pattern_StartPos;
 
+
+
+    public GameObject Pattern1_BossPos;
+    public GameObject Pattern1_CircleBullet;
+    public GameObject Pattern1_BulletStartPos;
+    public bool Pattern1BulletCanMove;
 
     public GameObject Pattern2_TrackingBullet;
     public GameObject Pattern2_StartPos;
@@ -71,7 +77,8 @@ public class Boss_Clea_Doll : MonoBehaviour
     public int postPattern = 0;
     public int patternRandomRate = 0;
 
-
+    private bool pattern1Activate = false;
+    public bool pattern1RotateStart = false;
     private bool pattern2Activate = false;
 
     IEnumerator PatternDecide()
@@ -81,7 +88,6 @@ public class Boss_Clea_Doll : MonoBehaviour
 
         while (true)
         {
-            isPattern = false;
 
             DecidePattern();
 
@@ -98,7 +104,7 @@ public class Boss_Clea_Doll : MonoBehaviour
 
             Debug.Log(nowPattern);
 
-            nowPattern = 2;
+            nowPattern = 1;
 
             switch (nowPattern)
             {
@@ -107,11 +113,38 @@ public class Boss_Clea_Doll : MonoBehaviour
 
                  //   Instantiate(TypingEffectManager, this.transform.position,
                 //        this.transform.rotation);
+                    
+                    
+                    
+                    yield return new WaitForSeconds(1.0f);
+
+                    Debug.Log("패턴1");
+                    pattern1Activate = true;
                     yield return new WaitForSeconds(3.0f);
 
-              //      Instantiate(FirstPattern_Hamster, FirsPattern_StartPos.transform.position, FirsPattern_StartPos.transform.rotation);
-                    Debug.Log("패턴1");
-                    yield return new WaitForSeconds(13.0f); // 1번 패턴이 끝날때까지 걸리는 시간
+                    pattern1RotateStart = true;
+                    for (int i = 0; i < 14; i++)
+                    {
+                        Instantiate(Pattern1_CircleBullet, Pattern1_BulletStartPos.transform.position,
+                            Pattern1_BulletStartPos.transform.rotation);
+                        yield return new WaitForSeconds(0.07f);
+
+                    }
+                    pattern1RotateStart = false;
+
+                    yield return new WaitForSeconds(1.0f);
+                    Pattern1BulletCanMove = true;
+                    yield return new WaitForSeconds(1.0f);
+                    for (int i = 0; i < 5; i++)
+                    {
+                        Pattern1BulletCanMove = false;
+                        yield return new WaitForSeconds(1.0f);
+                        Pattern1BulletCanMove = true;
+                        yield return new WaitForSeconds(1.0f);
+
+                    }
+                    pattern1Activate = false;
+                    yield return new WaitForSeconds(10.0f); // 1번 패턴이 끝날때까지 걸리는 시간
                     break;
                 case 2:
                     {
@@ -128,43 +161,17 @@ public class Boss_Clea_Doll : MonoBehaviour
 
                         int InstantiateNum = 0;
                      
+       
                         Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
                         yield return new WaitForSeconds(Pattern2InstiateTimeTerm); 
 
-                        Pattern2BulletTerm();
-                        Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
-                        InstantiateNum++;
-                        yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
-
-                        Pattern2BulletTerm();
-                        Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
-                        InstantiateNum++;
-                        yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
-
-                        Pattern2BulletTerm();
-                        Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
-                        InstantiateNum++;
-                        yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
-
-                        Pattern2BulletTerm();
-                        Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
-                        InstantiateNum++;
-                        yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
-
-                        Pattern2BulletTerm();
-                        Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
-                        InstantiateNum++;
-                        yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
-
-                        Pattern2BulletTerm();
-                        Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
-                        InstantiateNum++;
-                        yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
-
-                        Pattern2BulletTerm();
-                        Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
-                        InstantiateNum++;
-                        yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
+                        for(int i = 0; i < 7; i ++)
+                        {
+                            Pattern2BulletTerm();
+                            Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
+                            InstantiateNum++;
+                            yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
+                        }
 
                         Pattern2_StartPos.transform.position = new Vector2(Pattern2_StartPos.transform.position.x - 8 * InstantiateNum
                             , Pattern2_StartPos.transform.position.y);
@@ -236,13 +243,24 @@ public class Boss_Clea_Doll : MonoBehaviour
     private bool isArriveMidPos = false;
     private bool isArriveEndPos = false;
 
+
+    void Pattern1BossMove()
+    {
+        if (pattern1Activate)
+        {
+            transform.position = Vector2.MoveTowards(transform.position,
+                Pattern1_BossPos.transform.position, Time.deltaTime * 50f);
+        }
+    }
+
+
     void Pattern2BossMove()
     {
         if(pattern2Activate == true)
         {
             if (!isArriveStartPos)
             {
-                transform.position = Vector2.MoveTowards(transform.position, Pattern2Pos_BossStart.transform.position, Time.deltaTime * 60);
+                transform.position = Vector2.MoveTowards(transform.position, Pattern2Pos_BossStart.transform.position, Time.deltaTime * 80);
                 if (transform.position == Pattern2Pos_BossStart.transform.position)
                     isArriveStartPos = true;
             }

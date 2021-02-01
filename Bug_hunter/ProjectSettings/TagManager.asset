@@ -16,6 +16,7 @@ TagManager:
   - RotateSpike
   - Gimik
   - EnemyAttack
+  - Staff
   layers:
   - Default
   - TransparentFX
@@ -35,7 +36,7 @@ TagManager:
   - BossPattern_NoDamage
   - BossPattern_YesDamage
   - BossPattern_Tears
-  - 
+  - Boss_Clea_Doll
   - 
   - 
   - 
