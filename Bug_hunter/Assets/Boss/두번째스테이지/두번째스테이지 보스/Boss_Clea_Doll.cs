@@ -11,9 +11,9 @@ public class Boss_Clea_Doll : MonoBehaviour
         //플레이어 찾기
         Player = GameObject.Find("player");
         PlayerStatusManager = GameObject.Find("PlayerStatusManager");
+        
 
-
-
+   
         //=======================================
         //패턴생성 코루틴 시작
         StartCoroutine(PatternDecide());
@@ -22,7 +22,7 @@ public class Boss_Clea_Doll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Pattern2BossMove();
     }
 
     // =======================================================================
@@ -70,10 +70,13 @@ public class Boss_Clea_Doll : MonoBehaviour
 
     public int postPattern = 0;
     public int patternRandomRate = 0;
-    
+
+
+    private bool pattern2Activate = false;
+
     IEnumerator PatternDecide()
     {
-        yield return new WaitForSeconds(5.0f); //보스 패턴 시작하기전까지 시간
+        yield return new WaitForSeconds(1.0f); //보스 패턴 시작하기전까지 시간
 
 
         while (true)
@@ -95,7 +98,7 @@ public class Boss_Clea_Doll : MonoBehaviour
 
             Debug.Log(nowPattern);
 
-            nowPattern = 1;
+            nowPattern = 2;
 
             switch (nowPattern)
             {
@@ -116,13 +119,12 @@ public class Boss_Clea_Doll : MonoBehaviour
                         //          Instantiate(TypingEffectManager, this.transform.position,
                         //             this.transform.rotation);
 
-                        yield return new WaitForSeconds(4.0f);
+                        yield return new WaitForSeconds(2.0f);
 
 
                         Debug.Log("패턴2");
-
-                        Transform TempPattern2_StartPos = Pattern2_StartPos.transform;
-
+                        pattern2Activate = true;
+                        yield return new WaitForSeconds(1.5f);
 
                         int InstantiateNum = 0;
                      
@@ -164,14 +166,15 @@ public class Boss_Clea_Doll : MonoBehaviour
                         InstantiateNum++;
                         yield return new WaitForSeconds(Pattern2InstiateTimeTerm);
 
-                        Pattern2BulletTerm();
-                        Instantiate(Pattern2_TrackingBullet, Pattern2_StartPos.transform.position, Pattern2_StartPos.transform.rotation);
-                        InstantiateNum++;
-
                         Pattern2_StartPos.transform.position = new Vector2(Pattern2_StartPos.transform.position.x - 8 * InstantiateNum
                             , Pattern2_StartPos.transform.position.y);
 
                         yield return new WaitForSeconds(5.0f); // 2번 패턴이 끝날때까지 걸리는 시간
+
+                        pattern2Activate = false;
+                        isArriveStartPos = false;
+                       isArriveMidPos = false;
+                        isArriveEndPos = false;
                     }             
                     break;
                 case 3:
@@ -222,6 +225,41 @@ public class Boss_Clea_Doll : MonoBehaviour
     void Pattern2BulletTerm()
     {
         Pattern2_StartPos.transform.position = new Vector2(Pattern2_StartPos.transform.position.x + 8, Pattern2_StartPos.transform.position.y);
+    }
+
+
+
+    public GameObject Pattern2Pos_BossStart;
+    public GameObject Pattern2Pos_BossMid;
+    public GameObject Pattern2Pos_BossEnd;
+    private bool isArriveStartPos = false;
+    private bool isArriveMidPos = false;
+    private bool isArriveEndPos = false;
+
+    void Pattern2BossMove()
+    {
+        if(pattern2Activate == true)
+        {
+            if (!isArriveStartPos)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, Pattern2Pos_BossStart.transform.position, Time.deltaTime * 60);
+                if (transform.position == Pattern2Pos_BossStart.transform.position)
+                    isArriveStartPos = true;
+            }
+            else if (isArriveStartPos && !isArriveMidPos)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, Pattern2Pos_BossMid.transform.position, Time.deltaTime * 9.2f);
+                if (transform.position == Pattern2Pos_BossMid.transform.position)
+                    isArriveMidPos = true;
+            }
+
+            else if (isArriveStartPos && isArriveMidPos && !isArriveEndPos)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, Pattern2Pos_BossEnd.transform.position, Time.deltaTime * 10);
+                if (transform.position == Pattern2Pos_BossEnd.transform.position)
+                    isArriveEndPos = false;
+            }
+        }
     }
 
 

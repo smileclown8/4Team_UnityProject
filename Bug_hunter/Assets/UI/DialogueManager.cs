@@ -84,8 +84,14 @@ public class DialogueManager : MonoBehaviour
         animSprite.SetBool("Appear", false);
         animDialogueWindow.SetBool("Appear", false);
 
-        GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook = false;
-        GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().isBobgurut2 = false;
+        if (GameObject.Find("Dialougue_03_message") != null)
+        {
+            GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook = false;
+        }
+        if (GameObject.Find("Bobgurut2") != null)
+        {
+            GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().isBobgurut2 = false;
+        }
         if (GameObject.Find("Savor2") != null)
         {
             GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorBomb = false;
@@ -158,18 +164,26 @@ public class DialogueManager : MonoBehaviour
                 // Dialougue_03_message 오브젝트와 대화할때
                 // (count+1)번째 문장이 나올 때
                 // 그리고, 처음대화할때만(howManyTailkingWithThisObject ==) 효과음(dog_bark)을 재생시켜줘라.
-                if (GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook == true
+
+
+                if (GameObject.Find("Dialougue_03_message") != null) // 없는데 찾으라고해서 오류 났으니까 걸어줘야 함
+                {
+                    if (GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().isTalkWithBook == true
                     && count == 1
                     && GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
-                {
-                    theAudio.Play(dog_bark);
+                    {
+                        theAudio.Play(dog_bark);
+                    }
                 }
 
-                if (GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().isBobgurut2 == true
+                if (GameObject.Find("Bobgurut2") != null) // 매 오브젝트마다 걸어주기
+                {
+                    if (GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().isBobgurut2 == true
                     && count == 1
                     && GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
-                {
-                    theAudio.Play(dog_bark);
+                    {
+                        theAudio.Play(dog_bark);
+                    }
                 }
 
 
