@@ -4,7 +4,7 @@ using UnityEngine;
 
 // 상하 이동 강좌 https://youtu.be/4R_AdDK25kQ
 
-public class BatMove : MonoBehaviour
+public class MoveReply : MonoBehaviour
 {
     public float speed = 2f;        // 이동속도
 

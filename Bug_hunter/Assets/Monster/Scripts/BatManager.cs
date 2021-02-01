@@ -50,17 +50,17 @@ public class BatManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            GameObject.Find("BatMoving").GetComponent<BatMove>().enabled = false;       // 움직임을 멈추고
-            Attack();                                                                   // 공격
+            GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = false;       // 움직임을 멈추고
+            Attack();                                                                     // 공격
 
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")                                           // 트리거 반경에서 벗어나면
+        if (other.gameObject.tag == "Player")                                             // 트리거 반경에서 벗어나면
         {
-            GameObject.Find("BatMoving").GetComponent<BatMove>().enabled = true;        // 다시 움직이기 시작
+            GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = true;        // 다시 움직이기 시작
         }
     }
 
@@ -69,9 +69,8 @@ public class BatManager : MonoBehaviour
     {
         if (Time.time > nextshoot)
         {
-            // 왜 두번까지만 되는지 모르겠지만 두 번까지만 발사되니까 두 번 발사였던 것처럼 하자
-            Invoke("GenerateBullet", 0.3f);
             GenerateBullet();
+            Invoke("GenerateBullet", 0.3f);     // 0.3초 간격을 두고 총알 두 번 발사
             nextshoot = Time.time + shoottime;
         }
     }

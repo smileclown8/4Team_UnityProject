@@ -78,11 +78,11 @@ GameObject:
   - component: {fileID: 3476545778858288135}
   m_Layer: 11
   m_Name: Snake
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3476545778858288184
 Transform:
   m_ObjectHideFlags: 0

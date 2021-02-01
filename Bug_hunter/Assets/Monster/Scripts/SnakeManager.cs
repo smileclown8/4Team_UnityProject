@@ -21,11 +21,21 @@ public class SnakeManager : MonoBehaviour
     float timer = 3f;
     bool isFast;
 
+    // 데미지 연결
+    float playerHP;
+
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        playerHP = GameObject.FindWithTag("Player").GetComponent<PlayerStatusManager>().player_HP;
+    }
+
+    void Start()
+    {
         Invoke("Think", 1);
+
     }
 
     void FixedUpdate()
@@ -126,7 +136,7 @@ public class SnakeManager : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             target = collision.gameObject;
-            //GameObject.FindWithTag("Player").playerHP -= snakeDamage;
+            playerHP -= attack;
             Debug.Log("콰삭!");
         }
 
@@ -137,7 +147,7 @@ public class SnakeManager : MonoBehaviour
         {
             if (Time.time > attacktime)
             {
-                //GameObject.FindWithTag("Player").playerHP -= snakeDamage;
+                playerHP -= attack;
                 Debug.Log("콰삭콰삭!");
 
                 attacktime = Time.time + delaytime;
