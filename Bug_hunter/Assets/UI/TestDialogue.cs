@@ -98,6 +98,63 @@ public class TestDialogue : MonoBehaviour
                 }
 
 
+                //2스테이지
+                if (this.gameObject.name == "Magazine02")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Portrait")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Stage_Start")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Fairy_tale_01")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if(this.gameObject.name == "Fairy_tale_02")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if(this.gameObject.name == "Fairy_tale_03")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Portal_01")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Fairy_tale_04")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Fairy_tale_05")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Portal_02")
+                { 
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Fairy_tale_06")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Fairy_tale_07")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Portal_03")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+
+
+
+
 
                 howManyTailkingWithThisObject++;
             }
