@@ -49,6 +49,13 @@ public class DialogueManager : MonoBehaviour
     public bool talking = false;
     private bool keyActivated = false;
 
+
+    // ============ For 중력장 =====
+    GameObject player;
+    Rigidbody2D rb;
+    //====================
+
+
     // Use this for initialization
     void Start()
     {
@@ -58,6 +65,11 @@ public class DialogueManager : MonoBehaviour
         listSprites = new List<Sprite>();
         listDialogueWindows = new List<Sprite>();
         theAudio = FindObjectOfType<AudioManager>();
+
+        // ============ For 중력장 =====
+        player = GameObject.Find("player");
+        rb = player.GetComponent<Rigidbody2D>();
+        //====================
     }
 
     public void ShowDialogue(Dialogue dialogue)
@@ -120,6 +132,22 @@ public class DialogueManager : MonoBehaviour
                 GameObject.Find("Portal_02").GetComponent<TestDialogue>().isPortal2 = false;
             }
         }
+
+        // 페어리북 6의 텍스트 출력이 끝나면,                    
+        // 이 이후에 바닥이 사라지고(false), 중력장이 사라지고(false), 이슬라프 중력 1로 변경
+        // (SetActive) 활용
+        if (GameObject.Find("Fairy_tale_06") != null)
+          // if(rb.gravityScale == -10)
+          // 이라는 식으로 스테이지 2_4에서만 활용하는 특정 중력값을 조건으로 걸어
+          // 다른 페어리 오브젝트에서는 작동하지 않게 만들어야 함
+        {
+            // 이슬라프의 중력값을 1(기본값)으로 변경
+            // rb.gravityScale = 1;
+
+            // 바닥 사라지기 추가 필요
+            // 중력장 사라지기 추가 필요
+        }
+        // ==============================================================================
         talking = false;
     }
 

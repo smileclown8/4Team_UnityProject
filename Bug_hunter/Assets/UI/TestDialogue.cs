@@ -14,7 +14,6 @@ public class TestDialogue : MonoBehaviour
     public GameObject targetObject;
 
 
-
     public bool isSavorTalkItemGet = false;
 
     void Start()
@@ -156,6 +155,9 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Fairy_tale_06")
                 {
                     theDM.ShowDialogue(this.dialogue);
+
+
+
                 }
                 if (this.gameObject.name == "Fairy_tale_07")
                 {
