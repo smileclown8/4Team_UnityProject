@@ -6,9 +6,9 @@ public class For_TestPlayer : MonoBehaviour
 {
 
     Rigidbody2D rigidBody;  // 강체를 참조하기 위한 변수
-    float jumpForce = 900.0f;     // 점프에 전달할 힘 값
-    float walkForce = 100.0f;      // 이동에 전달할 힘 값
-    float maxSpeed = 15.0f;        // 캐릭터 최대 이동속도
+    float jumpForce = 950.0f;     // 점프에 전달할 힘 값
+    float walkForce = 60.0f;      // 이동에 전달할 힘 값
+    float maxSpeed = 7.0f;        // 캐릭터 최대 이동속도
     float currentSpeed = 0.0f;    // 캐릭터의 속도 절대 값을 담을 변수
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class For_TestPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A) || Input.acceleration.x < -15f)
+        if (Input.GetKey(KeyCode.A) || Input.acceleration.x < -10f)
         {
             if (currentSpeed < maxSpeed)
             // 강체의 x 축 이동속도가 maxSpeed 보다 작을 때만 이동
@@ -31,7 +31,7 @@ public class For_TestPlayer : MonoBehaviour
             // 스케일 값을 -로 적용하면 이미지가 -값의 축방향으로 반전된다
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.acceleration.x > 15f)
+        if (Input.GetKey(KeyCode.D) || Input.acceleration.x > 10f)
         {
             if (currentSpeed < maxSpeed)
             // 강체의 x 축 이동속도가 maxSpeed 보다 작을 때만 이동
