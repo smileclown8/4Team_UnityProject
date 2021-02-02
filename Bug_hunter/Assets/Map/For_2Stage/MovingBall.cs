@@ -50,10 +50,12 @@ public class MovingBall : MonoBehaviour
                 if (desPos == endPos)
                 {
                     desPos = startPos;
+                    rotSpeed = -rotSpeed;
                 }
                 else
                 {
                     desPos = endPos;
+                    rotSpeed = -rotSpeed;
                 }
                 yield return new WaitForSeconds(0.1f);
             }

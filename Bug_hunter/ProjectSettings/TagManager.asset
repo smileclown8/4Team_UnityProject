@@ -17,6 +17,7 @@ TagManager:
   - Gimik
   - EnemyAttack
   - Staff
+  - MovingBall
   layers:
   - Default
   - TransparentFX
