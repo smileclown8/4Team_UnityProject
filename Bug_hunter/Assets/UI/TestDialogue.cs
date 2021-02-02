@@ -128,6 +128,9 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
+
+                else
+
                 if (this.gameObject.name == "Fairy_tale_04")
                 {
                     theDM.ShowDialogue(this.dialogue);
@@ -166,7 +169,7 @@ public class TestDialogue : MonoBehaviour
                     theDM.ShowDialogue(this.dialogue);
                 }
                 
-
+                
 
 
 
