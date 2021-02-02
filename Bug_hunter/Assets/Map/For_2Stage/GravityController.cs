@@ -7,7 +7,7 @@ public class GravityController : MonoBehaviour
     // Start is called before the first frame update
     GameObject player;
     Rigidbody2D rb;
-
+    public float gravity;
 
 
     void Start()
@@ -26,7 +26,7 @@ public class GravityController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            rb.gravityScale = -5;
+            rb.gravityScale = gravity;
         }
 
     }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GravityOn : MonoBehaviour
 {
-    public GameObject targetObject;
+    public GameObject gravity;
+    public GameObject button;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,14 @@ public class GravityOn : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            targetObject.SetActive(true);
+            gravity.SetActive(false);
+            button.SetActive(true);
+            this.gameObject.SetActive(false);
+
         }
 
 

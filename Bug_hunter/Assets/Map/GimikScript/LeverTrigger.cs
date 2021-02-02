@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class LeverTrigger : MonoBehaviour
 {
-    GameObject Lever_off;
-    public GameObject Lever_on;
-    GameObject Lock_off;
-    GameObject Door_close;
+    public GameObject Lever_off;
+    public GameObject Lock_off;
+    public GameObject Door_close;
     public GameObject Door_open;
+    public GameObject Lever_on;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Lever_off = GameObject.Find("Lever_off");
-        Lock_off = GameObject.Find("Lock");
-        Door_close = GameObject.Find("Door_close");
+
     }
 
     // Update is called once per frame
@@ -36,6 +34,8 @@ public class LeverTrigger : MonoBehaviour
             {
                 Lever_on.SetActive(true);
             }
+
+
             if (Lock_off)
             {
                 Lock_off.SetActive(false);
