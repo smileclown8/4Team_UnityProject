@@ -58,7 +58,7 @@ public class Boss_Clea_GrogyManager : MonoBehaviour
                 }
 
                 Boss_Clea_Crying.SetActive(true);
-                Invoke("DestroyDoll", 0.5f);
+                Invoke("DestroyDoll", 0.01f);
                // Boss_Clea_Doll_Grogy_HP = GameObject.Find("Boss_Clea_StatusManager").GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_Grogy_MaxHP;
             }
         }

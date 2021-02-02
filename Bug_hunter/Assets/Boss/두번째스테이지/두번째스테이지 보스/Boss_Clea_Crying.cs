@@ -55,7 +55,8 @@ public class Boss_Clea_Crying : MonoBehaviour
 
     [SerializeField]
     public GameObject Movie1;
-
+    [SerializeField]
+    public GameObject Movie2;
 
 
     private int HowManyMeetClea;
@@ -83,7 +84,7 @@ public class Boss_Clea_Crying : MonoBehaviour
                 case 2:
       
                     Debug.Log("두번째 만남");
-                    Movie1.SetActive(true);
+                    Movie2.SetActive(true);
                     BlackScreen.SetActive(true);
                     Invoke("SetActiveScreen", 1f);
                     Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
@@ -125,12 +126,12 @@ public class Boss_Clea_Crying : MonoBehaviour
         // Boss_Clea_Doll.SetActive(true); Instatiate로 바꾸기
         Boss_Clea_Grogy.SetActive(false);
         limit_Time = limit_Time_Init;
-        Instantiate(Boss_Clea_Doll, Boss_GrogyRecoverPos.transform.position,
-            Boss_GrogyRecoverPos.transform.rotation);
-
+        //Instantiate(Boss_Clea_Doll, Boss_GrogyRecoverPos.transform.position,
+        //    Boss_GrogyRecoverPos.transform.rotation);
+        Invoke("BossReGenerate", 2f);
         GameObject.Find("Boss_Clea_GrogyManager").GetComponent<Boss_Clea_GrogyManager>().Boss_Clea_Doll
             = Boss_Clea_Doll;
-        Debug.Log("재생성");
+       // Debug.Log("재생성");
 
         this.gameObject.SetActive(false);    
     }
@@ -148,11 +149,20 @@ public class Boss_Clea_Crying : MonoBehaviour
         }
     }
 
+    void BossReGenerate()
+    {
+      Instantiate(Boss_Clea_Doll, Boss_GrogyRecoverPos.transform.position,
+          Boss_GrogyRecoverPos.transform.rotation);
+       Debug.Log("재생성");
+    }
 
     void MoveToBoss_AfterMovie()
     {
         Player.transform.position = ToBossPos.position;
+        if(Movie1 != null)
         Movie1.SetActive(false);
+        if(Movie2 != null)
+        Movie2.SetActive(false);
         Screen.SetActive(false);
         GameObject.Find("Boss_Clea_GrogyManager").GetComponent<Boss_Clea_GrogyManager>().isBossGrogy
             = true;

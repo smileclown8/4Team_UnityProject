@@ -26,5 +26,16 @@ public class Pattern1_CenterRotater : MonoBehaviour
                 this.transform.rotation = Quaternion.Euler(0, 0, -2.617f);
             }
         }
+
+        if(GameObject.Find("Boss_Clea_Doll(Clone)") != null)
+        {
+            if (GameObject.Find("Boss_Clea_Doll(Clone)").GetComponent<Boss_Clea_Doll>().pattern1RotateStart)
+                this.transform.Rotate(Vector3.forward, rotSpeed * Time.deltaTime);
+
+            else
+            {
+                this.transform.rotation = Quaternion.Euler(0, 0, -2.617f);
+            }
+        }
     }
 }

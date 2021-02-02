@@ -126,7 +126,7 @@ public class Boss_Clea_Doll : MonoBehaviour
 
             Debug.Log(nowPattern);
 
-            nowPattern = 2;
+            nowPattern = Random.Range(1,2+1);
 
             switch (nowPattern)
             {
@@ -165,6 +165,7 @@ public class Boss_Clea_Doll : MonoBehaviour
                         yield return new WaitForSeconds(1.0f);
 
                     }
+                    Pattern1BulletCanMove = false;
                     pattern1Activate = false;
                     yield return new WaitForSeconds(10.0f); // 1번 패턴이 끝날때까지 걸리는 시간
                     break;
