@@ -10,7 +10,7 @@ public class ItemManager : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private GameObject playerStatus;
-    private int item_Skill_ID = 2;
+    public int item_Skill_ID;
 
 
     private void Awake()
@@ -38,7 +38,6 @@ public class ItemManager : MonoBehaviour
         {
             playerStatus.GetComponent<PlayerStatusManager>().skill_ID = item_Skill_ID;
             Debug.Log(item_Skill_ID + "번 스킬 아이템 획득");
-            Debug.Log(playerStatus.GetComponent<PlayerStatusManager>().skill_ID);
             Destroy(this.gameObject);
         }
     }

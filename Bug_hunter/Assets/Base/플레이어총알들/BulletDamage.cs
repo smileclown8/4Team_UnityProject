@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class BulletDamage : MonoBehaviour
 {
+
+
     [SerializeField]
-    public float damage;
+    public float damage = 1;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -18,4 +21,7 @@ public class BulletDamage : MonoBehaviour
     {
         
     }
+
+
+
 }
