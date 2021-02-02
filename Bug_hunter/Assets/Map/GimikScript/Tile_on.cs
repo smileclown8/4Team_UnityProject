@@ -8,6 +8,8 @@ public class Tile_on : MonoBehaviour
     Renderer tileColor2_0_1;
     GameObject tilemap2_1_1;
     Renderer tileColor2_1_1;
+    GameObject tilemap2_1_2;
+    Renderer tileColor2_1_2;
     GameObject tilemap2_3_1;
     Renderer tileColor2_3_1;
     GameObject tilemap2_3_12;
@@ -17,6 +19,7 @@ public class Tile_on : MonoBehaviour
     {
         tilemap2_0_1 = GameObject.Find("Tilemap2_0_1");
         tilemap2_1_1 = GameObject.Find("Tilemap2_1_1");
+        tilemap2_1_1 = GameObject.Find("Tilemap2_1_2");
         tilemap2_3_1 = GameObject.Find("Tilemap2_3_1");
         tilemap2_3_12 = GameObject.Find("Tilemap2_3_12");
 
@@ -27,6 +30,10 @@ public class Tile_on : MonoBehaviour
         if (tilemap2_1_1 != null)
         {
             tileColor2_1_1 = tilemap2_1_1.GetComponent<Renderer>();
+        }
+        if (tilemap2_1_2 != null)
+        {
+            tileColor2_1_2 = tilemap2_1_2.GetComponent<Renderer>();
         }
         if (tilemap2_3_1 != null)
         {
@@ -53,6 +60,7 @@ public class Tile_on : MonoBehaviour
         {
             tileColor2_0_1.material.color = new Color(1f, 1f, 1f, 1f);
             tileColor2_1_1.material.color = new Color(1f, 1f, 1f, 1f);
+            tileColor2_1_2.material.color = new Color(1f, 1f, 1f, 1f);
             tileColor2_3_1.material.color = new Color(1f, 1f, 1f, 1f);
             tileColor2_3_12.material.color = new Color(1f, 1f, 1f, 1f);
         }
