@@ -6,25 +6,36 @@ public class BatManager : MonoBehaviour
 {
     // 스탯
     int hp = 10;
-    int batDamage = 2;
+    [HideInInspector] public int attack = 2;
+    int buffRate = 5;
+
+    bool isTracing;
+    public GameObject bullet;
+    float shoottime = 2;
+    float nextshoot = 2;
 
 
-    [SerializeField] public GameObject bullet;
-    float shoottime;
-    float nextshoot;
-    Animator animator;
 
-
-    void Start()
+    void Update()
     {
-        shoottime = 2f;
-        nextshoot = Time.time;
-    }
+        isTracing = transform.parent.GetComponentInChildren<RecognitionManager>().isTracing;
 
 
-    // 사망 시 사라지기
-    private void Update()
-    {
+        // 범위 안에 플레이어가 인식되면
+        if (isTracing)
+        {
+            GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = false;       // 움직임을 멈추고
+            Attack();                                                                     // 공격
+        }
+        // 놓치면
+        else
+        {
+            GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = true;        // 다시 움직이기 시작
+        }
+
+
+
+        // 사망 시 사라지기
         if (hp <= 0)
             Destroy(transform.parent.gameObject);       // 사망하면 부모 오브젝트부터 모두 삭제
     }
@@ -35,44 +46,15 @@ public class BatManager : MonoBehaviour
     }
 
 
-    GameObject target;
-    GameObject bat;
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")   // 플레이어가 닿으면
-        {
-            target = other.gameObject;          // 타깃을 플레이어로 세팅
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = false;       // 움직임을 멈추고
-            Attack();                                                                     // 공격
-
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")                                             // 트리거 반경에서 벗어나면
-        {
-            GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = true;        // 다시 움직이기 시작
-        }
-    }
-
-
     void Attack()
     {
-        if (Time.time > nextshoot)
+        if (shoottime > nextshoot)
         {
             GenerateBullet();
             Invoke("GenerateBullet", 0.3f);     // 0.3초 간격을 두고 총알 두 번 발사
-            nextshoot = Time.time + shoottime;
+            shoottime = 0;
         }
+        shoottime += Time.deltaTime;
     }
 
     void GenerateBullet()

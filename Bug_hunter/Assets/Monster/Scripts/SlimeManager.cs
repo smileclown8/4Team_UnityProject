@@ -2,14 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/* 필요한 기능
- * 특정 함수 한번만 실행
- * aiPath 컴포넌트 끄기/켜기
- * 점프해서 공격
- * 애니메이션 전환
- * 
- */
-
 
 public class SlimeManager : MonoBehaviour
 {
@@ -26,11 +18,9 @@ public class SlimeManager : MonoBehaviour
     public GameObject target;
     public Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
-    new CapsuleCollider2D collider;
+    new BoxCollider2D collider;
 
 
-
-    // ===============================================================
 
 
     private void Awake()
@@ -106,12 +96,13 @@ public class SlimeManager : MonoBehaviour
     // 체력 0 이하일 때 피격효과 내고 사라진다.
     public void OnDamaged(int damage)
     {
+        spriteRenderer.color = new Color(1, 1, 1, 0.3f);        // 맞으면 반투명해짐
+        collider.enabled = false;                               // 충돌 끄기
+        rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);    // 위로 튀어오름
+
         if (hp <= 0)
         {
-            spriteRenderer.color = new Color(1, 1, 1, 0.3f);        // 맞으면 반투명해짐
-            collider.enabled = false;                               // 충돌 끄기
-            rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);    // 위로 튀어오름
-            Invoke("Destroy", 1.5f);                                // 1.5초 뒤 사라짐
+            Invoke("Destroy", 1.5f);                            // 1.5초 뒤 사라짐
         }
     }
 

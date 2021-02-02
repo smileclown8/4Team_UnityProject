@@ -5,22 +5,17 @@ using UnityEngine;
 public class BookBulletManager : MonoBehaviour
 {
     int damage;
-    public float speed;
+    [SerializeField] float speed = 4;
     Rigidbody2D rb;
-
-    Vector2 target;
-    Vector2 moveDirection;
 
     Vector2 bookPos;
     Vector2 myPos;
     [SerializeField] float minRange;                         // 랜덤위치값1
     [SerializeField] float maxRange;                         // 랜덤위치값2
-    float randomX;
-    float randomY;
     [HideInInspector] public Vector2 randomBulletPosition;
-    float distance;
 
-    int destroySecond = 2;
+    float distance;                                          // 총알과 본인 사이의 거리
+    int destroySecond = 2;                                   // 총알이 파괴되기까지의 시간
 
 
 

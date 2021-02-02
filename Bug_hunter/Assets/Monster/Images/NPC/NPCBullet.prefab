@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 6495135641533652104}
   - component: {fileID: 6495135641533652105}
   - component: {fileID: 2298079058992426097}
-  - component: {fileID: 4334448945367706138}
-  - component: {fileID: 7115915563497617006}
+  - component: {fileID: -7945315454445013792}
+  - component: {fileID: 7645913901318020982}
   m_Layer: 0
-  m_Name: BatBullet
+  m_Name: NPCBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6495135641533652150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.23647857, y: 0.1542331, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: -1749980809984747440, guid: c0e0421621e9e02418d5cc4feeb1a654,
+  m_Sprite: {fileID: -1982640386571999079, guid: 2fa4146f66ca42348b1d45087e694d54,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 6495135641533652150}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: be7f05768a882a34d81ea47df224094b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4b37c9a9ea1fa0c48b58187e808bf5c8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -117,16 +117,16 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &4334448945367706138
+--- !u!58 &-7945315454445013792
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,13 +136,13 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.12
---- !u!114 &7115915563497617006
+  m_Radius: 0.28
+--- !u!114 &7645913901318020982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6495135641533652150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfb09c978d2d49d4d834148c2487e702, type: 3}
+  m_Script: {fileID: 11500000, guid: d34d65877c16a87499d7f858b167be60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 6
