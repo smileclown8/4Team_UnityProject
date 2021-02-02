@@ -25,7 +25,7 @@ public class Pattern5_BulletController : MonoBehaviour
 
         if( GameObject.Find("Boss_Clea_Doll(Clone)") != null)
         {
-            if (GameObject.Find("Boss_Clea_Doll").GetComponent<Boss_Clea_Doll>().Pattern5BulletCanMove)
+            if (GameObject.Find("Boss_Clea_Doll(Clone)").GetComponent<Boss_Clea_Doll>().Pattern5BulletCanMove)
                 transform.Translate(transform.right * 30 * Time.deltaTime);
         }
 

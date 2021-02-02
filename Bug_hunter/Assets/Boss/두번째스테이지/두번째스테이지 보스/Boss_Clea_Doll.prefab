@@ -125,23 +125,20 @@ MonoBehaviour:
   TypingEffectManager: {fileID: 0}
   postPattern: 0
   patternRandomRate: 0
-  Pattern1_BossPos: {fileID: 0}
   Pattern1_CircleBullet: {fileID: 141986925498662284, guid: a0e6a628f410d4a4aa069388c4e0dd78,
     type: 3}
-  Pattern1_BulletStartPos: {fileID: 0}
   Pattern1BulletCanMove: 0
   Pattern2_TrackingBullet: {fileID: 1794721756078709453, guid: c88eb59e1a927c74aa39f40eb359cb98,
     type: 3}
-  Pattern2_StartPos: {fileID: 0}
   Pattern2InstiateTimeTerm: 1
+  Pattern3_BombBear: {fileID: 5071991106774205662, guid: cd124db9ed8d09d4a8dfb10f8050218d,
+    type: 3}
+  Pattern4_BigBombDoll: {fileID: 3027749728541632057, guid: 6fac5df577375504897921c030dcf968,
+    type: 3}
   Pattern5_DamaegeBullet: {fileID: 3659551960107614392, guid: 7b4f943b232650745b8a3c924cc3f2fa,
     type: 3}
   Pattern5_HealBullet: {fileID: 3659551960107614392, guid: d7e159ddd24e1a243abb4b95cf59a14b,
     type: 3}
-  Pattern5_BossPos: {fileID: 0}
-  Pattern5_BulletStartPos: {fileID: 0}
   Pattern5BulletCanMove: 0
   pattern1RotateStart: 0
-  Pattern2Pos_BossStart: {fileID: 0}
-  Pattern2Pos_BossMid: {fileID: 0}
-  Pattern2Pos_BossEnd: {fileID: 0}
+  pattern4Return: 0

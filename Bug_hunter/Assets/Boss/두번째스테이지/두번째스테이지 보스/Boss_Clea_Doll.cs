@@ -154,8 +154,9 @@ public class Boss_Clea_Doll : MonoBehaviour
         while (true)
         {
 
-            DecidePattern();
+            //DecidePattern();
 
+         //   nowPattern = Random.Range(1, 5+1);
 
             while (true)
             {
@@ -166,9 +167,7 @@ public class Boss_Clea_Doll : MonoBehaviour
                 if (nowPattern != postPattern)
                     break;
             }
-
-
-            nowPattern =3;
+            nowPattern = 3;
 
             switch (nowPattern)
             {
@@ -395,7 +394,6 @@ public class Boss_Clea_Doll : MonoBehaviour
         }
     }
 
-
     void Pattern2BossMove()
     {
         if(pattern2Activate == true)
@@ -431,7 +429,6 @@ public class Boss_Clea_Doll : MonoBehaviour
         }
     }
 
-
     void Pattern4BossMove()
     {
         if (pattern4Activate)
@@ -440,7 +437,6 @@ public class Boss_Clea_Doll : MonoBehaviour
 Pattern4_BossPos.transform.position, Time.deltaTime * 50f);
         }
     }
-
 
     void Pattern4BossReturnMove()
     {

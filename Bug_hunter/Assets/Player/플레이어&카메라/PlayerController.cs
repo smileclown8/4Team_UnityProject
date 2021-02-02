@@ -168,19 +168,24 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-              OnDamaged(collision.transform.position);  // 만약 몬스터 위가 아닌곳에서 몬스터와 충돌하면 데미지를 입는다.
+              OnDamaged(collision.transform.position,8);  // 만약 몬스터 위가 아닌곳에서 몬스터와 충돌하면 데미지를 입는다.
             }
         }
         if (collision.gameObject.tag == "Gimik")  // tag가 Gimik인것과 충돌할때.
                                                   // if(collision.gameObject.tag =="Gimik"){ OnDamaged( ... ) } 이런 내용을 추가해야함
         {
 
-            OnDamaged(collision.transform.position);  
+            OnDamaged(collision.transform.position,8);  
         }
         
         if(collision.gameObject.tag == "EnemyAttack")
         {
-            OnDamaged(collision.transform.position);
+            OnDamaged(collision.transform.position,8);
+        }
+
+        if(collision.gameObject.tag == "Staff")
+        {
+            OnDamaged(collision.transform.position, 40);
         }
     }
 
@@ -197,7 +202,7 @@ public class PlayerController : MonoBehaviour
 
         // BE2 6분대 근처 참고하면서 마저작성하기
     }
-    void OnDamaged(Vector2 targetPos) //메이플마냥 데미지를 받으면 뒤로 약간 밀려나고 투명해지며 몬스터를 통과하게 함
+    void OnDamaged(Vector2 targetPos, float KnockBackPower) //메이플마냥 데미지를 받으면 뒤로 약간 밀려나고 투명해지며 몬스터를 통과하게 함
     {
         //피격시 PlayerDamaged로 플레이어의 레이어 변화
         this.gameObject.layer = 10; // 레이어 PlayerDamaged 가 들어가있는 레이어 번호
@@ -208,11 +213,12 @@ public class PlayerController : MonoBehaviour
         // 피격당했을때 튕겨나가는거
         int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1 ;  //몬스터에게 피격당해서 날아갈 방향
         isJumping = true;
-        playerRigidbody2D.AddForce(new Vector2(dirc, 1) * 8, ForceMode2D.Impulse);
+        playerRigidbody2D.AddForce(new Vector2(dirc, 1) * KnockBackPower, ForceMode2D.Impulse);
 
         Invoke("OffDamaged", 2); //레이어와 투명해진거를 원상복귀
 
     }
+
     void OffDamaged() //원상복귀
     {
         this.gameObject.layer = 9; // 레이어 Player가 들어가있는 레이어 번호
