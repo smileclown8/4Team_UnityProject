@@ -176,9 +176,23 @@ public class TestDialogue : MonoBehaviour
                     "")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    GameObject.Find("Door_close001").SetActive(false);
                 }
-                
-                
+                if(this.gameObject.name == "Door_close002" +
+                    "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Lever_off3" +
+                   "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    GameObject.Find("Door_close002").SetActive(false);
+                }
+
+
+
+
 
 
 
