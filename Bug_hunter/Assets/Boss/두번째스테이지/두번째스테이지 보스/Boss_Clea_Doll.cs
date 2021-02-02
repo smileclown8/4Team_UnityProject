@@ -39,6 +39,8 @@ public class Boss_Clea_Doll : MonoBehaviour
         Pattern3_BombBear_Pos7 = GameObject.Find("Pattern3_BombBear_Pos7");
 
         Pattern4_BossPos = GameObject.Find("Pattern4_BossPos");
+        Pattern4_GeneratePos = GameObject.Find("Pattern4_GeneratePos");
+        Pattenr4_BossReturnPos = GameObject.Find("Pattenr4_BossReturnPos");
 
 
         Pattern5_BossPos = GameObject.Find("Pattern5_BossPos");
@@ -48,11 +50,21 @@ public class Boss_Clea_Doll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //===========================================================
+        //패턴발생시 보스가 패턴위치로 이동
         Pattern1BossMove();
         Pattern2BossMove();
         Pattern3BossMove();
-
+        Pattern4BossMove();
         Pattern5BossMove();
+        Pattern4BossReturnMove();
+
+        if (GameObject.Find("Pattern4_BigBombDoll(Clone)") != null)
+        {
+            pattern4Return = GameObject.Find("Pattern4_BigBombDoll(Clone)").GetComponent<Pattern4_BigBombDoll>().BossReturn;
+        }
+
+        Debug.Log(pattern4Return);
     }
 
     // =======================================================================
@@ -114,6 +126,10 @@ public class Boss_Clea_Doll : MonoBehaviour
     private GameObject Pattern3_BombBear_Pos7;
 
     private GameObject Pattern4_BossPos;
+    public GameObject Pattern4_BigBombDoll;
+    private GameObject Pattenr4_BossReturnPos;
+
+    private GameObject Pattern4_GeneratePos;
 
     public GameObject Pattern5_DamaegeBullet;
     public GameObject Pattern5_HealBullet;
@@ -127,6 +143,8 @@ public class Boss_Clea_Doll : MonoBehaviour
     private bool pattern2Activate = false;
     private bool pattern3Activate = false;
     private bool pattern4Activate = false;
+    public bool pattern4Return = false;
+
     private bool pattern5Activate = false;
     IEnumerator PatternDecide()
     {
@@ -149,51 +167,52 @@ public class Boss_Clea_Doll : MonoBehaviour
                     break;
             }
 
-            Debug.Log(nowPattern);
 
-            nowPattern =3;
+            nowPattern =4;
 
             switch (nowPattern)
             {
                 case 1:
-                    // 1번 패턴 생성
-
-                 //   Instantiate(TypingEffectManager, this.transform.position,
-                //        this.transform.rotation);
-                    
-                    
-                    
-                    yield return new WaitForSeconds(1.0f);
-
-                    Debug.Log("패턴1");
-                    pattern1Activate = true;
-                    yield return new WaitForSeconds(3.0f);
-
-                    pattern1RotateStart = true;
-                    for (int i = 0; i < 14; i++)
                     {
-                        Instantiate(Pattern1_CircleBullet, Pattern1_BulletStartPos.transform.position,
-                            Pattern1_BulletStartPos.transform.rotation);
-                        yield return new WaitForSeconds(0.07f);
+                        // 1번 패턴 생성
 
-                    }
-                    pattern1RotateStart = false;
+                        //   Instantiate(TypingEffectManager, this.transform.position,
+                        //        this.transform.rotation);
 
-                    yield return new WaitForSeconds(1.0f);
-                    Pattern1BulletCanMove = true;
-                    yield return new WaitForSeconds(1.0f);
-                    for (int i = 0; i < 5; i++)
-                    {
-                        Pattern1BulletCanMove = false;
+
+
+                        yield return new WaitForSeconds(1.0f);
+
+                        Debug.Log("패턴1");
+                        pattern1Activate = true;
+                        yield return new WaitForSeconds(3.0f);
+
+                        pattern1RotateStart = true;
+                        for (int i = 0; i < 14; i++)
+                        {
+                            Instantiate(Pattern1_CircleBullet, Pattern1_BulletStartPos.transform.position,
+                                Pattern1_BulletStartPos.transform.rotation);
+                            yield return new WaitForSeconds(0.07f);
+
+                        }
+                        pattern1RotateStart = false;
+
                         yield return new WaitForSeconds(1.0f);
                         Pattern1BulletCanMove = true;
                         yield return new WaitForSeconds(1.0f);
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Pattern1BulletCanMove = false;
+                            yield return new WaitForSeconds(1.0f);
+                            Pattern1BulletCanMove = true;
+                            yield return new WaitForSeconds(1.0f);
 
+                        }
+                        Pattern1BulletCanMove = false;
+                        pattern1Activate = false;
+                        yield return new WaitForSeconds(10.0f); // 1번 패턴이 끝날때까지 걸리는 시간
+                        break;
                     }
-                    Pattern1BulletCanMove = false;
-                    pattern1Activate = false;
-                    yield return new WaitForSeconds(10.0f); // 1번 패턴이 끝날때까지 걸리는 시간
-                    break;
                 case 2:
                     {
                         // 2번 패턴 생성
@@ -233,43 +252,45 @@ public class Boss_Clea_Doll : MonoBehaviour
                     }             
                     break;
                 case 3:
-                    // 3번 패턴 생성
-       //             Instantiate(TypingEffectManager, this.transform.position,
- //   this.transform.rotation);
-                    yield return new WaitForSeconds(3.0f);
-
-                    pattern3Activate = true;
-
-                    yield return new WaitForSeconds(2.0f);
-
-
-                    Debug.Log("패턴3");
                     {
-                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos1.transform.position,
-                            Pattern3_BombBear_Pos1.transform.rotation);
-                        yield return new WaitForSeconds(0.2f);
-                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos2.transform.position,
-    Pattern3_BombBear_Pos2.transform.rotation);
-                        yield return new WaitForSeconds(0.2f);
-                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos3.transform.position,
-    Pattern3_BombBear_Pos3.transform.rotation);
-                        yield return new WaitForSeconds(0.2f);
-                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos4.transform.position,
-    Pattern3_BombBear_Pos4.transform.rotation);
-                        yield return new WaitForSeconds(0.2f);
-                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos5.transform.position,
-    Pattern3_BombBear_Pos5.transform.rotation);
-                        yield return new WaitForSeconds(0.2f);
-                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos6.transform.position,
-    Pattern3_BombBear_Pos6.transform.rotation);
-                        yield return new WaitForSeconds(0.2f);
-                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos7.transform.position,
-    Pattern3_BombBear_Pos7.transform.rotation);
+                        // 3번 패턴 생성
+                        //             Instantiate(TypingEffectManager, this.transform.position,
+                        //   this.transform.rotation);
+                        yield return new WaitForSeconds(3.0f);
 
+                        pattern3Activate = true;
+
+                        yield return new WaitForSeconds(2.0f);
+
+
+                        Debug.Log("패턴3");
+                        {
+                            Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos1.transform.position,
+                                Pattern3_BombBear_Pos1.transform.rotation);
+                            yield return new WaitForSeconds(0.2f);
+                            Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos2.transform.position,
+        Pattern3_BombBear_Pos2.transform.rotation);
+                            yield return new WaitForSeconds(0.2f);
+                            Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos3.transform.position,
+        Pattern3_BombBear_Pos3.transform.rotation);
+                            yield return new WaitForSeconds(0.2f);
+                            Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos4.transform.position,
+        Pattern3_BombBear_Pos4.transform.rotation);
+                            yield return new WaitForSeconds(0.2f);
+                            Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos5.transform.position,
+        Pattern3_BombBear_Pos5.transform.rotation);
+                            yield return new WaitForSeconds(0.2f);
+                            Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos6.transform.position,
+        Pattern3_BombBear_Pos6.transform.rotation);
+                            yield return new WaitForSeconds(0.2f);
+                            Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos7.transform.position,
+        Pattern3_BombBear_Pos7.transform.rotation);
+
+                        }
+                        yield return new WaitForSeconds(10.0f); // 3번 패턴이 끝날때까지 걸리는 시간
+                        pattern3Activate = false;
+                        break;
                     }
-                    yield return new WaitForSeconds(10.0f); // 3번 패턴이 끝날때까지 걸리는 시간
-                    pattern3Activate = false;
-                    break;
                 case 4:
                     // 4번 패턴 생성
         //            Instantiate(TypingEffectManager, this.transform.position,
@@ -281,12 +302,12 @@ public class Boss_Clea_Doll : MonoBehaviour
                     pattern4Activate = true;
                     Debug.Log("패턴4");
 
-
-
+                    Instantiate(Pattern4_BigBombDoll, Pattern4_GeneratePos.transform.position, Pattern4_GeneratePos.transform.rotation);
 
 
                     yield return new WaitForSeconds(15f); // 4번 패턴이 끝날때까지 걸리는 시간
                     pattern4Activate = false;
+                    pattern4Return = false;
                     break;
 
 
@@ -417,6 +438,16 @@ public class Boss_Clea_Doll : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position,
 Pattern4_BossPos.transform.position, Time.deltaTime * 50f);
+        }
+    }
+
+
+    void Pattern4BossReturnMove()
+    {
+        if (pattern4Return)
+        {
+            transform.position = Vector2.MoveTowards(transform.position,
+Pattenr4_BossReturnPos.transform.position, Time.deltaTime * 80f);
         }
     }
 
