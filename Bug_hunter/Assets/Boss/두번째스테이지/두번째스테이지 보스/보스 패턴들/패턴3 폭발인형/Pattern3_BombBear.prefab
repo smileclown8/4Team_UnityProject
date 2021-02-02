@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5071991106774205474}
   - component: {fileID: 5071991106774205661}
   - component: {fileID: 5071991106774205660}
+  - component: {fileID: -5711844821047102979}
   - component: {fileID: 5071991106774205663}
   m_Layer: 20
   m_Name: Pattern3_BombBear
@@ -104,6 +105,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-5711844821047102979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071991106774205662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31781c392507144c9a9ebdbba97b480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Explosion: {fileID: 6487682276949820271, guid: b7df2eb32963f5c4bac9d46c6ff10feb,
+    type: 3}
 --- !u!60 &5071991106774205663
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -168,7 +168,7 @@ public class Boss_Clea_Doll : MonoBehaviour
             }
 
 
-            nowPattern =4;
+            nowPattern =3;
 
             switch (nowPattern)
             {
@@ -287,7 +287,7 @@ public class Boss_Clea_Doll : MonoBehaviour
         Pattern3_BombBear_Pos7.transform.rotation);
 
                         }
-                        yield return new WaitForSeconds(10.0f); // 3번 패턴이 끝날때까지 걸리는 시간
+                        yield return new WaitForSeconds(5f); // 3번 패턴이 끝날때까지 걸리는 시간
                         pattern3Activate = false;
                         break;
                     }
