@@ -192,13 +192,6 @@ public class TestDialogue : MonoBehaviour
                     GameObject.Find("Door_close002").SetActive(false);
                 }
 
-
-
-
-
-
-
-
                 howManyTailkingWithThisObject++;
             }
         }
