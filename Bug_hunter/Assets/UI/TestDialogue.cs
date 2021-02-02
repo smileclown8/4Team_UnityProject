@@ -27,6 +27,10 @@ public class TestDialogue : MonoBehaviour
     public bool isSavorBomb = false;
     public bool isC_laugh = false;
 
+    public bool isPortal1 = false;
+    public bool isPortal2 = false;
+
+
     private void Update()
     {
         if (this.gameObject.name == "Savor2")
@@ -127,9 +131,8 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Portal_01")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    isPortal1 = true;
                 }
-
-                else
 
                 if (this.gameObject.name == "Fairy_tale_04")
                 {
@@ -139,11 +142,17 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
+                
+                
                 if (this.gameObject.name == "Portal_02")
                 { 
                     theDM.ShowDialogue(this.dialogue);
                     isC_laugh = true;
+                    isPortal2 = true;
                 }
+
+
+
                 if (this.gameObject.name == "Fairy_tale_06")
                 {
                     theDM.ShowDialogue(this.dialogue);

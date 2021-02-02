@@ -97,13 +97,41 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorBomb = false;
         }
+        
+
+        if (GameObject.Find("Portal_01")!= null)
+        {
+            if (GameObject.Find("Portal_01").GetComponent<TestDialogue>().isPortal1 == true)
+            {
+                Debug.Log(GameObject.Find("Portal_01").GetComponent<TestDialogue>().isPortal1);
+                Invoke("Stage2_Portal1_Move", 0.5f); // 포탈2와 대화가 끝나고 0.5초후에 이동
+                GameObject.Find("Portal_01").GetComponent<TestDialogue>().isPortal1 = false;
+            }
+        }
+
         if (GameObject.Find("Portal_02") != null)
         {
             GameObject.Find("Portal_02").GetComponent<TestDialogue>().isC_laugh = false;
+
+            if(GameObject.Find("Portal_02").GetComponent<TestDialogue>().isPortal2 == true)
+            {
+                Debug.Log(GameObject.Find("Portal_02").GetComponent<TestDialogue>().isPortal2);
+                Invoke("Stage2_Portal2_Move", 0.5f); // 포탈2와 대화가 끝나고 0.5초후에 이동
+                GameObject.Find("Portal_02").GetComponent<TestDialogue>().isPortal2 = false;
+            }
         }
         talking = false;
     }
 
+    void Stage2_Portal1_Move()
+    {
+        GameObject.Find("player").transform.position = GameObject.Find("XY01").transform.position;
+    }
+
+    void Stage2_Portal2_Move()
+    {
+        GameObject.Find("player").transform.position = GameObject.Find("XY02").transform.position;
+    }
 
     IEnumerator StartDialogueCoroutine()
     {
