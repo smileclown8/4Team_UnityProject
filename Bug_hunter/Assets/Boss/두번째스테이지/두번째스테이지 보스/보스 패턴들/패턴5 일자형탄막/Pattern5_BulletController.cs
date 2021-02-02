@@ -8,7 +8,6 @@ public class Pattern5_BulletController : MonoBehaviour
     void Start()
     {
 
-
         Invoke("DestroyBullet", 10f);
     }
 
@@ -24,7 +23,14 @@ public class Pattern5_BulletController : MonoBehaviour
                 transform.Translate(transform.right * 30 * Time.deltaTime);
         }
 
-        if(GameObject.Find("Boss_Clea_Doll") == null)
+        if( GameObject.Find("Boss_Clea_Doll(Clone)") != null)
+        {
+            if (GameObject.Find("Boss_Clea_Doll").GetComponent<Boss_Clea_Doll>().Pattern5BulletCanMove)
+                transform.Translate(transform.right * 30 * Time.deltaTime);
+        }
+
+
+        if(GameObject.Find("Boss_Clea_Doll") == null && GameObject.Find("Boss_Clea_Doll(Clone)") == null)
         {
             DestroyBullet();
         }

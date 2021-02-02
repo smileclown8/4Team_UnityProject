@@ -23,11 +23,23 @@ public class Boss_Clea_Doll : MonoBehaviour
 
         Pattern1_BossPos = GameObject.Find("Pattern1_BossPos");
         Pattern1_BulletStartPos = GameObject.Find("Pattern1_BulletStartPos");
-
         Pattern2_StartPos = GameObject.Find("Pattern2StartPos");
+        Pattern2StartPos_Init = GameObject.Find("Pattern2StartPos_Init");
+
         Pattern2Pos_BossStart = GameObject.Find("Pattern2Pos_BossStart");
         Pattern2Pos_BossMid = GameObject.Find("Pattern2Pos_BossMid");
         Pattern2Pos_BossEnd = GameObject.Find("Pattern2Pos_BossEnd");
+        Pattern3_BossPos = GameObject.Find("Pattern3_BossPos");
+        Pattern3_BombBear_Pos1 = GameObject.Find("Pattern3_BombBear_Pos1");
+        Pattern3_BombBear_Pos2 = GameObject.Find("Pattern3_BombBear_Pos2");
+        Pattern3_BombBear_Pos3 = GameObject.Find("Pattern3_BombBear_Pos3");
+        Pattern3_BombBear_Pos4 = GameObject.Find("Pattern3_BombBear_Pos4");
+        Pattern3_BombBear_Pos5 = GameObject.Find("Pattern3_BombBear_Pos5");
+        Pattern3_BombBear_Pos6 = GameObject.Find("Pattern3_BombBear_Pos6");
+        Pattern3_BombBear_Pos7 = GameObject.Find("Pattern3_BombBear_Pos7");
+
+        Pattern4_BossPos = GameObject.Find("Pattern4_BossPos");
+
 
         Pattern5_BossPos = GameObject.Find("Pattern5_BossPos");
         Pattern5_BulletStartPos = GameObject.Find("Pattern5_BulletStartPos");
@@ -38,6 +50,7 @@ public class Boss_Clea_Doll : MonoBehaviour
     {
         Pattern1BossMove();
         Pattern2BossMove();
+        Pattern3BossMove();
 
         Pattern5BossMove();
     }
@@ -88,7 +101,19 @@ public class Boss_Clea_Doll : MonoBehaviour
     public GameObject Pattern2_TrackingBullet;
     private GameObject Pattern2_StartPos;
     public float Pattern2InstiateTimeTerm = 0.5f;
+    private GameObject Pattern2StartPos_Init;
 
+    public GameObject Pattern3_BombBear;
+    private GameObject Pattern3_BossPos;
+    private GameObject Pattern3_BombBear_Pos1;
+    private GameObject Pattern3_BombBear_Pos2;
+    private GameObject Pattern3_BombBear_Pos3;
+    private GameObject Pattern3_BombBear_Pos4;
+    private GameObject Pattern3_BombBear_Pos5;
+    private GameObject Pattern3_BombBear_Pos6;
+    private GameObject Pattern3_BombBear_Pos7;
+
+    private GameObject Pattern4_BossPos;
 
     public GameObject Pattern5_DamaegeBullet;
     public GameObject Pattern5_HealBullet;
@@ -100,8 +125,8 @@ public class Boss_Clea_Doll : MonoBehaviour
     private bool pattern1Activate = false;
     public bool pattern1RotateStart = false;
     private bool pattern2Activate = false;
-
-
+    private bool pattern3Activate = false;
+    private bool pattern4Activate = false;
     private bool pattern5Activate = false;
     IEnumerator PatternDecide()
     {
@@ -126,7 +151,7 @@ public class Boss_Clea_Doll : MonoBehaviour
 
             Debug.Log(nowPattern);
 
-            nowPattern = Random.Range(1,2+1);
+            nowPattern =3;
 
             switch (nowPattern)
             {
@@ -213,11 +238,37 @@ public class Boss_Clea_Doll : MonoBehaviour
  //   this.transform.rotation);
                     yield return new WaitForSeconds(3.0f);
 
-   //                 Instantiate(ThirdPattern_Dove, ThirdPattern_DovePos.transform.position, ThirdPattern_DovePos.transform.rotation);
+                    pattern3Activate = true;
+
+                    yield return new WaitForSeconds(2.0f);
+
 
                     Debug.Log("패턴3");
+                    {
+                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos1.transform.position,
+                            Pattern3_BombBear_Pos1.transform.rotation);
+                        yield return new WaitForSeconds(0.2f);
+                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos2.transform.position,
+    Pattern3_BombBear_Pos2.transform.rotation);
+                        yield return new WaitForSeconds(0.2f);
+                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos3.transform.position,
+    Pattern3_BombBear_Pos3.transform.rotation);
+                        yield return new WaitForSeconds(0.2f);
+                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos4.transform.position,
+    Pattern3_BombBear_Pos4.transform.rotation);
+                        yield return new WaitForSeconds(0.2f);
+                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos5.transform.position,
+    Pattern3_BombBear_Pos5.transform.rotation);
+                        yield return new WaitForSeconds(0.2f);
+                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos6.transform.position,
+    Pattern3_BombBear_Pos6.transform.rotation);
+                        yield return new WaitForSeconds(0.2f);
+                        Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos7.transform.position,
+    Pattern3_BombBear_Pos7.transform.rotation);
+
+                    }
                     yield return new WaitForSeconds(10.0f); // 3번 패턴이 끝날때까지 걸리는 시간
-      //              isPattern = true;
+                    pattern3Activate = false;
                     break;
                 case 4:
                     // 4번 패턴 생성
@@ -225,11 +276,17 @@ public class Boss_Clea_Doll : MonoBehaviour
   //  this.transform.rotation);
                     yield return new WaitForSeconds(3.0f);
 
-      //              Instantiate(FourthPattern_Bear, FourthPattern_BearPos.transform.position, FourthPattern_BearPos.transform.rotation);
+                    //              Instantiate(FourthPattern_Bear, FourthPattern_BearPos.transform.position, FourthPattern_BearPos.transform.rotation);
 
-
+                    pattern4Activate = true;
                     Debug.Log("패턴4");
-                    yield return new WaitForSeconds(6.0f); // 4번 패턴이 끝날때까지 걸리는 시간
+
+
+
+
+
+                    yield return new WaitForSeconds(15f); // 4번 패턴이 끝날때까지 걸리는 시간
+                    pattern4Activate = false;
                     break;
 
 
@@ -341,6 +398,25 @@ public class Boss_Clea_Doll : MonoBehaviour
                 if (transform.position == Pattern2Pos_BossEnd.transform.position)
                     isArriveEndPos = false;
             }
+        }
+    }
+
+    void Pattern3BossMove()
+    {
+        if(pattern3Activate == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position,
+    Pattern3_BossPos.transform.position, Time.deltaTime * 50f);
+        }
+    }
+
+
+    void Pattern4BossMove()
+    {
+        if (pattern4Activate)
+        {
+            transform.position = Vector2.MoveTowards(transform.position,
+Pattern4_BossPos.transform.position, Time.deltaTime * 50f);
         }
     }
 

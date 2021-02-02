@@ -35,6 +35,12 @@ public class Pattern1_BulletController : MonoBehaviour
                 this.transform.position += Dir * 5f * Time.deltaTime;
             }
         }
+
+
+        if (GameObject.Find("Boss_Clea_Doll") == null && GameObject.Find("Boss_Clea_Doll(Clone)") == null)
+        {
+            DestroyBullet();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

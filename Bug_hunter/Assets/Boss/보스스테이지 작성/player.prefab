@@ -160,7 +160,7 @@ MonoBehaviour:
   isTalk: 0
   isLayer:
     serializedVersion: 2
-    m_Bits: 16640
+    m_Bits: 672000
 --- !u!114 &7068066420433603298
 MonoBehaviour:
   m_ObjectHideFlags: 0
