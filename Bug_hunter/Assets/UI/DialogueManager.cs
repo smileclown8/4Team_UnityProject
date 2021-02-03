@@ -53,14 +53,14 @@ public class DialogueManager : MonoBehaviour
     private bool keyActivated = false;
 
 
-    // ============ For 중력장 =====
+    // ============ For 플레이어 중력 =====
     GameObject player;
     Rigidbody2D rb;
     // ============ For 바닥 =====
     GameObject floor;
     // ============ For 중력장 =====
-    GameObject gravity;
-    //====================
+    public GameObject gravity;
+    //====================중력장의 경우 퍼블릭으로 안 하면 인식을 못해서 일단 퍼블릭으로 작동되게 만들어둠===========
 
 
     // Use this for initialization
@@ -73,13 +73,12 @@ public class DialogueManager : MonoBehaviour
         listDialogueWindows = new List<Sprite>();
         theAudio = FindObjectOfType<AudioManager>();
 
-        // ============ For 중력장 =====
+        // ============ For 플레이어 중력 =====
         player = GameObject.Find("player");
         rb = player.GetComponent<Rigidbody2D>();
         // ============ For 바닥 =====
         floor = GameObject.Find("Tilemap2_4_1");
-        // ============ For 바닥 =====
-        gravity = GameObject.Find("GravityEffect_5");
+
     }
 
     public void ShowDialogue(Dialogue dialogue)
@@ -173,19 +172,24 @@ public class DialogueManager : MonoBehaviour
         // 이 이후에 바닥이 사라지고(false), 중력장이 사라지고(false), 이슬라프 중력 1로 변경
         // (SetActive) 활용
         if (GameObject.Find("Fairy_tale_06") != null)
-          // if(rb.gravityScale == -10)
-          // 이라는 식으로 스테이지 2_4에서만 활용하는 특정 중력값을 조건으로 걸어
-          // 다른 페어리 오브젝트에서는 작동하지 않게 만들어야 함
         {
-            // 이슬라프의 중력값을 1(기본값)으로 변경
-            rb.gravityScale = 1;
-            // 바닥 사라지기 
-            floor.SetActive(false);
-            // 중력장 사라지기
-            gravity.SetActive(false);
+            if (rb.bodyType == RigidbodyType2D.Static)
+                // 다른 책에서는 작동하지 않게 만들기 위해, 이 책을 읽을 때만의 특수한 조건을 제약으로 건다.
+            {
+
+                // 이슬라프의 중력값을 1(기본값)으로 변경
+                rb.bodyType = RigidbodyType2D.Dynamic;
+                rb.gravityScale = 1;
+                // 바닥 사라지기 
+                floor.SetActive(false);
+                // 중력장 사라지기
+                gravity.SetActive(false);
+
+            }
+            // ==============================================================================
         }
-        // ==============================================================================
-        talking = false;
+
+            talking = false;
     }
 
     void Stage2_Portal1_Move()

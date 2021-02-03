@@ -21,7 +21,9 @@ public class TestDialogue : MonoBehaviour
     private AudioManager theAudio;
     public string Door_Open;
 
-
+    // ============ For 중력장 =====
+    GameObject player;
+    Rigidbody2D rb;
 
 
     void Start()
@@ -29,7 +31,11 @@ public class TestDialogue : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
 
 
-        theAudio = FindObjectOfType<AudioManager>();
+        theAudio = FindObjectOfType<AudioManager>();        
+        
+        // ============ For 중력장 =====
+        player = GameObject.Find("player");
+        rb = player.GetComponent<Rigidbody2D>();
     }
 
     public bool isTalkWithBook = false;
@@ -176,7 +182,8 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Fairy_tale_06")
                 {
                     theDM.ShowDialogue(this.dialogue);
-
+                    // 6번째 책(2_4의 첫번째 책)을 읽는 순간 플레이어의 바디 타입을 고정(static)으로 변경해라===================================================
+                    rb.bodyType = RigidbodyType2D.Static;
 
 
                 }
