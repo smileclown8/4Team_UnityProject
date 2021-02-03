@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class SnakeManager : MonoBehaviour
 {
-    // 스탯
-    int hp = 15;
-    int attack = 15;
-    int dodgeRate = 10;
-
-
     Rigidbody2D rigid;
     public int nextMove;
     GameObject target;
@@ -21,21 +15,22 @@ public class SnakeManager : MonoBehaviour
     float timer = 3f;
     bool isFast;
 
-    // 데미지 연결
-    float playerHP;
+    float delaytime = 1f;
+    float attacktime = 1f;
+
+    GameObject player;
 
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        playerHP = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP;
     }
 
     void Start()
     {
         Invoke("Think", 1);
-
+        player = GameObject.FindWithTag("Player");
     }
 
     void FixedUpdate()
@@ -129,25 +124,29 @@ public class SnakeManager : MonoBehaviour
 
 
 
-    float delaytime = 1f;
-    float attacktime = 1f;
+
+    // 닿자마자 딜 넣기
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             target = collision.gameObject;
-            playerHP -= attack;
+            player.GetComponent<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
+            // ********** 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
             Debug.Log("콰삭!");
         }
 
     }
+
+    // 닿아 있으면 1초마다 딜 넣기
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             if (Time.time > attacktime)
             {
-                playerHP -= attack;
+                player.GetComponent<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
+                // ********** 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
                 Debug.Log("콰삭콰삭!");
 
                 attacktime = Time.time + delaytime;

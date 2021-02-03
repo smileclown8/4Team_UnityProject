@@ -5,10 +5,6 @@ using UnityEngine;
 
 public class SlimeManager : MonoBehaviour
 {
-    // 스탯
-    int hp = 10;
-    int attack = 5;
-
     public float speed = 1f;
 
     // 이동 및 추격용
@@ -90,24 +86,11 @@ public class SlimeManager : MonoBehaviour
     }
 
 
-    
 
-
-    // 체력 0 이하일 때 피격효과 내고 사라진다.
-    public void OnDamaged(int damage)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        spriteRenderer.color = new Color(1, 1, 1, 0.3f);        // 맞으면 반투명해짐
-        collider.enabled = false;                               // 충돌 끄기
-        rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);    // 위로 튀어오름
-
-        if (hp <= 0)
-        {
-            Invoke("Destroy", 1.5f);                            // 1.5초 뒤 사라짐
-        }
+        if (collision.gameObject.tag == "PlayerBullet")
+            rigid.AddForce(Vector2.up * 8, ForceMode2D.Impulse);    // 맞으면 위로 약간 튀어오름
     }
 
-    private void Destroy()
-    {
-        Destroy(gameObject);
-    }
 }

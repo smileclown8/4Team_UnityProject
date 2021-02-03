@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class BatManager : MonoBehaviour
 {
-    // 스탯
-    int hp = 10;
-    [HideInInspector] public int attack = 2;
-    int buffRate = 5;
-
     bool isTracing;
     public GameObject bullet;
     float shoottime = 2;
@@ -32,19 +27,7 @@ public class BatManager : MonoBehaviour
         {
             GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = true;        // 다시 움직이기 시작
         }
-
-
-
-        // 사망 시 사라지기
-        if (hp <= 0)
-            Destroy(transform.parent.gameObject);       // 사망하면 부모 오브젝트부터 모두 삭제
     }
-
-    public void TakeDamage(int damage)
-    {
-        hp -= damage;
-    }
-
 
     void Attack()
     {

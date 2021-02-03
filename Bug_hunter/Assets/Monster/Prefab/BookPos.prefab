@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4893885247363288901}
   - component: {fileID: 4893885247363288898}
   - component: {fileID: 4893885247363288905}
+  - component: {fileID: 1604730459875060168}
   m_Layer: 11
   m_Name: Book
   m_TagString: Enemy
@@ -194,9 +195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ae5ea658d4e5145ae50763dc1eb91b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
-  attack: 20
-  defense: 5
   bullet1: {fileID: 6495135641533652150, guid: 431cbf1bbe53f034aa9f19d51ac4d705, type: 3}
   bullet2: {fileID: 6495135641533652150, guid: 413eb0b287f22e74e8c8f8b2bc712e3d, type: 3}
   bullet3: {fileID: 6495135641533652150, guid: e601c7ac8d36e0940890f21258ba6379, type: 3}
@@ -204,6 +202,23 @@ MonoBehaviour:
   bullet5: {fileID: 6495135641533652150, guid: c7621d127586eca4d8921e139f0d7d69, type: 3}
   shoottime: 0
   nextshoot: 0
+--- !u!114 &1604730459875060168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4893885247363288904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 20
+  attack: 20
+  def: 5
+  dod: 0
+  buffRate: 20
 --- !u!1 &4893885247591907464
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4893885247591907462}
   - component: {fileID: 4893885247591907465}
+  - component: {fileID: 683305106501375539}
   m_Layer: 0
   m_Name: BookPos
   m_TagString: Untagged
@@ -252,3 +268,15 @@ MonoBehaviour:
   speed: 2.5
   currentPos: {fileID: 4893885247363288900}
   desPos: {fileID: 4893885247107724195}
+--- !u!114 &683305106501375539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4893885247591907464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d84c692310f0d43adadc1e1baaa7f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

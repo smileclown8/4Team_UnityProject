@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1751285326667321365}
   - component: {fileID: 6050347447816242477}
-  - component: {fileID: -1339937040643257815}
   - component: {fileID: 8243120177142860041}
+  - component: {fileID: -1339937040643257815}
+  - component: {fileID: 2614669890743625238}
   m_Layer: 11
   m_Name: Staff
   m_TagString: Enemy
@@ -84,20 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-1339937040643257815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6389447803411368097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd216ea27710a7e428bab7864cf203d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Explosion: {fileID: 6487682276949820271, guid: b066d55424f366141a45bad0adf46e41,
-    type: 3}
 --- !u!61 &8243120177142860041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +111,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6242561, y: 2.8813486}
   m_EdgeRadius: 0
+--- !u!114 &-1339937040643257815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389447803411368097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd216ea27710a7e428bab7864cf203d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Explosion: {fileID: 6487682276949820271, guid: b066d55424f366141a45bad0adf46e41,
+    type: 3}
+--- !u!114 &2614669890743625238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389447803411368097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 1
+  attack: 20
+  def: 0
+  dod: 0
+  buffRate: 0

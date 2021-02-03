@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3780252469275121438}
   - component: {fileID: 3780252469275121410}
   - component: {fileID: 3780252469275121413}
+  - component: {fileID: 4481954460958514340}
   m_Layer: 11
   m_Name: Ghost
   m_TagString: Untagged
@@ -135,6 +136,23 @@ MonoBehaviour:
   target: {fileID: 0}
   aiPath: {fileID: 3780252470284202789}
   bullet: {fileID: 6495135641533652150, guid: 5f424b1d7a8a8f743a931c18b92f1d27, type: 3}
+--- !u!114 &4481954460958514340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780252469275121439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 15
+  attack: 20
+  def: 0
+  dod: 30
+  buffRate: 30
 --- !u!1 &3780252470284202786
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +165,7 @@ GameObject:
   - component: {fileID: 3780252470284202788}
   - component: {fileID: 3780252470284202789}
   - component: {fileID: 3780252470284202790}
+  - component: {fileID: 7946226041577186461}
   m_Layer: 11
   m_Name: GhostPos
   m_TagString: Enemy
@@ -247,3 +266,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &7946226041577186461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780252470284202786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d84c692310f0d43adadc1e1baaa7f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

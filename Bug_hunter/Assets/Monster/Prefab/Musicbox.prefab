@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3111677839297849148}
   - component: {fileID: 3111677839297849088}
   - component: {fileID: 3111677839297849091}
+  - component: {fileID: 1810576674633034276}
   m_Layer: 0
   m_Name: Musicbox
   m_TagString: Untagged
@@ -170,6 +171,23 @@ MonoBehaviour:
   forceFactor: 2000
   pulltime: 0
   cooltime: 3
+--- !u!114 &1810576674633034276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111677839297849149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 40
+  attack: 10
+  def: 15
+  dod: 0
+  buffRate: 40
 --- !u!1 &3111677840472425987
 GameObject:
   m_ObjectHideFlags: 0

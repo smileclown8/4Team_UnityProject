@@ -81,6 +81,7 @@ GameObject:
   - component: {fileID: 149886909127615056}
   - component: {fileID: 149886909127615063}
   - component: {fileID: 149886909127615061}
+  - component: {fileID: 6732243745509921548}
   m_Layer: 11
   m_Name: Slime
   m_TagString: Enemy
@@ -235,6 +236,23 @@ MonoBehaviour:
   speed: 1
   target: {fileID: 0}
   rigid: {fileID: 0}
+--- !u!114 &6732243745509921548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149886909127615060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 10
+  attack: 5
+  def: 0
+  dod: 0
+  buffRate: 0
 --- !u!1 &149886910272661519
 GameObject:
   m_ObjectHideFlags: 0

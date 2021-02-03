@@ -22,7 +22,7 @@ public class BookBulletManager : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        damage = GameObject.Find("Book").GetComponent<BookManager>().attack;
+        damage = GameObject.Find("Book").GetComponent<MonsterStatusManager>().attack;
 
         randomBulletPosition.x = Random.Range(-1.0f, 1.0f);
         randomBulletPosition.y = Random.Range(-1.0f, 1.0f);

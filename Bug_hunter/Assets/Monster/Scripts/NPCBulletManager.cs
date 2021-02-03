@@ -17,7 +17,7 @@ public class NPCBulletManager : MonoBehaviour
 
     void Start()
     {
-        damage = GameObject.Find("NPCmon").GetComponent<NPCmonManager>().attack;
+        damage = GameObject.Find("NPCmon").GetComponent<MonsterStatusManager>().attack;
     }
 
     void Update()

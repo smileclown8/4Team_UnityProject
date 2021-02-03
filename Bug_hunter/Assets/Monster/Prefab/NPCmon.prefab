@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5624566833013812570}
   - component: {fileID: 5624566833013812571}
   - component: {fileID: 5624566833013812568}
+  - component: {fileID: 2562759842834173520}
   m_Layer: 0
   m_Name: NPCmon
   m_TagString: Untagged
@@ -151,10 +152,26 @@ MonoBehaviour:
   isDamaged: 0
   shoottime: 2
   cooltime: 2
-  Bullet: {fileID: 0}
   bulletsAmount: 3
   startAngle: 300
   endAngle: 240
+--- !u!114 &2562759842834173520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5624566833013812569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 30
+  attack: 4
+  def: 0
+  dod: 0
+  buffRate: 30
 --- !u!1 &5624566834360548319
 GameObject:
   m_ObjectHideFlags: 0

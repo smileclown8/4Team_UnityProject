@@ -11,11 +11,6 @@ using UnityEngine;
 
 public class NPCmonManager : MonoBehaviour
 {
-    // 스탯
-    public int hp = 30;
-    public int attack = 4;
-    int buffRate = 30;
-
     [SerializeField] float speed = 3.5f;
 
     public GameObject target;

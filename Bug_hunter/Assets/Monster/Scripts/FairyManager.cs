@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class FairyManager : MonoBehaviour
 {
-    // 스탯
-    [HideInInspector] public int hp = 25;
-    int attack = 10;
-    int defenseRate = 10;
-    int dodgeRate = 10;
-    int buffRate = 20;
-
-
     Animator animator;
     bool pushingAnimTrigger;
 
@@ -29,13 +21,5 @@ public class FairyManager : MonoBehaviour
             animator.SetBool("bomb", true);     // 밀어낼 때의 애니메이션 재생
         else
             animator.SetBool("bomb", false);
-
-
-        // 사망하면 프리팹 파괴
-        if (hp <= 0)
-        {
-            Destroy(gameObject);
-        }
-
     }
 }

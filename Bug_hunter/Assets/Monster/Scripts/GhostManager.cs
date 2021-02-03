@@ -5,16 +5,9 @@ using Pathfinding;
 
 public class GhostManager : MonoBehaviour
 {
-    // 스탯
-    int hp = 15;
-    int attack = 20;
-    int dodgeRate = 30;
-
-
-
+    float hp;
     bool isDamaged;         // 공격을 받았는가?
     bool trace;             // 추격을 시작했는가?
-    Rigidbody2D rigid;
     Animator animator;
     public GameObject target;
 
@@ -28,8 +21,6 @@ public class GhostManager : MonoBehaviour
 
     void Start()
     {
-        hp = 15;
-        rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         shoottime = 3f;
         nextshoot = Time.time;
@@ -40,12 +31,7 @@ public class GhostManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(2))    // 테스트용 임시함수. 지울 것***************
-            isDamaged = true;
-
-        if (Input.GetMouseButtonDown(1))    // 테스트용 임시함수. 지울 것***************
-            hp = 0;
-
+        hp = GetComponent<MonsterStatusManager>().hp;
 
         if (isDamaged)
         {
@@ -57,10 +43,10 @@ public class GhostManager : MonoBehaviour
                 }
                 else if (hp <= 0)
                 {
-                    Death();                    // hp가 0 이하이면 죽음
+                    Death();                    // hp가 0 이하이면 죽음 (애니메이션 재생)
                 }
             }
-            else if (playerHP <= 0)
+            else if (playerHP <= 0)             // 플레이어가 먼저 죽으면 정지
             {
                 Stop();
             }
@@ -85,18 +71,15 @@ public class GhostManager : MonoBehaviour
         animator.SetBool("isAttack", false);
     }
 
+
     void Death()
     {
         GetComponentInParent<AIDestinationSetter>().enabled = false;
         animator.SetBool("isAttack", false);
         animator.SetTrigger("Death");
-        Invoke("DeathAnim", 1);     // 1초 후 실행
+        Invoke("DeathAnim", 1);
     }
-    void DeathAnim()
-    {
-        Destroy(this.gameObject);
 
-    }
 
 
     [SerializeField] public GameObject bullet;

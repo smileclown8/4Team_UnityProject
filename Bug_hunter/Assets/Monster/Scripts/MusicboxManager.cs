@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class MusicboxManager : MonoBehaviour
 {
-    // 스탯
-    public int hp = 40;
-    public int attack = 10;
-    public int defense = 15;
-    int buffRate = 40;
-
+    float attack;
     bool isTracing;                     // 플레이어 인식용
     GameObject player;                  // 그냥 플레이어
     GameObject target;                  // 끌어당길 플레이어
@@ -27,10 +22,10 @@ public class MusicboxManager : MonoBehaviour
 
     void Start()
     {
+        attack = GetComponent<MonsterStatusManager>().attack;
         myPos = GetComponent<Transform>();
         player = GameObject.FindWithTag("Player");
         targetGravity_original = player.GetComponent<Rigidbody2D>().gravityScale;
-        playerHP = player.GetComponent<PlayerStatusManager>().player_HP;
         // playerDef = player.GetComponent<PlayerStatusManager>().player_Def;  -------------- 추가할것
 
         pulltime = 1.5f;
@@ -50,7 +45,7 @@ public class MusicboxManager : MonoBehaviour
 
 
         }
-        
+
         if (!isTracing)
         {
             player.GetComponent<Rigidbody2D>().gravityScale = targetGravity_original;
@@ -61,33 +56,12 @@ public class MusicboxManager : MonoBehaviour
             if (pulltime >= cooltime)
             {
                 targetrb.AddForce((myPos.position - targetTrans.position) * forceFactor * Time.deltaTime);
-                playerHP -= attack;
-                Debug.Log("빡! 플레이어 HP: " + playerHP + ", 데미지 " + attack);
+                player.GetComponent<PlayerStatusManager>().player_HP -= attack;
+                // 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
+                Debug.Log("오르골의 공격! 플레이어 HP: " + playerHP + ", 데미지 " + attack);
                 pulltime = 0;
             }
             pulltime += Time.deltaTime;
         }
-    }
-
-
-
-
-    SpriteRenderer spriteRenderer;
-    new CapsuleCollider2D collider;
-
-    // 체력 0 이하일 때 피격효과 내고 사라진다.
-    public void OnDamaged(int damage)
-    {
-        if (hp <= 0)
-        {
-            spriteRenderer.color = new Color(1, 1, 1, 0.3f);        // 맞으면 반투명해짐
-            collider.enabled = false;                               // 충돌 끄기
-            Invoke("Destroy", 1.5f);                                // 1.5초 뒤 사라짐
-        }
-    }
-
-    private void Destroy()
-    {
-        Destroy(gameObject);
     }
 }

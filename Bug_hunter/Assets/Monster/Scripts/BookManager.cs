@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class BookManager : MonoBehaviour
 {
-    // 스탯
-    public int hp = 20;
-    public int attack = 20;
-    public int defense = 5;
-    int buffRate = 20;
-
     Animator anim;
-    SpriteRenderer spriteRenderer;
 
 
     // 공격용
@@ -44,6 +37,7 @@ public class BookManager : MonoBehaviour
 
     void Attack()
     {
+        // 쿨타임 돌 때마다 공격
         if (nextshoot <= shoottime)
         {
             GenerateBullet();
@@ -76,21 +70,4 @@ public class BookManager : MonoBehaviour
         }
     }
 
-
-
-
-    // 체력 0 이하일 때 피격효과 내고 사라진다.
-    public void OnDamaged(int damage)
-    {
-        if (hp <= 0)
-        {
-            spriteRenderer.color = new Color(1, 1, 1, 0.3f);        // 맞으면 반투명해짐
-            Invoke("Destroy", 1.5f);                                // 1.5초 뒤 사라짐
-        }
-    }
-
-    private void Destroy()
-    {
-        Destroy(gameObject);
-    }
 }

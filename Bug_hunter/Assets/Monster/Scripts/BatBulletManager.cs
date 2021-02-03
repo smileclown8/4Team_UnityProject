@@ -15,7 +15,7 @@ public class BatBulletManager : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag("Player");
-        damage = GameObject.Find("Bat").GetComponent<BatManager>().attack;
+        damage = GameObject.Find("Bat").GetComponent<MonsterStatusManager>().attack;
 
         moveDirection = (target.transform.position - transform.position).normalized * speed;
         rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
