@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3165318660983585390}
   - component: {fileID: 1960526911054284858}
   - component: {fileID: 6316346747898998462}
+  - component: {fileID: 5920647278307634241}
   m_Layer: 9
   m_Name: player
   m_TagString: Player
@@ -170,28 +171,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 3165318660983585385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae0623d9a5c8b04caeba84c8519d90e, type: 3}
+  m_Script: {fileID: 11500000, guid: 17181a42e77200649bee3a67107c9c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isShootButton: 0
   skill_ID: 0
   NormalBullet: {fileID: 1921888244951303501, guid: ec57b8b31e3819a4aaa7e89d2776a436,
     type: 3}
-  FirstSkillBullet: {fileID: 1921888244951303501, guid: ec57b8b31e3819a4aaa7e89d2776a436,
-    type: 3}
   SecondSkillBullet: {fileID: 3522355950248386491, guid: c3e4601e7bbb9ec44b89b85290ad45c6,
     type: 3}
-  arrowSkillBullet: {fileID: 2475634399493701589, guid: 8de9d4f205115984a85492d4d265e2bb,
+  RandomBullet: {fileID: 1921888244951303501, guid: ec57b8b31e3819a4aaa7e89d2776a436,
     type: 3}
-  BombSkill: {fileID: 428565131873435329, guid: 6eeeb647048a380438a440377273b3bc,
+  arrowSkillBullet: {fileID: 2475634399493701589, guid: 35a070e1a5e9f8042a5d282ad76e3399,
     type: 3}
-  ElectroSkill: {fileID: 955176400735252089, guid: a21b4568e21fbf948b94df920a0994d1,
+  BombSkill: {fileID: 428565131873435329, guid: 41fd9a0e4687e49488c620a0e904c837,
     type: 3}
-  FireSkill: {fileID: 5225882244830033029, guid: eeff8d331f412304fa3565a4ea3de559,
+  ElectroSkill: {fileID: 955176400735252089, guid: 0884f246ae3d9de49bcbb0b514296380,
+    type: 3}
+  FireSkill: {fileID: 5225882244830033029, guid: e17def6f24c85f94c9eb5342b43168e7,
     type: 3}
   coolTime_NormalShoot: 1
-  coolTime_FirstSkill: 1
   coolTime_SecondSKill: 1
+  coolTime_FirstSkill: 1
   coolTime_arrowSkillBullet: 1
   coolTime_BombSkill: 1
   coolTime_ElectroSkill: 1
@@ -199,7 +200,6 @@ MonoBehaviour:
   bulletPos: {fileID: 0}
   pos: {fileID: 0}
   coolTime: 0
-  continousFireSpeed: 0.05
 --- !u!58 &6316346747898998462
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -216,6 +216,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.24093522}
   serializedVersion: 2
   m_Radius: 2.1640651
+--- !u!114 &5920647278307634241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3165318660983585385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a696462935377488f8003798343a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Buff: {fileID: 3482203863048941401, guid: 81a48a03b8ea1b1478b426b40811929f, type: 3}
+  playerPos: {fileID: 0}
 --- !u!1 &3165318661782804472
 GameObject:
   m_ObjectHideFlags: 0
