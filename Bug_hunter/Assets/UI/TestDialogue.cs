@@ -16,6 +16,9 @@ public class TestDialogue : MonoBehaviour
 
     public bool isSavorTalkItemGet = false;
 
+
+    int Memory = 0;
+
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
@@ -28,6 +31,8 @@ public class TestDialogue : MonoBehaviour
 
     public bool isPortal1 = false;
     public bool isPortal2 = false;
+
+    
 
 
     private void Update()
@@ -192,7 +197,66 @@ public class TestDialogue : MonoBehaviour
                     GameObject.Find("Door_close002").SetActive(false);
                 }
 
-                howManyTailkingWithThisObject++;
+
+                /*
+                //2-4스테이지 기믹
+                if (this.gameObject.name == "Memory_01" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    Memory++;
+                    GameObject.Find("Memory_01").SetActive(false);
+                }
+                if (this.gameObject.name == "Memory_02" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    Memory++;
+                    GameObject.Find("Memory_02").SetActive(false);
+                }
+                if (this.gameObject.name == "Memory_03" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    Memory++;
+                    GameObject.Find("Memory_03").SetActive(false);
+                }
+                if (this.gameObject.name == "Memory_04" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    Memory++;
+                    GameObject.Find("Memory_04").SetActive(false);
+
+                }
+                if (this.gameObject.name == "Door_close003" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    if (Memory == 4)
+                    {
+                        GameObject.Find("Door_close003").SetActive(false);
+                    }
+
+                }
+                */
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    howManyTailkingWithThisObject++;
             }
         }
     }
