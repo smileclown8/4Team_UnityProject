@@ -17,13 +17,8 @@ public class TestDialogue : MonoBehaviour
     public bool isSavorTalkItemGet = false;
 
 
-    int Memory = 0;
 
 
-    public bool Memory1 = false;
-    public bool Memory2 = false;
-    public bool Memory3 = false;
-    public bool Memory4 = false;
 
 
     void Start()
@@ -35,6 +30,9 @@ public class TestDialogue : MonoBehaviour
     public bool isBobgurut2 = false;
     public bool isSavorBomb = false;
     public bool isC_laugh = false;
+    public bool isDoor_Unlock = false;
+
+
 
     public bool isPortal1 = false;
     public bool isPortal2 = false;
@@ -181,108 +179,62 @@ public class TestDialogue : MonoBehaviour
                 }
 
                 //2스테이지 트리거
-                if (this.gameObject.name == "Door_close001" +
-                    "")
+                if (this.gameObject.name == "Door_close001")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    isDoor_Unlock = true;
                 }
-                if (this.gameObject.name == "Lever_off" +
-                    "")
+                if (this.gameObject.name == "Lever_off")
                 {
                     theDM.ShowDialogue(this.dialogue);
                     GameObject.Find("Door_close001").SetActive(false);
                 }
-                if(this.gameObject.name == "Door_close002" +
-                    "")
+                if(this.gameObject.name == "Door_close002")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    isDoor_Unlock = true;
                 }
-                if (this.gameObject.name == "Lever_off3" +
-                   "")
+                if (this.gameObject.name == "Door_close003")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    isDoor_Unlock = true;
+                }
+                if (this.gameObject.name == "Lever_off3")
                 {
                     theDM.ShowDialogue(this.dialogue);
                     GameObject.Find("Door_close002").SetActive(false);
                 }
-
-
-                //2-4스테이지 기믹
-                if (this.gameObject.name == "Memory_01" +
-                  "")
+                if (this.gameObject.name == "Lever_off4")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    Memory1 = true;
-                }
-                if (this.gameObject.name == "Memory_02" +
-                  "")
-                {
-                    theDM.ShowDialogue(this.dialogue);
-                    Memory2 = true;
-                }
-                if (this.gameObject.name == "Memory_03" +
-                  "")
-                {
-                    theDM.ShowDialogue(this.dialogue);
-                    Memory3 = true;
-
-                }
-                if (this.gameObject.name == "Memory_04" +
-                  "")
-                {
-                    theDM.ShowDialogue(this.dialogue);
-                    Memory4 = true;
+               
                 }
 
-                if (GameObject.Find("Memory_01").GetComponent<TestDialogue>().Memory1 == true &&
-                    GameObject.Find("Memory_02").GetComponent<TestDialogue>().Memory2 == true &&
-                    GameObject.Find("Memory_03").GetComponent<TestDialogue>().Memory3 == true &&
-                    GameObject.Find("Memory_04").GetComponent<TestDialogue>().Memory4 == true)
+                if (this.gameObject.name == "Lever_off")
                 {
-                    GameObject.Find("Door_close003").SetActive(false);
+                    theDM.ShowDialogue(this.dialogue);
 
                 }
-
-                /*
-                //2-4스테이지 기믹
-                if (this.gameObject.name == "Memory_01" +
-                  "")
+                if (this.gameObject.name == "LostMemory1")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    Memory++;
-                    GameObject.Find("Memory_01").SetActive(false);
-                }
-                if (this.gameObject.name == "Memory_02" +
-                  "")
-                {
-                    theDM.ShowDialogue(this.dialogue);
-                    Memory++;
-                    GameObject.Find("Memory_02").SetActive(false);
-                }
-                if (this.gameObject.name == "Memory_03" +
-                  "")
-                {
-                    theDM.ShowDialogue(this.dialogue);
-                    Memory++;
-                    GameObject.Find("Memory_03").SetActive(false);
-                }
-                if (this.gameObject.name == "Memory_04" +
-                  "")
-                {
-                    theDM.ShowDialogue(this.dialogue);
-                    Memory++;
-                    GameObject.Find("Memory_04").SetActive(false);
 
                 }
-                if (this.gameObject.name == "Door_close003" +
-                  "")
+                if (this.gameObject.name == "LostMemory2")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    if (Memory == 4)
-                    {
-                        GameObject.Find("Door_close003").SetActive(false);
-                    }
 
                 }
-                */
+                if (this.gameObject.name == "LostMemory3")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+
+                }
+                if (this.gameObject.name == "LostMemory4")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+
+                }
 
 
 

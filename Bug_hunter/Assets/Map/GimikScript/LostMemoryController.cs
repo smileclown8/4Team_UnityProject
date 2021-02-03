@@ -7,6 +7,7 @@ public class LostMemoryController : MonoBehaviour
     public int count;
     public GameObject target1;
     public GameObject target2;
+    public GameObject target3;
 
 
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class LostMemoryController : MonoBehaviour
         {
             target1.SetActive(false);
             target2.SetActive(false);
+            target3.SetActive(false);
         }
     }
 }

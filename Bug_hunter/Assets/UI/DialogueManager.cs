@@ -43,6 +43,7 @@ public class DialogueManager : MonoBehaviour
     public string dog_bark;
     public string Bomb;
     public string C_laugh;
+    public string Door_Unlock;
 
     private AudioManager theAudio;
 
@@ -116,7 +117,24 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject.Find("Savor2").GetComponent<TestDialogue>().isSavorBomb = false;
         }
-        
+        if (GameObject.Find("Door_close001") != null)
+        {
+            GameObject.Find("Door_close001").GetComponent<TestDialogue>().isDoor_Unlock = false;
+        }
+        if (GameObject.Find("Door_close002") != null)
+        {
+            GameObject.Find("Door_close002").GetComponent<TestDialogue>().isDoor_Unlock = false;
+        }
+        if (GameObject.Find("Door_close003") != null)
+        {
+            GameObject.Find("Door_close003").GetComponent<TestDialogue>().isDoor_Unlock = false;
+        }
+
+
+
+
+
+
 
         if (GameObject.Find("Portal_01")!= null)
         {
@@ -304,9 +322,41 @@ public class DialogueManager : MonoBehaviour
                         Debug.Log("재생");
                         theAudio.Play(Bomb);
                     }
-
-
                 }
+
+                if (GameObject.Find("Door_close001") != null) 
+                {
+                    if (GameObject.Find("Door_close001").GetComponent<TestDialogue>().isDoor_Unlock == true
+                       && count == 1
+                       && GameObject.Find("Door_close001").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                    {
+                        Debug.Log("뜨나?");
+                        theAudio.Play(Door_Unlock);
+                    }
+                }
+                if (GameObject.Find("Door_close002") != null) 
+                {
+
+                    if (GameObject.Find("Door_close002").GetComponent<TestDialogue>().isDoor_Unlock == true
+                       && count == 1
+                       && GameObject.Find("Door_close002").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                    {
+                        theAudio.Play(Door_Unlock);
+                    }
+                }
+                if (GameObject.Find("Door_close003") != null)
+                {
+
+                    if (GameObject.Find("Door_close003").GetComponent<TestDialogue>().isDoor_Unlock == true
+                       && count == 1
+                       && GameObject.Find("Door_close003").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                    {
+                        theAudio.Play(Door_Unlock);
+                    }
+                }
+                
+
+
 
 
 
