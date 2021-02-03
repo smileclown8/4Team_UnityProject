@@ -170,28 +170,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5966874427858925745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae0623d9a5c8b04caeba84c8519d90e, type: 3}
+  m_Script: {fileID: 11500000, guid: 17181a42e77200649bee3a67107c9c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isShootButton: 0
   skill_ID: 0
   NormalBullet: {fileID: 1921888244951303501, guid: ec57b8b31e3819a4aaa7e89d2776a436,
     type: 3}
-  FirstSkillBullet: {fileID: 1921888244951303501, guid: ec57b8b31e3819a4aaa7e89d2776a436,
-    type: 3}
-  SecondSkillBullet: {fileID: 3522355950248386491, guid: c3e4601e7bbb9ec44b89b85290ad45c6,
-    type: 3}
-  arrowSkillBullet: {fileID: 2475634399493701589, guid: 8de9d4f205115984a85492d4d265e2bb,
-    type: 3}
-  BombSkill: {fileID: 428565131873435329, guid: 6eeeb647048a380438a440377273b3bc,
-    type: 3}
-  ElectroSkill: {fileID: 955176400735252089, guid: a21b4568e21fbf948b94df920a0994d1,
-    type: 3}
-  FireSkill: {fileID: 5225882244830033029, guid: eeff8d331f412304fa3565a4ea3de559,
-    type: 3}
+  SecondSkillBullet: {fileID: 0}
+  RandomBullet: {fileID: 0}
+  arrowSkillBullet: {fileID: 0}
+  BombSkill: {fileID: 0}
+  ElectroSkill: {fileID: 0}
+  FireSkill: {fileID: 0}
   coolTime_NormalShoot: 1
-  coolTime_FirstSkill: 1
   coolTime_SecondSKill: 1
+  coolTime_FirstSkill: 1
   coolTime_arrowSkillBullet: 1
   coolTime_BombSkill: 1
   coolTime_ElectroSkill: 1
@@ -199,7 +193,6 @@ MonoBehaviour:
   bulletPos: {fileID: 0}
   pos: {fileID: 0}
   coolTime: 0
-  continousFireSpeed: 0.05
 --- !u!58 &3353998400072019046
 CircleCollider2D:
   m_ObjectHideFlags: 0

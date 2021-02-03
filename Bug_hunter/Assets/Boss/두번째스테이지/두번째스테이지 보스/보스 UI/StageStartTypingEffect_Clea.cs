@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Core_StageStart_TypingEffect : MonoBehaviour
+public class StageStartTypingEffect_Clea : MonoBehaviour
 {
+
     public Text tx;
-    private string BossStageStart = "Boss -  절망한 데이터 IF";
-  
+    private string BossStageStart = "Boss - 영원히 꿈꾸는 아이 클레아";
+
     void Awake()
     {
         tx = GameObject.Find("StageStartText").GetComponent<Text>();
