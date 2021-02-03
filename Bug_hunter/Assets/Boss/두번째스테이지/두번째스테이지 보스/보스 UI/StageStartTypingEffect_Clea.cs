@@ -16,18 +16,32 @@ public class StageStartTypingEffect_Clea : MonoBehaviour
 
     void Start()
     {
-
+        Invoke("StartCamereEvent", 3f);
         StartCoroutine(_typing());
-
-        Invoke("Destroy", 5);
+        Invoke("StopCameraEvent", 7);
+        Invoke("Destroy", 8);
     }
 
     void Update()
     {
     }
 
+    void StartCamereEvent()
+    {
+        GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent = true;
+
+    }
+
+    void StopCameraEvent()
+    {
+        GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent = false;
+    }
+
+
     IEnumerator _typing()
     {
+        yield return new WaitForSeconds(3.0f);
+
         for (int i = 0; i <= BossStageStart.Length; i++)
         {
             tx.text = BossStageStart.Substring(0, i);

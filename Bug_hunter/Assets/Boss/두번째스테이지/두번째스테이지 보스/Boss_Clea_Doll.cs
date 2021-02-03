@@ -50,6 +50,8 @@ public class Boss_Clea_Doll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MoveToStartPos();
+
         //===========================================================
         //패턴발생시 보스가 패턴위치로 이동
         Pattern1BossMove();
@@ -148,15 +150,21 @@ public class Boss_Clea_Doll : MonoBehaviour
     private bool pattern5Activate = false;
     IEnumerator PatternDecide()
     {
-        yield return new WaitForSeconds(1.0f); //보스 패턴 시작하기전까지 시간
-
+        if (this.gameObject.name == "Boss_Clea_Doll")
+        {
+            yield return new WaitForSeconds(7.0f); //보스 최초 패턴 시작하기전까지 시간
+        }
+        else if (this.gameObject.name == "Boss_Clea_Doll(Clone)")
+        {
+            yield return new WaitForSeconds(1.0f); //보스 재생성 후 패턴 시작하기까지 시작
+        }
 
         while (true)
         {
 
             //DecidePattern();
 
-         //   nowPattern = Random.Range(1, 5+1);
+           nowPattern = Random.Range(1, 5+1);
 
             while (true)
             {
@@ -167,7 +175,7 @@ public class Boss_Clea_Doll : MonoBehaviour
                 if (nowPattern != postPattern)
                     break;
             }
-            nowPattern = 3;
+
 
             switch (nowPattern)
             {
@@ -356,7 +364,14 @@ public class Boss_Clea_Doll : MonoBehaviour
         }
     }
 
-    
+    void MoveToStartPos()
+    {
+        if(GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position,
+    Pattenr4_BossReturnPos.transform.position, Time.deltaTime * 35f);
+        }
+    }
 
     void DecidePattern()
     {

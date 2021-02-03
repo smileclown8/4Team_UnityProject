@@ -32,6 +32,8 @@ public class SecondStageCamera : MonoBehaviour
     public GameObject boss_Clea_CameraPos1;
     public GameObject boss_Clea_CameraPos2;
 
+    public GameObject Boss_Clea_Doll;
+
     float leftEnd;
     float rightEnd;
     float downEnd;
@@ -48,6 +50,14 @@ public class SecondStageCamera : MonoBehaviour
 
         if (GameObject.Find("Boss_Clea_GrogyManager").GetComponent<Boss_Clea_GrogyManager>().isBossGrogy == false)
         {
+            if(GameObject.Find("Boss_Clea_Doll") != null){
+                if(GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent == true)
+                {
+                    transform.position = GameObject.Find("Boss_Clea_Doll").transform.position;
+                }
+
+            }
+
             if (transform.position.x <= leftEnd)
             {
                 transform.position = new Vector2(leftEnd, transform.position.y);

@@ -38,6 +38,9 @@ public class Boss_Clea_GrogyManager : MonoBehaviour
 
     public bool isBossGrogy;
 
+    [SerializeField]
+    public GameObject GrogyNoticeText;
+
     void isGrogy()
     {
         if (Boss_Clea_Doll != null)
@@ -46,6 +49,7 @@ public class Boss_Clea_GrogyManager : MonoBehaviour
             {
                 isBossGrogy = true;
                 Debug.Log("그로기");
+                GrogyNoticeText.SetActive(true);
                 Boss_Clea_Grogy.SetActive(true);
                 if (GameObject.Find("Boss_Clea_Doll") != null)
                 {

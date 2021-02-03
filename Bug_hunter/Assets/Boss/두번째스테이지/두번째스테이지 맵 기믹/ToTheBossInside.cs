@@ -17,12 +17,17 @@ public class ToTheBossInside : MonoBehaviour
     }
 
     public Transform portalPos;
+    public bool isPlayerInBossInside = false;
 
+    public GameObject LimitTimeNoticeText;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
+            GameObject.Find("GrogyNoticeText").SetActive(false);
+            isPlayerInBossInside = true;
+            LimitTimeNoticeText.SetActive(true);
             collision.gameObject.transform.position = portalPos.position;
         }
     }

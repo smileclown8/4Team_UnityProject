@@ -19,6 +19,7 @@ public class Boss_Clea_Crying : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      
         limit_Time = limit_Time_Init;
     }
 
@@ -125,6 +126,7 @@ public class Boss_Clea_Crying : MonoBehaviour
         GameObject.Find("Boss_Clea_GrogyManager").GetComponent<Boss_Clea_GrogyManager>().isBossGrogy = false;
         // Boss_Clea_Doll.SetActive(true); Instatiate로 바꾸기
         Boss_Clea_Grogy.SetActive(false);
+        LimitTimeNoticeText.SetActive(false);
         limit_Time = limit_Time_Init;
         //Instantiate(Boss_Clea_Doll, Boss_GrogyRecoverPos.transform.position,
         //    Boss_GrogyRecoverPos.transform.rotation);
@@ -136,16 +138,29 @@ public class Boss_Clea_Crying : MonoBehaviour
         this.gameObject.SetActive(false);    
     }
 
+    private bool isPlayerInBossInside;
+    public GameObject LimitTimeNoticeText;
 
     void TimeLimit()
     {
-        limit_Time -= Time.deltaTime;
-        Debug.Log((int)limit_Time);
-
-        if(limit_Time <= 0)
+        if (GameObject.Find("Boss_Clea_Grogy") != null)
         {
-            Player.transform.position = ToBossPos.position;
-            isGrogyRecover();
+            isPlayerInBossInside = GameObject.Find("Boss_Clea_Grogy").GetComponent<ToTheBossInside>().isPlayerInBossInside;
+        }
+
+        if (isPlayerInBossInside)
+        {
+            limit_Time -= Time.deltaTime;
+            int LeftTime = (int)limit_Time;
+            if (LeftTime <= 30)
+            {
+                LimitTimeNoticeText.GetComponent<Text>().text = LeftTime.ToString();
+            }
+            if (limit_Time <= 0)
+            {
+                Player.transform.position = ToBossPos.position;
+                isGrogyRecover();
+            }
         }
     }
 

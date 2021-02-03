@@ -15,7 +15,7 @@ public class Boss_Clea_StatusManager : MonoBehaviour
     void Start()
     {
         Instantiate(StageStartTypingManager_Clea, this.transform.position, this.transform.rotation);
-        Invoke("StartShowBossInfoInvoke", 5f);
+        Invoke("StartShowBossInfoInvoke", 8f);
     }
 
     // Update is called once per frame
