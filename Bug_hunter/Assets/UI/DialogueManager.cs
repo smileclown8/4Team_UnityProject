@@ -44,6 +44,8 @@ public class DialogueManager : MonoBehaviour
     public string Bomb;
     public string C_laugh;
     public string Door_Unlock;
+    public string Musicbox1;
+    public string SadSound1;
 
     private AudioManager theAudio;
 
@@ -128,6 +130,15 @@ public class DialogueManager : MonoBehaviour
         if (GameObject.Find("Door_close003") != null)
         {
             GameObject.Find("Door_close003").GetComponent<TestDialogue>().isDoor_Unlock = false;
+        }
+        if (GameObject.Find("Portal_01") != null)
+        {
+            GameObject.Find("Portal_01").GetComponent<TestDialogue>().isMusicbox1 = false;
+            theAudio.Stop(Musicbox1);
+        }
+        if (GameObject.Find("Stage_Start") != null)
+        {
+            GameObject.Find("Stage_Start").GetComponent<TestDialogue>().isSadSound1 = false;
         }
 
 
@@ -323,38 +334,28 @@ public class DialogueManager : MonoBehaviour
                         theAudio.Play(Bomb);
                     }
                 }
-
-                if (GameObject.Find("Door_close001") != null) 
-                {
-                    if (GameObject.Find("Door_close001").GetComponent<TestDialogue>().isDoor_Unlock == true
-                       && count == 1
-                       && GameObject.Find("Door_close001").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
-                    {
-                        Debug.Log("뜨나?");
-                        theAudio.Play(Door_Unlock);
-                    }
-                }
-                if (GameObject.Find("Door_close002") != null) 
+                if(GameObject.Find("Portal_01") != null) // 없는데 찾으라고해서 오류 났으니까 걸어줘야 함
                 {
 
-                    if (GameObject.Find("Door_close002").GetComponent<TestDialogue>().isDoor_Unlock == true
+                    if (GameObject.Find("Portal_01").GetComponent<TestDialogue>().isMusicbox1 == true
                        && count == 1
-                       && GameObject.Find("Door_close002").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                       && GameObject.Find("Portal_01").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
-                        theAudio.Play(Door_Unlock);
+                        Debug.Log("재생");
+                        theAudio.Play(Musicbox1);
                     }
                 }
-                if (GameObject.Find("Door_close003") != null)
+                if (GameObject.Find("Stage_Start") != null) // 없는데 찾으라고해서 오류 났으니까 걸어줘야 함
                 {
 
-                    if (GameObject.Find("Door_close003").GetComponent<TestDialogue>().isDoor_Unlock == true
-                       && count == 1
-                       && GameObject.Find("Door_close003").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                    if (GameObject.Find("Stage_Start").GetComponent<TestDialogue>().isSadSound1 == true
+                       && count == 2
+                       && GameObject.Find("Stage_Start").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
-                        theAudio.Play(Door_Unlock);
+                        Debug.Log("재생");
+                        theAudio.Play(SadSound1);
                     }
                 }
-                
 
 
 

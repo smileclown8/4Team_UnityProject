@@ -16,7 +16,10 @@ public class TestDialogue : MonoBehaviour
 
     public bool isSavorTalkItemGet = false;
 
-
+    //오디오 사운드 관련
+    public string Door_Unlock;
+    private AudioManager theAudio;
+    public string Door_Open;
 
 
 
@@ -24,6 +27,9 @@ public class TestDialogue : MonoBehaviour
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
+
+
+        theAudio = FindObjectOfType<AudioManager>();
     }
 
     public bool isTalkWithBook = false;
@@ -31,12 +37,15 @@ public class TestDialogue : MonoBehaviour
     public bool isSavorBomb = false;
     public bool isC_laugh = false;
     public bool isDoor_Unlock = false;
+    public bool isMusicbox1 = false;
+    public bool isSadSound1 = false;
 
 
 
     public bool isPortal1 = false;
     public bool isPortal2 = false;
 
+  
     
 
 
@@ -124,6 +133,7 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Stage_Start")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    isSadSound1 = true;
                 }
                 if (this.gameObject.name == "Fairy_tale_01")
                 {
@@ -140,6 +150,7 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Portal_01")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    isMusicbox1 = true;
                     isPortal1 = true;
                 }
 
@@ -182,38 +193,37 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Door_close001")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    theAudio.Play(Door_Unlock);
                     isDoor_Unlock = true;
-                }
-                if (this.gameObject.name == "Lever_off")
-                {
-                    theDM.ShowDialogue(this.dialogue);
-                    GameObject.Find("Door_close001").SetActive(false);
                 }
                 if(this.gameObject.name == "Door_close002")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    theAudio.Play(Door_Unlock);
                     isDoor_Unlock = true;
                 }
                 if (this.gameObject.name == "Door_close003")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    theAudio.Play(Door_Unlock);
                     isDoor_Unlock = true;
+                }
+                if (this.gameObject.name == "Lever_off")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    theAudio.Play(Door_Open);
+                    GameObject.Find("Door_close001").SetActive(false);
                 }
                 if (this.gameObject.name == "Lever_off3")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    theAudio.Play(Door_Open);
                     GameObject.Find("Door_close002").SetActive(false);
                 }
                 if (this.gameObject.name == "Lever_off4")
                 {
                     theDM.ShowDialogue(this.dialogue);
-               
-                }
-
-                if (this.gameObject.name == "Lever_off")
-                {
-                    theDM.ShowDialogue(this.dialogue);
-
+                    theAudio.Play(Door_Open);
                 }
                 if (this.gameObject.name == "LostMemory1")
                 {
