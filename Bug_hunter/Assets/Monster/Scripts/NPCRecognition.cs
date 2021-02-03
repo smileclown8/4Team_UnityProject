@@ -10,7 +10,6 @@ public class NPCRecognition : MonoBehaviour
     public bool missing;
 
 
-
     void Update()
     {
         isDamaged = GetComponentInParent<NPCmonManager>().isDamaged;
