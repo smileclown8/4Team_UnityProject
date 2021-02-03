@@ -19,6 +19,13 @@ public class TestDialogue : MonoBehaviour
 
     int Memory = 0;
 
+
+    public bool Memory1 = false;
+    public bool Memory2 = false;
+    public bool Memory3 = false;
+    public bool Memory4 = false;
+
+
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
@@ -198,6 +205,42 @@ public class TestDialogue : MonoBehaviour
                 }
 
 
+                //2-4스테이지 기믹
+                if (this.gameObject.name == "Memory_01" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    Memory1 = true;
+                }
+                if (this.gameObject.name == "Memory_02" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    Memory2 = true;
+                }
+                if (this.gameObject.name == "Memory_03" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    Memory3 = true;
+
+                }
+                if (this.gameObject.name == "Memory_04" +
+                  "")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    Memory4 = true;
+                }
+
+                if (GameObject.Find("Memory_01").GetComponent<TestDialogue>().Memory1 == true &&
+                    GameObject.Find("Memory_02").GetComponent<TestDialogue>().Memory2 == true &&
+                    GameObject.Find("Memory_03").GetComponent<TestDialogue>().Memory3 == true &&
+                    GameObject.Find("Memory_04").GetComponent<TestDialogue>().Memory4 == true)
+                {
+                    GameObject.Find("Door_close003").SetActive(false);
+
+                }
+
                 /*
                 //2-4스테이지 기믹
                 if (this.gameObject.name == "Memory_01" +
@@ -240,7 +283,6 @@ public class TestDialogue : MonoBehaviour
 
                 }
                 */
-              
 
 
 
@@ -256,7 +298,8 @@ public class TestDialogue : MonoBehaviour
 
 
 
-                    howManyTailkingWithThisObject++;
+
+                howManyTailkingWithThisObject++;
             }
         }
     }

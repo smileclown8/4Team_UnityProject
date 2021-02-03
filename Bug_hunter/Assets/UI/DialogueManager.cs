@@ -53,6 +53,10 @@ public class DialogueManager : MonoBehaviour
     // ============ For 중력장 =====
     GameObject player;
     Rigidbody2D rb;
+    // ============ For 바닥 =====
+    GameObject floor;
+    // ============ For 중력장 =====
+    GameObject gravity;
     //====================
 
 
@@ -69,7 +73,10 @@ public class DialogueManager : MonoBehaviour
         // ============ For 중력장 =====
         player = GameObject.Find("player");
         rb = player.GetComponent<Rigidbody2D>();
-        //====================
+        // ============ For 바닥 =====
+        floor = GameObject.Find("Tilemap2_4_1");
+        // ============ For 바닥 =====
+        gravity = GameObject.Find("GravityEffect_5");
     }
 
     public void ShowDialogue(Dialogue dialogue)
@@ -142,10 +149,11 @@ public class DialogueManager : MonoBehaviour
           // 다른 페어리 오브젝트에서는 작동하지 않게 만들어야 함
         {
             // 이슬라프의 중력값을 1(기본값)으로 변경
-            // rb.gravityScale = 1;
-
-            // 바닥 사라지기 추가 필요
-            // 중력장 사라지기 추가 필요
+            rb.gravityScale = 1;
+            // 바닥 사라지기 
+            floor.SetActive(false);
+            // 중력장 사라지기
+            gravity.SetActive(false);
         }
         // ==============================================================================
         talking = false;
