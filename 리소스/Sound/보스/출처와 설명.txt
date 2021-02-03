@@ -20,7 +20,8 @@ Game Start2 (총알 발사음 후보)
 https://freesound.org/people/CasperThePancake/sounds/521939/
 
 Player Spawned (스폰음인데 총알 생성음으로 쓸 수 있을 듯)
-https://freesound.org/people/luminousfridge/sounds/496199/
+https://freesound.org/people/luminousfridge/sounds/496199/ 
+->후보1
 
 Video Game Powerup (총알 생성음 후보)
 https://freesound.org/people/SRJA_Gaming/sounds/546640/
