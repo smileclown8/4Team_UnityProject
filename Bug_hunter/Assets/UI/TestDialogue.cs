@@ -17,11 +17,15 @@ public class TestDialogue : MonoBehaviour
     public bool isSavorTalkItemGet = false;
 
 
-    int Memory = 0;
+    public bool Memory1 = false;
+    public bool Memory2 = false;
+    public bool Memory3 = false;
+    public bool Memory4 = false;
 
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
+        
     }
 
     public bool isTalkWithBook = false;
@@ -42,11 +46,16 @@ public class TestDialogue : MonoBehaviour
             Destroy(GameObject.Find("Savor1_Chatbox(Clone)"));
         }
     }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       
         if (collision.gameObject.name == "player")
         {
+
+            
+
+
 
             if (howManyTailkingWithThisObject >= 1
                 && this.dialogue2.sentences.Length != 0)
@@ -198,48 +207,54 @@ public class TestDialogue : MonoBehaviour
                 }
 
 
-                /*
+                
                 //2-4스테이지 기믹
                 if (this.gameObject.name == "Memory_01" +
                   "")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    Memory++;
-                    GameObject.Find("Memory_01").SetActive(false);
+                    Memory1 = true;
                 }
                 if (this.gameObject.name == "Memory_02" +
                   "")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    Memory++;
-                    GameObject.Find("Memory_02").SetActive(false);
+                    Memory2 = true;
                 }
                 if (this.gameObject.name == "Memory_03" +
                   "")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    Memory++;
-                    GameObject.Find("Memory_03").SetActive(false);
+                    Memory3 = true;
+
                 }
                 if (this.gameObject.name == "Memory_04" +
                   "")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    Memory++;
-                    GameObject.Find("Memory_04").SetActive(false);
+                    Memory4 = true;
+                }
+
+                if (GameObject.Find("Memory_01").GetComponent <TestDialogue>().Memory1 == true &&
+                    GameObject.Find("Memory_02").GetComponent<TestDialogue>().Memory2 == true &&
+                    GameObject.Find("Memory_03").GetComponent<TestDialogue>().Memory3 == true &&
+                    GameObject.Find("Memory_04").GetComponent<TestDialogue>().Memory4 == true)
+                {
+                    GameObject.Find("Door_close003").SetActive(false);
 
                 }
+                
+
+
+
+
                 if (this.gameObject.name == "Door_close003" +
                   "")
                 {
                     theDM.ShowDialogue(this.dialogue);
-                    if (Memory == 4)
-                    {
-                        GameObject.Find("Door_close003").SetActive(false);
-                    }
 
                 }
-                */
+                
               
 
 
