@@ -11,7 +11,6 @@ public class MonsterStatusManager : MonoBehaviour
     public int buffRate;        // 버프획득확률
 
     SpriteRenderer spriteRenderer;
-    new Collider2D collider;
 
 
     void Start()
@@ -59,8 +58,7 @@ public class MonsterStatusManager : MonoBehaviour
         if (hp <= 0)
         {
             Debug.Log("으악 죽었다");
-            collider.enabled = false;           // 충돌 끄기
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 0.5f);
         }
     }
 
