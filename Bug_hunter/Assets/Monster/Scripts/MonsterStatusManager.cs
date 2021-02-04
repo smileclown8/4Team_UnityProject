@@ -10,6 +10,8 @@ public class MonsterStatusManager : MonoBehaviour
     public int dod;             // 회피율
     public int buffRate;        // 버프획득확률
 
+    public GameObject item;
+
     SpriteRenderer spriteRenderer;
 
 
@@ -57,8 +59,10 @@ public class MonsterStatusManager : MonoBehaviour
     {
         if (hp <= 0)
         {
+            Instantiate(item, transform.position + Vector3.up * 3, transform.rotation);
+
             Debug.Log("으악 죽었다");
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject);
         }
     }
 
