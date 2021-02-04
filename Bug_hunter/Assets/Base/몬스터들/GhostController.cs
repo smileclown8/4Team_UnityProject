@@ -6,8 +6,7 @@ public class GhostController : MonoBehaviour
 {
     // 0203 몬스터 HP
     public float MonsterHP;
-    // 해당 아이템 프리팹 적용
-    public GameObject buff;
+
     // 오브젝트의 투사체 프리팹 적용
     public GameObject bullet;
 
@@ -36,21 +35,8 @@ public class GhostController : MonoBehaviour
         if (collision.gameObject.tag == "PlayerBullet")
         {
             MonsterHP -= collision.gameObject.GetComponent<BulletDamage>().damage;
-
-            if (MonsterHP <= 0)
-            {
-                Drop();
-            }
         }
     }
 
-    // 0203 아이템 드랍
-    public void Drop()
-    {
-        // 아이템 생성
-        Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);
 
-        // 몬스터 삭제
-        Destroy(gameObject);
-    }
 }

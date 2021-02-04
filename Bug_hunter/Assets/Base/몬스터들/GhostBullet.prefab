@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3503349189547349669}
   - component: {fileID: 8478492125377610113}
   - component: {fileID: 569070731750177527}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: GhostBullet
-  m_TagString: Untagged
+  m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

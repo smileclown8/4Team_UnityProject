@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5981053110698568565}
   - component: {fileID: 5981053110698568564}
   - component: {fileID: 5981053110698568561}
+  - component: {fileID: -5733418504256692098}
   m_Layer: 11
   m_Name: "\uC720\uB3C4\uD0C4\uC3D8\uB294 \uC720\uB839"
   m_TagString: Enemy
@@ -135,7 +136,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!58 &5981053110698568564
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -164,9 +165,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 5
   attack: 0
   def: 0
   dod: 0
   buffRate: 0
   buff: {fileID: 5257743199344223543, guid: c961ef874679e384eae3860660724f3b, type: 3}
+--- !u!114 &-5733418504256692098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981053110698568571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20020fe48278dfe44976dbefa819c774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MonsterHP: 0
+  bullet: {fileID: 3464359066328310682, guid: cc3f51090958cce4891135a32b03dabd, type: 3}

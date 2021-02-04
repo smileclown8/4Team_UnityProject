@@ -36,6 +36,7 @@ public class ItemManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+
             playerStatus.GetComponent<PlayerStatusManager>().skill_ID = item_Skill_ID;
             Debug.Log(item_Skill_ID + "번 스킬 아이템 획득");
             Destroy(this.gameObject);
