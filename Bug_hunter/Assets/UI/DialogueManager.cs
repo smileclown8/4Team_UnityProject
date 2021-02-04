@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
+   // public GameObject DialougeWindow_Image;
+
     public static DialogueManager instance;
 
     #region Singleton
@@ -93,6 +95,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         animSprite.SetBool("Appear", true);
+
+       // DialougeWindow_Image.SetActive(true);
         animDialogueWindow.SetBool("Appear", true);
         StartCoroutine(StartDialogueCoroutine());
     }
@@ -104,6 +108,8 @@ public class DialogueManager : MonoBehaviour
         listSprites.Clear();
         listDialogueWindows.Clear();
         animSprite.SetBool("Appear", false);
+
+       // DialougeWindow_Image.SetActive(false);
         animDialogueWindow.SetBool("Appear", false);
 
         if (GameObject.Find("Dialougue_03_message") != null)
@@ -209,11 +215,14 @@ public class DialogueManager : MonoBehaviour
             if (listDialogueWindows[count] != listDialogueWindows[count - 1])
             {
                 animSprite.SetBool("Change", true);
+
+               // DialougeWindow_Image.SetActive(false);
                 animDialogueWindow.SetBool("Appear", false);
                 yield return new WaitForSeconds(0.2f);
                 rendererDialogueWindow.GetComponent<SpriteRenderer>().sprite = listDialogueWindows[count];
                 rendererSprite.GetComponent<SpriteRenderer>().sprite = listSprites[count];
                 animDialogueWindow.SetBool("Appear", true);
+               // DialougeWindow_Image.SetActive(true);
                 animSprite.SetBool("Change", false);
             }
             else
@@ -273,22 +282,51 @@ public class DialogueManager : MonoBehaviour
             {
                 theAudio.Play(typeSound);
             }
-            yield return new WaitForSeconds(0.05f);
+
+            if (!isAllShow)
+            {
+                yield return new WaitForSeconds(0.05f);
+            }
+
+            else if (isAllShow)
+            {
+                yield return new WaitForSeconds(0.01f);
+            }
         }
 
     }
     // Update is called once per frame
+
+    bool isAllShow = false;
+
+    bool canSkip = false;
+
+    void CanSkip()
+    {
+        canSkip = false;
+    }
+
     void Update()
     {
-        if (talking && keyActivated)
+        if (talking && keyActivated && !canSkip)
         {
-            // if (Input.GetKeyDown(KeyCode.Z))   // 터치가 아닐때
             if (Input.GetMouseButtonDown(0))     // 터치일 때
             {
-                keyActivated = false;
-                count++;
-                text.text = "";
-                theAudio.Play(enterSound);
+                    text.text = "";
+                if (isAllShow)
+                {
+                    isAllShow = false;
+                    count++;
+                    keyActivated = false;
+                    theAudio.Play(enterSound);
+                }
+                else if (!isAllShow)
+                {
+                    isAllShow = true;
+                    canSkip = true;
+                }
+                Invoke("CanSkip", 2f);
+
 
                 // Dialougue_03_message 오브젝트와 대화할때
                 // (count+1)번째 문장이 나올 때
