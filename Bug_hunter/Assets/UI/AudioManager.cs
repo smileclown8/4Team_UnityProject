@@ -57,6 +57,9 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
 
     private void Awake()
+        //게임 오브젝트가 생성되거나 컴포넌트가 게임 오브젝트에 부착되었을 때 가장 먼저 실행되는 Awake()
+        //함수에서 씬에 이미 존재하는 같은 싱글톤 오브젝트가 있는지 검사를 한 뒤,
+        //이미 존재하는 오브젝트가 있다면 지금 생성된 오브젝트를 파괴하는 작업을 진행한다.
     {
         if (instance != null)
         {
