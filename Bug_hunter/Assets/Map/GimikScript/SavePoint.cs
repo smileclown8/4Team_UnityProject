@@ -4,28 +4,41 @@ using UnityEngine;
 
 public class SavePoint : MonoBehaviour
 {
-    public int here;
 
-    public GameObject Flag_On;
+    public GameObject PlayerStatusManager;
     // Start is called before the first frame update
     void Start()
     {
-
+        ChildFlag = transform.GetChild(0).gameObject;
+        Debug.Log(ChildFlag.GetComponent<SpriteRenderer>().color);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        PlayerStatusManager = GameObject.Find("PlayerStatusManager");
     }
+
+    GameObject ChildFlag;
+
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
-            if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
+        {
+         
+            if(GameObject.Find("PlayerStatusManager") != null)
             {
-                here++;
-                this.gameObject.SetActive(false);
-                Flag_On.SetActive(true);
+                GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos
+                    = this.transform.position;
             }
-        
+
+            this.GetComponent<SpriteRenderer>().color
+                = new Color(0, 0, 0, 0);
+
+            ChildFlag.GetComponent<SpriteRenderer>().color =
+               new Color(1, 1, 1, 1);
+        }
+
     }
 }

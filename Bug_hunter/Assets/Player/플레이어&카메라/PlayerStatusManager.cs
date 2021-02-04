@@ -29,6 +29,9 @@ public class PlayerStatusManager : MonoBehaviour
     public float player_HP = 100;
     public int skill_ID;
 
+    public Transform PlayerRespawn;
+    public Vector2 PlayerRespawn_Pos;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,6 @@ public class PlayerStatusManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+   
     }
 }

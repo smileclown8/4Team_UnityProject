@@ -27,7 +27,7 @@ public class BatBulletManager : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<PlayerStatusManager>().player_HP -= damage;
+            col.gameObject.GetComponent<PlayerStatusManager>().player_HP-= damage;
             Debug.Log("Hit!");
             Destroy(gameObject);
         }
