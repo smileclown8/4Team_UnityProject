@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 5980076763868280145}
   - component: {fileID: 5410343692175344376}
   - component: {fileID: 189549031341294062}
-  m_Layer: 11
+  - component: {fileID: 8301023767350966609}
+  m_Layer: 26
   m_Name: Item6
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4715,7 +4716,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5257743199344223543}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -4727,7 +4728,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 1
 --- !u!58 &189549031341294062
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4743,7 +4744,23 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.41
+  m_Radius: 1.5
+--- !u!58 &8301023767350966609
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257743199344223543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.4
 --- !u!1 &5257817488132691151
 GameObject:
   m_ObjectHideFlags: 0
@@ -4755,7 +4772,7 @@ GameObject:
   - component: {fileID: 5252076316313782631}
   - component: {fileID: 5346697597533992243}
   - component: {fileID: 5347467096912863519}
-  m_Layer: 11
+  m_Layer: 26
   m_Name: Waves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9266,7 +9283,7 @@ GameObject:
   - component: {fileID: 5259246352960841407}
   - component: {fileID: 5346010074874328313}
   - component: {fileID: 5346124925494587159}
-  m_Layer: 11
+  m_Layer: 26
   m_Name: Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13988,16 +14005,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5225882244830033025, guid: e17def6f24c85f94c9eb5342b43168e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225882244830033027, guid: e17def6f24c85f94c9eb5342b43168e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 5225882244830033029, guid: e17def6f24c85f94c9eb5342b43168e7,
         type: 3}
       propertyPath: m_Name
       value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225882244830033029, guid: e17def6f24c85f94c9eb5342b43168e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 26
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -818770473980710876, guid: e17def6f24c85f94c9eb5342b43168e7, type: 3}
     - {fileID: -3827463508756583998, guid: e17def6f24c85f94c9eb5342b43168e7, type: 3}
     - {fileID: -6178204621059330970, guid: e17def6f24c85f94c9eb5342b43168e7, type: 3}
     - {fileID: 7992114693174970531, guid: e17def6f24c85f94c9eb5342b43168e7, type: 3}
+    - {fileID: 3743973548464741827, guid: e17def6f24c85f94c9eb5342b43168e7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e17def6f24c85f94c9eb5342b43168e7, type: 3}
 --- !u!4 &5804985967516410850 stripped
 Transform:

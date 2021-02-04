@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 820108958319630158}
   - component: {fileID: 5606718230494312544}
-  m_Layer: 0
+  m_Layer: 26
   m_Name: "\uD1B5\uD1B5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949197122849676809}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 5259606357371052197}
   m_RootOrder: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 221a49d08be57764c8dfcd5baae0f416, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 535f418bb4d532949b4a6ac5ced9122a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +96,8 @@ GameObject:
   - component: {fileID: 5980076763868280145}
   - component: {fileID: 5410343692175344376}
   - component: {fileID: 189549031341294062}
-  m_Layer: 11
+  - component: {fileID: 9207878993932144789}
+  m_Layer: 26
   m_Name: Item1
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4770,7 +4771,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5257743199344223543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fd2e8874f60266498a388d7229a1bac, type: 3}
+  m_Script: {fileID: 11500000, guid: f2dd453dbe05cca44aad27b5ea457eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnlyDeactivate: 0
@@ -4796,11 +4797,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5257743199344223543}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -4808,7 +4809,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 1
 --- !u!58 &189549031341294062
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4824,7 +4825,23 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.41
+  m_Radius: 1.5
+--- !u!58 &9207878993932144789
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257743199344223543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.4
 --- !u!1 &5257817488132691151
 GameObject:
   m_ObjectHideFlags: 0
@@ -4836,7 +4853,7 @@ GameObject:
   - component: {fileID: 5252076316313782631}
   - component: {fileID: 5346697597533992243}
   - component: {fileID: 5347467096912863519}
-  m_Layer: 11
+  m_Layer: 26
   m_Name: Waves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9347,7 +9364,7 @@ GameObject:
   - component: {fileID: 5259246352960841407}
   - component: {fileID: 5346010074874328313}
   - component: {fileID: 5346124925494587159}
-  m_Layer: 11
+  m_Layer: 26
   m_Name: Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
