@@ -164,9 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 30
+  hp: 10
   attack: 0
   def: 0
   dod: 0
   buffRate: 0
-  item: {fileID: 5257743199344223543, guid: 7592b5f532ba08947bce081a5921d2cc, type: 3}
+  buff: {fileID: 5257743199344223543, guid: c961ef874679e384eae3860660724f3b, type: 3}

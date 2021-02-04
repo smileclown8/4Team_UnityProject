@@ -15,7 +15,7 @@ public class SnakeManager : MonoBehaviour
     float timer = 3f;
     bool isFast;
 
-    float delaytime = 1f;
+    float delaytime = 0;
     float attacktime = 1f;
 
     GameObject player;
@@ -131,7 +131,7 @@ public class SnakeManager : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             target = collision.gameObject;
-            player.GetComponent<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
+            GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
             // ********** 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
             Debug.Log("콰삭!");
         }
@@ -143,14 +143,15 @@ public class SnakeManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (Time.time > attacktime)
+            if (delaytime > attacktime)
             {
-                player.GetComponent<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
+                GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
                 // ********** 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
                 Debug.Log("콰삭콰삭!");
 
-                attacktime = Time.time + delaytime;
+                delaytime = 0;
             }
+            delaytime += Time.deltaTime;
         }
     }
 }

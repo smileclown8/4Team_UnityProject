@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SlimeManager : MonoBehaviour
 {
+    int attack;
     public float speed = 1f;
 
     // 이동 및 추격용
@@ -18,11 +19,11 @@ public class SlimeManager : MonoBehaviour
 
 
 
-
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        attack = GetComponent<MonsterStatusManager>().attack;
     }
 
     void Start()
@@ -89,8 +90,18 @@ public class SlimeManager : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "PlayerBullet")
+        if (collision.gameObject.tag == "PlayerBullet")             // 플레이어의 총알에 닿으면
+        {
             rigid.AddForce(Vector2.up * 8, ForceMode2D.Impulse);    // 맞으면 위로 약간 튀어오름
+            // 데미지 계산은 MonsterStatusManager가 해줄것
+        }
+
+        if (collision.gameObject.tag == "Player")                   // 플레이어와 닿으면
+        {
+            GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= attack; // 충돌 시 데미지를 준다
+            // 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
+            Debug.Log("슬라임의 공격! 데미지 " + attack);
+        }
     }
 
 }

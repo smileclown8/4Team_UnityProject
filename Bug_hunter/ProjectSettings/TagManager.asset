@@ -18,6 +18,7 @@ TagManager:
   - EnemyAttack
   - Staff
   - MovingBall
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -45,7 +46,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Item
   - 
   - 
   - 

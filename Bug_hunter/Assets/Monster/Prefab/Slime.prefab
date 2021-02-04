@@ -64,9 +64,10 @@ MonoBehaviour:
   myPos: {fileID: 0}
   rigid: {fileID: 0}
   mass: 0
-  jumpHeight: 35
-  backHeightX: 30
-  backHeightY: 40
+  speed: 2
+  jumpHeight: 20
+  backHeightX: 15
+  backHeightY: 35
 --- !u!1 &149886909127615060
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,10 +187,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 13
+  m_GravityScale: 15
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

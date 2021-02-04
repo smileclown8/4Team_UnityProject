@@ -10,9 +10,10 @@ public class SlimeAttackRange : MonoBehaviour
     public Rigidbody2D rigid;
 
     public float mass;
-    public int jumpHeight = 35;
-    public int backHeightX = 30;
-    public int backHeightY = 40;
+    public int speed = 2;
+    public int jumpHeight = 20;
+    public int backHeightX = 15;
+    public int backHeightY = 35;
 
 
     void Awake()
@@ -44,18 +45,18 @@ public class SlimeAttackRange : MonoBehaviour
     {
         float distanceFromPlayer = playerPos.transform.position.x - transform.transform.position.x;
 
-        rigid.AddForce(new Vector2(distanceFromPlayer * 4, playerPos.localScale.y * jumpHeight), ForceMode2D.Impulse);
+        rigid.AddForce(new Vector2(distanceFromPlayer * speed, jumpHeight), ForceMode2D.Impulse);
     }
 
     void BackDown()
     {
         if (myPos.position.x <= playerPos.position.x)
         {
-            rigid.AddForce(new Vector2(-backHeightX, playerPos.localScale.y * backHeightY), ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(-backHeightX, backHeightY), ForceMode2D.Impulse);
         }
         else if (myPos.position.x > playerPos.position.x)
         {
-            rigid.AddForce(new Vector2(backHeightX, playerPos.localScale.y * backHeightY), ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(backHeightX, backHeightY), ForceMode2D.Impulse);
         }
     }
 }

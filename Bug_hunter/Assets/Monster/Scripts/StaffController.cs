@@ -18,7 +18,7 @@ public class StaffController : MonoBehaviour
 		{
 			GetComponent<Renderer>().material.color = new Color(0f, 0f, 0f, 0f);
 			Instantiate(Explosion, transform.position, Quaternion.identity);
-			player.GetComponent<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
+			GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
 			// ********** 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
 			Destroy(gameObject);
 

@@ -12,16 +12,12 @@ public class Died : MonoBehaviour
     {
         Player_Hp = GameObject.Find("PlayerStatusManager");
         Player = GameObject.Find("player");
-
-
     }
-
 
     void Update()
     {
          if (Player_Hp.GetComponent<PlayerStatusManager>().player_HP <= 0)
          {
-
             Debug.Log("플레이어 사망");
             Invoke("RespawnWait", 2f);
          }
