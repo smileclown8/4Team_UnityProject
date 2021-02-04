@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class TotheNextScene : MonoBehaviour
+public class ToTheFirstBossStage : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -24,6 +23,6 @@ public class TotheNextScene : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("FirstBossStage");
-        }        
+        }
     }
 }
