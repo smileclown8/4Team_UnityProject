@@ -10,10 +10,8 @@ public class MonsterStatusManager : MonoBehaviour
     public int dod;             // 회피율
     public int buffRate;        // 버프획득확률
 
-    public GameObject item;
-
     SpriteRenderer spriteRenderer;
-
+    float playerBulletDamage;
 
     void Start()
     {
@@ -25,14 +23,16 @@ public class MonsterStatusManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerBullet")
         {
+            playerBulletDamage = GameObject.FindWithTag("PlayerBullet").GetComponent<BulletDamage>().damage;
+
             int Ran = Random.Range(1, 101);                             // 회피 계산
 
             if (Ran > dod)                                              // 회피율보다 크면 회피 실패
             {
-                // 회피 실패 : 플레이어 공격력 - 몬스터 방어력이 0 이상이면 데미지가 들어오고, 이하이면 몬스터hp가 0이 된다.
-                if (collision.gameObject.GetComponent<BulletDamage>().damage - def > 0)
+                // 회피 : 플레이어 공격력 - 몬스터 방어력이 0 이상이면 데미지가 들어오고, 이하이면 몬스터hp가 0이 된다.
+                if (playerBulletDamage - def > 0)
                 {
-                    hp -= collision.gameObject.GetComponent<BulletDamage>().damage;
+                    hp -= playerBulletDamage;
                 }
                 else
                 {
@@ -55,14 +55,12 @@ public class MonsterStatusManager : MonoBehaviour
 
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (hp <= 0)
         {
-            Instantiate(item, transform.position + Vector3.up * 3, transform.rotation);
-
             Debug.Log("으악 죽었다");
-            Destroy(gameObject);
+            Destroy(gameObject, 0.5f);
         }
     }
 

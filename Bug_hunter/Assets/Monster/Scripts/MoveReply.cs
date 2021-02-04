@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class MoveReply : MonoBehaviour
 {
+    float hp;
     public float speed = 2f;        // 이동속도
 
     private Vector3 startPos;       // 시작점
@@ -28,16 +29,21 @@ public class MoveReply : MonoBehaviour
 
     void Update()
     {
+        hp = GetComponentInChildren<MonsterStatusManager>().hp;
         Move();
     }
 
     public void Move() // 이동
     {
-        currentPos.localPosition = Vector3.MoveTowards(currentPos.transform.localPosition, nextPos, speed * Time.deltaTime);
-        if (Vector3.Distance(currentPos.localPosition, nextPos) <= 0.1)
+        if(hp > 0)
         {
-            ChangeDestination();
+            currentPos.localPosition = Vector3.MoveTowards(currentPos.transform.localPosition, nextPos, speed * Time.deltaTime);
+            if (Vector3.Distance(currentPos.localPosition, nextPos) <= 0.1)
+            {
+                ChangeDestination();
+            }
         }
+        
     }
     private void ChangeDestination()    // 방향 전환
     {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BookBulletManager : MonoBehaviour
 {
+    float hp;
+
     int damage;
     [SerializeField] float speed = 4;
     Rigidbody2D rb;
@@ -35,13 +37,19 @@ public class BookBulletManager : MonoBehaviour
 
     void Update()
     {
-        bookPos = GameObject.Find("Book").GetComponent<Transform>().position;
-        myPos = GetComponent<Transform>().position; 
-        distance = Vector2.Distance(bookPos, myPos);
+        hp = GameObject.Find("Book").GetComponent<MonsterStatusManager>().hp;
 
-        // 8의 범위를 넘어가면 파괴
-        if (distance >= 8)
-            Destroy(gameObject);
+        if (hp > 0)
+        {
+            bookPos = GameObject.Find("Book").GetComponent<Transform>().position;
+            myPos = GetComponent<Transform>().position;
+            distance = Vector2.Distance(bookPos, myPos);
+
+            // 8의 범위를 넘어가면 파괴
+            if (distance >= 8)
+                Destroy(gameObject);
+        }
+
     }
 
 
@@ -54,5 +62,8 @@ public class BookBulletManager : MonoBehaviour
             Debug.Log("Hit!" + damage + " 받음");
             Destroy(gameObject);
         }
+        if (col.gameObject.tag == "PlayerBullet")
+            Destroy(gameObject);
+
     }
 }

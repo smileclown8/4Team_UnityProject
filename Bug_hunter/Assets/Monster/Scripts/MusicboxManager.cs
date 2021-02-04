@@ -41,9 +41,6 @@ public class MusicboxManager : MonoBehaviour
             targetrb = target.GetComponent<Rigidbody2D>();
             targetTrans = target.GetComponent<Transform>();
             targetrb.gravityScale = 0.2f;
-
-
-
         }
 
         if (!isTracing)
@@ -56,9 +53,9 @@ public class MusicboxManager : MonoBehaviour
             if (pulltime >= cooltime)
             {
                 targetrb.AddForce((myPos.position - targetTrans.position) * forceFactor * Time.deltaTime);
-                player.GetComponent<PlayerStatusManager>().player_HP -= attack;
+                GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= attack;
                 // 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
-                Debug.Log("오르골의 공격! 플레이어 HP: " + playerHP + ", 데미지 " + attack);
+                Debug.Log("오르골의 공격! 데미지 " + attack);
                 pulltime = 0;
             }
             pulltime += Time.deltaTime;

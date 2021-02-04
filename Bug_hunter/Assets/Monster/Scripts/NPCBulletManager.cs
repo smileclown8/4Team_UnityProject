@@ -48,9 +48,8 @@ public class NPCBulletManager : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<PlayerStatusManager>().player_HP -= damage;
+            GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= damage;
             Debug.Log("요정님 뿔났다~ 데미지 " + damage);
-            //Destroy(gameObject);
         }
     }
 
