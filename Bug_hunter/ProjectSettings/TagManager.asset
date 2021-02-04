@@ -33,7 +33,7 @@ TagManager:
   - PlayerDamaged
   - Enemy
   - Bullet
-  - Spike
+  - Ball
   - Wall
   - BossPattern_NoDamage
   - BossPattern_YesDamage

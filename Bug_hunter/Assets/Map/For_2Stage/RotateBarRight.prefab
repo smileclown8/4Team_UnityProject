@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4512193030627313237}
   - component: {fileID: 4177539222101442775}
   - component: {fileID: 3884003872581002887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RotateBarRight
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

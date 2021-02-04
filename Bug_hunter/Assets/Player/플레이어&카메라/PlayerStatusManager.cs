@@ -22,7 +22,7 @@ public class PlayerStatusManager : MonoBehaviour
     //35정도 추천
     //플레이어가 점프를 하고 나면, 다시 떨어져야하는데 너무 천천히 떨어질 수 있다.
     //그러니 플레이어의 리지드바디2D의 그래비티 스케일을 조절해주자. ( 8 추천 )
-    public float jumpPower = 50f;
+    public float jumpPower = 300f;
 
 
     public float player_MaxHP = 100;
