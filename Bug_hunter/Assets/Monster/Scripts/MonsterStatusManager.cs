@@ -13,6 +13,9 @@ public class MonsterStatusManager : MonoBehaviour
     SpriteRenderer spriteRenderer;
     float playerBulletDamage;
 
+    public GameObject buff;
+
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -60,7 +63,8 @@ public class MonsterStatusManager : MonoBehaviour
         if (hp <= 0)
         {
             Debug.Log("으악 죽었다");
-            Destroy(gameObject, 0.5f);
+            Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);
+            Destroy(gameObject);
         }
     }
 
