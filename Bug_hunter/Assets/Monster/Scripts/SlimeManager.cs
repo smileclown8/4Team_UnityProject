@@ -14,20 +14,25 @@ public class SlimeManager : MonoBehaviour
     bool isTracing;
     public GameObject target;
     public Rigidbody2D rigid;
-    SpriteRenderer spriteRenderer;
-    new BoxCollider2D collider;
 
-
+    // 오디오용
+    public AudioClip moving;
+    public AudioClip jump;
+    [HideInInspector] public AudioSource audioSource;
+    public float soundPlayTime;
+    float soundDelayTime;
 
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         attack = GetComponent<MonsterStatusManager>().attack;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
     {
+        soundPlayTime = 1;
+        soundDelayTime = 1;
         StartCoroutine("ChangeMovement");
     }
 
@@ -44,6 +49,7 @@ public class SlimeManager : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+
         isTracing = GetComponentInChildren<RecognitionManager>().isTracing;
         target = GetComponentInChildren<RecognitionManager>().target;
     }
@@ -52,6 +58,15 @@ public class SlimeManager : MonoBehaviour
     // 이동용 함수
     void Move()
     {
+        // n초마다 이동사운드 출력
+        if(soundPlayTime >= soundDelayTime)
+        {
+            audioSource.clip = moving;
+            audioSource.Play();
+            soundPlayTime = 0;
+        }
+        soundPlayTime += Time.deltaTime;
+
         Vector3 moveVelocity = Vector3.zero;
         string direction = "";
 
@@ -66,6 +81,8 @@ public class SlimeManager : MonoBehaviour
         }
         else
         {
+            audioSource.Stop();
+
             if (movementFlag == 1)
                 direction = "Left";
             else if (movementFlag == 2)
@@ -98,10 +115,13 @@ public class SlimeManager : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")                   // 플레이어와 닿으면
         {
-            GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= attack; // 충돌 시 데미지를 준다
+            GameObject.Find("PlayerStatusManager").GetComponentInChildren<PlayerStatusManager>().player_HP -= attack; // 충돌 시 데미지를 준다
             // 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
             Debug.Log("슬라임의 공격! 데미지 " + attack);
         }
     }
+
+
+
 
 }

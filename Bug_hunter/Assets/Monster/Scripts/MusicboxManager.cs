@@ -16,19 +16,33 @@ public class MusicboxManager : MonoBehaviour
 
     [SerializeField] float pulltime;
     [SerializeField] float cooltime = 1.5f;
-    float playerHP;
-    //float playerDef;
+
+    // 오디오용
+    public AudioClip idleSound;
+    float idleSoundPlayTime;
+    float idleSoundDelayTime;
+    float attackSoundPlayTime;
+    float attackSoundDelayTime;
+    public AudioClip attackSound;
+    AudioSource audioSource;
+
 
 
     void Start()
     {
         attack = GetComponent<MonsterStatusManager>().attack;
         myPos = GetComponent<Transform>();
+        audioSource = GetComponent<AudioSource>();
+
         player = GameObject.FindWithTag("Player");
         targetGravity_original = player.GetComponent<Rigidbody2D>().gravityScale;
         // playerDef = player.GetComponent<PlayerStatusManager>().player_Def;  -------------- 추가할것
 
         pulltime = 1.5f;
+        idleSoundPlayTime = 17;
+        idleSoundDelayTime = 17;
+        attackSoundPlayTime = 1;
+        attackSoundDelayTime = 1;
     }
 
     void Update()
@@ -45,15 +59,35 @@ public class MusicboxManager : MonoBehaviour
 
         if (!isTracing)
         {
+            audioSource.enabled = false;
+
             player.GetComponent<Rigidbody2D>().gravityScale = targetGravity_original;
         }
 
         if (isTracing && target.gameObject.tag == "Player")
         {
+            // n초마다 이동사운드 출력
+            if (idleSoundPlayTime >= idleSoundDelayTime)
+            {
+                audioSource.clip = idleSound;
+                audioSource.Play();
+                idleSoundPlayTime = 0;
+            }
+            idleSoundPlayTime += Time.deltaTime;
+
             if (pulltime >= cooltime)
             {
+                /*
+                if (attackSoundPlayTime >= attackSoundDelayTime)
+                {
+                    audioSource.clip = attackSound;
+                    audioSource.Play();
+                    attackSoundPlayTime = 0;
+                }
+                attackSoundPlayTime += Time.deltaTime;*/
+
                 targetrb.AddForce((myPos.position - targetTrans.position) * forceFactor * Time.deltaTime);
-                GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= attack;
+                GameObject.Find("PlayerStatusManager").GetComponentInChildren<PlayerStatusManager>().player_HP -= attack;
                 // 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
                 Debug.Log("오르골의 공격! 데미지 " + attack);
                 pulltime = 0;

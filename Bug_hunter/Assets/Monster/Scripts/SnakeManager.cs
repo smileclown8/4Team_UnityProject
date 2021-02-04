@@ -11,26 +11,37 @@ public class SnakeManager : MonoBehaviour
     string direction = "";
     public float movePower = 1f;
     Vector3 moveVelocity = Vector3.zero;
-    Animator anim;
     float timer = 3f;
     bool isFast;
 
     float delaytime = 0;
     float attacktime = 1f;
 
-    GameObject player;
+    // 오디오용
+    public AudioClip moving;
+    public AudioClip attack;
+    AudioSource audioSource;
+    float movingSoundPlayTime;
+    float movingSoundDelayTime;
+    float attackSoundPlayTime;
+    float attackSoundDelayTime;
 
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
     {
+        movingSoundPlayTime = 2;
+        movingSoundDelayTime = 2;
+        attackSoundPlayTime = 1;
+        attackSoundDelayTime = 1;
+        audioSource.volume = 0.3f;
+
         Invoke("Think", 1);
-        player = GameObject.FindWithTag("Player");
     }
 
     void FixedUpdate()
@@ -39,6 +50,7 @@ public class SnakeManager : MonoBehaviour
         // 패트롤
         if (!isTracing)
         {
+            // 3초에 1초씩 빠르게 이동
             if (isFast)
             {
                 if (timer > 0)
@@ -83,6 +95,16 @@ public class SnakeManager : MonoBehaviour
         isTracing = GetComponentInChildren<RecognitionManager>().isTracing;
         if (isTracing)
         {
+            // n초마다 이동사운드 출력
+            if (movingSoundPlayTime >= movingSoundDelayTime)
+            {
+                audioSource.Stop();
+                audioSource.clip = moving;
+                audioSource.Play();
+                movingSoundPlayTime = 0;
+            }
+            movingSoundPlayTime += Time.deltaTime;
+
             movePower = 2f;
             Vector3 playerPos = target.transform.position;
 
@@ -96,6 +118,8 @@ public class SnakeManager : MonoBehaviour
         }
         else
         {
+            movingSoundPlayTime = 2;
+
             if (nextMove == -1)
                 direction = "Left";
             else if (nextMove == 1)
@@ -130,8 +154,14 @@ public class SnakeManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            // 공격사운드 출력
+            audioSource.Stop();
+            audioSource.clip = attack;
+            audioSource.Play();
+            attackSoundPlayTime = 0;
+
             target = collision.gameObject;
-            GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
+            GameObject.Find("PlayerStatusManager").GetComponentInChildren<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
             // ********** 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
             Debug.Log("콰삭!");
         }
@@ -145,12 +175,23 @@ public class SnakeManager : MonoBehaviour
         {
             if (delaytime > attacktime)
             {
-                GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
+                // n초마다 공격사운드 출력
+                if (attackSoundPlayTime >= attackSoundDelayTime)
+                {
+                    audioSource.Stop();
+                    audioSource.volume = 0.3f;
+                    audioSource.clip = attack;
+                    audioSource.Play();
+                    attackSoundPlayTime = 0;
+                }
+
+                GameObject.Find("PlayerStatusManager").GetComponentInChildren<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
                 // ********** 플레이어 방어력 변수 추가되면 여기에 뭔가 해야함
                 Debug.Log("콰삭콰삭!");
 
                 delaytime = 0;
             }
+            attackSoundPlayTime += Time.deltaTime;
             delaytime += Time.deltaTime;
         }
     }

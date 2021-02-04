@@ -11,8 +11,19 @@ public class BatBulletManager : MonoBehaviour
     GameObject target;
     Vector2 moveDirection;
 
+    // 오디오용
+    public AudioClip attack;
+    AudioSource audioSource;
+
+
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = 0.2f;
+        audioSource.clip = attack;
+        audioSource.Play();
+
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag("Player");
         damage = GameObject.Find("Bat").GetComponent<MonsterStatusManager>().attack;
@@ -27,7 +38,7 @@ public class BatBulletManager : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= damage;
+            GameObject.Find("PlayerStatusManager").GetComponentInChildren<PlayerStatusManager>().player_HP -= damage;
             Debug.Log("Hit!");
             Destroy(gameObject);
         }

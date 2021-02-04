@@ -15,6 +15,9 @@ public class SlimeAttackRange : MonoBehaviour
     public int backHeightX = 15;
     public int backHeightY = 35;
 
+    // 오디오용
+    AudioSource audioSource;
+
 
     void Awake()
     {
@@ -25,6 +28,7 @@ public class SlimeAttackRange : MonoBehaviour
     {
         rigid = GetComponentInParent<SlimeManager>().rigid;
         mass = GetComponentInParent<Rigidbody2D>().mass;
+        audioSource = GetComponentInParent<AudioSource>();
     }
 
 
@@ -32,14 +36,16 @@ public class SlimeAttackRange : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            audioSource.Stop();
+            audioSource.clip = GetComponentInParent<SlimeManager>().jump;
             myPos = GetComponentInParent<Transform>();
             JumpAttack();
-            Invoke("BackDown", 0.25f);
+            Debug.Log(audioSource.clip);
+            Invoke("BackDown", 0.2f);
+            audioSource.Play();
         }
     }
 
-
-    // 아래는 공격 피격용 아직 구현 안됨
 
     void JumpAttack()   // 몬스터의 공격
     {

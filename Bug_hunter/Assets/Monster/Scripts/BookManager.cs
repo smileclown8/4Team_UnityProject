@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BookManager : MonoBehaviour
 {
-    Animator anim;
 
 
     // 공격용
@@ -16,22 +15,24 @@ public class BookManager : MonoBehaviour
     [SerializeField] float shoottime;       // 발사시간
     [SerializeField] float nextshoot;       // 쿨타임
 
+    // 오디오용
+    public AudioClip attack;
+    AudioSource audioSource;
+    bool isTracing;
 
-
-    void Awake()
-    {
-        anim = GetComponent<Animator>();
-    }
 
     void Start()
     {
         nextshoot = 5;
         shoottime = Random.Range(0, 6);
+        audioSource = GetComponent<AudioSource>();
     }
 
 
-    void FixedUpdate()
+    void Update()
     {
+        isTracing = GetComponentInChildren<RecognitionManager>().isTracing;
+
         Attack();
     }
 
@@ -40,6 +41,12 @@ public class BookManager : MonoBehaviour
         // 쿨타임 돌 때마다 공격
         if (nextshoot <= shoottime)
         {
+            if (isTracing)
+            {
+                audioSource.volume = 0.3f;
+                audioSource.clip = attack;
+                audioSource.Play();
+            }
             GenerateBullet();
             shoottime = 0;
         }

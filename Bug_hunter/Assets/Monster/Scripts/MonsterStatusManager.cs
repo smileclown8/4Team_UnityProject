@@ -13,7 +13,7 @@ public class MonsterStatusManager : MonoBehaviour
     SpriteRenderer spriteRenderer;
     float playerBulletDamage;
 
-    public GameObject buff;
+    [SerializeField] public GameObject buff;
 
 
     void Start()

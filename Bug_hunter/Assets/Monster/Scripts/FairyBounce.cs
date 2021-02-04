@@ -6,17 +6,22 @@ public class FairyBounce : MonoBehaviour
 {
     public GameObject bouncing;
     public bool pushing;
-    Animator pushinAnim;
 
-    private void Start()
+    // 오디오용
+    public AudioClip attack;
+    AudioSource audioSource;
+
+    void Start()
     {
-        pushinAnim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            audioSource.clip = attack;
+            audioSource.Play();
             Pushing();
             pushing = true; // 밀어내는 효과 애니메이션 재생
         }

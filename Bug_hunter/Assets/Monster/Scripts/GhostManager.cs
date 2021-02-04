@@ -7,7 +7,6 @@ public class GhostManager : MonoBehaviour
 {
     float hp;
     bool isDamaged;         // 공격을 받았는가?
-    bool trace;             // 추격을 시작했는가?
     Animator animator;
     public GameObject target;
 
@@ -18,10 +17,19 @@ public class GhostManager : MonoBehaviour
     public AIPath aiPath;
     Transform playerPos;
 
+    // 오디오용
+    public AudioClip attack;
+    AudioSource audioSource;
+
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         shoottime = 3f;
         nextshoot = Time.time;
         playerPos = GameObject.FindWithTag("Player").GetComponent<Transform>();
@@ -51,6 +59,7 @@ public class GhostManager : MonoBehaviour
                 Stop();
             }
         }
+
     }
 
 
@@ -91,6 +100,8 @@ public class GhostManager : MonoBehaviour
         Trace();
         if (Time.time > nextshoot)      // 플레이어가 죽을 때까지 3초마다 한 번씩 탄알 발사
         {
+            audioSource.clip = attack;
+            audioSource.Play();
             Instantiate(bullet, transform.position, Quaternion.identity);
             nextshoot = Time.time + shoottime;
         }

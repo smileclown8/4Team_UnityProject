@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1928124685980538081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1928124685980538095}
+  - component: {fileID: 1928124685980538094}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1928124685980538095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928124685980538081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.120968, y: 12.236955, z: -9.28218}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928124685980538094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928124685980538081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdfa7b6864a2c2c47858782491ec3762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: type_sound
+    clip: {fileID: 8300000, guid: 58a5dd5888761af4dbff225d52caf926, type: 3}
+    Volumn: 0.5
+    loop: 0
+  - name: enter_sound
+    clip: {fileID: 8300000, guid: 4fbc62a75b72f6d42b33069b6c067e1d, type: 3}
+    Volumn: 0.5
+    loop: 0
+  - name: 
+    clip: {fileID: 0}
+    Volumn: 1
+    loop: 0
+  - name: C_laugh
+    clip: {fileID: 8300000, guid: 287e64a7291805d469aa542a549487fc, type: 3}
+    Volumn: 1
+    loop: 0
+  - name: Door_Open
+    clip: {fileID: 8300000, guid: 654d151c86725fd4c94490afc2d88e25, type: 3}
+    Volumn: 1
+    loop: 0
+  - name: Door_Unlock
+    clip: {fileID: 8300000, guid: fc2f2b524f4b23847ba5f71ab032edaf, type: 3}
+    Volumn: 1
+    loop: 0
+  - name: Musicbox1
+    clip: {fileID: 8300000, guid: 8d1f73c4fbce18f4ca655093ab5bd101, type: 3}
+    Volumn: 0.5
+    loop: 0
+  - name: Sad_Sound1
+    clip: {fileID: 8300000, guid: 24aa279704dae0c4d82cffec0b003026, type: 3}
+    Volumn: 1
+    loop: 0
+  - name: SlimeMoving
+    clip: {fileID: 8300000, guid: 15d39781c6576874f8188e812b9531ab, type: 3}
+    Volumn: 1
+    loop: 0
