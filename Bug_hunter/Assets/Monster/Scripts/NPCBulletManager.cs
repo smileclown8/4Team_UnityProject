@@ -9,7 +9,6 @@ public class NPCBulletManager : MonoBehaviour
     Vector2 moveDirection;
     [SerializeField] float speed = 4;
 
-
     private void OnEnable()
     {
         Invoke("Destroy", 2);
@@ -48,8 +47,8 @@ public class NPCBulletManager : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            GameObject.Find("Manager").GetComponentInChildren<PlayerStatusManager>().player_HP -= damage;
-            Debug.Log("요정님 뿔났다~ 데미지 " + damage);
+            GameObject.Find("PlayerStatusManager").GetComponentInChildren<PlayerStatusManager>().player_HP -= damage;
+            Debug.Log("동화 속 요정의 공격! 데미지 " + damage);
         }
     }
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7945315454445013792}
   - component: {fileID: 2700388733740755486}
   m_Layer: 0
-  m_Name: NPCBullet 1
+  m_Name: NPCBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,3 +154,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb24496c87f6ad4494101c96ad863a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 4

@@ -27,24 +27,32 @@ public class MonsterStatusManager : MonoBehaviour
         if (collision.gameObject.tag == "PlayerBullet")
         {
             playerBulletDamage = GameObject.FindWithTag("PlayerBullet").GetComponent<BulletDamage>().damage;
+            Debug.Log("내 피 " + hp);
+            Debug.Log("내 방어 " + def);
+            Debug.Log("데미지 " + playerBulletDamage);
 
-            int Ran = Random.Range(1, 101);                             // 회피 계산
+            int ran = Random.Range(1, 101);                             // 회피 계산
+            Debug.Log("회피율 " + dod);
+            Debug.Log("회피수치" + ran);
 
-            if (Ran > dod)                                              // 회피율보다 크면 회피 실패
+            if (ran > dod)                                              // 회피율보다 크면 회피 실패
             {
                 // 회피 : 플레이어 공격력 - 몬스터 방어력이 0 이상이면 데미지가 들어오고, 이하이면 몬스터hp가 0이 된다.
-                if (playerBulletDamage - def > 0)
+                if (def - playerBulletDamage < hp)
                 {
                     hp -= playerBulletDamage;
+                    Debug.Log("회피실패");
+                    Debug.Log("남은 피 " + hp);
                 }
-                else
+                else if (def - playerBulletDamage >= hp)
                 {
+                    Debug.Log("회피성공");
                     hp = 0;
                 }
                 spriteRenderer.color = new Color(1, 1, 1, 0.4f);        // 맞으면 반투명해짐
                 Invoke("ColorBack", 0.1f);
             }
-            else if (Ran <= dod)                                        // 회피율보다 작으면 회피 성공
+            else if (ran <= dod)                                        // 회피율보다 작으면 회피 성공
             {
                 Debug.Log("Miss!");
             }
@@ -63,7 +71,8 @@ public class MonsterStatusManager : MonoBehaviour
         if (hp <= 0)
         {
             Debug.Log("으악 죽었다");
-            Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);
+            Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);     // 버프템 드랍
+            // 74줄에서 문제가 생기면 : 해당 몬스터의 인스펙터에서 buff에 버프템을 아웃렛 연결해줄 것!
             Destroy(gameObject);
         }
     }

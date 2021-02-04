@@ -145,8 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2b137e900987841bcac875ad0fcdbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 30
-  attack: 4
   speed: 3.5
   target: {fileID: 0}
   isDamaged: 0
@@ -155,6 +153,7 @@ MonoBehaviour:
   bulletsAmount: 3
   startAngle: 300
   endAngle: 240
+  attackSound: {fileID: 0}
 --- !u!114 &2562759842834173520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +171,7 @@ MonoBehaviour:
   def: 0
   dod: 0
   buffRate: 30
+  buff: {fileID: 0}
 --- !u!1 &5624566834360548319
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5624566835085322915}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.54, y: -1.32, z: 0}
+  m_LocalPosition: {x: -1.2, y: 0.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5624566833013812572}

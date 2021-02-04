@@ -13,27 +13,32 @@ public class NPCmonManager : MonoBehaviour
 {
     [SerializeField] float speed = 3.5f;
 
+    // 추격용
     public GameObject target;
     [HideInInspector] public bool isDamaged;
     bool isTracing;
     Vector3 moveVelocity = Vector3.zero;
     Vector3 playerPos;
 
+    // 공격용
     Animator anim;
     public float shoottime = 2;                 // 발사시간
     [SerializeField] float cooltime = 2;        // 쿨타임
-
-
     bool notEnoughBulletsInPool = true;
     List<GameObject> bullets;
     [SerializeField] int bulletsAmount = 3;
     [SerializeField] float startAngle, endAngle;
+
+    // 오디오용
+    AudioSource audioSource;
+    public AudioClip attackSound;
 
 
     void Start()
     {
         anim = GetComponent<Animator>();
         bullets = new List<GameObject>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -108,8 +113,10 @@ public class NPCmonManager : MonoBehaviour
 
                 angle += angleStep;
             }
-
             shoottime = 0;
+
+            audioSource.clip = attackSound;
+            audioSource.Play();
         }
         shoottime += Time.deltaTime;
     }

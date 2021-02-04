@@ -58,8 +58,8 @@ public class BookBulletManager : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<PlayerStatusManager>().player_HP -= damage;
-            Debug.Log("Hit!" + damage + " 받음");
+            GameObject.Find("PlayerStatusManager").GetComponentInChildren<PlayerStatusManager>().player_HP -= damage;
+            Debug.Log("동화책의 노래! 데미지 " + damage);
             Destroy(gameObject);
         }
         if (col.gameObject.tag == "PlayerBullet")
