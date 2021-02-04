@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
-   // public GameObject DialougeWindow_Image;
+    // public GameObject DialougeWindow_Image;
 
     public static DialogueManager instance;
 
@@ -96,7 +96,7 @@ public class DialogueManager : MonoBehaviour
 
         animSprite.SetBool("Appear", true);
 
-       // DialougeWindow_Image.SetActive(true);
+        // DialougeWindow_Image.SetActive(true);
         animDialogueWindow.SetBool("Appear", true);
         StartCoroutine(StartDialogueCoroutine());
     }
@@ -109,7 +109,7 @@ public class DialogueManager : MonoBehaviour
         listDialogueWindows.Clear();
         animSprite.SetBool("Appear", false);
 
-       // DialougeWindow_Image.SetActive(false);
+        // DialougeWindow_Image.SetActive(false);
         animDialogueWindow.SetBool("Appear", false);
 
         if (GameObject.Find("Dialougue_03_message") != null)
@@ -152,7 +152,7 @@ public class DialogueManager : MonoBehaviour
 
 
 
-        if (GameObject.Find("Portal_01")!= null)
+        if (GameObject.Find("Portal_01") != null)
         {
             if (GameObject.Find("Portal_01").GetComponent<TestDialogue>().isPortal1 == true)
             {
@@ -166,7 +166,7 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject.Find("Portal_02").GetComponent<TestDialogue>().isC_laugh = false;
 
-            if(GameObject.Find("Portal_02").GetComponent<TestDialogue>().isPortal2 == true)
+            if (GameObject.Find("Portal_02").GetComponent<TestDialogue>().isPortal2 == true)
             {
                 Debug.Log(GameObject.Find("Portal_02").GetComponent<TestDialogue>().isPortal2);
                 Invoke("Stage2_Portal2_Move", 0.5f); // 포탈2와 대화가 끝나고 0.5초후에 이동
@@ -180,7 +180,7 @@ public class DialogueManager : MonoBehaviour
         if (GameObject.Find("Fairy_tale_06") != null)
         {
             if (rb.bodyType == RigidbodyType2D.Static)
-                // 다른 책에서는 작동하지 않게 만들기 위해, 이 책을 읽을 때만의 특수한 조건을 제약으로 건다.
+            // 다른 책에서는 작동하지 않게 만들기 위해, 이 책을 읽을 때만의 특수한 조건을 제약으로 건다.
             {
 
                 // 이슬라프의 중력값을 1(기본값)으로 변경
@@ -195,7 +195,7 @@ public class DialogueManager : MonoBehaviour
             // ==============================================================================
         }
 
-            talking = false;
+        talking = false;
     }
 
     void Stage2_Portal1_Move()
@@ -216,13 +216,13 @@ public class DialogueManager : MonoBehaviour
             {
                 animSprite.SetBool("Change", true);
 
-               // DialougeWindow_Image.SetActive(false);
+                // DialougeWindow_Image.SetActive(false);
                 animDialogueWindow.SetBool("Appear", false);
                 yield return new WaitForSeconds(0.2f);
                 rendererDialogueWindow.GetComponent<SpriteRenderer>().sprite = listDialogueWindows[count];
                 rendererSprite.GetComponent<SpriteRenderer>().sprite = listSprites[count];
                 animDialogueWindow.SetBool("Appear", true);
-               // DialougeWindow_Image.SetActive(true);
+                // DialougeWindow_Image.SetActive(true);
                 animSprite.SetBool("Change", false);
             }
             else
@@ -282,51 +282,26 @@ public class DialogueManager : MonoBehaviour
             {
                 theAudio.Play(typeSound);
             }
+            yield return new WaitForSeconds(textWaitTime);
 
-            if (!isAllShow)
-            {
-                yield return new WaitForSeconds(0.05f);
-            }
-
-            else if (isAllShow)
-            {
-                yield return new WaitForSeconds(0.01f);
-            }
         }
 
     }
     // Update is called once per frame
 
-    bool isAllShow = false;
+    public float textWaitTime;
 
-    bool canSkip = false;
-
-    void CanSkip()
-    {
-        canSkip = false;
-    }
+    private bool isSoundPlayed = false;
 
     void Update()
     {
-        if (talking && keyActivated && !canSkip)
+        if (talking && keyActivated)
         {
             if (Input.GetMouseButtonDown(0))     // 터치일 때
             {
-                    text.text = "";
-                if (isAllShow)
-                {
-                    isAllShow = false;
-                    count++;
-                    keyActivated = false;
-                    theAudio.Play(enterSound);
-                }
-                else if (!isAllShow)
-                {
-                    isAllShow = true;
-                    canSkip = true;
-                }
-                Invoke("CanSkip", 2f);
-
+                keyActivated = false;
+                Debug.Log(count);
+                theAudio.Play(enterSound);
 
                 // Dialougue_03_message 오브젝트와 대화할때
                 // (count+1)번째 문장이 나올 때
@@ -339,7 +314,12 @@ public class DialogueManager : MonoBehaviour
                     && count == 1
                     && GameObject.Find("Dialougue_03_message").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
-                        theAudio.Play(dog_bark);
+                        if (!isSoundPlayed)
+                        {
+                            Debug.Log("재생");
+                            theAudio.Play(dog_bark);
+                            isSoundPlayed = true;
+                        }
                     }
                 }
 
@@ -349,7 +329,12 @@ public class DialogueManager : MonoBehaviour
                     && count == 1
                     && GameObject.Find("Bobgurut2").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
-                        theAudio.Play(dog_bark);
+                        if (!isSoundPlayed)
+                        {
+                            Debug.Log("재생");
+                            theAudio.Play(dog_bark);
+                            isSoundPlayed = true;
+                        }
                     }
                 }
 
@@ -359,7 +344,12 @@ public class DialogueManager : MonoBehaviour
                     && count == 8
                     && GameObject.Find("Portal_02").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
-                        theAudio.Play(C_laugh);
+                        if (!isSoundPlayed)
+                        {
+                            Debug.Log("재생");
+                            theAudio.Play(C_laugh);
+                            isSoundPlayed = true;
+                        }
                     }
                 }
 
@@ -372,19 +362,35 @@ public class DialogueManager : MonoBehaviour
                        && count == 9
                        && GameObject.Find("Savor2").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
+                        /*
                         Debug.Log("재생");
                         theAudio.Play(Bomb);
+                        */
+                        if (!isSoundPlayed)
+                        {
+                            Debug.Log("재생");
+                            theAudio.Play(Bomb);
+                            isSoundPlayed = true;
+                        }
                     }
                 }
-                if(GameObject.Find("Portal_01") != null) // 없는데 찾으라고해서 오류 났으니까 걸어줘야 함
+                if (GameObject.Find("Portal_01") != null) // 없는데 찾으라고해서 오류 났으니까 걸어줘야 함
                 {
 
                     if (GameObject.Find("Portal_01").GetComponent<TestDialogue>().isMusicbox1 == true
                        && count == 1
                        && GameObject.Find("Portal_01").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
+                        /*
                         Debug.Log("재생");
                         theAudio.Play(Musicbox1);
+                        */
+                        if (!isSoundPlayed)
+                        {
+                            Debug.Log("재생");
+                            theAudio.Play(Musicbox1);
+                            isSoundPlayed = true;
+                        }
                     }
                 }
                 if (GameObject.Find("Stage_Start") != null) // 없는데 찾으라고해서 오류 났으니까 걸어줘야 함
@@ -394,30 +400,42 @@ public class DialogueManager : MonoBehaviour
                        && count == 2
                        && GameObject.Find("Stage_Start").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
                     {
+                        /*
                         Debug.Log("재생");
                         theAudio.Play(SadSound1);
+                        */
+                        if (!isSoundPlayed)
+                        {
+                            Debug.Log("재생");
+                            theAudio.Play(SadSound1);
+                            isSoundPlayed = true;
+                        }
                     }
                 }
 
-
-
-
-
-
-
-
-
-                if (count == listSentences.Count)
+                if (textWaitTime != 0)
                 {
-                    StopAllCoroutines();
-                    ExitDialogue();
+                    textWaitTime = 0;
+                    keyActivated = true;
                 }
-                else
+                else if (textWaitTime == 0)
                 {
-                    StopAllCoroutines();
-                    StartCoroutine(StartDialogueCoroutine());
-
+                    text.text = "";
+                    count++;
+                    textWaitTime = 0.1f;
+                    isSoundPlayed = false;
+                    if (count == listSentences.Count)
+                    {
+                        StopAllCoroutines();
+                        ExitDialogue();
+                    }
+                    else
+                    {
+                        StopAllCoroutines();
+                        StartCoroutine(StartDialogueCoroutine());
+                    }
                 }
+
             }
         }
     }
