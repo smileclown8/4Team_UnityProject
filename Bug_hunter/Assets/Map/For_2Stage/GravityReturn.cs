@@ -22,7 +22,7 @@ public class GravityReturn : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            rb.gravityScale = 1;
+            rb.gravityScale = 10;
         }
 
     }
