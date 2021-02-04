@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4293583095431900426}
   - component: {fileID: 4293583095431900424}
   - component: {fileID: 4293583095431900425}
+  - component: {fileID: 5457297951497162928}
   m_Layer: 5
   m_Name: Text (1)
   m_TagString: Untagged
@@ -78,6 +79,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Jump
+--- !u!114 &5457297951497162928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4293583095431900427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581addc997ec40a4a908e0487e73d3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogue: {fileID: 0}
 --- !u!1 &4293583096023300954
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +104,7 @@ GameObject:
   - component: {fileID: 4293583096023300958}
   - component: {fileID: 4293583096023300959}
   - component: {fileID: 4293583096023300952}
+  - component: {fileID: 6790620366189807303}
   m_Layer: 5
   m_Name: Jump
   m_TagString: Untagged
@@ -208,3 +223,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6790620366189807303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4293583096023300954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581addc997ec40a4a908e0487e73d3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogue: {fileID: 0}

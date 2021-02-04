@@ -10,7 +10,6 @@ public class SavePoint : MonoBehaviour
     void Start()
     {
         ChildFlag = transform.GetChild(0).gameObject;
-        Debug.Log(ChildFlag.GetComponent<SpriteRenderer>().color);
     }
 
     // Update is called once per frame
