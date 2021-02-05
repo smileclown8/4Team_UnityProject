@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1980246415}
   - component: {fileID: 1980246417}
   - component: {fileID: 1980246416}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AttackSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,9 +157,9 @@ GameObject:
   - component: {fileID: 3111677839297849091}
   - component: {fileID: 1810576674633034276}
   - component: {fileID: 1900840277}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Musicbox
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 3111677840472425986}
   - component: {fileID: 3111677840472425984}
   - component: {fileID: 3111677840472425985}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Recognition
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2298079058992426097}
   - component: {fileID: 7202224581571434040}
   - component: {fileID: 1955945268827501599}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BookBullet1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: -2
   m_Sprite: {fileID: -5523106904891711669, guid: 861dfb9be86f8434a9ae58c43b29b948,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ea4e201b34e2442924c2ed52c25efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 2
   minRange: 0
   maxRange: 0
   randomBulletPosition: {x: 0, y: 0}

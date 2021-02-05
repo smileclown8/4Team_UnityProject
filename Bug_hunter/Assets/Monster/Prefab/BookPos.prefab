@@ -47,7 +47,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.12, y: 0.09}
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 8
 --- !u!114 &2117836328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,9 +392,9 @@ GameObject:
   - component: {fileID: 4893885247591907462}
   - component: {fileID: 4893885247591907465}
   - component: {fileID: 683305106501375539}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BookPos
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

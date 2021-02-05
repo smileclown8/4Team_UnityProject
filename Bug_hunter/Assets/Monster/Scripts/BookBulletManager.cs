@@ -29,8 +29,10 @@ public class BookBulletManager : MonoBehaviour
         randomBulletPosition.x = Random.Range(-1.0f, 1.0f);
         randomBulletPosition.y = Random.Range(-1.0f, 1.0f);
 
-        rb.velocity = new Vector2((transform.position.x + randomBulletPosition.x) * speed * 10 * Time.deltaTime,
-                                  (transform.position.y + randomBulletPosition.y) * speed * 10 * Time.deltaTime);
+        //rb.velocity = new Vector2((transform.position.x + randomBulletPosition.x) * speed * Time.deltaTime,
+        //                          (transform.position.y + randomBulletPosition.y) * speed * Time.deltaTime);
+
+        rb.AddForce(new Vector2(randomBulletPosition.x, randomBulletPosition.y).normalized * Time.deltaTime * speed);
 
         Destroy(gameObject, destroySecond);
     }
@@ -38,6 +40,7 @@ public class BookBulletManager : MonoBehaviour
     void Update()
     {
         hp = GameObject.Find("Book").GetComponent<MonsterStatusManager>().hp;
+        rb.AddForce(new Vector2(randomBulletPosition.x, randomBulletPosition.y).normalized * Time.deltaTime * 0.01f * speed);
 
         if (hp > 0)
         {
@@ -63,6 +66,8 @@ public class BookBulletManager : MonoBehaviour
             Destroy(gameObject);
         }
         if (col.gameObject.tag == "PlayerBullet")
+            Destroy(gameObject);
+        if (col.gameObject.tag == "platform")
             Destroy(gameObject);
 
     }
