@@ -21,7 +21,6 @@ public class HasteController : MonoBehaviour
         {
             Haste();
         }
-
     }
 
     void Haste()

@@ -117,7 +117,7 @@ public class SkillController : MonoBehaviour
     public GameObject bulletPos;
 
     public Transform pos;
-    public float coolTime;
+    public int coolTime = 1;
     private float curTime;
 
     public void NormalBulletFire()
