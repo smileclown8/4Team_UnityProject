@@ -146,6 +146,8 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
                 if (nowPattern != postPattern)
                     break;
             }
+
+
             switch (nowPattern)
             {
                 case 1:
