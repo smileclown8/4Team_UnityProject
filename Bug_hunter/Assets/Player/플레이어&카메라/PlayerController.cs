@@ -121,22 +121,21 @@ public class PlayerController : MonoBehaviour
             playerRigidbody2D.AddForce(Vector2.right * this.playerRigidbody2D.velocity.x * 0.5f, ForceMode2D.Impulse);
             //플레이어가 대각선으로 점프할때, 너무 앞으로 나아가는 힘이 없어서 좀 더 앞으로 밀어줌
             isJumping = true;
+
+            // 점프 애니메이션과 사운드
+            anim.SetBool("isJumping", true);
+            audioSource.volume = 0.6f;
+            audioSource.clip = jumping;
+            audioSource.Play();
         }
 
-        if(playerRigidbody2D.velocity.y > 40.0f)
+        if (playerRigidbody2D.velocity.y > 40.0f)
         {
             playerRigidbody2D.AddForce(Vector2.down * jumpPower / 5, ForceMode2D.Impulse);
         }
         // 플레이어가 점프힘을 지나치게 많이받아서 하늘로 날아가고 그러길래, 플레이어의 점프속도가 어느 정도를 넘어가면 강제로
         // 아래로 내려꽂히는 힘을 추가로 가해줌.
 
-        /*
-        // 점프 애니메이션과 사운드
-        anim.SetBool("isJumping",true);
-        audioSource.volume = 0.6f;
-        audioSource.clip = jumping;
-        audioSource.Play();
-        */
     }
 
 
@@ -193,10 +192,12 @@ public class PlayerController : MonoBehaviour
         
         if(collision.gameObject.tag == "EnemyAttack")
         {
+            Debug.Log("아야!");
             OnDamaged(collision.transform.position,8);
+
         }
 
-        if(collision.gameObject.tag == "Staff")
+        if (collision.gameObject.tag == "Staff")
         {
             OnDamaged(collision.transform.position, 40);
         }
@@ -217,9 +218,6 @@ public class PlayerController : MonoBehaviour
     }
     void OnDamaged(Vector2 targetPos, float KnockBackPower) //메이플마냥 데미지를 받으면 뒤로 약간 밀려나고 투명해지며 몬스터를 통과하게 함
     {
-        // 피격 사운드
-        audioSource.clip = damaged;
-        audioSource.Play();
 
         //피격시 PlayerDamaged로 플레이어의 레이어 변화
         this.gameObject.layer = 10; // 레이어 PlayerDamaged 가 들어가있는 레이어 번호

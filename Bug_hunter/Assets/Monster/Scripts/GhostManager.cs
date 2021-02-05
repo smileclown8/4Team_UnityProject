@@ -48,6 +48,7 @@ public class GhostManager : MonoBehaviour
                 if (hp > 0)
                 {
                     TakeDamage();               // hp가 0 이상이면 추적 시작
+                    Attack();
                 }
                 else if (hp <= 0)
                 {
@@ -77,7 +78,6 @@ public class GhostManager : MonoBehaviour
         GetComponentInParent<AIDestinationSetter>().enabled = true;
         target = GameObject.FindWithTag("Player");                      // 타깃을 플레이어로 세팅
         animator.SetBool("isAttack", true);
-        Attack();
     }
 
     void Stop()
@@ -111,7 +111,7 @@ public class GhostManager : MonoBehaviour
             Instantiate(bullet, transform.position, Quaternion.identity);
             shoottime = 0;
         }
-        nextshoot = Time.time + shoottime;
+        shoottime += Time.deltaTime;
     }
 
 

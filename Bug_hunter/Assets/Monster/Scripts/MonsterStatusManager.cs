@@ -76,7 +76,7 @@ public class MonsterStatusManager : MonoBehaviour
             
             if (random <= 15)
             {
-                //Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);     // 버프템 드랍
+                Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);     // 버프템 드랍
             }
             // 74줄에서 문제가 생기면 : 해당 몬스터의 인스펙터에서 buff에 버프템을 아웃렛 연결해줄 것!
             Destroy(gameObject, 0.5f);

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6666212661220742002}
   m_Layer: 11
   m_Name: BookBullet2
-  m_TagString: Enemy
+  m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
