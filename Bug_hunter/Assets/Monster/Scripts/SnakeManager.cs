@@ -122,21 +122,30 @@ public class SnakeManager : MonoBehaviour
             // 도대체 왜 두 개가 같이 나오는데!!!!!!!!!!!!!!!!!!!!!
             if (isFast)
             {
-                Debug.Log("빠르게!");
-                speed = 4;
-                timer = 3;
-                isFast = false;
+                if (timer > 0)
+                {
+                    Debug.Log("빠르게!");
+                    speed = 4f;
+                    timer -= Time.deltaTime;
+                    if (timer <= 0)
+                    {
+                        isFast = false;
+                        timer = 3f;
+                    }
+                }
             }
-            if (!isFast)
+            else
             {
                 Debug.Log("천천히~");
-                speed = 1;
-                timer = 1;
-                isFast = true;
+                speed = 1f;
+                timer -= Time.deltaTime;
+                if (timer <= 0)
+                {
+                    isFast = true;
+                    timer = 1f;
+                }
             }
         }
-        else
-            timer -= Time.deltaTime;
 
 
 
