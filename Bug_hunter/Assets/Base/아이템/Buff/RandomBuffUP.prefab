@@ -9360,8 +9360,9 @@ GameObject:
   - component: {fileID: -6539476415169082094}
   - component: {fileID: 1106818328706440417}
   - component: {fileID: 3608257097740368750}
+  - component: {fileID: 1691317789345970892}
   m_Layer: 0
-  m_Name: BuffUP
+  m_Name: RandomBuffUP
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14099,7 +14100,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6180952072070543855}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -14127,7 +14128,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!114 &3608257097740368750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14143,5 +14144,19 @@ MonoBehaviour:
   speedup: 10
   MaxHPup: 10
   jumpUP: 10
-  coolUP: 0
-  attUP: 1
+--- !u!58 &1691317789345970892
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6180952072070543855}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.9

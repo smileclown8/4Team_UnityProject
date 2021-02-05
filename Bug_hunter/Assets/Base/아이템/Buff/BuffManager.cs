@@ -18,26 +18,25 @@ public class BuffManager : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-
         // 플레이어가 아이템을 획득
         if (collision.gameObject.tag == "Player")
         {
-            int random = Random.Range(1, 4);
-            if(random == 1)
-            {
-                SpeedUP();
-            }
-            if (random == 2)
-            {
-                HPUP();
-            }
-            if (random == 3)
-            {
-                JumpUP();
-            }
 
-            // 아이템 오브젝트 삭제
-            Destroy(this.gameObject);
+                int random = Random.Range(1, 4);
+
+                if (random == 1)
+                {
+                    SpeedUP();
+                }
+                if (random == 2)
+                {
+                    HPUP();
+                }
+                if (random == 3)
+                {
+                    JumpUP();
+                }
+                Destroy(this.gameObject);
         }
     }
 
