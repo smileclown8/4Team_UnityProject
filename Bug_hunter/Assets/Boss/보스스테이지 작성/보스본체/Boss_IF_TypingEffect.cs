@@ -7,7 +7,7 @@ public class Boss_IF_TypingEffect : MonoBehaviour
 {
     public Text tx;
     private string PatternStartText_Hamster = "IF { ME == HAMSTER }";
-    private string PatternStartText_Alpaca = "IF { ME == ALPACA }";
+    private string PatternStartText_Alpaca = "IF { ME == Chipmunk }";
     private string PatternStartText_Dove = "IF { ME == DOVE }";
     private string PatternStartText_Bear = "IF { ME == BEAR }";
 

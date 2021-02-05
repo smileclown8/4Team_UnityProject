@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss_IF_CORE_Controller : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
     void Update()
     {
         transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
-
+        ShowBossInfo();
      //   Debug.Log(nowPattern);
     }
 
@@ -57,6 +58,17 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
         }
     }
 
+    private float Alpha = 0;
+    void ShowBossInfo()
+    {
+            if (Alpha <= 0.8f)
+            {
+                GameObject.Find("BossHpBar").GetComponent<Image>().color = new Color(GameObject.Find("BossHpBar").GetComponent<Image>().color.r, GameObject.Find("BossHpBar").GetComponent<Image>().color.g, GameObject.Find("BossHpBar").GetComponent<Image>().color.b, Alpha);
+                GameObject.Find("BossName").GetComponent<Text>().color = new Color(GameObject.Find("BossName").GetComponent<Text>().color.r, GameObject.Find("BossName").GetComponent<Text>().color.g, GameObject.Find("BossName").GetComponent<Text>().color.b, Alpha);
+                Alpha += Time.deltaTime * 0.5f;
+            }
+
+    }
 
 
     // =======================================================================

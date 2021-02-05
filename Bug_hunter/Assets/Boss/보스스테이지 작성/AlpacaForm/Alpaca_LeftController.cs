@@ -20,7 +20,7 @@ public class Alpaca_LeftController : MonoBehaviour
     void Update()
     {
         AlpacaMoveLeft_To_Right();
-        moveSpeed += 5;
+        moveSpeed += 5 ;
     }
 
 

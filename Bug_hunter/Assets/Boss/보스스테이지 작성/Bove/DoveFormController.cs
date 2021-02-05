@@ -5,6 +5,10 @@ using UnityEngine;
 public class DoveFormController : MonoBehaviour
 {
     // Start is called before the first frame update
+    private void Awake()
+    {
+        coolTime = 0.015f;
+    }
     void Start()
     {
         Invoke("DestroyPattern", 10);
@@ -24,7 +28,7 @@ public class DoveFormController : MonoBehaviour
     public GameObject DoveTears;
     public Transform DoveTearsPos;
     private float curTime;
-    private float coolTime = 0.03f;
+    private float coolTime = 0.015f;
     void CreateHamsterBullet()
     {
         float createPos_Random = Random.Range(-0.5f, 0.5f);
