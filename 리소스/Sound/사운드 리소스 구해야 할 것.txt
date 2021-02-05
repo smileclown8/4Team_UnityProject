@@ -1,12 +1,38 @@
 
 뾰로롱 사운드
 보스 HP바 ui (2개)
+피격 사운드
+
+
+
+
+
+
 
 쿠구구구궁 (이프흔들림)
-곰 할퀴기
-비둘기 우는소리
+https://freesound.org/people/Reitanna/sounds/217657/
+후보 1_지진1
+https://freesound.org/people/hiriak/sounds/187857/
+후보 2_지진2
+https://freesound.org/people/metrostock99/sounds/203281/
+후보3_지진3
 
 
+https://freesound.org/people/Maemi_no_yume/sounds/398634/
+(곰 할퀴기_곰할퀴기)
+
+https://freesound.org/people/WagnerTamborin/sounds/394098/
+(비둘기 우는소리 확인 _cartoon-doves)
+
+https://freesound.org/people/AMPUL/sounds/29721/
+(톱니 사운드 _톱니 사운드)
+
+
+
+
+------------------------
 https://freesound.org/people/schafferdavid/sounds/253555/
 
 이거 로그인해야 다운되던데 이거좀요 ㅎㅎ
+(다운로드 완료 02.05 오전 11시 30분)
+보스 폴더로 옮겨둠 이름 (cartoon-14)
