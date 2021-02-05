@@ -1,7 +1,15 @@
 
 뾰로롱 사운드
 보스 HP바 ui (2개)
-피격 사운드
+
+
+
+
+
+https://freesound.org/people/LittleRobotSoundFactory/sounds/270326/
+피격 사운드_피격1
+https://freesound.org/people/SRJA_Gaming/sounds/544887/
+피격2
 
 
 
