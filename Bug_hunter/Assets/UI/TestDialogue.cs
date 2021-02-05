@@ -93,6 +93,10 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
+                if (this.gameObject.name == "Seed")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
                 if (this.gameObject.name == "Savor1")
                 {
                     theDM.ShowDialogue(this.dialogue);
