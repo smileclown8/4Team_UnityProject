@@ -40,8 +40,8 @@ public class GhostBulletManager : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            GameObject.Find("PlayerStatusManager").GetComponentInChildren<PlayerStatusManager>().player_HP -= GetComponent<MonsterStatusManager>().attack;
-            Debug.Log("유령의 공격! 데미지 " + GetComponent<MonsterStatusManager>().attack);
+            GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP -= GameObject.Find("Ghost").GetComponent<MonsterStatusManager>().attack;
+            Debug.Log("유령의 공격! 데미지 " + GameObject.Find("Ghost").GetComponent<MonsterStatusManager>().attack);
             Destroy(gameObject);
         }
     }

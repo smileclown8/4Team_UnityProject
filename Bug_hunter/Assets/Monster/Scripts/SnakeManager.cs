@@ -51,7 +51,7 @@ public class SnakeManager : MonoBehaviour
     void Think()
     {
         nextMove = Random.Range(-1, 2);
-        Debug.Log("다음 방향은 " + nextMove);
+        // Debug.Log("다음 방향은 " + nextMove);
 
         Invoke("Think", 3);
     }

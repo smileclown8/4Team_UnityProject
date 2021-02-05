@@ -30,8 +30,8 @@ public class GhostManager : MonoBehaviour
 
     void Start()
     {
-        shoottime = 3f;
-        nextshoot = Time.time;
+        shoottime = 3;
+        nextshoot = 3;
         playerPos = GameObject.FindWithTag("Player").GetComponent<Transform>();
         GetComponentInParent<AIDestinationSetter>().target = playerPos;
         GetComponentInParent<AIDestinationSetter>().enabled = false;
@@ -62,7 +62,13 @@ public class GhostManager : MonoBehaviour
 
     }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "PlayerBullet")
+        {
+            isDamaged = true;
+        }
+    }
 
     public void TakeDamage()
     {
@@ -86,7 +92,7 @@ public class GhostManager : MonoBehaviour
         GetComponentInParent<AIDestinationSetter>().enabled = false;
         animator.SetBool("isAttack", false);
         animator.SetTrigger("Death");
-        Invoke("DeathAnim", 1);
+        //Invoke("DeathAnim", 1);
     }
 
 
@@ -98,13 +104,14 @@ public class GhostManager : MonoBehaviour
     void Attack()
     {
         Trace();
-        if (Time.time > nextshoot)      // 플레이어가 죽을 때까지 3초마다 한 번씩 탄알 발사
+        if (shoottime >= nextshoot)      // 플레이어가 죽을 때까지 3초마다 한 번씩 탄알 발사
         {
             audioSource.clip = attack;
             audioSource.Play();
             Instantiate(bullet, transform.position, Quaternion.identity);
-            nextshoot = Time.time + shoottime;
+            shoottime = 0;
         }
+        nextshoot = Time.time + shoottime;
     }
 
 
