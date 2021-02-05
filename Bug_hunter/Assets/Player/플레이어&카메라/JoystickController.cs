@@ -45,6 +45,9 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
     [HideInInspector]
     Image JoystickImage;
 
+    // 오디오 재생시간 관리
+    float runningSoundPlayT = 0.2f;
+    float runningSoundDelayT = 0.2f;
 
     void Awake()
     {
@@ -56,7 +59,6 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
     // Start is called before the first frame update
     void Start()
     {
-
         radius = rect_Background.rect.width * 0.5f;
 
         JoystickBGImage = GetComponent<Image>();
@@ -85,7 +87,6 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
             else if (playerDir == -1)
             {
                 Player.transform.eulerAngles = new Vector3(0, 180, 0);
-
             }
         }
         if (isTouch && isTalk == false)
@@ -93,6 +94,17 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
             playerRigidbody.AddForce(movePosition * 70, ForceMode2D.Impulse);
             //  Player.transform.position += movePosition;
 
+            // 달리는 애니메이션
+            Player.GetComponent<Animator>().SetBool("isRunning", true);
+            // 달리는 소리
+            if (runningSoundPlayT > runningSoundDelayT)
+            {
+                GameObject.FindWithTag("Player").GetComponent<AudioSource>().volume = 0.3f;
+                GameObject.FindWithTag("Player").GetComponent<AudioSource>().clip = GameObject.FindWithTag("Player").GetComponent<PlayerController>().running;
+                GameObject.FindWithTag("Player").GetComponent<AudioSource>().Play();
+                runningSoundPlayT = 0;
+            }
+            runningSoundPlayT += Time.deltaTime;
 
             //플레이어 이동속도 최대 제한
             if (playerRigidbody.velocity.x > maxMoveSpeed)
@@ -102,6 +114,11 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
 
         }
 
+        if(movePosition == new Vector2(0, 0))
+        {
+            // 움직임이 없을 때 Idle 애니메이션으로 전환
+            Player.GetComponent<Animator>().SetBool("isRunning", false);
+        }
     }
 
     //player의 Linear Drag(공기저항)을 1로 설정해서 미끄러지는걸 방지하기
@@ -128,6 +145,8 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
         {
             playerDir = 1;
         }
+
+        
 
     }
 

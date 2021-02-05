@@ -15,8 +15,15 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D playerRigidbody2D;
     SpriteRenderer spriteRenderer;
-    Animator anim;
-    
+
+    public Animator anim;
+    public AudioSource audioSource;
+    public AudioClip running;
+    public AudioClip jumping;
+    public AudioClip damaged;
+    public AudioClip death;
+
+
 
     //플레이어의 최대 이동속도
     public float maxMoveSpeed;
@@ -53,7 +60,8 @@ public class PlayerController : MonoBehaviour
         PlayerStatusManager = GameObject.Find("PlayerStatusManager");
         jumpPower = PlayerStatusManager.GetComponent<PlayerStatusManager>().jumpPower;
         Dialogue = GameObject.Find("UI_Dialogue");
-
+        anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -61,7 +69,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-  //      bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
+        // bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
         tilemap = GameObject.Find("Tilemap1_2_1");
         if (tilemap != null)
         {
@@ -87,7 +95,7 @@ public class PlayerController : MonoBehaviour
 
         //터치가 아닐 때
          Jump();
-        Land();
+         Land();
 
 
 
@@ -115,9 +123,6 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
         }
 
-        //점프중일때 점프하는 모습의 애니메이션 추가해주세요 anim.SetBool("isJumping",true);
-        
-
         if(playerRigidbody2D.velocity.y > 40.0f)
         {
             playerRigidbody2D.AddForce(Vector2.down * jumpPower / 5, ForceMode2D.Impulse);
@@ -125,6 +130,13 @@ public class PlayerController : MonoBehaviour
         // 플레이어가 점프힘을 지나치게 많이받아서 하늘로 날아가고 그러길래, 플레이어의 점프속도가 어느 정도를 넘어가면 강제로
         // 아래로 내려꽂히는 힘을 추가로 가해줌.
 
+        /*
+        // 점프 애니메이션과 사운드
+        anim.SetBool("isJumping",true);
+        audioSource.volume = 0.6f;
+        audioSource.clip = jumping;
+        audioSource.Play();
+        */
     }
 
 
@@ -144,7 +156,8 @@ public class PlayerController : MonoBehaviour
                 {
                     isJumping = false;
 
-                    //점프가 끝나고 착지하는 애니메이션 anim.SetBool("isJumping",false);
+                    // 착지 애니메이션
+                    anim.SetBool("isJumping",false);
                 }
             }
         }
@@ -204,6 +217,10 @@ public class PlayerController : MonoBehaviour
     }
     void OnDamaged(Vector2 targetPos, float KnockBackPower) //메이플마냥 데미지를 받으면 뒤로 약간 밀려나고 투명해지며 몬스터를 통과하게 함
     {
+        // 피격 사운드
+        audioSource.clip = damaged;
+        audioSource.Play();
+
         //피격시 PlayerDamaged로 플레이어의 레이어 변화
         this.gameObject.layer = 10; // 레이어 PlayerDamaged 가 들어가있는 레이어 번호
 
