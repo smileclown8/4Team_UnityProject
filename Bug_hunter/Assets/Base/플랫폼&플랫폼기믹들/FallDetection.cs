@@ -26,8 +26,10 @@ public class FallDetection : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+
             if (GameObject.Find("PlayerStatusManager") != null)
             {
+
                 collision.gameObject.transform.position
                 = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos;
                 Debug.Log("플레이어 추락, hp 20감소");
