@@ -129,6 +129,15 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
+                if(this.gameObject.name == "Bear")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+
+
+
+
+
 
 
                 //2스테이지
