@@ -92,8 +92,8 @@ public class PlayerController : MonoBehaviour
 
 
         //터치가 아닐 때
-      //   Jump();
-      //   Land();
+        //   Jump();
+        //   Land();
 
     
    
@@ -103,13 +103,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
-        }
-
-
-        if(GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP <=0)
-        {
-            GetComponent<AudioSource>().clip = GetComponentInChildren<EslafDeadSound>().dead;
-            audioSource.Play();
         }
 
     }

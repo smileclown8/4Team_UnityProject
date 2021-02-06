@@ -17,17 +17,27 @@ public class Died : MonoBehaviour
     {
          if (!isRespawn && Player_Hp.GetComponent<PlayerStatusManager>().player_HP <= 0)
          {
-          
-            // 사망 사운드
-            GameObject.Find("PlayerDeadSound").GetComponent<AudioSource>().clip = GameObject.FindWithTag("Player").GetComponent<PlayerController>().death;
-            GameObject.Find("PlayerDeadSound").GetComponent<AudioSource>().Play();
-          
+            // 사망 애니메이션
+            GameObject.FindWithTag("Player").GetComponent<Animator>().SetTrigger("Dead");
+            // 사망 사운드 : 으윽! + 브금
+            GameObject.FindWithTag("Player").GetComponent<AudioSource>().clip = GameObject.FindWithTag("Player").GetComponent<PlayerController>().death;
+            GameObject.FindWithTag("Player").GetComponent<AudioSource>().Play();
+            Invoke("DeathBGM", 0.25f);
+
+
 
             isRespawn = true;
             Debug.Log("플레이어 사망");
             Invoke("RespawnWait", 2f);
          }
     }
+    void DeathBGM()     // 사망브금
+    {
+        GameObject.Find("PlayerDeadSound").GetComponent<AudioSource>().volume = 0.7f;
+        GameObject.Find("PlayerDeadSound").GetComponent<AudioSource>().clip = GameObject.Find("PlayerDeadSound").GetComponent<EslafDeadSound>().dead;
+        GameObject.Find("PlayerDeadSound").GetComponent<AudioSource>().Play();
+    }
+
 
     private bool isRespawn = false;
 
