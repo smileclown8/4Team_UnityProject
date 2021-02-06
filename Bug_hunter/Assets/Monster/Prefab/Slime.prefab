@@ -241,6 +241,7 @@ MonoBehaviour:
   moving: {fileID: 8300000, guid: 15d39781c6576874f8188e812b9531ab, type: 3}
   jump: {fileID: 8300000, guid: 6d8fd40dbf3e20b4cbddf332342fd67f, type: 3}
   audioSource: {fileID: 0}
+  soundPlayTime: 0
 --- !u!114 &6732243745509921548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +259,7 @@ MonoBehaviour:
   def: 0
   dod: 0
   buffRate: 0
-  buff: {fileID: 0}
+  buff: {fileID: 6180952072070543855, guid: e9cb96ae0a0c33948af71320b2ba80cb, type: 3}
 --- !u!82 &316480234
 AudioSource:
   m_ObjectHideFlags: 0

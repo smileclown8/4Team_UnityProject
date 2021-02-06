@@ -15,10 +15,14 @@ public class MonsterStatusManager : MonoBehaviour
 
     [SerializeField] public GameObject buff;
 
+    bool drop;
+
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        drop = true;
+
     }
 
     // 플레이어 총알에 닿으면 HP 깎임
@@ -70,17 +74,38 @@ public class MonsterStatusManager : MonoBehaviour
     {
         if (hp <= 0)
         {
+            Drop();
             Debug.Log("몬스터 사망");
+
+            // 74줄에서 문제가 생기면 : 해당 몬스터의 인스펙터에서 buff에 버프템을 아웃렛 연결해줄 것!
+            Destroy(gameObject, 0.5f);      // 0.5초 뒤에 삭제. 부모 오브젝트 삭제 시간 계산을 위해 필요함.
             
+        }
+
+    }
+
+    void droptrue()
+    {
+        drop = true;
+    }
+
+    void Drop()
+    {
+
+        if (drop == true)
+        {
             int random = Random.Range(0, 101);
-            
+
             if (random <= buffRate)                                                             // 버프 확률보다 적으면 버프 얻는다.
             {
                 Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);     // 버프템 드랍 (템은 아웃렛 연결)
+                drop = false;
             }
-            // 74줄에서 문제가 생기면 : 해당 몬스터의 인스펙터에서 buff에 버프템을 아웃렛 연결해줄 것!
-            Destroy(gameObject, 0.5f);      // 0.5초 뒤에 삭제. 부모 오브젝트 삭제 시간 계산을 위해 필요함.
         }
-    }
+        else if (drop == false)
+        {
+            Invoke("droptrue", 0.5f);
+        }
 
+    }
 }
