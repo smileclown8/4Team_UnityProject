@@ -212,7 +212,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3165318660983585390, guid: a0d6c8077ca668e47b2ca48353beb405,
+          type: 3}
         m_MethodName: Jump
         m_Mode: 1
         m_Arguments:

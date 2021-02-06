@@ -30,12 +30,12 @@ public class SkillController : MonoBehaviour
             Shoot();
         }
 
-        /*
+
         if(isShootButton == true)
         {
             Shoot();
         }
-        */
+
     }
 
 

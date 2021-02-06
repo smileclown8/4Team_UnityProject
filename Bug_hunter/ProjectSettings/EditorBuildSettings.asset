@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/2Stage_Map_ToTheBoss.unity
+    guid: ac7fbd5e75c282f4eaaf05d266996429
+  - enabled: 1
+    path: Assets/Scenes/SecondBossStage.unity
+    guid: 227656e2c8bfdb14d8e1eeb6788fa8aa
   m_configObjects: {}
