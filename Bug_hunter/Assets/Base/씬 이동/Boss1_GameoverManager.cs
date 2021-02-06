@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Boss1_GameoverManager : MonoBehaviour
 {
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
 
     }
+
 
     // Update is called once per frame
     void Update()
@@ -18,21 +24,34 @@ public class Boss1_GameoverManager : MonoBehaviour
         {
             if (GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP <= 0)
             {
-                Debug.Log("보스방에서 사망");
                 GameOver();
             }
         }
 
-
-        Debug.Log(GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos);
+        if (isMoved)
+        {
+            Invoke("MoveToSavePoint", 0.1f);
+            isMoved = false;
+        }
     }
+    private bool isMoved = false;
 
+    void MoveToSavePoint()
+    {
+        if (GameObject.Find("SavePoint_1_5") != null)
+        {
+            GameObject.Find("player").transform.position = GameObject.Find("SavePoint_1_5").transform.position;
+            Destroy(this.gameObject);
+        }
+    }
 
     void GameOver()
     {
 
-            SceneManager.LoadScene("1Stage_Map");
-        GameObject.Find("player").transform.position = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos;
+        isMoved = true;
 
+        GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP
+           = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_MaxHP;
+        SceneManager.LoadScene("1Stage_Map");
     }
 }

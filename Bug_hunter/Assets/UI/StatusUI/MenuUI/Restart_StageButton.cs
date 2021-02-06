@@ -15,12 +15,24 @@ public class Restart_StageButton : MonoBehaviour
     {
         
     }
+
+    public void CanRestartAgain()
+    {
+
+    }
+
+    public bool canRestart = false;
     public GameObject Menu_Set;
     public void Restart()
     {
 
-        GameObject.Find("player").transform.position = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos;
-        Time.timeScale = 1;
-        Menu_Set.SetActive(false);
+    //    if (!canRestart)
+      //  {
+            GameObject.Find("player").transform.position = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos;
+            Time.timeScale = 1;
+            Menu_Set.SetActive(false);
+
+       //     canRestart = true;
+      //  }
     }
 }

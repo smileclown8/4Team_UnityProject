@@ -300,7 +300,6 @@ public class DialogueManager : MonoBehaviour
             if (Input.GetMouseButtonDown(0))     // 터치일 때
             {
                 keyActivated = false;
-                Debug.Log(count);
                 theAudio.Play(enterSound);
 
                 // Dialougue_03_message 오브젝트와 대화할때
