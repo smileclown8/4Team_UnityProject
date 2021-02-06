@@ -66,7 +66,6 @@ public class PlayerController : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
     void Start()
     {
         // bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
@@ -85,7 +84,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
        // skill_ID = PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID;
@@ -108,6 +106,11 @@ public class PlayerController : MonoBehaviour
         }
 
 
+        if(GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP <=0)
+        {
+            GetComponent<AudioSource>().clip = GetComponentInChildren<EslafDeadSound>().dead;
+            audioSource.Play();
+        }
 
     }
 
@@ -181,19 +184,35 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-              OnDamaged(collision.transform.position,8);  // 만약 몬스터 위가 아닌곳에서 몬스터와 충돌하면 데미지를 입는다.
+                // 피격 사운드
+                audioSource.Stop();
+                audioSource.volume = 1;
+                audioSource.clip = damaged;
+                audioSource.Play();
+
+                OnDamaged(collision.transform.position,8);  // 만약 몬스터 위가 아닌곳에서 몬스터와 충돌하면 데미지를 입는다.
             }
         }
         if (collision.gameObject.tag == "Gimik")  // tag가 Gimik인것과 충돌할때.
                                                   // if(collision.gameObject.tag =="Gimik"){ OnDamaged( ... ) } 이런 내용을 추가해야함
         {
+            // 피격 사운드
+            audioSource.Stop();
+            audioSource.volume = 1;
+            audioSource.clip = damaged;
+            audioSource.Play();
 
             OnDamaged(collision.transform.position,8);  
         }
         
         if(collision.gameObject.tag == "EnemyAttack")
         {
-            Debug.Log("아야!");
+            // 피격 사운드
+            audioSource.Stop();
+            audioSource.volume = 1;
+            audioSource.clip = damaged;
+            audioSource.Play();
+
             OnDamaged(collision.transform.position,8);
 
         }
@@ -214,24 +233,42 @@ public class PlayerController : MonoBehaviour
         playerRigidbody2D.AddForce(Vector2.up * 15, ForceMode2D.Impulse); // 밟았을때 통~ 하고 튀게 위로 힘을 준다.
 
         //Enemy Die
+        if(monster.gameObject.name != "Bat" &&
+           monster.gameObject.name != "Ghost" &&
+           monster.gameObject.name != "Musicbox"
+           /*몬스터 '이슬라프의 망령' 추가 시 + && monster.gameObject.name != "PhantomEslaf"*/ )
+        monster.GetComponent<MonsterStatusManager>().hp = 0;
+
 
         // BE2 6분대 근처 참고하면서 마저작성하기
     }
     void OnDamaged(Vector2 targetPos, float KnockBackPower) //메이플마냥 데미지를 받으면 뒤로 약간 밀려나고 투명해지며 몬스터를 통과하게 함
     {
+        if(PlayerStatusManager.GetComponent<PlayerStatusManager>().player_HP > 0)
+        {
+            //피격시 PlayerDamaged로 플레이어의 레이어 변화
+            this.gameObject.layer = 10; // 레이어 PlayerDamaged 가 들어가있는 레이어 번호
 
-        //피격시 PlayerDamaged로 플레이어의 레이어 변화
-        this.gameObject.layer = 10; // 레이어 PlayerDamaged 가 들어가있는 레이어 번호
+            //피격당하면 색변화(투명도를 변화시킴)
+            this.spriteRenderer.color = new Color(1, 1, 1, 0.4f);
 
-        //피격당하면 색변화(투명도를 변화시킴)
-        this.spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+            // 피격당했을때 튕겨나가는거
+            int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;  //몬스터에게 피격당해서 날아갈 방향
+            isJumping = true;
+            playerRigidbody2D.AddForce(new Vector2(dirc, 1) * KnockBackPower, ForceMode2D.Impulse);
 
-        // 피격당했을때 튕겨나가는거
-        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1 ;  //몬스터에게 피격당해서 날아갈 방향
-        isJumping = true;
-        playerRigidbody2D.AddForce(new Vector2(dirc, 1) * KnockBackPower, ForceMode2D.Impulse);
-
-        Invoke("OffDamaged", 2); //레이어와 투명해진거를 원상복귀
+            Invoke("OffDamaged", 2); //레이어와 투명해진거를 원상복귀
+        }
+        else if (PlayerStatusManager.GetComponent<PlayerStatusManager>().player_HP <= 0)
+        {
+            Debug.Log("왜안돼");
+            // 사망 애니메이션
+            GetComponent<Animator>().SetTrigger("Dead");
+            // 사망 사운드
+            GetComponent<AudioSource>().volume = 1;
+            GetComponent<AudioSource>().clip = GetComponent<PlayerController>().death;
+            GetComponent<AudioSource>().Play();
+        }
 
     }
 

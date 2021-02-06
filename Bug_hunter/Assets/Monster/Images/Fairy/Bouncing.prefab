@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2892845075786376146}
   - component: {fileID: -3060519620306117396}
   - component: {fileID: -2467255241755808162}
-  m_Layer: 0
+  m_Layer: 29
   m_Name: Bouncing
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}

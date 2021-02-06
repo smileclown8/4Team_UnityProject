@@ -41,7 +41,7 @@ public class SlimeAttackRange : MonoBehaviour
             myPos = GetComponentInParent<Transform>();
             JumpAttack();
             Debug.Log(audioSource.clip);
-            Invoke("BackDown", 0.2f);
+            Invoke("BackDown", 0.23f);
             audioSource.Play();
         }
     }

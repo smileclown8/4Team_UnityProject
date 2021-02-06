@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4334448945367706138}
   - component: {fileID: 7115915563497617006}
   - component: {fileID: 6717073457352618182}
-  m_Layer: 0
+  m_Layer: 29
   m_Name: BatBullet
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}

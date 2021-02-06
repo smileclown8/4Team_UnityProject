@@ -49,7 +49,7 @@ TagManager:
   - Item
   - 
   - 
-  - 
+  - EnemyBullet
   - EnemyBlocker
   - 
   m_SortingLayers:

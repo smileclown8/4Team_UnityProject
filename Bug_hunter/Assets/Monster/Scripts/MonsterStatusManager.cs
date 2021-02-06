@@ -70,16 +70,16 @@ public class MonsterStatusManager : MonoBehaviour
     {
         if (hp <= 0)
         {
-            Debug.Log("으악 죽었다");
+            Debug.Log("몬스터 사망");
             
             int random = Random.Range(0, 101);
             
-            if (random <= 15)
+            if (random <= buffRate)                                                             // 버프 확률보다 적으면 버프 얻는다.
             {
-                Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);     // 버프템 드랍
+                Instantiate(buff, transform.position + Vector3.up * 3, transform.rotation);     // 버프템 드랍 (템은 아웃렛 연결)
             }
             // 74줄에서 문제가 생기면 : 해당 몬스터의 인스펙터에서 buff에 버프템을 아웃렛 연결해줄 것!
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject, 0.5f);      // 0.5초 뒤에 삭제. 부모 오브젝트 삭제 시간 계산을 위해 필요함.
         }
     }
 

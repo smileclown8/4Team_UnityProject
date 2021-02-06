@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2298079058992426097}
   - component: {fileID: -7945315454445013792}
   - component: {fileID: 2700388733740755486}
-  m_Layer: 0
+  m_Layer: 29
   m_Name: NPCBullet
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2298079058992426097}
   - component: {fileID: 7202224581571434040}
   - component: {fileID: 273259547960855748}
-  m_Layer: 11
+  m_Layer: 29
   m_Name: BookBullet4
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
