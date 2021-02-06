@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 17181a42e77200649bee3a67107c9c1e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - NormalBullet: {fileID: 1921888244951303501, guid: ec57b8b31e3819a4aaa7e89d2776a436,
+      type: 3}
+  - SecondSkillBullet: {fileID: 3522355950248386491, guid: c3e4601e7bbb9ec44b89b85290ad45c6,
+      type: 3}
+  - RandomBullet: {fileID: 1921888244951303501, guid: ec57b8b31e3819a4aaa7e89d2776a436,
+      type: 3}
+  - arrowSkillBullet: {fileID: 2475634399493701589, guid: 35a070e1a5e9f8042a5d282ad76e3399,
+      type: 3}
+  - BombSkill: {fileID: 428565131873435329, guid: 41fd9a0e4687e49488c620a0e904c837,
+      type: 3}
+  - ElectroSkill: {fileID: 955176400735252089, guid: 0884f246ae3d9de49bcbb0b514296380,
+      type: 3}
+  - FireSkill: {fileID: 5225882244830033029, guid: e17def6f24c85f94c9eb5342b43168e7,
+      type: 3}
+  - bulletPos: {instanceID: 0}
+  - pos: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
