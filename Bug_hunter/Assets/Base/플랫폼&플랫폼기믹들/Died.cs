@@ -17,11 +17,11 @@ public class Died : MonoBehaviour
     {
          if (!isRespawn && Player_Hp.GetComponent<PlayerStatusManager>().player_HP <= 0)
          {
-            /*
+          
             // 사망 사운드
-            GameObject.Find("PlayerDeadVoice").GetComponent<AudioSource>().clip = GameObject.FindWithTag("Player").GetComponent<PlayerController>().death;
-            GameObject.Find("PlayerDeadVoice").GetComponent<AudioSource>().Play();
-            */
+            GameObject.Find("PlayerDeadSound").GetComponent<AudioSource>().clip = GameObject.FindWithTag("Player").GetComponent<PlayerController>().death;
+            GameObject.Find("PlayerDeadSound").GetComponent<AudioSource>().Play();
+          
 
             isRespawn = true;
             Debug.Log("플레이어 사망");
