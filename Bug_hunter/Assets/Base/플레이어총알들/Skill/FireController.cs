@@ -39,6 +39,10 @@ public class FireController : MonoBehaviour
         {
             DestroyBullet();
         }
+        if (collision.gameObject.tag == "platform")
+        {
+            DestroyBullet();
+        }
     }
     void DestroyBullet()
     {

@@ -37,6 +37,10 @@ public class ElectroController : MonoBehaviour
         {
             DestroyBullet();
         }
+        if (collision.gameObject.tag == "platform")
+        {
+            DestroyBullet();
+        }
     }
     void DestroyBullet()
     {

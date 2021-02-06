@@ -83,6 +83,10 @@ public class BulletController : MonoBehaviour
         {
             DestroyBullet();
         }
+        if (collision.gameObject.tag == "platform")
+        {
+            DestroyBullet();
+        }
     }
 
 

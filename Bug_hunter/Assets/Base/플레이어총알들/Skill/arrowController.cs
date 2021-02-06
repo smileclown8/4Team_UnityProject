@@ -36,6 +36,10 @@ public class arrowController : MonoBehaviour
         {
             DestroyBullet();
         }
+        if (collision.gameObject.tag == "platform")
+        {
+            DestroyBullet();
+        }
     }
     void DestroyBullet()
     {
