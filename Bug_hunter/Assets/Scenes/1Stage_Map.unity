@@ -95716,8 +95716,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
         type: 3}
+      propertyPath: rehp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
+        type: 3}
+      propertyPath: rejump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
+        type: 3}
+      propertyPath: remove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
+        type: 3}
       propertyPath: jumpPower
       value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
+        type: 3}
+      propertyPath: player_HP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
+        type: 3}
+      propertyPath: maxMoveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
+        type: 3}
+      propertyPath: player_MaxHP
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4072865626438990715, guid: d7a565ba2d676584590d87db05d1efa3,
         type: 3}
@@ -109569,6 +109604,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_BombSkill
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_FireSkill
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_FirstSkill
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_NormalShoot
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_SecondSKill
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_ElectroSkill
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_arrowSkillBullet
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165318660983585385, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
       propertyPath: m_Name
