@@ -15,7 +15,7 @@ public class Died : MonoBehaviour
 
     void Update()
     {
-         if (Player_Hp.GetComponent<PlayerStatusManager>().player_HP <= 0)
+         if (!isRespawn && Player_Hp.GetComponent<PlayerStatusManager>().player_HP <= 0)
          {
             /*
             // 사망 사운드
@@ -23,10 +23,13 @@ public class Died : MonoBehaviour
             GameObject.Find("PlayerDeadVoice").GetComponent<AudioSource>().Play();
             */
 
+            isRespawn = true;
             Debug.Log("플레이어 사망");
             Invoke("RespawnWait", 2f);
          }
     }
+
+    private bool isRespawn = false;
 
 
     void RespawnWait()
@@ -35,6 +38,7 @@ public class Died : MonoBehaviour
              GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos;
         Player_Hp.GetComponent<PlayerStatusManager>().player_HP =
             Player_Hp.GetComponent<PlayerStatusManager>().player_MaxHP;
+        isRespawn = false;
     }
 }
 
