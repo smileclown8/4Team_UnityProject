@@ -50,8 +50,6 @@ public class Boss1_GameoverManager : MonoBehaviour
 
         isMoved = true;
 
-        GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP
-           = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_MaxHP;
         SceneManager.LoadScene("1Stage_Map");
     }
 }
