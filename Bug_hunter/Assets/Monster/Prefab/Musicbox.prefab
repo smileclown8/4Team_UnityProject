@@ -329,7 +329,7 @@ MonoBehaviour:
   def: 15
   dod: 0
   buffRate: 40
-  buff: {fileID: 0}
+  buff: {fileID: 6180952072070543855, guid: e9cb96ae0a0c33948af71320b2ba80cb, type: 3}
 --- !u!82 &1900840277
 AudioSource:
   m_ObjectHideFlags: 0

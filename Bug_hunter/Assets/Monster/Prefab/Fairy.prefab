@@ -375,4 +375,4 @@ MonoBehaviour:
   def: 10
   dod: 10
   buffRate: 20
-  buff: {fileID: 0}
+  buff: {fileID: 6180952072070543855, guid: e9cb96ae0a0c33948af71320b2ba80cb, type: 3}
