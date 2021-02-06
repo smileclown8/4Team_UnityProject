@@ -34,11 +34,13 @@ public class ButtonHideController : MonoBehaviour
 
         if (!Dialogue.GetComponent<DialogueManager>().talking)
         {
-            if (this.gameObject.name == "Jump" || this.gameObject.name == "Shoot")
+            if (this.gameObject.name == "Jump" || this.gameObject.name == "Shoot"
+                || this.gameObject.name == "HpBar")
             {
                 this.gameObject.GetComponent<Image>().color = new Color(this.gameObject.GetComponent<Image>().color.r, this.gameObject.GetComponent<Image>().color.g
 , this.gameObject.GetComponent<Image>().color.b, 1);
             }
+
             else //조이스틱
             {
                 if (this.gameObject.GetComponent<Image>() != null)
