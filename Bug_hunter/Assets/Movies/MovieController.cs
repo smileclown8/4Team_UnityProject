@@ -24,7 +24,7 @@ public class MovieController : MonoBehaviour
 
         while(!mVidepPlayer.isPrepared)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return null;
         }
         mScreen.texture = mVidepPlayer.texture;
     }
