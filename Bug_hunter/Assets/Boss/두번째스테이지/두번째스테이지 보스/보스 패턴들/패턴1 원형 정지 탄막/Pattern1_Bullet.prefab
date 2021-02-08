@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 141986925498662289}
   - component: {fileID: 141986925498662290}
   - component: {fileID: 308321496575399860}
+  - component: {fileID: -222669348689886475}
   m_Layer: 11
   m_Name: Pattern1_Bullet
   m_TagString: EnemyAttack
@@ -148,3 +149,17 @@ PolygonCollider2D:
       - {x: 0.105, y: -0.98499995}
       - {x: 0.235, y: -0.675}
       - {x: 0.295, y: -0.53499997}
+--- !u!114 &-222669348689886475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141986925498662284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd440e626c9fd1b418bf2043dfebc2e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
+  PlayerStatusManager: {fileID: 0}

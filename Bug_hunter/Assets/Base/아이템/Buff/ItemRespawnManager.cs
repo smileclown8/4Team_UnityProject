@@ -25,7 +25,7 @@ public class ItemRespawnManager : MonoBehaviour
                 }
                 if (SceneManager.GetActiveScene().name == "SecondBossStage")
                 {
-                    Invoke("Respawn", 3);
+                    Invoke("Respawn", 20);
                 }
             }
         }

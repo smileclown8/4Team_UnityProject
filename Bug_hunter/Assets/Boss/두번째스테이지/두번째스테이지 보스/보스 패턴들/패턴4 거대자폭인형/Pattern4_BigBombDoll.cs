@@ -8,7 +8,7 @@ public class Pattern4_BigBombDoll : MonoBehaviour
     void Start()
     {
         DesPos = GameObject.Find("Pattern4_DesPos");
-        BigBombDoll_HP = 100;
+        BigBombDoll_HP = 30;
         BossReturn = false;
 
         Invoke("Explose", 8f);
@@ -31,7 +31,7 @@ public class Pattern4_BigBombDoll : MonoBehaviour
     public bool BossReturn;
 
 
-     void OnCollisonEnter2D(Collision2D collision)
+     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "PlayerBullet")
         {
