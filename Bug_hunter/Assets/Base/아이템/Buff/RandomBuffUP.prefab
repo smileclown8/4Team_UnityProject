@@ -14141,9 +14141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecec2b7bb8f1ae34f90309e5c193975c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedup: 10
+  speedup: 2
   HPup: 10
-  jumpUP: 10
+  jumpUP: 2
 --- !u!58 &1691317789345970892
 CircleCollider2D:
   m_ObjectHideFlags: 0

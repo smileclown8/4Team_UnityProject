@@ -25,8 +25,15 @@ public class BuffManager : MonoBehaviour
 
             if (random == 1)
             {
+                if (playerStatus.GetComponent<PlayerStatusManager>().moveSpeed >= 90)
+                {
+                    random = Random.Range(2,4);
+                }
                 SpeedUP();
+                Debug.Log("이동 속도 " + playerStatus.GetComponent<PlayerStatusManager>().moveSpeed);
+
             }
+
             if (random == 2)
             {
                 HPUP();
@@ -36,9 +43,15 @@ public class BuffManager : MonoBehaviour
                     Debug.Log("HP " + playerStatus.GetComponent<PlayerStatusManager>().player_HP);
                 }
             }
+
             if (random == 3)
             {
+                if (playerStatus.GetComponent<PlayerStatusManager>().jumpPower >= 60)
+                {
+                    random = Random.Range(1, 3);
+                }
                 JumpUP();
+                Debug.Log("점프 " + playerStatus.GetComponent<PlayerStatusManager>().jumpPower);
             }
             Destroy(this.gameObject);
         }
@@ -46,8 +59,11 @@ public class BuffManager : MonoBehaviour
 
     void SpeedUP()
     {
-        playerStatus.GetComponent<PlayerStatusManager>().moveSpeed += speedup;
-        Debug.Log("이동 속도 " + playerStatus.GetComponent<PlayerStatusManager>().moveSpeed);
+        if (playerStatus.GetComponent<PlayerStatusManager>().moveSpeed < 90)
+        {
+            playerStatus.GetComponent<PlayerStatusManager>().moveSpeed += speedup;
+        }
+
     }
 
     void HPUP()
@@ -60,7 +76,9 @@ public class BuffManager : MonoBehaviour
 
     void JumpUP()
     {
-        playerStatus.GetComponent<PlayerStatusManager>().jumpPower += jumpUP;
-        Debug.Log("점프 " + playerStatus.GetComponent<PlayerStatusManager>().jumpPower);
+        if (playerStatus.GetComponent<PlayerStatusManager>().jumpPower < 60)
+        {
+            playerStatus.GetComponent<PlayerStatusManager>().jumpPower += jumpUP;
+        }
     }
 }
