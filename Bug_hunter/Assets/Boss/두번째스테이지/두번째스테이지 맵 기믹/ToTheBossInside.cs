@@ -28,6 +28,7 @@ public class ToTheBossInside : MonoBehaviour
             GameObject.Find("GrogyNoticeText").SetActive(false);
             isPlayerInBossInside = true;
             LimitTimeNoticeText.SetActive(true);
+            GameObject.Find("Boss_Clea_GrogyManager").GetComponent<Boss_Clea_GrogyManager>().isBossGrogy = true ;
             collision.gameObject.transform.position = portalPos.position;
         }
     }

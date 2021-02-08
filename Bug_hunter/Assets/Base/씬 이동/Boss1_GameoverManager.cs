@@ -33,6 +33,11 @@ public class Boss1_GameoverManager : MonoBehaviour
             Invoke("MoveToSavePoint", 0.1f);
             isMoved = false;
         }
+
+        if(SceneManager.GetActiveScene().name == "2Stage_Map")
+        {
+            Destroy(this.gameObject);
+        }
     }
     private bool isMoved = false;
 

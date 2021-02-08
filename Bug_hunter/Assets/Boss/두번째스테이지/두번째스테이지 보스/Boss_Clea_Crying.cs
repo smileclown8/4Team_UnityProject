@@ -58,6 +58,10 @@ public class Boss_Clea_Crying : MonoBehaviour
     public GameObject Movie1;
     [SerializeField]
     public GameObject Movie2;
+    [SerializeField]
+    public GameObject Movie3;
+    [SerializeField]
+    public GameObject Movie4;
 
 
     private int HowManyMeetClea;
@@ -68,6 +72,7 @@ public class Boss_Clea_Crying : MonoBehaviour
         {
             limit_Time = limit_Time_Init;
             HowManyMeetClea++;
+            BlackScreen.SetActive(true);
             Player.transform.position = Player_TempPos.position;
             switch (HowManyMeetClea)
             {
@@ -76,8 +81,8 @@ public class Boss_Clea_Crying : MonoBehaviour
                     Debug.Log("첫번째 만남");
 
                     Movie1.SetActive(true);
-                    BlackScreen.SetActive(true);
-                    Invoke("SetActiveScreen", 1f);
+                    Invoke("SetActiveScreen", 0.1f);
+                    Invoke("MoveToBoss_AfterMovie", 12f);
 
 
                     Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
@@ -86,26 +91,30 @@ public class Boss_Clea_Crying : MonoBehaviour
       
                     Debug.Log("두번째 만남");
                     Movie2.SetActive(true);
-                    BlackScreen.SetActive(true);
-                    Invoke("SetActiveScreen", 1f);
+
+                    Invoke("SetActiveScreen", 0.1f);
+                    Invoke("MoveToBoss_AfterMovie", 17f);
                     Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     break;
                 case 3:
           
                     Debug.Log("세번째 만남");
-
+                    Movie3.SetActive(true);
+                    Invoke("SetActiveScreen", 0.1f);
+                    Invoke("MoveToBoss_AfterMovie", 17f);
                     Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     break;
                 case 4:
                
                     Debug.Log("네번째 만남");
-
+                    Movie4.SetActive(true);
+                    Invoke("SetActiveScreen", 0.1f);
+                    Invoke("MoveToBoss_AfterMovie", 65f);
                     Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     Debug.Log("Clear!");
                     break;
             }
 
-            Invoke("MoveToBoss_AfterMovie", 10f);
             Debug.Log("클레아 인형 HP 감소!");
             Debug.Log(Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP);
             Debug.Log(Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_Grogy_HP);
@@ -179,8 +188,6 @@ public class Boss_Clea_Crying : MonoBehaviour
         if(Movie2 != null)
         Movie2.SetActive(false);
         Screen.SetActive(false);
-        GameObject.Find("Boss_Clea_GrogyManager").GetComponent<Boss_Clea_GrogyManager>().isBossGrogy
-            = true;
         isGrogyRecover();
     }
 

@@ -66,7 +66,6 @@ public class Boss_Clea_Doll : MonoBehaviour
             pattern4Return = GameObject.Find("Pattern4_BigBombDoll(Clone)").GetComponent<Pattern4_BigBombDoll>().BossReturn;
         }
 
-        Debug.Log(pattern4Return);
     }
 
     // =======================================================================

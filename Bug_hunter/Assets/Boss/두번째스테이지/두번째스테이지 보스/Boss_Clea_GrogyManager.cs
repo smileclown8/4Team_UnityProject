@@ -47,7 +47,6 @@ public class Boss_Clea_GrogyManager : MonoBehaviour
         {
             if (!isBossGrogy && Boss_Clea_Doll_Grogy_HP < 0)
             {
-                isBossGrogy = true;
                 Debug.Log("그로기");
                 GrogyNoticeText.SetActive(true);
                 Boss_Clea_Grogy.SetActive(true);
