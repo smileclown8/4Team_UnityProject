@@ -14,7 +14,6 @@ public class BuffManager : MonoBehaviour
     private void Awake()
     {
         playerStatus = GameObject.Find("PlayerStatusManager");
-
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +21,6 @@ public class BuffManager : MonoBehaviour
         // 플레이어가 아이템을 획득
         if (collision.gameObject.tag == "Player")
         {
-
                 int random = Random.Range(1, 4);
 
                 if (random == 1)
@@ -66,4 +64,3 @@ public class BuffManager : MonoBehaviour
         Debug.Log("점프 " + playerStatus.GetComponent<PlayerStatusManager>().jumpPower);
     }
 }
-// ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
