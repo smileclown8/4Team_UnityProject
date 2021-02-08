@@ -14144,6 +14144,7 @@ MonoBehaviour:
   speedup: 2
   HPup: 10
   jumpUP: 2
+  AttDamage: 1
 --- !u!58 &1691317789345970892
 CircleCollider2D:
   m_ObjectHideFlags: 0

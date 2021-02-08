@@ -10,10 +10,14 @@ public class BuffManager : MonoBehaviour
     public int speedup;
     public int HPup;
     public int jumpUP;
+    public int AttDamage;
+
+    int SkillDamageAtt;
 
     private void Awake()
     {
         playerStatus = GameObject.Find("PlayerStatusManager");
+        GameObject.FindGameObjectWithTag("PlayerBullet").GetComponent<BulletDamage>().damage = SkillDamageAtt;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -21,8 +25,13 @@ public class BuffManager : MonoBehaviour
         // 플레이어가 아이템을 획득
         if (collision.gameObject.tag == "Player")
         {
-            int random = Random.Range(1, 4);
+            // int random = Random.Range(1, 4);
+            int random = 0;
 
+            if (random == 0)
+            {
+                SkillDamageAtt += AttDamage;
+            }
             if (random == 1)
             {
                 if (playerStatus.GetComponent<PlayerStatusManager>().moveSpeed >= 90)
