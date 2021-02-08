@@ -187,7 +187,7 @@ public class Boss_Clea_Doll : MonoBehaviour
 
 
 
-                        yield return new WaitForSeconds(1.0f);
+                       // yield return new WaitForSeconds(1.0f);
 
                         Debug.Log("패턴1");
                         pattern1Activate = true;
@@ -216,7 +216,7 @@ public class Boss_Clea_Doll : MonoBehaviour
                         }
                         Pattern1BulletCanMove = false;
                         pattern1Activate = false;
-                        yield return new WaitForSeconds(10.0f); // 1번 패턴이 끝날때까지 걸리는 시간
+                        yield return new WaitForSeconds(5f); // 1번 패턴이 끝날때까지 걸리는 시간
                         break;
                     }
                 case 2:
@@ -225,7 +225,7 @@ public class Boss_Clea_Doll : MonoBehaviour
                         //          Instantiate(TypingEffectManager, this.transform.position,
                         //             this.transform.rotation);
 
-                        yield return new WaitForSeconds(2.0f);
+                     //   yield return new WaitForSeconds(2.0f);
 
 
                         Debug.Log("패턴2");
@@ -249,7 +249,7 @@ public class Boss_Clea_Doll : MonoBehaviour
                         Pattern2_StartPos.transform.position = new Vector2(Pattern2_StartPos.transform.position.x - 8 * InstantiateNum
                             , Pattern2_StartPos.transform.position.y);
 
-                        yield return new WaitForSeconds(5.0f); // 2번 패턴이 끝날때까지 걸리는 시간
+                        yield return new WaitForSeconds(2f); // 2번 패턴이 끝날때까지 걸리는 시간
 
                         pattern2Activate = false;
                         isArriveStartPos = false;
@@ -262,7 +262,7 @@ public class Boss_Clea_Doll : MonoBehaviour
                         // 3번 패턴 생성
                         //             Instantiate(TypingEffectManager, this.transform.position,
                         //   this.transform.rotation);
-                        yield return new WaitForSeconds(3.0f);
+                    //    yield return new WaitForSeconds(3.0f);
 
                         pattern3Activate = true;
 

@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  speed: 15
+  speed: 25
   isShootReady: 0
 --- !u!114 &6134441526380890112
 MonoBehaviour:

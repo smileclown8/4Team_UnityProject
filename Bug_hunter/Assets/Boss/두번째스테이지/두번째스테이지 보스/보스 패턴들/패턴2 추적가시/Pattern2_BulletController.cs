@@ -14,7 +14,7 @@ public class Pattern2_BulletController : MonoBehaviour
     void Start()
     {
 
-      Invoke("ShootStart", 12);
+      Invoke("ShootStart", 6);
       Invoke("DestroyBullet", 17);
     }
 

@@ -11,7 +11,7 @@ public class Pattern4_BigBombDoll : MonoBehaviour
         BigBombDoll_HP = 100;
         BossReturn = false;
 
-        Invoke("Explose", 10f);
+        Invoke("Explose", 8f);
 
     }
 
@@ -30,11 +30,13 @@ public class Pattern4_BigBombDoll : MonoBehaviour
 
     public bool BossReturn;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+     void OnCollisonEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "PlayerBullet")
         {
             BigBombDoll_HP -= collision.gameObject.GetComponent<BulletDamage>().damage;
+            Destroy(collision.gameObject);
         }
     }
 
