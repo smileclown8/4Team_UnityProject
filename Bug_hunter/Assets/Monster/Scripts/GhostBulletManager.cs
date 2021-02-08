@@ -44,6 +44,8 @@ public class GhostBulletManager : MonoBehaviour
             Debug.Log("유령의 공격! 데미지 " + GameObject.Find("Ghost").GetComponent<MonsterStatusManager>().attack);
             Destroy(gameObject);
         }
+        if (col.gameObject.tag == "PlayerBullet")
+            Destroy(gameObject);
     }
 
     void DestroyBullet()

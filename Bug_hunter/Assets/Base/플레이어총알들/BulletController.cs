@@ -87,6 +87,10 @@ public class BulletController : MonoBehaviour
         {
             DestroyBullet();
         }
+        if(collision.gameObject.tag == "Gimik")
+        {
+            DestroyBullet();
+        }
     }
 
 
