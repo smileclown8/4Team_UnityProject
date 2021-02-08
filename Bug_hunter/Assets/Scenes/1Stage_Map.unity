@@ -95556,7 +95556,7 @@ PrefabInstance:
     - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
         type: 3}
       propertyPath: jumpPower
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
         type: 3}
@@ -109481,12 +109481,12 @@ PrefabInstance:
     - target: {fileID: 3165318660983585389, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 348.2
+      value: 95.4
       objectReference: {fileID: 0}
     - target: {fileID: 3165318660983585389, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 36.9
+      value: 26.5
       objectReference: {fileID: 0}
     - target: {fileID: 3165318660983585389, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
