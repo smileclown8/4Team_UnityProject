@@ -421,7 +421,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     text.text = "";
                     count++;
-                    textWaitTime = 0.1f;
+                    textWaitTime = 0.05f;
                     isSoundPlayed = false;
                     if (count == listSentences.Count)
                     {
