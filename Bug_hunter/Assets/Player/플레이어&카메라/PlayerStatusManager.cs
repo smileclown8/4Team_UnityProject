@@ -5,6 +5,21 @@ using UnityEngine;
 public class PlayerStatusManager : MonoBehaviour
 {
 
+    public static PlayerStatusManager instance;
+    #region Singleton
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    #endregion Singleton
 
     // 플레이어의 각종 스테이터스값들을 관리해주는 매니저
     // 버프,피격, 등등.. 별별 상황이 발생했을때 이 곳의 값을 바꿔준다.
@@ -38,8 +53,6 @@ public class PlayerStatusManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
-
         // Inspector창에 정의해준 값을 저장한다
         rejump = jumpPower;
         rehp = player_MaxHP;

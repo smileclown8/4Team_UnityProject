@@ -16,7 +16,7 @@ public class Tothe2Stage_TotheBossSceneDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)

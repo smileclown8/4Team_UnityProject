@@ -24,6 +24,10 @@ public class ToTheSecondStage : MonoBehaviour
             Invoke("MoveToSavePoint", 0.1f);
             isMoved = false;
         }
+        if (SceneManager.GetActiveScene().name == "SecondBossStage")
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private bool isMoved = false;

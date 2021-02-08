@@ -24,7 +24,7 @@ public class Boss1_ClearManager : MonoBehaviour
         }
 
 
-        Debug.Log(GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos);
+      //  Debug.Log(GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos);
     }
 
     void Boss1_Clear()

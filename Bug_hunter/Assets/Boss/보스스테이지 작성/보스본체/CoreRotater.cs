@@ -30,7 +30,7 @@ public class CoreRotater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent);
+      //  Debug.Log(GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent);
         transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
 
         if (GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent == true)
