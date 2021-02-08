@@ -17,6 +17,8 @@ public class GameSaveButton : MonoBehaviour
         player = GameObject.Find("player");
         PlayerStatusManager = GameObject.Find("PlayerStatusManager");
         SceneName = SceneManager.GetActiveScene().name;
+
+
     }
 
     public GameObject player;
@@ -24,11 +26,12 @@ public class GameSaveButton : MonoBehaviour
     public string SceneName;
     public void Save()
     {
+
         PlayerPrefs.SetString("SavedSceneName", SceneName);
-        PlayerPrefs.SetFloat("PlayerHP", PlayerStatusManager.GetComponent<PlayerStatusManager>().player_HP );
+        PlayerPrefs.SetFloat("PlayerHP", PlayerStatusManager.GetComponent<PlayerStatusManager>().player_HP);
         PlayerPrefs.SetFloat("PlayerMaxHP", PlayerStatusManager.GetComponent<PlayerStatusManager>().player_MaxHP);
         PlayerPrefs.SetFloat("JumpPower", PlayerStatusManager.GetComponent<PlayerStatusManager>().jumpPower);
-        PlayerPrefs.SetFloat("MoveSkill_ID", PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID);
+        PlayerPrefs.SetInt("Skill_ID", PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID);
         PlayerPrefs.SetFloat("PlayerRespawn_x", PlayerStatusManager.GetComponent<PlayerStatusManager>().PlayerRespawn_Pos.x);
         PlayerPrefs.SetFloat("PlayerRespawn_y", PlayerStatusManager.GetComponent<PlayerStatusManager>().PlayerRespawn_Pos.y);
         PlayerPrefs.SetFloat("PlayerPos.x", player.transform.position.x);
