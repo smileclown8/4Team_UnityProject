@@ -133,6 +133,30 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
+                if (this.gameObject.name == "Memory1")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Memory2")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Memory3")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Memory4")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Memory5")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Memory6")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
 
 
 
