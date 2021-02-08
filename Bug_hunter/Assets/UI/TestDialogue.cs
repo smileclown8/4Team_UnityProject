@@ -15,6 +15,7 @@ public class TestDialogue : MonoBehaviour
 
 
     public bool isSavorTalkItemGet = false;
+    public bool isLamziTalk = false;
 
     //오디오 사운드 관련
     public string Door_Unlock;
@@ -61,6 +62,10 @@ public class TestDialogue : MonoBehaviour
         {
             Destroy(GameObject.Find("Savor1_Chatbox(Clone)"));
         }
+        if (this.gameObject.name == "Savor4")
+        {
+            Destroy(GameObject.Find("Savor3_Chatbox(Clone)"));
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -96,8 +101,14 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Seed")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    GameObject.Find("Savor3").SetActive(false);
+
+                    targetObject.SetActive(true);
+                    GameObject.Find("Savor4").GetComponent<TestDialogue>().isLamziTalk = true;
+                    Destroy(GameObject.Find("Seed"));
                 }
-                if (this.gameObject.name == "Savor1")
+
+                    if (this.gameObject.name == "Savor1")
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
@@ -129,7 +140,11 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
-                if(this.gameObject.name == "Bear")
+                if(this.gameObject.name == "Savor4")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                }
+                if (this.gameObject.name == "Bear")
                 {
                     theDM.ShowDialogue(this.dialogue);
                 }
