@@ -99,7 +99,7 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler,IPointerUpH
             // 달리는 소리
             if (runningSoundPlayT > runningSoundDelayT)
             {
-                GameObject.FindWithTag("Player").GetComponent<AudioSource>().volume = 0.3f;
+                GameObject.FindWithTag("Player").GetComponent<AudioSource>().volume = 0.1f;
                 GameObject.FindWithTag("Player").GetComponent<AudioSource>().clip = GameObject.FindWithTag("Player").GetComponent<PlayerController>().running;
                 GameObject.FindWithTag("Player").GetComponent<AudioSource>().Play();
                 runningSoundPlayT = 0;
