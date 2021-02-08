@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip damaged;
     public AudioClip death;
 
+    public bool printingScripts;
+
 
 
     //플레이어의 최대 이동속도
@@ -295,11 +297,27 @@ public class PlayerController : MonoBehaviour
         {
             tileColor2.material.color = new Color(1f, 1f, 1f, 0.2f);
         }
+
         if (collision.gameObject.tag == "Tile1_4off")
         {
             tileColor2.material.color = new Color(1f, 1f, 1f, 1f);
         }
 
+        if (collision.gameObject.tag == "Story")
+        {
+            printingScripts = true;
+            GameObject.Find("StageBGM").GetComponent<AudioSource>().volume = 0.1f;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Story")
+        {
+            printingScripts = false;
+            if (GameObject.Find("StageBGM").GetComponent<AudioSource>().volume != 1)
+                GameObject.Find("StageBGM").GetComponent<AudioSource>().volume = 1;
+        }
     }
 
 

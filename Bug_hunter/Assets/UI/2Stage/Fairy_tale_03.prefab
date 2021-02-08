@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 2942353195765471870}
   m_Layer: 0
   m_Name: Fairy_tale_03
-  m_TagString: Untagged
+  m_TagString: Story
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,8 +230,15 @@ MonoBehaviour:
     - {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d, type: 3}
   targetObject: {fileID: 0}
   isSavorTalkItemGet: 0
+  Door_Unlock: 
+  Door_Open: 
   isTalkWithBook: 0
   isBobgurut2: 0
   isSavorBomb: 0
   isC_laugh: 0
+  isDoor_Unlock: 0
+  isMusicbox1: 0
+  isSadSound1: 0
+  isPortal1: 0
+  isPortal2: 0
   howManyTailkingWithThisObject: 0

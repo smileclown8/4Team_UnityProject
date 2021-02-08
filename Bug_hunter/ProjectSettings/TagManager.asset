@@ -19,6 +19,7 @@ TagManager:
   - Staff
   - MovingBall
   - Item
+  - Story
   layers:
   - Default
   - TransparentFX

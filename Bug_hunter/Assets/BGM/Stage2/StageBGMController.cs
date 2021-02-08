@@ -6,9 +6,9 @@ public class StageBGMController : MonoBehaviour
 {
 
     public AudioSource audioSource;
-    public AudioClip first;             // 볼륨비율 100
-    public AudioClip second;            // 볼륨비율 30
-    public AudioClip third;             // 볼륨비율 15
+    public AudioClip first;
+    public AudioClip second;
+    public AudioClip third;
 
 
     void Start()

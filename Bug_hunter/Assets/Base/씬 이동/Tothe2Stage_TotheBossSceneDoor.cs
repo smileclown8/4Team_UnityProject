@@ -21,6 +21,8 @@ public class Tothe2Stage_TotheBossSceneDoor : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        GameObject.Find("StageBGM").GetComponent<AudioSource>().Stop();
+
         if (collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("2Stage_Map_ToTheBoss");
