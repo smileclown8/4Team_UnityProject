@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class BearFormController : MonoBehaviour
 {
+
+    private AudioManager theAudio;
+    public string Halquigi;
+
+    private void Awake()
+    {
+        theAudio = FindObjectOfType<AudioManager>();
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +25,6 @@ public class BearFormController : MonoBehaviour
         StartCoroutine(CreateClaws());
 
         Invoke("DestroyPattern", 5);
-
     }
 
     // Update is called once per frame
@@ -42,6 +51,7 @@ public class BearFormController : MonoBehaviour
     IEnumerator CreateClaws()
     {
         yield return new WaitForSeconds(3.0f);
+        theAudio.Play(Halquigi);
         Instantiate(Claw4, BearClaw_Pos4.transform.position, BearClaw_Pos4.transform.rotation);
         yield return new WaitForSeconds(0.1f);
         Instantiate(Claw3, BearClaw_Pos3.transform.position, BearClaw_Pos3.transform.rotation);

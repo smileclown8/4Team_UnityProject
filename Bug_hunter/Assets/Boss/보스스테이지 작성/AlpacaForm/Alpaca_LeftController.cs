@@ -5,13 +5,20 @@ using UnityEngine;
 public class Alpaca_LeftController : MonoBehaviour
 {
 
+    private AudioManager theAudio;
+    public string Wekk;
 
+    private void Awake()
+    {
+        theAudio = FindObjectOfType<AudioManager>();
 
+    }
     // Start is called before the first frame update
     void Start()
     {
-        rigid = GetComponent<Rigidbody2D>();
+        Invoke("SoundPlay", 0.2f);
 
+        rigid = GetComponent<Rigidbody2D>();
 
         Invoke("DestroyPattern", 10);
     }
@@ -23,7 +30,11 @@ public class Alpaca_LeftController : MonoBehaviour
         moveSpeed += 5 ;
     }
 
+    void SoundPlay()
+    {
+        theAudio.Play(Wekk);
 
+    }
 
 
 
@@ -37,6 +48,7 @@ public class Alpaca_LeftController : MonoBehaviour
 
     void AlpacaMoveLeft_To_Right()
     {
+
         rigid.AddForce(Vector2.right * Time.deltaTime * moveSpeed, ForceMode2D.Impulse) ;
 
     }

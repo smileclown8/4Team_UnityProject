@@ -6,7 +6,14 @@ public class HamsterFormController : MonoBehaviour
 {
     public Rigidbody2D rigid;
 
+    private AudioManager theAudio;
+    public string HamsterDrop;
 
+    private void Awake()
+    {
+        theAudio = FindObjectOfType<AudioManager>();
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +23,8 @@ public class HamsterFormController : MonoBehaviour
         StartCoroutine(HamsterBulletStop());
 
         endPos = GameObject.Find("hamsterEndPos").transform;
+        theAudio.Play(HamsterDrop);
+
     }
 
     // Update is called once per frame

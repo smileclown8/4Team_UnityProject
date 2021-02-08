@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80ea8735784dc04d97f5958f6fd9876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tears: Tears
   DoveTears: {fileID: 4040209886301904118, guid: 079b2d0f9e3abea41b6acd2c4bf49487,
     type: 3}
   DoveTearsPos: {fileID: 0}

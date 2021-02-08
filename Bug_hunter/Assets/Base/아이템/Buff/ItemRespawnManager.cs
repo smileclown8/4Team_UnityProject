@@ -21,11 +21,11 @@ public class ItemRespawnManager : MonoBehaviour
                 isStartRespawn = true;
                 if(SceneManager.GetActiveScene().name == "FirstBossStage")
                 {
-                    Invoke("Respawn", 10);
+                    Invoke("Respawn", 30);
                 }
                 if (SceneManager.GetActiveScene().name == "SecondBossStage")
                 {
-                    Invoke("Respawn", 20);
+                    Invoke("Respawn", 40);
                 }
             }
         }

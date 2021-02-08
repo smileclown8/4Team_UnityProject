@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820dead7d58d59143b0fb30a849c3351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Halquigi: Halquigi
   Claw1: {fileID: 7721335947040646180, guid: 0daef2c2bc1ca6e4cae6754569804e83, type: 3}
   Claw2: {fileID: 7880466776559304165, guid: 48a2fa3b3810f194a92195fff7e5dd67, type: 3}
   Claw3: {fileID: 4344617831061573889, guid: 9797d9a655c790c4d94f9c56fe8593d7, type: 3}

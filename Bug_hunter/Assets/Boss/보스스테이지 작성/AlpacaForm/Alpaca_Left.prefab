@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16d4cdb009d4f946a63bdfb3aab7624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Wekk: Wekk
   rigid: {fileID: 0}
   moveSpeed: 1
 --- !u!114 &4745971505215186000

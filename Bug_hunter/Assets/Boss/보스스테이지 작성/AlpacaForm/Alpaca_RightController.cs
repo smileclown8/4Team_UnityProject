@@ -5,13 +5,19 @@ using UnityEngine;
 public class Alpaca_RightController : MonoBehaviour
 {
 
+    private AudioManager theAudio;
+    public string Wekk;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        Invoke("SoundPlay", 0.2f);
+
+
         rigid = GetComponent<Rigidbody2D>();
 
+        theAudio = FindObjectOfType<AudioManager>();
 
         Invoke("DestroyPattern", 10);
     }
@@ -23,6 +29,11 @@ public class Alpaca_RightController : MonoBehaviour
         moveSpeed += 5;
     }
 
+    void SoundPlay()
+    {
+        theAudio.Play(Wekk);
+
+    }
 
 
 

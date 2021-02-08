@@ -15,6 +15,10 @@ public class CoreRotater : MonoBehaviour
     public float CameraSize;
     public float shirinkCamerSpeed;
 
+    private AudioManager theAudio;
+    public string StageStart;
+
+
     void Awake()
     {
 
@@ -23,6 +27,8 @@ public class CoreRotater : MonoBehaviour
     void Start()
     {
         initialPosition = new Vector3(GameObject.Find("CORE_STAGESTART_POS").transform.position.x, GameObject.Find("CORE_STAGESTART_POS").transform.position.y, GameObject.Find("CORE_STAGESTART_POS").transform.position.z);
+
+        theAudio = FindObjectOfType<AudioManager>();
 
     }
 
@@ -59,7 +65,7 @@ public class CoreRotater : MonoBehaviour
            GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent == false)
         {
             GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent = true;
-
+            theAudio.Play(StageStart);
             Debug.Log("충돌");
 
             Invoke("CreateBossStartNotice", 1.4f);
