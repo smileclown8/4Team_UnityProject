@@ -1172,7 +1172,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d495166f961ba41ace318037c71102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tx: {fileID: 0}
   Boss_Core: {fileID: 0}
+  Hp70Check: 0
+  Hp40Check: 0
+  Hp20Check: 0
 --- !u!4 &585840625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6005446786498240729, guid: a35195da26c59894984c058e1a76696c,
@@ -1233,7 +1237,7 @@ PrefabInstance:
     - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
         type: 3}
       propertyPath: jumpPower
-      value: 70
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4072865626438990715, guid: d7a565ba2d676584590d87db05d1efa3,
         type: 3}
@@ -3722,6 +3726,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_BombSkill
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_FireSkill
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_FirstSkill
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_NormalShoot
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_ElectroSkill
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
+        type: 3}
+      propertyPath: coolTime_arrowSkillBullet
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165318660983585385, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
       propertyPath: m_Name
