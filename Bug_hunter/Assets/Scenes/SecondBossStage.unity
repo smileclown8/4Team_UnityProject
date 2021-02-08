@@ -50688,10 +50688,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4013145706434248495, guid: f2a2b7c068d2cb64c821a088e441a53a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.54
+      objectReference: {fileID: 0}
     - target: {fileID: 4673618116932160267, guid: f2a2b7c068d2cb64c821a088e441a53a,
         type: 3}
       propertyPath: m_Name
-      value: "\uD1A0\uB07C\uC778\uD615"
+      value: BigBomb
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673618116932160267, guid: f2a2b7c068d2cb64c821a088e441a53a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7063575656481730989, guid: f2a2b7c068d2cb64c821a088e441a53a,
         type: 3}
@@ -50721,7 +50731,7 @@ PrefabInstance:
     - target: {fileID: 7063575656481730989, guid: f2a2b7c068d2cb64c821a088e441a53a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.588
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7063575656481730989, guid: f2a2b7c068d2cb64c821a088e441a53a,
         type: 3}
