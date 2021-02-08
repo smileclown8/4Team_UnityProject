@@ -34,9 +34,11 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        BossHpRate = (int)((Boss_IF_HP / Boss_IF_MaxHP) * 100);
         transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
         ShowBossInfo();
-     //   Debug.Log(nowPattern);
+        //   Debug.Log(nowPattern);
+        StoryBossHPCheck();
     }
 
 
@@ -70,6 +72,48 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
 
     }
 
+
+    [SerializeField]
+    public GameObject Boss_IF_StoryText;
+    public bool BossHp70Check = false;
+    public bool BossHp40Check = false;
+    public bool BossHp20Check = false;
+
+    public int BossHpRate = 100;
+    public int StoryDecided;
+
+    public void StoryBossHPCheck()
+    {
+        if (BossHpRate <= 70f)
+        {
+            if (!BossHp70Check)
+            {
+                StoryDecided = 1;
+                Instantiate(Boss_IF_StoryText, this.transform.position, this.transform.rotation);
+                BossHp70Check = true;
+            }
+        }
+
+        if (BossHpRate <= 40f)
+        {
+            if (!BossHp40Check)
+            {
+                StoryDecided = 2;
+                Instantiate(Boss_IF_StoryText, this.transform.position, this.transform.rotation);
+                BossHp40Check = true;
+            }
+        }
+
+
+        if(BossHpRate <= 20f){
+            if (!BossHp20Check)
+            {
+                StoryDecided = 3;
+                Instantiate(Boss_IF_StoryText, this.transform.position, this.transform.rotation);
+                BossHp20Check = true;
+            }
+        }
+    }
 
     // =======================================================================
     // 코어 상, 하 이동 부분
@@ -124,6 +168,7 @@ public class Boss_IF_CORE_Controller : MonoBehaviour
     public GameObject FourthPattern_Bear;
     public GameObject FourthPattern_BearPos;
 
+ 
     IEnumerator PatternDecide()
     {
         yield return new WaitForSeconds(5.0f); //보스 패턴 시작하기전까지 시간

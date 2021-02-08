@@ -22,9 +22,11 @@ public class Boss1_GameoverManager : MonoBehaviour
     {
         if (GameObject.Find("PlayerStatusManager") != null)
         {
-            if (GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP <= 0)
+            if (GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP <= 0
+                && !isdead)
             {
-                GameOver();
+                isdead = true;
+                Invoke("GameOver", 1.5f);
             }
         }
 
@@ -39,6 +41,7 @@ public class Boss1_GameoverManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    private bool isdead = false;
     private bool isMoved = false;
 
     void MoveToSavePoint()
@@ -46,6 +49,7 @@ public class Boss1_GameoverManager : MonoBehaviour
         if (GameObject.Find("SavePoint_1_5") != null)
         {
             GameObject.Find("player").transform.position = GameObject.Find("SavePoint_1_5").transform.position;
+            GameObject.Find("player").GetComponent<PlayerController>().isDead = false;
             Destroy(this.gameObject);
         }
     }
@@ -56,5 +60,6 @@ public class Boss1_GameoverManager : MonoBehaviour
         isMoved = true;
 
         SceneManager.LoadScene("1Stage_Map");
+        GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_MaxHP;
     }
 }

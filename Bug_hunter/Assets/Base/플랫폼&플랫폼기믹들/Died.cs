@@ -12,6 +12,7 @@ public class Died : MonoBehaviour
         Player_Hp = GameObject.Find("PlayerStatusManager");
         Player = GameObject.Find("player");
     }
+   
 
     void Update()
     {
@@ -21,9 +22,13 @@ public class Died : MonoBehaviour
             GameObject.FindWithTag("Player").GetComponent<Animator>().SetTrigger("Dead");
             // 사망 사운드 : 으윽! + 브금
             GameObject.FindWithTag("Player").GetComponent<AudioSource>().clip = GameObject.FindWithTag("Player").GetComponent<PlayerController>().death;
-            GameObject.FindWithTag("Player").GetComponent<AudioSource>().Play();
-            Invoke("DeathBGM", 0.25f);
+            if (!isDead)
+            {
+                GameObject.FindWithTag("Player").GetComponent<AudioSource>().Play();
+                Invoke("DeathBGM", 0.25f);
+                isDead = true;
 
+            }
 
 
             isRespawn = true;
@@ -31,6 +36,8 @@ public class Died : MonoBehaviour
             Invoke("RespawnWait", 2f);
          }
     }
+
+    private bool isDead;
     void DeathBGM()     // 사망브금
     {
         GameObject.Find("PlayerDeadSound").GetComponent<AudioSource>().volume = 0.7f;
@@ -49,6 +56,7 @@ public class Died : MonoBehaviour
         Player_Hp.GetComponent<PlayerStatusManager>().player_HP =
             Player_Hp.GetComponent<PlayerStatusManager>().player_MaxHP;
         isRespawn = false;
+        isDead = false;
     }
 }
 

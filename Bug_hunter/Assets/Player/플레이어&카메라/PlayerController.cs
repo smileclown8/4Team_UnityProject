@@ -256,15 +256,20 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("왜안돼");
             // 사망 애니메이션
+            if (!isDead)
+            {
             GetComponent<Animator>().SetTrigger("Dead");
             // 사망 사운드
             GetComponent<AudioSource>().volume = 1;
             GetComponent<AudioSource>().clip = GetComponent<PlayerController>().death;
-            GetComponent<AudioSource>().Play();
+                GetComponent<AudioSource>().Play();
+                isDead = true;
+            }
         }
 
     }
-
+    public bool isDead = false;
+    
     void OffDamaged() //원상복귀
     {
         this.gameObject.layer = 9; // 레이어 Player가 들어가있는 레이어 번호
