@@ -109512,7 +109512,7 @@ PrefabInstance:
     - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
       propertyPath: coolTime_BombSkill
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
@@ -109532,7 +109532,7 @@ PrefabInstance:
     - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
       propertyPath: coolTime_SecondSKill
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
