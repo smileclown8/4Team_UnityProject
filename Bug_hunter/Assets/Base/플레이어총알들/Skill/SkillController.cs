@@ -16,6 +16,7 @@ public class SkillController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SkillSoundManager = FindObjectOfType<SkillSoundManager>();
         bulletPos = GameObject.Find("bulletPos"); //자식인 bulletPos 오브젝트를 찾아서 그 좌표값을 총알발사 좌표값으로 사용한다.
 
     }
@@ -39,6 +40,13 @@ public class SkillController : MonoBehaviour
     }
 
 
+    private SkillSoundManager SkillSoundManager;
+    public string NormalBulletSound;
+    public string tongtong;
+    public string arrow;
+    public string bomb;
+    public string electro;
+    public string fire;
 
 
     public bool isShootButton = false;

@@ -34,8 +34,8 @@ public class GameSaveButton : MonoBehaviour
         PlayerPrefs.SetInt("Skill_ID", PlayerStatusManager.GetComponent<PlayerStatusManager>().skill_ID);
         PlayerPrefs.SetFloat("PlayerRespawn_x", PlayerStatusManager.GetComponent<PlayerStatusManager>().PlayerRespawn_Pos.x);
         PlayerPrefs.SetFloat("PlayerRespawn_y", PlayerStatusManager.GetComponent<PlayerStatusManager>().PlayerRespawn_Pos.y);
-        PlayerPrefs.SetFloat("PlayerPos.x", player.transform.position.x);
-        PlayerPrefs.SetFloat("PlayerPos.y", player.transform.position.y);
+        PlayerPrefs.SetFloat("PlayerPos_x", player.transform.position.x);
+        PlayerPrefs.SetFloat("PlayerPos_y", player.transform.position.y);
 
         Debug.Log("저장됨");
     }

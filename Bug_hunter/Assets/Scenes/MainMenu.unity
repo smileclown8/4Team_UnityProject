@@ -2344,7 +2344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85fde427ce8f62438a3ba1ed2ee96c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonClick: 
+  ButtonClick: ButtonClick
   SceneName: 
   PlayerStatusManager: {fileID: 930760384}
 --- !u!1 &666356706
@@ -2835,7 +2835,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 635153323}
-        m_MethodName: LoadGame
+        m_MethodName: LoadGameClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
