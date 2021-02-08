@@ -21,21 +21,26 @@ public class BuffManager : MonoBehaviour
         // 플레이어가 아이템을 획득
         if (collision.gameObject.tag == "Player")
         {
-                int random = Random.Range(1, 4);
+            int random = Random.Range(1, 4);
 
-                if (random == 1)
+            if (random == 1)
+            {
+                SpeedUP();
+            }
+            if (random == 2)
+            {
+                HPUP();
+                if (playerStatus.GetComponent<PlayerStatusManager>().player_HP >= 100)
                 {
-                    SpeedUP();
+                    playerStatus.GetComponent<PlayerStatusManager>().player_HP = 100;
+                    Debug.Log("HP " + playerStatus.GetComponent<PlayerStatusManager>().player_HP);
                 }
-                if (random == 2)
-                {
-                    HPUP();
-                }
-                if (random == 3)
-                {
-                    JumpUP();
-                }
-                Destroy(this.gameObject);
+            }
+            if (random == 3)
+            {
+                JumpUP();
+            }
+            Destroy(this.gameObject);
         }
     }
 
@@ -51,11 +56,6 @@ public class BuffManager : MonoBehaviour
         {
             playerStatus.GetComponent<PlayerStatusManager>().player_HP += HPup;
         }
-        else if (playerStatus.GetComponent<PlayerStatusManager>().player_HP >= 100)
-        {
-            playerStatus.GetComponent<PlayerStatusManager>().player_HP = 100;
-        }
-        Debug.Log("HP " + playerStatus.GetComponent<PlayerStatusManager>().player_HP);
     }
 
     void JumpUP()
