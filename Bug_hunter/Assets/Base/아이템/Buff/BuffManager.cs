@@ -5,6 +5,8 @@ using UnityEngine;
 public class BuffManager : MonoBehaviour
 {
     private GameObject playerStatus;
+    private GameObject AttackDamage;
+
 
     // 밸런스 능력치 입력 해주세요
     public int speedup;
@@ -12,12 +14,11 @@ public class BuffManager : MonoBehaviour
     public int jumpUP;
     public int AttDamage;
 
-    int SkillDamageAtt;
 
     private void Awake()
     {
         playerStatus = GameObject.Find("PlayerStatusManager");
-        GameObject.FindGameObjectWithTag("PlayerBullet").GetComponent<BulletDamage>().damage = SkillDamageAtt;
+        AttackDamage = GameObject.Find("DamageManager");
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -30,7 +31,8 @@ public class BuffManager : MonoBehaviour
 
             if (random == 0)
             {
-                SkillDamageAtt += AttDamage;
+                AttUP();
+                Debug.Log("공격력 " + AttackDamage.GetComponent<BulletDamage>().damage);
             }
             if (random == 1)
             {
@@ -89,5 +91,12 @@ public class BuffManager : MonoBehaviour
         {
             playerStatus.GetComponent<PlayerStatusManager>().jumpPower += jumpUP;
         }
+    }
+
+    void AttUP()
+    {
+        AttackDamage.GetComponent<BulletDamage>().damage += AttDamage;
+
+
     }
 }
