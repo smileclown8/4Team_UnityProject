@@ -53,7 +53,8 @@ public class SecondStage_Boss_Camera : MonoBehaviour
             if(GameObject.Find("Boss_Clea_Doll") != null){
                 if(GameObject.Find("CameraEventManager").GetComponent<CameraEventManager>().isEvent == true)
                 {
-                    transform.position = GameObject.Find("Boss_Clea_Doll").transform.position;
+                    transform.position = new Vector2(GameObject.Find("Boss_Clea_Doll").transform.position.x
+                        , GameObject.Find("Boss_Clea_Doll").transform.position.y + 10) ;
                 }
 
             }

@@ -155,11 +155,11 @@ public class Boss_Clea_Doll : MonoBehaviour
     {
         if (this.gameObject.name == "Boss_Clea_Doll")
         {
-            yield return new WaitForSeconds(7.0f); //보스 최초 패턴 시작하기전까지 시간
+            yield return new WaitForSeconds(10.0f); //보스 최초 패턴 시작하기전까지 시간
         }
         else if (this.gameObject.name == "Boss_Clea_Doll(Clone)")
         {
-            yield return new WaitForSeconds(1.0f); //보스 재생성 후 패턴 시작하기까지 시작
+            yield return new WaitForSeconds(5.0f); //보스 재생성 후 패턴 시작하기까지 시작
         }
 
         while (true)
