@@ -14,7 +14,7 @@ public class BatManager : MonoBehaviour
     AudioSource audioSource;
     float soundPlayTime;
     float soundDelayTime;
-
+    bool isChattering;
 
     void Awake()
     {
@@ -35,16 +35,14 @@ public class BatManager : MonoBehaviour
         // 범위 안에 플레이어가 인식되면
         if (isTracing)
         {
-            // n초마다 이동사운드 출력
-            if (soundPlayTime >= soundDelayTime)
+            // 이동사운드 출력
+            if (isChattering == false)
             {
-                audioSource.Stop();
-                audioSource.volume = 0.8f;
+                audioSource.volume = 0.6f;
                 audioSource.clip = moving;
                 audioSource.Play();
-                soundPlayTime = 0;
+                isChattering = true;
             }
-            soundPlayTime += Time.deltaTime;
 
             GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = false;       // 움직임을 멈추고
             Attack();                                                                     // 공격
@@ -53,6 +51,7 @@ public class BatManager : MonoBehaviour
         else
         {
             audioSource.Stop();
+            isChattering = false;
 
             GameObject.Find("BatMoving").GetComponent<MoveReply>().enabled = true;        // 다시 움직이기 시작
         }

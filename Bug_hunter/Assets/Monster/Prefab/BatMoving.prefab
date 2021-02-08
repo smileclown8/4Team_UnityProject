@@ -287,7 +287,7 @@ MonoBehaviour:
   def: 0
   dod: 0
   buffRate: 5
-  buff: {fileID: 0}
+  buff: {fileID: 6180952072070543855, guid: e9cb96ae0a0c33948af71320b2ba80cb, type: 3}
 --- !u!82 &1280188144740457416
 AudioSource:
   m_ObjectHideFlags: 0
@@ -299,10 +299,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

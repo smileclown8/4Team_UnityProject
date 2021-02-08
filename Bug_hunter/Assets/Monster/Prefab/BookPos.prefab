@@ -279,12 +279,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af66b03c6862fef4f9916ebd2564d08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
+  hp: 15
   attack: 20
   def: 5
   dod: 0
   buffRate: 20
-  buff: {fileID: 0}
+  buff: {fileID: 6180952072070543855, guid: e9cb96ae0a0c33948af71320b2ba80cb, type: 3}
 --- !u!82 &1935785726
 AudioSource:
   m_ObjectHideFlags: 0
