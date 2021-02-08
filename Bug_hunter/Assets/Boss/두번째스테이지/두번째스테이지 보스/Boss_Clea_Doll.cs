@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Boss_Clea_Doll : MonoBehaviour
 {
+    Animation anim;
+
     // Start is called before the first frame update
     void Start()
     {
+        anim = this.GetComponent<Animation>();
+
         //=======================================
         //플레이어 찾기
         Player = GameObject.Find("player");
@@ -190,6 +194,8 @@ public class Boss_Clea_Doll : MonoBehaviour
                        // yield return new WaitForSeconds(1.0f);
 
                         Debug.Log("패턴1");
+                        anim.Play("Rabbit1Pattern");
+
                         pattern1Activate = true;
                         yield return new WaitForSeconds(3.0f);
 
@@ -229,6 +235,7 @@ public class Boss_Clea_Doll : MonoBehaviour
 
 
                         Debug.Log("패턴2");
+                        anim.Play("Rabbit2Pattern");
                         pattern2Activate = true;
                         yield return new WaitForSeconds(1.5f);
 
@@ -270,6 +277,7 @@ public class Boss_Clea_Doll : MonoBehaviour
 
 
                         Debug.Log("패턴3");
+                        anim.Play("Rabbit3Pattern");
                         {
                             Instantiate(Pattern3_BombBear, Pattern3_BombBear_Pos1.transform.position,
                                 Pattern3_BombBear_Pos1.transform.rotation);
@@ -307,7 +315,7 @@ public class Boss_Clea_Doll : MonoBehaviour
 
                     pattern4Activate = true;
                     Debug.Log("패턴4");
-
+                    anim.Play("RabbitHited");
                     Instantiate(Pattern4_BigBombDoll, Pattern4_GeneratePos.transform.position, Pattern4_GeneratePos.transform.rotation);
 
 
@@ -321,7 +329,7 @@ public class Boss_Clea_Doll : MonoBehaviour
                     yield return new WaitForSeconds(3.0f);//패턴알림 시간
 
                     Debug.Log("패턴5");
-
+                    anim.Play("Rabbit5Pattern");
                     pattern5Activate = true;
                     yield return new WaitForSeconds(2.0f);//이동에 걸리는 최소시간
 
