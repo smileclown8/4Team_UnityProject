@@ -14142,7 +14142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedup: 10
-  MaxHPup: 10
+  HPup: 10
   jumpUP: 10
 --- !u!58 &1691317789345970892
 CircleCollider2D:

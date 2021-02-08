@@ -8,12 +8,13 @@ public class BuffManager : MonoBehaviour
 
     // 밸런스 능력치 입력 해주세요
     public int speedup;
-    public int MaxHPup;
+    public int HPup;
     public int jumpUP;
 
     private void Awake()
     {
         playerStatus = GameObject.Find("PlayerStatusManager");
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -48,8 +49,15 @@ public class BuffManager : MonoBehaviour
 
     void HPUP()
     {
-        playerStatus.GetComponent<PlayerStatusManager>().player_MaxHP += MaxHPup;
-        Debug.Log("HP " + playerStatus.GetComponent<PlayerStatusManager>().player_MaxHP);
+        if (playerStatus.GetComponent<PlayerStatusManager>().player_HP <= 100)
+        {
+            playerStatus.GetComponent<PlayerStatusManager>().player_HP += HPup;
+        }
+        else if (playerStatus.GetComponent<PlayerStatusManager>().player_HP >= 100)
+        {
+            playerStatus.GetComponent<PlayerStatusManager>().player_HP = 100;
+        }
+        Debug.Log("HP " + playerStatus.GetComponent<PlayerStatusManager>().player_HP);
     }
 
     void JumpUP()
