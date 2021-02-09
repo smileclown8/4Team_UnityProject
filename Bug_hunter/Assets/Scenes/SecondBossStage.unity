@@ -1772,6 +1772,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1703952774, guid: a0d6c8077ca668e47b2ca48353beb405, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2107240290, guid: a0d6c8077ca668e47b2ca48353beb405, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1960526911054284858, guid: a0d6c8077ca668e47b2ca48353beb405,
         type: 3}
       propertyPath: coolTime

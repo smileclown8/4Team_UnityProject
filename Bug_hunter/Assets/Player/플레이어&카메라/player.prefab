@@ -142,53 +142,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1703952774
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1703952775}
-  - component: {fileID: 1703952776}
-  m_Layer: 25
-  m_Name: Playerfoot
-  m_TagString: PlayerFoot
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1703952775
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703952774}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.282, y: -0.465, z: 0}
-  m_LocalScale: {x: 1.2781247, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3165318660983585389}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &1703952776
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703952774}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.21}
-  m_Size: {x: 1.05, y: 1}
-  m_Direction: 1
 --- !u!1 &3165318660323332757
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +211,6 @@ Transform:
   - {fileID: 3165318661782804473}
   - {fileID: 329478414}
   - {fileID: 4310204165992273161}
-  - {fileID: 1703952775}
   - {fileID: 6570819421097484100}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -342,7 +294,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 3165318660983585385}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 89108808e446c6e49acaccdd529cd1da, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -770,7 +722,7 @@ PrefabInstance:
     - target: {fileID: 974406710237846732, guid: 20dc7d5800e4dba40aade0c79d284aca,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 974406710237846732, guid: 20dc7d5800e4dba40aade0c79d284aca,
         type: 3}
