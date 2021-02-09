@@ -256,17 +256,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (PlayerStatusManager.GetComponent<PlayerStatusManager>().player_HP <= 0)
         {
-            Debug.Log("왜안돼");
-            // 사망 애니메이션
-            if (!isDead)
-            {
-            GetComponent<Animator>().SetTrigger("Dead");
-            // 사망 사운드
-            GetComponent<AudioSource>().volume = 1;
-            GetComponent<AudioSource>().clip = GetComponent<PlayerController>().death;
-                GetComponent<AudioSource>().Play();
-                isDead = true;
-            }
+            
         }
 
     }
