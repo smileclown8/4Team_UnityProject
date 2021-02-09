@@ -39,10 +39,10 @@ public class GameLoad : MonoBehaviour
     private Transform PlayerPos;
     public string SceneName;
     public GameObject PlayerStatusManager;
-    public string tempSceneName;
+
     public void LoadGame()
     {
-        tempSceneName = PlayerPrefs.GetString("SavedSceneName");
+        SceneName = PlayerPrefs.GetString("SavedSceneName");
 
         GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().player_HP
                = PlayerPrefs.GetFloat("PlayerHP");
@@ -60,20 +60,8 @@ public class GameLoad : MonoBehaviour
         Debug.Log(GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos.x);
 
         isMoved = true;
-
-        if (tempSceneName == "FirstBossStage")
-        {
-            SceneName = "1Stage_Map";
-        }
-        else if (tempSceneName == "SecondBossStage")
-        {
-            SceneName = "2Stage_Map";
-        }
-        else
-        {
-            SceneName = tempSceneName;
-        }
-            SceneManager.LoadScene(SceneName);
+        SceneManager.LoadScene(SceneName);
+    
     }
 
     private bool isMoved = false;
@@ -81,26 +69,9 @@ public class GameLoad : MonoBehaviour
     public void playerMove()
     {
         Debug.Log("이동");
-        if (tempSceneName == "FirstBossStage")
-        {
-            if (GameObject.Find("SavePoint_1_5") != null)
-            {
-                GameObject.Find("player").transform.position = GameObject.Find("SavePoint_1_5").transform.position;
-            }
-        }
-        else if (tempSceneName == "SecondBossStage")
-        {
-            if (GameObject.Find("2_5SavePoint_Off") != null)
-            {
-                GameObject.Find("player").transform.position = GameObject.Find("2_5SavePoint_Off").transform.position;
-            }
-        }
-        else
-        {
         GameObject.Find("player").transform.position
     = new Vector2( GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos.x
     , GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().PlayerRespawn_Pos.y);
-        }
     }
 
     private void Destroy()

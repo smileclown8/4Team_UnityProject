@@ -52,14 +52,12 @@ public class Boss_Clea_GrogyManager : MonoBehaviour
                 Boss_Clea_Grogy.SetActive(true);
                 if (GameObject.Find("Boss_Clea_Doll") != null)
                 {
-                    Boss_Clea_Grogy.transform.position = 
-                        new Vector2 (GameObject.Find("Boss_Clea_Doll").transform.position.x, GameObject.Find("Boss_Clea_Doll").transform.position.y + 4) ;
+                    Boss_Clea_Grogy.transform.position = GameObject.Find("Boss_Clea_Doll").transform.position;
                 }
 
                 else if (GameObject.Find("Boss_Clea_Doll(Clone)") != null)
                 {
-                    Boss_Clea_Grogy.transform.position =
-                        new Vector2(GameObject.Find("Boss_Clea_Doll(Clone)").transform.position.x, GameObject.Find("Boss_Clea_Doll(Clone)").transform.position.y + 4);
+                    Boss_Clea_Grogy.transform.position = GameObject.Find("Boss_Clea_Doll(Clone)").transform.position;
                 }
 
                 Boss_Clea_Crying.SetActive(true);
