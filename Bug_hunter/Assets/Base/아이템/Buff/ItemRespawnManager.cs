@@ -21,7 +21,7 @@ public class ItemRespawnManager : MonoBehaviour
                 isStartRespawn = true;
                 if(SceneManager.GetActiveScene().name == "FirstBossStage")
                 {
-                    Invoke("Respawn", 30);
+                    Invoke("Respawn", 60);
                 }
                 if (SceneManager.GetActiveScene().name == "SecondBossStage")
                 {
@@ -40,7 +40,7 @@ public class ItemRespawnManager : MonoBehaviour
 
     void Respawn()
     {
-        Item.GetComponent<HPBuff>().HPup = 30;
+        Item.GetComponent<HPBuff>().HPup = 25;
         Instantiate(Item, ItemPos.transform.position, ItemPos.transform.rotation);
         isStartRespawn = false;
     }
