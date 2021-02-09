@@ -40,6 +40,7 @@ public class PlayerStatusManager : MonoBehaviour
 
     public float player_MaxHP;
     public float player_HP;
+    public float skill_Damage;
     public int skill_ID;
 
     public Transform PlayerRespawn;
@@ -49,14 +50,18 @@ public class PlayerStatusManager : MonoBehaviour
     public float remove;
     public float rejump;
     public float rehp;
+    public float redamage;
 
     // Start is called before the first frame update
     void Start()
     {
+        skill_Damage = GameObject.Find("DamageManager").GetComponent<BulletDamage>().damage;
+
         // Inspector창에 정의해준 값을 저장한다
         rejump = jumpPower;
         rehp = player_MaxHP;
         remove = moveSpeed;
+        redamage = skill_Damage;
     }
 
     // Update is called once per frame
@@ -68,6 +73,7 @@ public class PlayerStatusManager : MonoBehaviour
             moveSpeed = remove;
             jumpPower = rejump;
             player_MaxHP = rehp;
+            skill_Damage = redamage;
         }
     }
 }
