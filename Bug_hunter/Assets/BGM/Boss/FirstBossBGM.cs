@@ -27,6 +27,4 @@ public class FirstBossBGM : MonoBehaviour
         }
     }
 
-    /* 특정 시점부터 재생되게 하려면
-     * 현재 Active 되어있지 않은 이 스크립트를, 재생시키고 싶은 부분에서 Active 시키면 됩니다! */
 }
