@@ -28,7 +28,9 @@ public class SecondCleaBGM : MonoBehaviour
             GetComponentInParent<AudioSource>().volume = 0.2f;      // 기본 볼륨 여기서 조절
             GetComponentInParent<AudioSource>().clip = GetComponentInParent<SecondBossBGM>().Clea;
             GetComponentInParent<AudioSource>().Play();
-            BGMtrigger = false;
+            GetComponentInParent<SecondBossBGM>().BGMtrigger = false;
         }
     }
+
+    // 영상 나올 때는 꺼지도록 해놨습니다 (Boss_Clea_Crying.cs)
 }

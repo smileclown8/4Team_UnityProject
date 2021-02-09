@@ -70,6 +70,9 @@ public class Boss_Clea_Crying : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            // BGM 끄기
+            GameObject.Find("DollBGM").GetComponent<AudioSource>().Stop();
+
             limit_Time = limit_Time_Init;
             HowManyMeetClea++;
             BlackScreen.SetActive(true);
