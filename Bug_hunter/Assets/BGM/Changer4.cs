@@ -19,7 +19,7 @@ public class Changer4 : MonoBehaviour
             GameObject.Find("StageBGM").GetComponentInChildren<Changer3>().secondBGMtrigger = false;
             GetComponentInParent<AudioSource>().Stop();
             GetComponentInParent<AudioSource>().clip = GetComponentInParent<StageBGMController>().third;
-            GetComponentInParent<AudioSource>().volume = 0.8f;
+            GetComponentInParent<AudioSource>().volume = 0.6f;
             GetComponentInParent<AudioSource>().Play();
             isChanged = true;
             thirdBGMtrigger = true;
@@ -30,9 +30,9 @@ public class Changer4 : MonoBehaviour
     {
         printingScripts = GameObject.FindWithTag("Player").GetComponent<PlayerController>().printingScripts;
 
-        if (thirdBGMtrigger == true && printingScripts == false && GetComponentInParent<AudioSource>().volume != 0.8f)
+        if (thirdBGMtrigger == true && printingScripts == false && GetComponentInParent<AudioSource>().volume != 0.6f)
         {
-            GetComponentInParent<AudioSource>().volume = 0.8f;
+            GetComponentInParent<AudioSource>().volume = 0.6f;
         }
     }
 

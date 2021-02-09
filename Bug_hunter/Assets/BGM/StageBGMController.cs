@@ -14,7 +14,7 @@ public class StageBGMController : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.volume = 1;
+        audioSource.volume = 0.4f;
         audioSource.clip = first;
         audioSource.Play();
     }

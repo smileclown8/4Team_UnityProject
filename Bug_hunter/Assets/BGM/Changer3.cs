@@ -18,7 +18,7 @@ public class Changer3 : MonoBehaviour
         {
             GetComponentInParent<AudioSource>().Stop();
             GetComponentInParent<AudioSource>().clip = GetComponentInParent<StageBGMController>().second;
-            GetComponentInParent<AudioSource>().volume = 0.8f;
+            GetComponentInParent<AudioSource>().volume = 0.4f;
             GetComponentInParent<AudioSource>().Play();
             isChanged = true;
             secondBGMtrigger = true;
@@ -29,9 +29,9 @@ public class Changer3 : MonoBehaviour
     {
         printingScripts = GameObject.FindWithTag("Player").GetComponent<PlayerController>().printingScripts;
 
-        if (secondBGMtrigger == true && printingScripts == false && GetComponentInParent<AudioSource>().volume != 0.8f)
+        if (secondBGMtrigger == true && printingScripts == false && GetComponentInParent<AudioSource>().volume != 0.4f)
         {
-            GetComponentInParent<AudioSource>().volume = 0.8f;
+            GetComponentInParent<AudioSource>().volume = 0.4f;
         }
     }
 
