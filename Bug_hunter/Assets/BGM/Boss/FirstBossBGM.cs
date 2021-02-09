@@ -12,7 +12,19 @@ public class FirstBossBGM : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = 0.5f;
         audioSource.clip = firstBoss;
-        audioSource.Play();
+    }
+
+    private bool isPlayed = false;
+
+    private void Update()
+    {
+        if (GameObject.Find("Boss_CORE") != null)
+        {
+            if (!isPlayed)
+                audioSource.Play();
+
+            isPlayed = true;
+        }
     }
 
     /* 특정 시점부터 재생되게 하려면
