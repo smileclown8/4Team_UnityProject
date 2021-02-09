@@ -26,8 +26,8 @@ public class BuffManager : MonoBehaviour
         // 플레이어가 아이템을 획득
         if (collision.gameObject.tag == "Player")
         {
-            // int random = Random.Range(1, 4);
-            int random = 0;
+            int random = Random.Range(1, 4);
+            // int random = 0;
 
             if (random == 0)
             {
