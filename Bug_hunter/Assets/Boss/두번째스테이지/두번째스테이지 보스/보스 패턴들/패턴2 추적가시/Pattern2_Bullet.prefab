@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   speed: 25
+  Pattern2Generate: Pattern2Generate
   isShootReady: 0
 --- !u!114 &6134441526380890112
 MonoBehaviour:

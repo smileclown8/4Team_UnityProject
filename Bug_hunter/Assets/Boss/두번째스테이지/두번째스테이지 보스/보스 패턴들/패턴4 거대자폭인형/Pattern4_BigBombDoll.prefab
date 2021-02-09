@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490ffbb8e5bde4e4b8e6f6365e67a1ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pattern4Explosion: Pattern4Explosion
   DesPos: {fileID: 0}
   BigBombDoll_HP: 0
   Explosion: {fileID: 6487682276949820271, guid: 24e86dfc29b76d3439a58ae39eb7d0d7,

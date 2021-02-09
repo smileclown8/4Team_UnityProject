@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class Pattern4_BigBombDoll : MonoBehaviour
 {
+
+    private AudioManager theAudio;
+    public string Pattern4Explosion;
+
+    private void Awake()
+    {
+
+        theAudio = FindObjectOfType<AudioManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,6 +21,7 @@ public class Pattern4_BigBombDoll : MonoBehaviour
         BigBombDoll_HP = 30;
         BossReturn = false;
 
+        Invoke("PlaySound", 7.2f);
         Invoke("Explose", 8f);
 
     }
@@ -49,6 +60,7 @@ public class Pattern4_BigBombDoll : MonoBehaviour
     void Explose()
     {
         GetComponent<Renderer>().material.color = new Color(0f, 0f, 0f, 0f);
+
         Instantiate(Explosion, transform.position, Quaternion.identity);
         BossReturn = true;
         Invoke("Destroy", 0.1f);
@@ -62,6 +74,11 @@ public class Pattern4_BigBombDoll : MonoBehaviour
             BossReturn = true;
             Invoke("Destroy", 0.1f);
         }
+    }
+
+    void PlaySound()
+    {
+        theAudio.Play(Pattern4Explosion);
     }
 
 

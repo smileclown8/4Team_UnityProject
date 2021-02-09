@@ -10,11 +10,23 @@ public class Pattern2_BulletController : MonoBehaviour
     public float speed;
 
 
+
+    private AudioManager theAudio;
+    public string Pattern2Generate;
+
+
+    private void Awake()
+    {
+
+        theAudio = FindObjectOfType<AudioManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        theAudio.Play(Pattern2Generate);
 
-      Invoke("ShootStart", 6);
+        Invoke("ShootStart", 6);
       Invoke("DestroyBullet", 17);
     }
 

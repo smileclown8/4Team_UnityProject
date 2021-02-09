@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Center: {fileID: 0}
+  Pattern1Generate: Pattern1Generate
 --- !u!60 &308321496575399860
 PolygonCollider2D:
   m_ObjectHideFlags: 0

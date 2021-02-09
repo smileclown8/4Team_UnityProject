@@ -8,9 +8,22 @@ public class Pattern1_BulletController : MonoBehaviour
     Vector3 Dir;
     float angle;
 
+
+
+    private AudioManager theAudio;
+    public string Pattern1Generate;
+
+    private void Awake()
+    {
+        
+        theAudio = FindObjectOfType<AudioManager>();
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
+        theAudio.Play(Pattern1Generate);
         Center = GameObject.Find("Pattern1_Center");
         Dir = (this.transform.position - Center.transform.position).normalized;
         angle = Mathf.Atan2(Dir.y, Dir.x) * Mathf.Rad2Deg;

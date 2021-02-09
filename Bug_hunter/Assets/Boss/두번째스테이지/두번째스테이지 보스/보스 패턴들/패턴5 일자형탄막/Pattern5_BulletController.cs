@@ -4,9 +4,21 @@ using UnityEngine;
 
 public class Pattern5_BulletController : MonoBehaviour
 {
+
+
+    private AudioManager theAudio;
+    public string Pattern5Generate;
+
+    private void Awake()
+    {
+
+        theAudio = FindObjectOfType<AudioManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        theAudio.Play(Pattern5Generate);
 
         Invoke("DestroyBullet", 10f);
     }
