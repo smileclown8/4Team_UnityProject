@@ -971,6 +971,11 @@ PrefabInstance:
       propertyPath: jumpPower
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4072865626438990714, guid: d7a565ba2d676584590d87db05d1efa3,
+        type: 3}
+      propertyPath: skill_Damage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4072865626438990715, guid: d7a565ba2d676584590d87db05d1efa3,
         type: 3}
       propertyPath: m_RootOrder

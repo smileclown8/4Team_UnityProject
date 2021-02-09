@@ -114,7 +114,7 @@ public class Boss_Clea_Crying : MonoBehaviour
                     Movie4.SetActive(true);
                     Invoke("SetActiveScreen", 0.1f);
                     limit_Time = 500f;
-                    Invoke("MoveToBoss_AfterMovie", 65f);
+                    Invoke("MoveToFinalScene", 65f);
                     Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     Debug.Log("Clear!");
                     break;
@@ -126,6 +126,12 @@ public class Boss_Clea_Crying : MonoBehaviour
             Debug.Log(Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_Grogy_MaxHP);
         }
     }
+
+    public void MoveToFinalScene()
+    {
+        SceneManager.LoadScene("Final_with_Savor");
+    }
+
 
     [SerializeField]
     public GameObject Boss_Clea_Doll;
