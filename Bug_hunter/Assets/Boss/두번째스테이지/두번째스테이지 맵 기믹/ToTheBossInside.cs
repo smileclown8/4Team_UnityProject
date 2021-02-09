@@ -13,7 +13,7 @@ public class ToTheBossInside : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        portalPos = GameObject.Find("PortalPos").transform;
+        //portalPos = GameObject.Find("PortalPos").transform;
     }
 
     public Transform portalPos;

@@ -20,7 +20,7 @@ public class SecondBossBGM : MonoBehaviour
     // 2. 내면세계에서 돌아오면 자동 재생
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (BGMtrigger == false)
+        if (collision.gameObject.tag == "Player" && BGMtrigger == false)
         {
             audioSource = GetComponent<AudioSource>();
             audioSource.volume = 1;      // 기본 볼륨 여기서 조절

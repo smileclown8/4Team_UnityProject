@@ -73,6 +73,7 @@ public class Boss_Clea_Crying : MonoBehaviour
             // BGM 끄기
             GameObject.Find("DollBGM").GetComponent<AudioSource>().Stop();
 
+            isPlayerInBossInside = false;
             limit_Time = limit_Time_Init;
             HowManyMeetClea++;
             BlackScreen.SetActive(true);
@@ -112,6 +113,7 @@ public class Boss_Clea_Crying : MonoBehaviour
                     Debug.Log("네번째 만남");
                     Movie4.SetActive(true);
                     Invoke("SetActiveScreen", 0.1f);
+                    limit_Time = 500f;
                     Invoke("MoveToBoss_AfterMovie", 65f);
                     Boss_Clea_StatusManager.GetComponent<Boss_Clea_StatusManager>().Boss_Clea_Doll_HP -= 25f;
                     Debug.Log("Clear!");
