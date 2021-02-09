@@ -12,19 +12,11 @@ public class BatManager : MonoBehaviour
     // 오디오용
     public AudioClip moving;
     AudioSource audioSource;
-    float soundPlayTime;
-    float soundDelayTime;
     bool isChattering;
 
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-    }
-
-    void Start()
-    {
-        soundPlayTime = 10;
-        soundDelayTime = 10;
     }
 
     void Update()
