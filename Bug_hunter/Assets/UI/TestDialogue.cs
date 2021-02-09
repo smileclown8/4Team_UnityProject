@@ -346,14 +346,20 @@ public class TestDialogue : MonoBehaviour
                 howManyTailkingWithThisObject++;
             }
 
-            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            Invoke("ColliderReactive", 5f); //2초 후 콜라이더를 재활성화
+           // this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+           // Invoke("ColliderReactive", 5f); //2초 후 콜라이더를 재활성화
 
 
         }
     }
 
-
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "player")
+        {
+            Invoke("ColliderReactive", 3); //2초 후 콜라이더를 재활성화
+        }
+    }
 
     public int howManyTailkingWithThisObject = 0;
     private void OnCollisionExit2D(Collision2D collision)
