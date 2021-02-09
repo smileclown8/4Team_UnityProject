@@ -48,6 +48,44 @@ public class SkillController : MonoBehaviour
     public string electro;
     public string fire;
 
+    public void SoundPlay()
+    {
+        if(skill_ID == 0)
+        {
+            SkillSoundManager.Play(NormalBulletSound);
+        }
+
+        if (skill_ID == 1)
+        {
+            SkillSoundManager.Play(tongtong);
+        }
+
+        if (skill_ID == 2)
+        {
+            SkillSoundManager.Play(NormalBulletSound);
+        }
+
+        if (skill_ID == 3)
+        {
+            SkillSoundManager.Play(arrow);
+        }
+
+        if (skill_ID == 4)
+        {
+            SkillSoundManager.Play(bomb);
+        }
+
+        if (skill_ID == 5)
+        {
+            SkillSoundManager.Play(electro);
+        }
+
+        if (skill_ID == 6)
+        {
+            SkillSoundManager.Play(fire);
+        }
+    }
+
 
     public bool isShootButton = false;
 
@@ -128,6 +166,9 @@ public class SkillController : MonoBehaviour
     public int coolTime = 1;
     private float curTime;
 
+
+
+    //이거 그냥 여기에다가 소리넣으면되는거아닌가? 자고일어나서 넣어보기
     public void NormalBulletFire()
     {
         pos = bulletPos.transform;
@@ -144,6 +185,8 @@ public class SkillController : MonoBehaviour
         if (curTime <= 0)
         {
             NormalBulletFire();
+            SkillSoundManager.Play(NormalBulletSound);
+
             curTime = coolTime * coolTime_NormalShoot;
         }
         curTime -= Time.deltaTime;
@@ -158,6 +201,8 @@ public class SkillController : MonoBehaviour
         {
             Instantiate(SecondSkillBullet, pos.position, transform.rotation);
             curTime = coolTime * coolTime_SecondSKill;
+            SkillSoundManager.Play(tongtong);
+
         }
         curTime -= Time.deltaTime;
     }
@@ -171,6 +216,7 @@ public class SkillController : MonoBehaviour
             Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
 
             Instantiate(RandomBullet, newBulletPos, transform.rotation);
+            SkillSoundManager.Play(NormalBulletSound);
 
             curTime = coolTime * coolTime_FirstSkill;
         }
@@ -183,6 +229,8 @@ public class SkillController : MonoBehaviour
         {
             pos = bulletPos.transform;
             Instantiate(arrowSkillBullet, pos.position, transform.rotation);
+            SkillSoundManager.Play(arrow);
+
             curTime = coolTime * coolTime_arrowSkillBullet;
 
         }
@@ -198,6 +246,8 @@ public class SkillController : MonoBehaviour
             Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
 
             Instantiate(BombSkill, newBulletPos, transform.rotation);
+            SkillSoundManager.Play(bomb);
+
             curTime = coolTime * coolTime_BombSkill;
 
         }
@@ -213,6 +263,8 @@ public class SkillController : MonoBehaviour
             Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
 
             Instantiate(ElectroSkill, newBulletPos, transform.rotation);
+            SkillSoundManager.Play(electro);
+
             curTime = coolTime * coolTime_ElectroSkill;
 
         }
@@ -226,6 +278,8 @@ public class SkillController : MonoBehaviour
             pos = bulletPos.transform;
 
             Instantiate(FireSkill, pos.position, transform.rotation);
+            SkillSoundManager.Play(fire);
+
             curTime = coolTime * coolTime_FireSkill;
 
         }
