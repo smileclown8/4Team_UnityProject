@@ -172,9 +172,8 @@ public class SkillController : MonoBehaviour
     public void NormalBulletFire()
     {
         pos = bulletPos.transform;
-        GameObject bullet = Instantiate(NormalBullet, pos.position, transform.rotation);
-        bullet.GetComponent<BulletDamage>().damage = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().damage * 1.0f;
-        Debug.Log(bullet.GetComponent<BulletDamage>().damage);
+        Instantiate(NormalBullet, pos.position, transform.rotation);
+
 
         curTime = coolTime * coolTime_SecondSKill;
         curTime -= Time.deltaTime;
@@ -201,9 +200,8 @@ public class SkillController : MonoBehaviour
 
         if (curTime <= 0)
         {
-            GameObject bullet = Instantiate(SecondSkillBullet, pos.position, transform.rotation);
-            bullet.GetComponent<BulletDamage>().damage = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().damage * 1.5f;
-            Debug.Log(bullet.GetComponent<BulletDamage>().damage);
+            Instantiate(SecondSkillBullet, pos.position, transform.rotation);
+
 
             curTime = coolTime * coolTime_SecondSKill;
             SkillSoundManager.Play(tongtong);
@@ -220,9 +218,8 @@ public class SkillController : MonoBehaviour
             int random_BulletPOS_Y = Random.Range(-1, 1 + 1);
             Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
 
-            GameObject bullet = Instantiate(RandomBullet, newBulletPos, transform.rotation);
-            bullet.GetComponent<BulletDamage>().damage = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().damage * 1.0f;
-            Debug.Log(bullet.GetComponent<BulletDamage>().damage);
+            Instantiate(RandomBullet, newBulletPos, transform.rotation);
+
 
             SkillSoundManager.Play(NormalBulletSound);
 
@@ -236,9 +233,8 @@ public class SkillController : MonoBehaviour
         if (curTime <= 0)
         {
             pos = bulletPos.transform;
-            GameObject bullet = Instantiate(arrowSkillBullet, pos.position, transform.rotation);
-            bullet.GetComponent<BulletDamage>().damage = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().damage * 1.2f;
-            Debug.Log(bullet.GetComponent<BulletDamage>().damage);
+            Instantiate(arrowSkillBullet, pos.position, transform.rotation);
+
 
             SkillSoundManager.Play(arrow);
 
@@ -256,9 +252,8 @@ public class SkillController : MonoBehaviour
             int random_BulletPOS_Y = Random.Range(-2, 1 + 2);
             Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
 
-            GameObject bullet = Instantiate(BombSkill, newBulletPos, transform.rotation);
-            bullet.GetComponent<BulletDamage>().damage = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().damage * 1.5f;
-            Debug.Log(bullet.GetComponent<BulletDamage>().damage);
+            Instantiate(BombSkill, newBulletPos, transform.rotation);
+
 
             SkillSoundManager.Play(bomb);
 
@@ -276,9 +271,8 @@ public class SkillController : MonoBehaviour
             int random_BulletPOS_Y = Random.Range(-2, 1 + 2);
             Vector2 newBulletPos = new Vector2(pos.position.x, pos.position.y + random_BulletPOS_Y);
 
-            GameObject bullet = Instantiate(ElectroSkill, newBulletPos, transform.rotation);
-            bullet.GetComponent<BulletDamage>().damage = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().damage * 1.7f;
-            Debug.Log(bullet.GetComponent<BulletDamage>().damage);
+            Instantiate(ElectroSkill, newBulletPos, transform.rotation);
+
 
             SkillSoundManager.Play(electro);
 
@@ -294,9 +288,8 @@ public class SkillController : MonoBehaviour
         {
             pos = bulletPos.transform;
 
-            GameObject bullet = Instantiate(FireSkill, pos.position, transform.rotation);
-            bullet.GetComponent<BulletDamage>().damage = GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().damage * 1.8f;
-            Debug.Log(bullet.GetComponent<BulletDamage>().damage);
+            Instantiate(FireSkill, pos.position, transform.rotation);
+
 
             SkillSoundManager.Play(fire);
 
