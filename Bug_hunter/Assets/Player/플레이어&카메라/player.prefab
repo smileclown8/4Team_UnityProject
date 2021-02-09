@@ -351,7 +351,7 @@ MonoBehaviour:
   isTalk: 0
   isLayer:
     serializedVersion: 2
-    m_Bits: 26880
+    m_Bits: 551168
   isDead: 0
 --- !u!114 &1960526911054284858
 MonoBehaviour:
