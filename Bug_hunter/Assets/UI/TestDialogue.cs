@@ -327,6 +327,14 @@ public class TestDialogue : MonoBehaviour
 
 
                 }
+                if (this.gameObject.name == "Savor_Final")
+                {
+       
+                    theDM.ShowDialogue(this.dialogue);
+
+
+                }
+
 
 
 

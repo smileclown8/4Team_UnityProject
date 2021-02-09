@@ -121,6 +121,1655 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &158772593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866738, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854789278969866741, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1561728867}
+    - target: {fileID: 854789278969866742, guid: 5778d6218b2e0c04ab7b54b3ca9b8137,
+        type: 3}
+      propertyPath: m_Name
+      value: UI_Dialogue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5778d6218b2e0c04ab7b54b3ca9b8137, type: 3}
+--- !u!1001 &326379709
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2078695074496475131, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078695074496475131, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: .........
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078695074496475131, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: "\uB78C\uCC0C\uC775...."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063328, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ee6c0586a92f3ff40af2fbc88eed71b9,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sprites.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.sprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\".....\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "\uC804\uACFC\uB294 \uB2E4\uB978 \uC138\uC774\uBC84\uC758 \uCC28\uAC00\uC6B4
+        \uC2DC\uC120\uC774 \uB290\uAEF4\uC9C4\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\"\uACB0\uAD6D \uC5EC\uAE30\uAE4C\uC9C0
+        \uB3C4\uB2EC\uD588\uAD70\uC694.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\"\uC218 \uC5C6\uC774 \uB9CE\uC740
+        \uB2F9\uC2E0\uC744 \uBCF4\uC544\uC654\uC9C0\uB9CC...\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\"\uC5B4\uB54C\uC694, \uC774\uBC88\uC5D4
+        \uC880 \uB2E4\uB978\uAC00\uC694?\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\"..\uC774 \uC55E\uC73C\uB85C \uB098\uC544\uAC00\uBA74,
+        \uB2F9\uC2E0\uC740 \uC9C4\uC815\uD55C \uC9C4\uC2E4\uACFC \uB9C8\uC8FC\uD558\uACA0\uC8E0.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\"\uC774\uD504\uB97C \uC8FD\uC774\uACE0,
+        \uD074\uB808\uC544\uB97C \uB118\uC5B4\uC624\uBA74\uC11C..\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\"\uC544\uBB34\uB7F0 \uC704\uD654\uAC10\uC744
+        \uB290\uB07C\uC9C0 \uBABB\uD588\uB294\uC9C0 \uAD81\uAE08\uD558\uAD70\uC694.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[8]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\"\uC774 \uACF3\uC744 \uC9C0\uB098\uAC04\uB2E4\uBA74,
+        \uC804\uACFC\uB294 \uB2E4\uB974\uB2E4\uB294 \uAC83\uC744 \uBD84\uBA85\uD788
+        \uC544\uC154\uC57C \uD560 \uAC81\uB2C8\uB2E4.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[9]
+      value: " \u2605\uC138\uC774\uBC84\u2606\n\"\uC774\uC2AC\uB77C\uD504, \uB2F9\uC2E0\uC740
+        \uC9C4\uC2E4\uC744 \uB9DE\uC774\uD560 \uC900\uBE44\uAC00 \uB410\uB098\uC694?\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[10]
+      value: "\uC624\uB978\uCABD \uC544\uB798 \uC228\uACA8\uC9C4 \uBC29\uC744 \uCC3E\uC544\uAC00\uBCF4\uC790."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[11]
+      value: "\uC624\uB978\uCABD \uC544\uB798 \uC228\uACA8\uC9C4 \uBC29\uC744 \uCC3E\uC544\uAC00\uBCF4\uC790."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[12]
+      value: "\uC624\uB978\uCABD \uC544\uB798 \uC228\uACA8\uC9C4 \uBC29\uC744 \uCC3E\uC544\uAC00\uBCF4\uC790."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[13]
+      value: "\uC624\uB978\uCABD \uC544\uB798 \uC228\uACA8\uC9C4 \uBC29\uC744 \uCC3E\uC544\uAC00\uBCF4\uC790."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[14]
+      value: "\uC624\uB978\uCABD \uC544\uB798 \uC228\uACA8\uC9C4 \uBC29\uC744 \uCC3E\uC544\uAC00\uBCF4\uC790."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[15]
+      value: "\uC624\uB978\uCABD \uC544\uB798 \uC228\uACA8\uC9C4 \uBC29\uC744 \uCC3E\uC544\uAC00\uBCF4\uC790."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.sentences.Array.data[0]
+      value: "\uC5C5\uB370\uC774\uD2B8 \uC608\uC815\uC785\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.dialogueWindows.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.dialogueWindows.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.dialogueWindows.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.dialogueWindows.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.dialogueWindows.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.dialogueWindows.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue.dialogueWindows.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[13]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[14]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[15]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[17]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[18]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[19]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[20]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[21]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[22]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[23]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[24]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[25]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[26]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[27]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[28]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[29]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[30]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[31]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[32]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[33]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[34]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[35]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[36]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[37]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[38]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[39]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[40]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[41]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[42]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[43]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[44]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[45]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[46]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[47]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[48]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[49]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[50]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[51]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[52]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[53]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[54]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[55]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[56]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[57]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[58]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[59]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[60]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[61]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[62]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[63]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[64]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[65]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[66]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[67]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[68]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[69]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[70]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[71]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[72]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[73]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[74]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[75]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[76]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[77]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[78]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[79]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[80]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[81]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[82]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[83]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[84]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[85]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[86]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[87]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[88]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[89]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[90]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[91]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[92]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[93]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[94]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[95]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[96]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[97]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[98]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[99]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[100]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[101]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[102]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[103]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[104]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[105]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[106]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[107]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[108]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[109]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[110]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[111]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[112]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[113]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[114]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[115]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[116]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[117]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[118]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[119]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[120]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[121]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[122]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[123]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[124]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[125]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[126]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[127]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[128]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[129]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[130]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[131]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[132]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[133]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[134]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[135]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[136]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[137]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[138]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[139]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[140]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[141]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[142]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[143]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[144]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[145]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[146]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[147]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[148]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[149]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[150]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[151]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[152]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[153]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[154]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[155]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[156]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[157]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[158]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[159]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[160]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[161]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[162]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[163]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[164]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[165]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[166]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[167]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[168]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[169]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[170]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[171]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[172]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[173]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[174]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[175]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[176]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[177]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[178]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[179]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[180]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[181]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[182]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[183]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[184]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[185]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[186]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[187]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[188]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[189]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[190]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[191]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[192]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[193]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[194]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[195]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[196]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[197]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[198]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[199]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[200]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[201]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[202]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[203]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[204]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[205]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[206]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[207]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[208]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[209]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063330, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: dialogue2.dialogueWindows.Array.data[210]
+      value: 
+      objectReference: {fileID: 21300000, guid: e074326b4466a36478bafc0b505aa55d,
+        type: 3}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063331, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8777913207177063342, guid: 3ff3a3d14940f854198a6e1741ef0fcd,
+        type: 3}
+      propertyPath: m_Name
+      value: Savor_Final
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3ff3a3d14940f854198a6e1741ef0fcd, type: 3}
 --- !u!1 &1142638485
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +1827,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: 0c94c337ae94f0b45955c833a98b86e5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
