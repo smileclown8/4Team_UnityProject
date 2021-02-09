@@ -9,8 +9,8 @@ public class DialogueManager : MonoBehaviour
     // public GameObject DialougeWindow_Image;
 
     public static DialogueManager instance;
-
-    #region Singleton
+    
+    /*#region Singleton
     private void Awake()
     {
         if (instance == null)
@@ -24,7 +24,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
     #endregion Singleton
-
+    */
     public Text text;
     public SpriteRenderer rendererSprite;
     public SpriteRenderer rendererDialogueWindow;
@@ -48,6 +48,7 @@ public class DialogueManager : MonoBehaviour
     public string Door_Unlock;
     public string Musicbox1;
     public string SadSound1;
+    public string Door_Open;
 
     private AudioManager theAudio;
 
@@ -144,6 +145,10 @@ public class DialogueManager : MonoBehaviour
         if (GameObject.Find("Stage_Start") != null)
         {
             GameObject.Find("Stage_Start").GetComponent<TestDialogue>().isSadSound1 = false;
+        }
+        if (GameObject.Find("LostMemory4") != null)
+        {
+            GameObject.Find("LostMemory4").GetComponent<TestDialogue>().isDoor_Open = false;
         }
 
 
@@ -347,6 +352,20 @@ public class DialogueManager : MonoBehaviour
                         {
                             Debug.Log("재생");
                             theAudio.Play(C_laugh);
+                            isSoundPlayed = true;
+                        }
+                    }
+                }
+                if (GameObject.Find("LostMemory4") != null) // 매 오브젝트마다 걸어주기
+                {
+                    if (GameObject.Find("LostMemory4").GetComponent<TestDialogue>().isDoor_Open == true
+                    && count == 2
+                    && GameObject.Find("LostMemory4").GetComponent<TestDialogue>().howManyTailkingWithThisObject == 1)
+                    {
+                        if (!isSoundPlayed)
+                        {
+                            Debug.Log("재생");
+                            theAudio.Play(Door_Open);
                             isSoundPlayed = true;
                         }
                     }
