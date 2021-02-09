@@ -44,8 +44,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxMoveSpeed: 10
-  moveSpeed: 80
-  jumpPower: 35
+  moveSpeed: 70
+  jumpPower: 60
   player_MaxHP: 100
   player_HP: 100
+  skill_Damage: 0
   skill_ID: 0
+  PlayerRespawn: {fileID: 0}
+  PlayerRespawn_Pos: {x: 0, y: 0}
+  remove: 0
+  rejump: 0
+  rehp: 0
+  redamage: 0
