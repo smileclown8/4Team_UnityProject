@@ -19,7 +19,7 @@ public class BuffManager : MonoBehaviour
     private void Awake()
     {
         playerStatus = GameObject.Find("PlayerStatusManager");
-        AttackDamage = GameObject.Find("DamageManager");
+        AttackDamage = GameObject.Find("PlayerStatusManager");
     }
 
 
@@ -35,7 +35,7 @@ public class BuffManager : MonoBehaviour
             if (random == 0)
             {
                 AttUP();
-                Debug.Log("공격력 " + AttackDamage.GetComponent<BulletDamage>().damage);
+                Debug.Log("공격력 " + AttackDamage.GetComponent<PlayerStatusManager>().damage);
             }
             if (random == 1)
             {
@@ -99,7 +99,7 @@ public class BuffManager : MonoBehaviour
 
     void AttUP()
     {
-        GameObject.Find("DamageManager").GetComponent<BulletDamage>().damage += AttDamage;
+        GameObject.Find("PlayerStatusManager").GetComponent<PlayerStatusManager>().damage += AttDamage;
     }
 
 

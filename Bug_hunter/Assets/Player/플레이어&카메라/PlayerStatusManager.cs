@@ -43,6 +43,8 @@ public class PlayerStatusManager : MonoBehaviour
     public float skill_Damage;
     public int skill_ID;
 
+    public float damage;
+
     public Transform PlayerRespawn;
     public Vector2 PlayerRespawn_Pos;
 
