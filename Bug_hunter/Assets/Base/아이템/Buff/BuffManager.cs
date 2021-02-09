@@ -12,8 +12,9 @@ public class BuffManager : MonoBehaviour
     public int speedup;
     public int HPup;
     public int jumpUP;
-    public int AttDamage;
+    public int AttDamage;   // 올라가는 값
 
+    float DMG;              // BulletDamage 스크립트에 damage
 
     private void Awake()
     {
@@ -21,12 +22,14 @@ public class BuffManager : MonoBehaviour
         AttackDamage = GameObject.Find("DamageManager");
     }
 
+
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         // 플레이어가 아이템을 획득
         if (collision.gameObject.tag == "Player")
         {
-            int random = Random.Range(1, 4);
+            int random = Random.Range(0, 4);
             // int random = 0;
 
             if (random == 0)
@@ -68,6 +71,7 @@ public class BuffManager : MonoBehaviour
         }
     }
 
+
     void SpeedUP()
     {
         if (playerStatus.GetComponent<PlayerStatusManager>().moveSpeed < 90)
@@ -95,8 +99,8 @@ public class BuffManager : MonoBehaviour
 
     void AttUP()
     {
-        AttackDamage.GetComponent<BulletDamage>().damage += AttDamage;
-
-
+        GameObject.Find("DamageManager").GetComponent<BulletDamage>().damage += AttDamage;
     }
+
+
 }
