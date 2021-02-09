@@ -46,6 +46,7 @@ public class TestDialogue : MonoBehaviour
     public bool isDoor_Unlock = false;
     public bool isMusicbox1 = false;
     public bool isSadSound1 = false;
+    public bool isDoor_Open = false;
 
 
 
@@ -67,6 +68,18 @@ public class TestDialogue : MonoBehaviour
             Destroy(GameObject.Find("Savor3_Chatbox(Clone)"));
         }
     }
+
+    void ColliderReactive()
+    {
+        this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+    }
+
+
+
+
+
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -246,6 +259,7 @@ public class TestDialogue : MonoBehaviour
                 if (this.gameObject.name == "Portal_03")
                 {
                     theDM.ShowDialogue(this.dialogue);
+                    GameObject.Find("Portal_03").SetActive(false);
                 }
 
                 //2스테이지 트리거
@@ -256,6 +270,12 @@ public class TestDialogue : MonoBehaviour
                     isDoor_Unlock = true;
                 }
                 if(this.gameObject.name == "Door_close002")
+                {
+                    theDM.ShowDialogue(this.dialogue);
+                    theAudio.Play(Door_Unlock);
+                    isDoor_Unlock = true;
+                }
+                if (this.gameObject.name == "Door_close004")
                 {
                     theDM.ShowDialogue(this.dialogue);
                     theAudio.Play(Door_Unlock);
@@ -283,6 +303,7 @@ public class TestDialogue : MonoBehaviour
                 {
                     theDM.ShowDialogue(this.dialogue);
                     theAudio.Play(Door_Open);
+                    GameObject.Find("Door_close004").SetActive(false);
                 }
                 if (this.gameObject.name == "LostMemory1")
                 {
@@ -301,7 +322,9 @@ public class TestDialogue : MonoBehaviour
                 }
                 if (this.gameObject.name == "LostMemory4")
                 {
+                    isDoor_Open = true;
                     theDM.ShowDialogue(this.dialogue);
+
 
                 }
 
@@ -322,6 +345,11 @@ public class TestDialogue : MonoBehaviour
 
                 howManyTailkingWithThisObject++;
             }
+
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            Invoke("ColliderReactive", 5f); //2초 후 콜라이더를 재활성화
+
+
         }
     }
 
